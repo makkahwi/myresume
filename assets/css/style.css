@@ -1,45 +1,3 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Template Name: Suhaib Ahmad
-Template Demo URL: 
-Version: 1.0
-Author: madsparrow.us
-
---------------------------------------------------------------------
-
-[Table of contents]
-
-1. General style
-    1.1 Typography
-    1.2 Specials Classes
-2. Header
-    2.1 Menu
-    2.2 Burger Button
-    2.3 Collapse Navigation
-3. Pages Style
-4. Home Slider
-    4.1 Slider Navigation Buttons
-    4.2 Slider Inner Info
-  4.3 Pagination
-5. Albums
-6. Gallery
-7. Blog
-8. About
-9. Contact
-10. Footer
-11. Responsive Rules
-
---------------------------------------------------------------------
-# Font: 'Yantramanav';
---------------------------------------------------------------------
-# Colors: #151515, #fff, #555555
-------------------------------------------------------------------*/
-
-/**
- * 1. General style
- */
- 
 /*Text font*/
 @import 'https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900';
 
@@ -150,12 +108,12 @@ h2,
 h4,
 h5,
 h6 {
-    color: #151515;
+    color: #ff5d00;
     margin-top: 0;
     text-transform: uppercase;
 }
 h1 {
-    font-size: calc(80px + 1vw);
+    font-size: calc(70px + 1vw);
 }
 h2 {
     font-size: calc(36px + 16 * (100vw - 992px) / 1508);
@@ -198,23 +156,37 @@ p {
 .c-white {
     color: #fff !important;
 }
+
+.ms-corner {
+    position: absolute;
+    margin-left: 85%;
+    background-color: #ff5d00;
+    width: 15%;
+    height: 500px;
+}
+
 .navbar-white {
     color: #fff;
     background-color: transparent !important;
 }
+
 .center-block {
     display: flex;
     justify-content: center;
 }
+
 .center {
     text-align: center;
 }
+
 .align-left {
     text-align: left;
 }
+
 .align-right {
     text-align: right;
 }
+
 .align-center {
     text-align: center;
     display: block;
@@ -325,7 +297,7 @@ p {
  */
 
 .ms-header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background-color: #f7f7f7;
     z-index: 3;
@@ -427,7 +399,7 @@ p {
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: #151515;
+    background-color: #fff;
     transition: all .3s ease .5s;
 }
 .hamburger-inner:before {
@@ -578,6 +550,7 @@ p {
     visibility: visible;
     background-color: #151515;
 }
+
 .ms-main-container {
     position: relative;
     width: 100%;
@@ -585,42 +558,220 @@ p {
     opacity: 0;
     background-color: #fff;
 }
+
 .ms-container {
     width: 100%;
     height: 100%;
     position: relative;
     padding-top: 12em;
 }
-.ms-section__block {
-    width: 85%;
-    margin: 0 auto 6em;
+
+.section-block {
+    min-height: 100vh;
+    width: 100%;
+    padding: 10vh 10%;
 }
+
+.section-block-side {
+    background-color: white;
+    min-height: 80vh;
+    width: 100%;
+    padding: 30vh 10%;
+}
+
+/* Graph ******************************************/
+
+.main-timeline .timeline{
+    padding: 0 2px;
+    position: relative;
+}
+
+.main-timeline .timeline-icon{
+    display: block;
+    text-align: center;
+    padding: 20px 0 55px 0;
+    z-index: 1;
+    position: relative;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-icon{
+    padding: 55px 0 20px 0;
+}
+
+.main-timeline .timeline-icon:before{
+    content: "";
+    width: 1px;
+    height: 75%;
+    background: #ff5d00;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-icon:before{
+    bottom: auto;
+    top: 0;
+}
+
+.main-timeline .timeline:hover .timeline-icon:before{
+    background: #e55400;
+}
+
+.main-timeline .timeline-icon i{
+    width: 45px;
+    height: 45px;
+    line-height:45px;
+    border-radius: 50%;
+    background: #ff5d00;
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.main-timeline .timeline:hover .timeline-icon i{
+    background: #e55400;
+    animation: icon-load 2.5s ease 0s infinite;
+}
+
+.main-timeline .border{
+    height: 15px;
+    background: #ff5d00;
+    margin-bottom: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.main-timeline .timeline:hover .border{
+    background: #e55400;
+}
+
+.main-timeline .timeline:first-child .border{
+    border-radius: 4px 0 0 4px;
+}
+
+.main-timeline .timeline:last-child .border{
+    border-radius: 0 4px 4px 0;
+}
+
+.main-timeline .timeline:nth-child(2n) .border{
+    margin: 18px 0 0 0;
+}
+
+.main-timeline .timeline-content{
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 3px;
+    transition: all 0.3s ease 0s;
+}
+
+.main-timeline .timeline:hover .timeline-content{
+    background: #e55400;
+}
+
+.main-timeline .title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff5d00;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    transition: all 0.3s ease 0s;
+}
+
+.main-timeline .timeline:hover .title{
+    color: #fff;
+}
+
+.timeline-content .description{
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.main-timeline .timeline:hover .description{
+    color: #fff;
+}
+
+.bg-photo {
+    background-image: url('assets/images/developer.png');
+}
+
+@media only screen and (max-width: 990px){
+    .main-timeline .timeline{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .main-timeline .timeline-icon{
+        padding-top: 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-icon{
+        padding-bottom: 0;
+    }
+    .main-timeline .border{
+        margin-bottom: 10px;
+    }
+    .main-timeline .timeline:nth-child(2n) .border{
+        margin: 10px 0 0 0;
+    }
+    .main-timeline .timeline-content{
+        text-align: center;
+    }
+}
+
+/* Graph End ******************************************/
+
 .page-div {
     background-color: #e9e9e9;
     padding: 6em 0 0 0;
 }
+
+.section-side {
+    position: absolute;
+    margin: 0% 95% 0% 0%;
+    width: 5vw;
+    height: 50vh;
+    background-color: #ff5d00;
+}
+
+.theme-main {
+    color: #ff5d00
+}
+
 .imgw {
     width: 150px;
 }
+
 .unl{
     text-decoration: underline;
 }
-.ms-page-title span {
+
+.page-title span {
     text-transform: uppercase;
-    letter-spacing: .15em;
-    color: #fff;
+    letter-spacing: .25em;
 }
+
 .section-header {
     text-transform: uppercase;
     position: relative;
-    margin: 15px 0;
+    font-family: 'knewave', Arial, sans-serif;
+    letter-spacing: .2rem;
+    line-height: 1.2;
+    padding: 2rem 0em;
 }
+
 .section-subheader {
     text-transform: uppercase;
     position: relative;
     margin: 10px 0;
     color: #494949;
 }
+
 .section-desc {
     width: 100%;
     font-size: 1.5em;
@@ -629,10 +780,12 @@ p {
     letter-spacing: .05em;
     text-align: justify;
 }
+
 .section-photo {
     height: 100%;
     max-height: 100%;
 }
+
 .desc-icon{
     width: 20%;
     color: #151515;
@@ -1366,9 +1519,8 @@ footer {
     .ms-container.home-slider {
         padding-bottom: 0 !important;
     }
-    .ms-section__block {
-        width: auto;
-        margin: 0 15px 3em;
+    .section-block {
+        padding: 10vh 7.5% 10vh 7.5%;
     }
     .page-div{
         background-color: #e9e9e9;
@@ -1404,11 +1556,6 @@ footer {
 
 .slide-inner--info>h1, .ms-btn {
     font-family: 'mv boli', Arial, sans-serif;
-}
-
-.section-header {
-    font-family: 'knewave', Arial, sans-serif;
-    letter-spacing: 2px;
 }
 
 .logo-light {
