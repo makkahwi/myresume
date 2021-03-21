@@ -13,7 +13,7 @@
     <!-- CSS Plugins -->
     <link rel="stylesheet" href="assets/css/plugins.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
+
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -23,6 +23,7 @@
   <body style="background-color: #ff5d00;">
     <div class="ms-main-container">
       <div class="ms-preloader"></div>
+      <a class="totop ripple" data-ripple-color="#89669b" href="#"><h1><i class="fas fa-chevron-down"></i></h1></a>
       
       <header class="ms-header" style="background-color: #545961;">
         <div class="ms-corner"></div>
@@ -32,49 +33,6 @@
             <div class="logo-dark current"><img src="assets/img/logo.png" alt="logo image"></div>
             <div class="logo-light text-light"><img src="assets/img/logo.png" alt="logo image">Suhaib Ahmad</div>
           </div>
-
-          <div class="col-md-1"></div>
-          
-          <button class="hamburger" type="button" data-toggle="navigation">
-            <span class="hamburger-box">
-              <span class="hamburger-label"></span>
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-          
-          <div class="height-full-viewport" style="background-color: #cd4b00;">
-            <ul class="ms-navbar">
-              <li class="nav-item">
-                <a href="#" data-type="page-transition">
-                  <span class="ms-btn">About Me</span>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" data-type="page-transition">
-                  <span class="ms-btn">Education</span>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a href="#" data-type="page-transition">
-                  <span class="ms-btn">Experiences</span>
-                </a>
-              </li>
-              
-              <li class="nav-item">
-                <a href="#" data-type="page-transition">
-                  <span class="ms-btn">My Works</span>
-                </a>
-              </li>
-             
-              <li class="nav-item">
-                <a href="#" data-type="page-transition">
-                  <span class="ms-btn">Reach Me</span>
-                </a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </header>
       
@@ -83,7 +41,7 @@
         <div class="col-lg-12 section-block row">
           <div class="col-lg-6 row">
             <div class="col-lg-2"></div>
-            
+
             <div class="col-lg-8 center">
               <h1 class="section-header" style="line-height: 1.3;">Suhaib Ahmad</h1>
               <h5>Full-Stack Web Developer</h5>
@@ -217,75 +175,247 @@
         <!-- Works -->
         <div class="section-block center">
           <h2 class="section-header">My Works</h2>
-
-          <div class="row">
-            <div class="col-lg-4">
-              <a href="https://aqsa.edu.my" target="_blank">
-                <img src="assets/img/Websites/2.jpg" style="padding: 1rem;">
-              </a>
-
-              <a href="https://teamtr.team" target="_blank">
-                <img src="assets/img/Websites/3.jpg" style="padding: 1rem;">
-              </a>
-
-              <div class="row" style="padding: 0.75rem 0.75rem 0.75rem 0.75rem;">
-                <div class="col-sm-6">
-                  <img src="assets/img/designs/Banners/1.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                  <img src="assets/img/designs/Logos/4.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                </div>
-                
-                <div class="col-sm-6">
-                  <img src="assets/img/designs/Banners/4.jpg" style="padding: 1rem 0.25rem 1.5rem 1rem;">
-                  <img src="assets/img/designs/Logos/2.jpg" style="padding: 1.5rem 0.25rem 1rem 1rem;">
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <a href="https://arromi.net" target="_blank">
-                <img src="assets/img/Websites/5.jpg" style="padding: 1rem;">
-              </a>
-
-              <a href="https://students.aqsa.edu.my" target="_blank">
-                <img src="assets/img/Websites/8.jpg" style="padding: 1rem;">
-              </a>
-              
-              <div class="row" style="padding: 0.75rem 0.75rem 0.75rem 0.75rem;">
-                <div class="col-sm-6">
-                  <img src="assets/img/designs/Booklets/2.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                  <img src="assets/img/designs/Booklets/5.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                  <img src="assets/img/designs/posts/1.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                </div>
-                
-                <div class="col-sm-6">
-                  <img src="assets/img/designs/Booklets/1.jpg" style="padding: 1rem 0.25rem 1rem 1rem;">
-                  <img src="assets/img/designs/posts/8.jpg" style="padding: 1rem 0.25rem 1rem 1rem;">
-                  <img src="assets/img/designs/posts/5.jpg" style="padding: 1rem 0.25rem 1rem 1rem;">
-                </div>
-              </div>
-            </div>
+          <div id="albums">
             
-            <div class="col-lg-4">
-              <a href="https://speedwheelstrade.com" target="_blank">
-                <img src="assets/img/Websites/4.jpg" style="padding: 1rem;">
-              </a>
+            <!-- Sorting -->
+            <ul class="filtr-btn">
+              <li data-filter="all" class="active"><h6>All</h6></li>
+              <li data-filter="6"><h6>Wordpress Web Dev</h6></li>
+              <li data-filter="7"><h6>Code-Based Web Dev</h6></li>
+              <li data-filter="1"><h6>Print-Material Graphic Designs</h6></li>
+              <li data-filter="4"><h6>Digital-Publish Graphic Designs</h6></li>
+            </ul>
+            
+            <div class="filtr-container row">
+              <!-- A Wordpress Website -->
+              <div class="album-item col-md-4 filtr-item" data-category="6">
+                <a target="_blank" href="https://aqsa.edu.my" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>International School Website</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/Websites/2.jpg)"></div>
+                </a>
+              </div>
 
-              <a href="https://ppam.org.my" target="_blank">
-                <img src="assets/img/Websites/9.jpg" style="padding: 1rem;">
-              </a>
+              <!-- A Wordpress Website -->
+              <div class="album-item col-md-4 filtr-item" data-category="6">
+                <a target="_blank" href="https://teamtr.team" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Startup Website</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/Websites/3.jpg)"></div>
+                </a>
+              </div>
 
-              <div class="row" style="padding: 0.75rem 0.75rem 0.75rem 0.75rem;">
-                <div class="col-sm-6">
-                  <img src="assets/img/designs/BusinessCards/2.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                  <img src="assets/img/designs/Others/2.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                  <img src="assets/img/designs/Others/4.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                </div>
+              <!-- A Wordpress Website -->
+              <div class="album-item col-md-4 filtr-item" data-category="6">
+                <a target="_blank" href="https://speedwheelstrade.com" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Business Website</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/Websites/4.jpg)"></div>
+                </a>
+              </div>
 
-                <div class="col-sm-6">
-                  <img src="assets/img/designs/BusinessCards/3.jpg" style="padding: 1rem 0.25rem 1rem 1rem;">
-                  <img src="assets/img/designs/Others/3.jpg" style="padding: 1rem 1rem 1rem 0.25rem;">
-                  <img src="assets/img/designs/Others/1.jpg" style="padding: 0.9rem 1rem 1rem 0.25rem;">
-                </div>
+              <!-- A Wordpress Website -->
+              <div class="album-item col-md-4 filtr-item" data-category="6">
+                <a target="_blank" href="https://ppam.org.my" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Non-profit Website</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/Websites/9.jpg)"></div>
+                </a>
+              </div>
+
+              <!-- A Code-Base Website -->
+              <div class="album-item col-md-4 filtr-item" data-category="7">
+                <a target="_blank" href="https://students.aqsa.edu.my" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>School Data Online Managment System</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/Websites/8.jpg)"></div>
+                </a>
+              </div>
+
+              <!-- A Code-Base Website -->
+              <div class="album-item col-md-4 filtr-item" data-category="7">
+                <a target="_blank" href="https://arromi.net" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Business Website</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/Websites/5.jpg)"></div>
+                </a>
+              </div>
+
+              <!-- A Code-Base Website -->
+              <div class="album-item col-md-4 filtr-item" data-category="7">
+                <a target="_blank" href="#" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>The Resume Website You're Browsing</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/Websites/8.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Banner -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/Banners/1.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Banner</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Banners/1.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Banner -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/Banners/4.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>X Stand</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Banners/4.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Booklet -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/Booklets/2.pdf" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>A5 Project Booklet</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Booklets/2.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Booklet -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/Booklets/5.pdf" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>A5 Profile Booklet</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Booklets/5.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Booklet -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/Booklets/1.pdf" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>A5 Booklet</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Booklets/1.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A BusinessCard -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/BusinessCards/2.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Business Card</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/BusinessCards/2.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A BusinessCard -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/BusinessCards/3.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Business Card</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/BusinessCards/3.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Poster -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/Others/2.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>A1 Poster</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Others/2.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A CV -->
+              <div class="album-item col-md-4 filtr-item" data-category="1">
+                <a target="_blank" href="assets/img/designs/Others/3.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>CV</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Others/3.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Logo -->
+              <div class="album-item col-md-4 filtr-item" data-category="4">
+                <a target="_blank" href="assets/img/designs/Logos/4.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Logo Design</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Logos/4.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Logo -->
+              <div class="album-item col-md-4 filtr-item" data-category="4">
+                <a target="_blank" href="assets/img/designs/Logos/1.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Logo Redesign</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/Logos/1.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Poster -->
+              <div class="album-item col-md-4 filtr-item" data-category="4">
+                <a target="_blank" href="assets/img/designs/posts/1.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Poster</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/posts/1.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Poster -->
+              <div class="album-item col-md-4 filtr-item" data-category="4">
+                <a target="_blank" href="assets/img/designs/posts/8.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Poster</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/posts/8.jpg)"></div>
+                </a>
+              </div>
+              
+              <!-- A Poster -->
+              <div class="album-item col-md-4 filtr-item" data-category="4">
+                <a target="_blank" href="assets/img/designs/posts/5.jpg" data-type="page-transition">
+                  <div class="album-item-overlay">
+                    <span class="album-item-cover"></span>
+                    <h5>Poster</h5>
+                  </div>
+                  <div class="album-item-img" style="background-image: url(assets/img/designs/posts/5.jpg)"></div>
+                </a>
               </div>
             </div>
           </div>
@@ -526,6 +656,7 @@
       <script type="text/javascript" src='assets/js/jquery-3.2.1.min.js'></script>
       <script type="text/javascript" src='assets/js/plugins.min.js'></script>
       <script type="text/javascript" src="assets/js/main.js"></script>
+      <script type="text/javascript" src="assets/js/arrow.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     </div>
   </body>

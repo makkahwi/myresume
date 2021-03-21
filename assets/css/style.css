@@ -11,6 +11,10 @@
     color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #151515;
     padding: 0;
@@ -126,12 +130,57 @@ p {
     src: url('../css/fonts/lobster.otf');
 }
 
+.rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 -1px 1.5px 0 rgba(0,0,0,.12), 0 -1px 1px 0 rgba(0,0,0,.24);
+}
+
+.totop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 15%;
+    background-color: #ff5d00;
+    left: 87%;
+    z-index: 1;
+    border-radius: 50px;
+    box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.totop i {
+    display: block;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 55px;
+    color: #fff;
+}
+
 .ms-corner {
     position: absolute;
     margin-left: 85%;
     background-color: #ff5d00;
     width: 15%;
     height: 500px;
+}
+
+.ms-corner > a > h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 28rem;
 }
 
 .sidebar {
@@ -148,7 +197,7 @@ p {
     margin-left: 0%;
     margin-right: 2.5%;
     margin-top: 30vh;
-    background-color: rgba(84, 89, 97, 0.25);
+    background-color: rgba(84, 89, 97, 0.35);
     width: 97.5%;
     height: 60vh;
 }
@@ -233,102 +282,6 @@ p {
 .ms-nav {
     padding: 2em 3em;
     color: inherit;
-}
-
-.hamburger {
-    margin-right: 0;
-    margin-left: auto;
-    overflow: visible;
-    cursor: pointer;
-    z-index: 7;
-    border: 0;
-    transition-timing-function: linear;
-    transition-duration: .3s ease;
-    transition-property: opacity, -webkit-filter;
-    transition-property: opacity, filter;
-    transition-property: opacity, filter, -webkit-filter;
-}
-
-.hamburger-label {
-    display: block;
-    font-family: 'Yantramanav', Arial;
-    font-size: 16px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 0;
-    left: -4em;
-    padding-right: 4em;
-    text-transform: uppercase;
-    line-height: 1.5em;
-    transition: color .3s ease .4s;
-    color: #151515;
-}
-
-.hamburger.is-active .hamburger-label {
-    color: #fff !important;
-    transition: color .1s ease;
-}
-
-.hamburger-box {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    vertical-align: middle;
-}
-
-.hamburger-inner {
-    display: block;
-    top: 0;
-}
-
-.hamburger-inner:after,
-.hamburger-inner:before {
-    display: block;
-    content: '';
-}
-
-.hamburger-inner,
-.hamburger-inner:after,
-.hamburger-inner:before {
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    transition: all .3s ease .5s;
-}
-
-.hamburger-inner:before {
-    top: 8px;
-    left: -8px;
-}
-
-.hamburger-inner:after {
-    top: 16px;
-    width: 26px;
-}
-
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner:after {
-    background-color: #fff;
-    transition-delay: .1s;
-}
-
-.hamburger.is-active .hamburger-inner {
-    -webkit-transform: translate3d(0, 8px, 0) rotate(45deg);
-    transform: translate3d(0, 8px, 0) rotate(45deg);
-}
-
-.hamburger.is-active .hamburger-inner:before {
-    opacity: 0;
-    transition: opacity .3s ease 0s
-}
-
-.hamburger.is-active .hamburger-inner:after {
-    width: 30px;
-    -webkit-transform: translate3d(0, -16px, 0) rotate(-90deg);
-    transform: translate3d(0, -16px, 0) rotate(-90deg);
 }
 
 .ms-nav {
@@ -545,9 +498,6 @@ p {
         width: auto;
         margin-left: 0;
     }
-    .nav-item__label {
-        display: none;
-    }
     .ms-nav {
         padding-left: 15px;
         padding-right: 15px;
@@ -645,4 +595,107 @@ p {
 h1>span {
     font-size: 40px;
     color: darkgray;
+}
+
+
+
+/**
+ * 5. Albums
+ */
+
+ .filtr-container {
+    transition: height .5s ease-out;
+    overflow: hidden;
+}
+.filtr-btn {
+    display: inline-block;
+    margin-bottom: 2.4em;
+}
+.filtr-btn li {
+    cursor: pointer;
+    display: inline-block;
+    opacity: .5;
+    margin-bottom: 15px;
+    transition: opacity .3s ease;
+}
+.filtr-btn h6 {
+    margin-bottom: 0;
+    padding-right: 1.2em;
+}
+.filtr-btn li.active {
+    opacity: 1;
+}
+.filtr-btn li:hover {
+    opacity: 1 !important;
+}
+.album-item {
+    padding-bottom: 1.8em;
+}
+.album-item a {
+    padding-top: 60%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index: 9;
+}
+.album-item-img {
+    position: absolute;
+    width: 100.5%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1);
+    transition: transform .3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.album-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100.5%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+.album-item-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.album-item-overlay h5 {
+    position: relative;
+    color: #fff;
+    margin: 0;
+    max-width: 100%;
+    padding: 1em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+    transform: scale(1.5);
+    opacity: 0;
+    transition: all .3s ease;
+}
+.album-item:hover .album-item-img {
+    transform: scale(1.1);
+}
+.album-item:hover .album-item-cover,
+.album-item:hover .album-item-overlay h5 {
+    opacity: 1;
+    transform: translateZ(0);
 }
