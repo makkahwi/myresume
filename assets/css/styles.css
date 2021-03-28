@@ -53,7 +53,7 @@ tr > .title {
     font-size: small;
 }
 
-.progress-bar.cursor {
+.cursor {
     cursor: zoom-in;
 }
 
@@ -147,7 +147,7 @@ p {
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 15%;
+    bottom: 5%;
     background-color: #ff5d00;
     left: 87%;
     z-index: 1;
@@ -187,9 +187,18 @@ p {
     position: absolute;
     margin-right: 0%;
     margin-left: 95%;
-    background-color: #ff5d00;
     width: 5%;
     height: 100vh;
+}
+
+.theme-bg {
+    background-color: #ff5d00;
+    color: white;
+}
+
+.theme-invert {
+    background-color: #fff;
+    color: #ff5d00;
 }
 
 .bg {
