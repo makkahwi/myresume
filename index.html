@@ -36,37 +36,63 @@
       </header>
       
       <main class="ms-container">
-        <!-- About Me -->
-        <div class="col-lg-12 section-block row">
-          <div class="col-lg-6 row">
-            <div class="col-lg-2"></div>
+        <!-- PC About Me -->
+        <div class="d-none d-lg-block">
+          <div class="col-lg-12 section-block row">
+            <div class="col-lg-6 row">
+              <div class="col-lg-2"></div>
 
-            <div class="col-lg-8 center">
-              <h1 class="section-header" style="line-height: 1.3;">Suhaib Ahmad</h1>
-              <h5>Full-Stack Web Developer</h5>
-              <p class="text-danger">Please note that this is under construction for mobile compatibility and more content, but basic data is already here</p>
+              <div class="col-lg-8 center">
+                <h1 class="section-header" style="line-height: 1.3;">Suhaib Ahmad</h1>
+                <h5>Full-Stack Web Developer</h5>
+                <p class="text-danger">Please note that this is under construction for mobile compatibility and more content, but basic data is already here</p>
 
-              <div style="padding: 10vh 0% 0% 0%;">
-                <h2 class="section-header">About me</h2>
-                <img src="assets/img/comingSoon.jpg" alt="img">
+                <div style="padding: 10vh 0% 0% 0%;">
+                  <h2 class="section-header">About me</h2>
+                  <img src="assets/img/comingSoon.jpg" alt="img">
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6 row">
-            <div class="col-lg-1"></div>
+            <div class="col-lg-6 row">
+              <div class="col-lg-1"></div>
 
-            <div class="col-lg-10 center">
-              <div style="border-width: 6px 6px 3px 6px; border-style: solid; border-color: #ff5d00; ">
-                <img src="assets/img/photo1.jpg" alt="img">
-              </div>
+              <div class="col-lg-10 center">
+                <div style="border-width: 6px 6px 3px 6px; border-style: solid; border-color: #ff5d00; ">
+                  <img src="assets/img/photo1.jpg" alt="img">
+                </div>
 
-              <div style="border-width: 3px 6px 6px 6px; border-style: solid; border-color: #ff5d00; padding: 35vh 5% 5% 5%;">
-                <p class="section-desc">Suhaib Ahmad, an ambitious, fast-learner and extremely organized individual with passion for the IT sector. A fresh graduate but with rich experiences of volunteering, freelance, part & full-time jobs in multiple computer-related fields. Those experiences included multiple major career shifts over the past 12 years. Scroll down to track those experiences' & shifts' details.</p>
+                <div style="border-width: 3px 6px 6px 6px; border-style: solid; border-color: #ff5d00; padding: 35vh 5% 5% 5%;">
+                  <p class="section-desc">Suhaib Ahmad, an ambitious, fast-learner and extremely organized individual with passion for the IT sector. A fresh graduate but with rich experiences of volunteering, freelance, part & full-time jobs in multiple computer-related fields. Those experiences included multiple major career shifts over the past 12 years. Scroll down to track those experiences' & shifts' details.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Mobile About Me -->
+        <div class="d-lg-none">
+          <div class="col-lg-12 section-block row">
+            <div class="col-lg-6 row">
+              <div class="col-lg-2"></div>
+          
+              <div class="col-lg-8 center">
+                <img src="assets/img/photo1.jpg" alt="img" style="width: 60%;">
+                <h1 class="section-header" style="line-height: 1.3;">Suhaib Ahmad</h1>
+                <h5>Full-Stack Web Developer</h5>
+                <p class="text-danger">Please note that this is under construction for mobile compatibility and more content, but basic data is already here</p>
+          
+                <div style="padding: 10vh 0% 0% 0%;">
+                  <h2 class="section-header">About me</h2>
+                  <img src="assets/img/comingSoon.jpg" alt="img" style="width: 60%;">
+                  <br/><br/>
+                  <p class="section-desc">Suhaib Ahmad, an ambitious, fast-learner and extremely organized individual with passion for the IT sector. A fresh graduate but with rich experiences of volunteering, freelance, part & full-time jobs in multiple computer-related fields. Those experiences included multiple major career shifts over the past 12 years. Scroll down to track those experiences' & shifts' details.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Education -->
         <div style="position: absolute; height: 100vh; width: 100%; background-image: url('/assets/img/BG4.png'); background-size: cover; background-position: top; background-repeat: no-repeat;"></div>
 
@@ -90,6 +116,7 @@
         <div class="section-block center" style="background-image: url('/assets/img/BG1.png'); background-size: cover; background-position: center;">
           <h2 class="section-header align-left">Experiences</h2>
 
+          <!-- PC Experiance -->
           <div class="d-none d-lg-block">
             <table class="table">
               <thead>
@@ -171,6 +198,7 @@
             </table>
           </div>
 
+          <!-- Mobile Experiance -->
           <div class="d-lg-none">
             <table class="table">
               <tbody class="theme-invert">
