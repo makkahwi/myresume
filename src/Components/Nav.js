@@ -27,7 +27,7 @@ export default function Header() {
             <li><a className="smoothscroll" href="#resume">{t("Resume")}</a></li>
             <li><a className="smoothscroll" href="#portfolio">{t("Works")}</a></li>
             <li><a className="smoothscroll" href="#contact">{t("Contact")}</a></li>
-            <li className="arabic"><a className="smoothscroll" href="" onClick={() => languageChange()}>{t("Other Lang")}</a></li>
+            {/* <li className="arabic"><a className="smoothscroll" href="" onClick={() => languageChange()}>{t("Other Lang")}</a></li> */}
          </ul>
       </nav>
    );
