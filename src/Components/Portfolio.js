@@ -6,20 +6,20 @@ export default function Portfolio({ data }) {
 
   const { projectsList } = data;
 
-  const projects = projectsList.map(projects => (
-    <div key={projects.title} className="columns portfolio-item">
-      <div className="item-wrap">
-        <a target="_blank" href={projects.url}>
-          <img alt={projects.title} src={projects.image} />
+  const projects = projectsList.map(project => (
+    <div key={project.title} className="columns portfolio-item">
+      <a target="_blank" href={project.url}>
+        <div className="item-wrap">
+          <img alt={project.title} src={project.image} />
           <div className="overlay">
             <div className="portfolio-item-meta">
-              <h5>{projects.title}</h5>
-              <p>{t(projects.description)}</p>
+              <h5>{project.title}</h5>
+              <p>{t(project.description)}</p>
             </div>
           </div>
           <div className="link-icon"><i className="fa fa-link"></i></div>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
   ))
 

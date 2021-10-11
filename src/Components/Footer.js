@@ -14,7 +14,7 @@ function Footer({ data }) {
         <div className={`twelve columns ${i18n.language === "ar" && "arabic"}`}>
           <ul className="copyright">
             <li>{t(name)} &copy; {currentYear}</li>
-            <li>{t("UI / UX By")} <a target="_blank" href="http://ruy.design/">{t("Roya Ahmad")}</a></li>
+            <li>{t("UI / UX By")} <a target="_blank" href="http://ruy.design/" rel="noopener noreferrer" >{t("Roya Ahmad")}</a></li>
           </ul>
         </div>
         <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="icon-up-open"></i></a></div>

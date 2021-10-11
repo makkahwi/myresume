@@ -76,8 +76,8 @@ export default function Resume({ data, educations }) {
   const TextDiv = () => (
     <div className="six columns">
       {education}
-      {t("You may check")} <a target="_blank" href="https://fyp.suhaib.dev/">{t("my FYP project")}</a> ({t("a web app")})<br />
-      <a target="_blank" href={"https://suhaib.dev/assets/My%20Certificates.pdf"} className="downloadButton button" style={{ backgroundColor: "#ff5d00", margin: "10px 0", color: "#fff" }}><FontAwesomeIcon icon={faDownload} style={{ margin: "0 5px" }} />{t("My Certificates")}</a>
+      {t("You may check")} <a target="_blank" href="https://fyp.suhaib.dev/" rel="noopener noreferrer" >{t("my FYP project")}</a> ({t("a web app")})<br />
+      <a target="_blank" href={"/My-Certificates.pdf"} download className="downloadButton button" style={{ backgroundColor: "#ff5d00", margin: "10px 0", color: "#fff" }}><FontAwesomeIcon icon={faDownload} style={{ margin: "0 5px" }} />{t("My Certificates")}</a>
     </div>
   )
 

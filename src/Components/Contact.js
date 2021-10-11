@@ -5,13 +5,13 @@ import { useTranslation } from "react-i18next";
 export default function Contact({ data }) {
    const { t, i18n } = useTranslation();
 
-   const { name, socialList } = data;
+   const { socialList } = data;
 
    const networks = socialList.map(netwoks =>
       <li>
          <h2>
             {netwoks.map(network =>
-               <a target="_blank" href={network.url}>
+               <a target="_blank" href={network.url} rel="noopener noreferrer">
                   <FontAwesomeIcon icon={network.icon} />{" "}
                </a>
             )}{" "}

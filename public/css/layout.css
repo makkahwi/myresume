@@ -65,8 +65,6 @@ header .name-banner hr {
 
 header {
    position: relative;
-   height: 800px;
-   min-height: 500px;
    width: 100%;
    /* background: #fff url(../images/header-background.jpg) no-repeat center left; */
    background: url(../images/BG3.png) no-repeat center left;
@@ -74,6 +72,7 @@ header {
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   min-height: 100vh;
 }
 
 header:before {
@@ -211,7 +210,7 @@ h4 { color: #ff5d00; }
    background-size: cover;
    padding-top: 20vh;
    padding-bottom: 20vh;
-   overflow: hidden;
+   overflow-x: hidden;
    min-height: 100vh;
 }
 
@@ -267,7 +266,7 @@ h4 { color: #ff5d00; }
    background-size: cover;
    padding-top: 90px;
    padding-bottom: 72px;
-   overflow: hidden;
+   overflow-x: hidden;
    min-height: 100vh;
 }
 
@@ -456,7 +455,7 @@ h4 { color: #ff5d00; }
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
-   overflow: hidden;
+   overflow-x: hidden;
    position: relative;
 
    -webkit-transition: all 0.3s ease-in-out;
@@ -818,6 +817,7 @@ call-to-action .button {
    padding-bottom: 102px;
    color: #636363;
    min-height: 80vh;
+   overflow-x: hidden;
 }
 
 #contact .section-head { margin-bottom: 42px; }

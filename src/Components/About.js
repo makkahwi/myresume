@@ -7,6 +7,7 @@ export default function About({ data: { bio, downloads, resumeVideo } }) {
    const [divs, setDivs] = useState([]);
 
    const [files, setFiles] = useState(downloads);
+   const [state, setstate] = useState()
 
    const setRTL = () => {
       setFiles(downloads.reverse());
@@ -40,7 +41,7 @@ export default function About({ data: { bio, downloads, resumeVideo } }) {
          <div className="row">
             {files.map(file =>
                <div className={`${filesLength} columns`}>
-                  <a target="_blank" href={file.link} className={`downloadButton button ${i18n.language === "ar" && "arabic"}`}><FontAwesomeIcon icon={file.icon} /><br />{t(file.text)}</a>
+                  <a target="_blank" href={file.link} rel="noopener noreferrer" download className={`downloadButton button ${i18n.language === "ar" && "arabic"}`}><FontAwesomeIcon icon={file.icon} /><br />{t(file.text)}</a>
                </div>
             )}
          </div>

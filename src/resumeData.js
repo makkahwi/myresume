@@ -1,7 +1,7 @@
 import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHtml5, faInstagram, faLaravel, faLinkedin, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faChartBar, faDatabase, faEnvelope, faFileAlt, faScroll, faImages, faVectorSquare, faNewspaper, faGlobe, faVideo } from '@fortawesome/free-solid-svg-icons';
 
-const portfolioLink = 'images/portfolio/';
+const portfolioLink = 'images/portfolio';
 
 const Data = {
    main: {
@@ -56,9 +56,9 @@ const Data = {
       web: {
          bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. I'm highly organized, detail-oriented and timing-particular, and I believe that also what makes me a good programmer. You may scroll down to see it for yourself, and you may also download my...",
          downloads: [
-            { text: "Resume Sheet", link: "/assets/Suhaib%20Ahmad%20WD%20Resume%20Sheet.pdf", icon: faFileAlt },
+            { text: "Resume Sheet", link: "/Suhaib-Ahmad-WD-Resume-Sheet.pdf", icon: faFileAlt },
             { text: "Personality Test", link: "https://www.16personalities.com/profiles/aa175983b37f8", icon: faScroll },
-            { text: "Psychometric Analysis", link: "/assets/Suhaib%20Ahmad%20Psychometric.pdf", icon: faChartBar },
+            { text: "Psychometric Analysis", link: "/Suhaib-Ahmad-Psychometric.pdf", icon: faChartBar },
          ],
          resumeVideo: "https://www.youtube.com/embed/JxHy8wEhrEg"
       },
@@ -228,7 +228,7 @@ const Data = {
             {
                "category": "wordpress",
                "description": "Wordpress Website",
-               "image": `${portfolioLink}/9.jpg`,
+               "image": `${portfolioLink}/6.jpg`,
                "title": "PPAM Organization",
                "url": "https://ppam.org.my/"
             },
@@ -274,98 +274,98 @@ const Data = {
             {
                "category": "banner",
                "description": "Banner Design",
-               "image": `${portfolioLink}//Banners/2.jpg`,
+               "image": `${portfolioLink}/Banners/2.jpg`,
                "title": "Several University Clubs",
                "url": `${portfolioLink}/Banners/2.jpg`,
             },
             {
                "category": "booklet",
                "description": "Booklet Design",
-               "image": `${portfolioLink}//Booklets/5.jpg`,
+               "image": `${portfolioLink}/Booklets/5.jpg`,
                "title": "PSAD Southeast Asia",
                "url": `${portfolioLink}/Booklets/5.jpg`,
             },
             {
                "category": "businessCard",
                "description": "Business Card Design",
-               "image": `${portfolioLink}//BusinessCards/3.jpg`,
+               "image": `${portfolioLink}/BusinessCards/3.jpg`,
                "title": "AIS School",
                "url": `${portfolioLink}/BusinessCards/3.jpg`,
             },
             {
                "category": "booklet",
                "description": "Booklet Design",
-               "image": `${portfolioLink}//Booklets/4.jpg`,
+               "image": `${portfolioLink}/Booklets/4.jpg`,
                "title": "QFM Malaysia",
                "url": `${portfolioLink}/Booklets/4.jpg`,
             },
             {
                "category": "logos",
                "description": "Logo Design",
-               "image": `${portfolioLink}//Logos/4.jpg`,
+               "image": `${portfolioLink}/Logos/4.jpg`,
                "title": "Univeristy Club",
                "url": `${portfolioLink}/Logos/4.jpg`,
             },
             {
                "category": "banner",
                "description": "Poster Design",
-               "image": `${portfolioLink}//Others/2.jpg`,
+               "image": `${portfolioLink}/Others/2.jpg`,
                "title": "FYP Project",
                "url": `${portfolioLink}/Others/2.jpg`,
             },
             {
                "category": "others",
                "description": "CV Design",
-               "image": `${portfolioLink}//Others/3.jpg`,
+               "image": `${portfolioLink}/Others/3.jpg`,
                "title": "An Engineering Graduate",
                "url": `${portfolioLink}/Others/3.jpg`,
             },
             {
                "category": "logos",
                "description": "Logo Re-design",
-               "image": `${portfolioLink}//Logos/1.jpg`,
+               "image": `${portfolioLink}/Logos/1.jpg`,
                "title": "QFM Malaysia",
                "url": `${portfolioLink}/Logos/1.jpg`,
             },
             {
                "category": "banner",
                "description": "Brochure Design",
-               "image": `${portfolioLink}//posters/1.jpg`,
+               "image": `${portfolioLink}/posters/1.jpg`,
                "title": "Makan Sini Resturant",
                "url": `${portfolioLink}/posters/1.jpg`,
             },
             {
                "category": "businessCard",
                "description": "Business Card Design",
-               "image": `${portfolioLink}//BusinessCards/4.jpg`,
+               "image": `${portfolioLink}/BusinessCards/4.jpg`,
                "title": "Global Mediator",
                "url": `${portfolioLink}/BusinessCards/4.jpg`,
             },
             {
                "category": "booklet",
                "description": "Booklet Design",
-               "image": `${portfolioLink}//Booklets/6.jpg`,
+               "image": `${portfolioLink}/Booklets/6.jpg`,
                "title": "IIUM",
                "url": `${portfolioLink}/Booklets/6.jpg`,
             },
             {
                "category": "others",
                "description": "Brochure Design",
-               "image": `${portfolioLink}//posters/2.jpg`,
+               "image": `${portfolioLink}/posters/2.jpg`,
                "title": "IIUM",
                "url": `${portfolioLink}/posters/2.jpg`,
             },
             {
                "category": "videos",
                "description": "Video Producing",
-               "image": `${portfolioLink}/3.jpg`,
+               "image": `${portfolioLink}/Videos/1.png`,
                "title": "ICPC Asia Regional Contest",
                "url": "https://www.youtube.com/watch?v=nwjGLer53sQ"
             },
             {
                "category": "videos",
                "description": "Video Producing",
-               "image": `${portfolioLink}/3.jpg`,
+               "image": `${portfolioLink}/Videos/2.png`,
                "title": "ICPC Asia Regional Contest",
                "url": "https://www.youtube.com/watch?v=D1uIlE_YB3U"
             }

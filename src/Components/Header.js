@@ -22,7 +22,7 @@ export default function Header({ data, jobsList, setJob }) {
 
    const networks = socialList.map(networks => networks.map(network => (
       <li>
-         <a target="_blank" href={network.url}><FontAwesomeIcon icon={network.icon} /></a>
+         <a target="_blank" rel="noopener noreferrer" href={network.url}><FontAwesomeIcon icon={network.icon} /></a>
       </li>
    )))
 
