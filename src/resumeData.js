@@ -200,56 +200,56 @@ const Data = {
       web: {
          projectsList: [
             {
-               "category": "Code-Based Web App",
+               "category": "Web App",
                "description": "PERN-Based Web App (Collaborative)",
                "image": `${portfolioLink}/7.jpg`,
                "title": "BrandTag",
                "url": "https://app.brandtag.io/"
             },
             {
-               "category": "Wordpress",
+               "category": "Wordpress Websites",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/1.jpg`,
                "title": "OneShot Future Company",
                "url": "https://oneshotfuture.com/"
             },
             {
-               "category": "Code-Based Web App",
+               "category": "Web App",
                "description": "Laravel-Based Web App",
                "image": `${portfolioLink}/8.jpg`,
                "title": "AIS School",
                "url": "https://students.aqsa.edu.my/"
             },
             {
-               "category": "Code-Based Website",
+               "category": "Code-Based Websites",
                "description": "React.Js-Based Website",
                "image": `${portfolioLink}/5.jpg`,
                "title": "Arromi",
                "url": "https://arromi.net/"
             },
             {
-               "category": "Wordpress",
+               "category": "Wordpress Websites",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/6.jpg`,
                "title": "PPAM Organization",
                "url": "https://ppam.org.my/"
             },
             {
-               "category": "Wordpress",
+               "category": "Wordpress Websites",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/2.jpg`,
                "title": "AIS School",
                "url": "https://aqsa.edu.my/"
             },
             {
-               "category": "Wordpress",
+               "category": "Wordpress Websites",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/4.jpg`,
                "title": "SpeedWheels Company",
                "url": "https://speedwheelstrade.online/"
             },
             {
-               "category": "Wordpress",
+               "category": "Wordpress Websites",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/3.jpg`,
                "title": "Team Foundation",
@@ -260,42 +260,42 @@ const Data = {
       gd: {
          projectsList: [
             {
-               "category": "Banner & Posters",
+               "category": "Banners & Posters",
                "description": "Banner Design",
                "image": `${portfolioLink}/Banners/1.jpg`,
                "title": "SpeedWheels",
                "url": `${portfolioLink}/Banners/1.jpg`
             },
             {
-               "category": "Booklet",
+               "category": "Booklets",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/2.jpg`,
                "title": "Mercy Mission World",
                "url": `${portfolioLink}/Booklets/2.pdf`,
             },
             {
-               "category": "Banner & Posters",
+               "category": "Banners & Posters",
                "description": "Banner Design",
                "image": `${portfolioLink}/Banners/2.jpg`,
                "title": "Several University Clubs",
                "url": `${portfolioLink}/Banners/2.jpg`,
             },
             {
-               "category": "Booklet",
+               "category": "Booklets",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/5.jpg`,
                "title": "PSAD Southeast Asia",
                "url": `${portfolioLink}/Booklets/5.pdf`,
             },
             {
-               "category": "Business Card",
+               "category": "Business Cards",
                "description": "Business Card Design",
                "image": `${portfolioLink}/BusinessCards/3.jpg`,
                "title": "AIS School",
                "url": `${portfolioLink}/BusinessCards/3.jpg`,
             },
             {
-               "category": "Booklet",
+               "category": "Booklets",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/4.jpg`,
                "title": "QFM Malaysia",
@@ -309,7 +309,7 @@ const Data = {
                "url": `${portfolioLink}/Logos/4.jpg`,
             },
             {
-               "category": "Banner & Posters",
+               "category": "Banners & Posters",
                "description": "Poster Design",
                "image": `${portfolioLink}/Others/2.jpg`,
                "title": "FYP Project",
@@ -330,21 +330,21 @@ const Data = {
                "url": `${portfolioLink}/Logos/1.jpg`,
             },
             {
-               "category": "Banner & Posters",
+               "category": "Banners & Posters",
                "description": "Brochure Design",
                "image": `${portfolioLink}/posters/1.jpg`,
                "title": "Makan Sini Resturant",
                "url": `${portfolioLink}/posters/1.jpg`,
             },
             {
-               "category": "Business Card",
+               "category": "Business Cards",
                "description": "Business Card Design",
                "image": `${portfolioLink}/BusinessCards/4.jpg`,
                "title": "Global Mediator",
                "url": `${portfolioLink}/BusinessCards/4.jpg`,
             },
             {
-               "category": "Booklet",
+               "category": "Booklets",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/6.jpg`,
                "title": "IIUM",

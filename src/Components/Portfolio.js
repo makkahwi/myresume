@@ -35,11 +35,11 @@ export default function Portfolio({ data }) {
             <div className="row">
               <div className="twelve columns main-col text-center text-underline">
                 <div className={`${filtersLength(filters.length + 1)} columns main-col`}>
-                  <p><a className={`button buttonWidth ${!filter && "selected"}`} onClick={() => setFilter()}>{("All")}</a></p>
+                  <p><a className={`button buttonWidth ${!filter && "selected"}`} onClick={() => setFilter()}>{t("All")}</a></p>
                 </div>
                 {filters.map((filt, i) => (
                   <div key={i} className={`${filtersLength(filters.length + 1)} columns main-col`}>
-                    <p><a className={`button buttonWidth ${filter === filt && "selected"}`} onClick={() => setFilter(filt)}>{filt}</a></p>
+                    <p><a className={`button buttonWidth ${filter === filt && "selected"}`} onClick={() => setFilter(filt)}>{t(filt)}</a></p>
                   </div>
                 ))}
               </div>
