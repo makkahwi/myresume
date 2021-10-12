@@ -9,13 +9,13 @@ export default function Resume({ data, educations }) {
   const [eduDivs, setEduDivs] = useState([]);
 
   const setRTL = () => {
-    setWorkDivs([<FreelanceBanner />, <JobsBanner />]);
-    setEduDivs([<TextDiv />, <LogoDiv />]);
+    setWorkDivs([<FreelanceBanner key={0} />, <JobsBanner key={1} />]);
+    setEduDivs([<TextDiv key={2} />, <LogoDiv key={3} />]);
   }
 
   const setLTR = () => {
-    setWorkDivs([<JobsBanner />, <FreelanceBanner />]);
-    setEduDivs([<LogoDiv />, <TextDiv />]);
+    setWorkDivs([<JobsBanner key={0} />, <FreelanceBanner key={1} />]);
+    setEduDivs([<LogoDiv key={2} />, <TextDiv key={3} />]);
   }
 
   useEffect(() => {
@@ -24,30 +24,30 @@ export default function Resume({ data, educations }) {
 
   const { freelancesList, jobsList, skillsList } = data;
 
-  const jobs = jobsList.map(work => (
-    <div key={work.company}>
+  const jobs = jobsList.map((work, i) => (
+    <div key={i}>
       <h3>{t(work.title)}</h3>
       <p className="info"><a target="_blank" href={work.website} >{work.company}</a><span>{" "}&bull;{" "}</span> <em className="date">{work.years}</em></p>
       <p style={{ textAlign: "justify" }}>{t(work.description)}</p>
     </div>
   ));
 
-  const freelances = freelancesList.map(work => (
-    <div key={work.company}>
+  const freelances = freelancesList.map((work, i) => (
+    <div key={i}>
       <h3>{t(work.title)}</h3>
       <p className="info"><em className="date">{work.years}</em></p>
       <p style={{ textAlign: "justify" }}>{t(work.description)}</p>
     </div>
   ));
 
-  const skills = skillsList.map(skill => (
-    <div className="four columns skill">
+  const skills = skillsList.map((skill, i) => (
+    <div className="four columns skill" key={i}>
       <em><h4><a target="_blank" href={skill.website} style={{ color: `#${skill.color}` }} ><FontAwesomeIcon icon={skill.icon} />{" "}{skill.name}</a></h4></em>
     </div>
   ));
 
-  const education = educations.map(education => (
-    <div key={education.school}>
+  const education = educations.map((education, i) => (
+    <div key={i}>
       <h3>{t(education.degree)}</h3>
       <p className="info">{t(education.school)}<span>{" "}&bull;{" "}</span><em className="date">{education.graduated}</em></p>
       <p>{t(education.description)}</p></div>

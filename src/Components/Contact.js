@@ -7,11 +7,11 @@ export default function Contact({ data }) {
 
    const { socialList } = data;
 
-   const networks = socialList.map(netwoks =>
-      <li>
+   const networks = socialList.map((netwoks, x) =>
+      <li key={x}>
          <h2>
-            {netwoks.map(network =>
-               <a target="_blank" href={network.url} rel="noopener noreferrer">
+            {netwoks.map((network, y) =>
+               <a key={y} target="_blank" href={network.url} rel="noopener noreferrer">
                   <FontAwesomeIcon icon={network.icon} />{" "}
                </a>
             )}{" "}

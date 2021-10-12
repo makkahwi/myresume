@@ -7,16 +7,15 @@ export default function About({ data: { bio, downloads, resumeVideo } }) {
    const [divs, setDivs] = useState([]);
 
    const [files, setFiles] = useState(downloads);
-   const [state, setstate] = useState()
 
    const setRTL = () => {
       setFiles(downloads.reverse());
-      setDivs([<TextBanner />, <VideoBanner />]);
+      setDivs([<TextBanner key={0} />, <VideoBanner key={1} />]);
    }
 
    const setLTR = () => {
       setFiles(downloads);
-      setDivs([<VideoBanner />, <TextBanner />]);
+      setDivs([<VideoBanner key={0} />, <TextBanner key={1} />]);
    }
 
    useEffect(() => {
@@ -29,9 +28,9 @@ export default function About({ data: { bio, downloads, resumeVideo } }) {
       <div className="six columns text-center">
          <h1 className={`${i18n.language === "ar" && "arabic"}`}>{t("About Me")}</h1>
          <iframe width="100%" height="265px" src={resumeVideo}
-            title="YouTube video player" frameborder="0"
+            title="YouTube video player" frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowFullScreen></iframe>
       </div>
    );
 
@@ -39,8 +38,8 @@ export default function About({ data: { bio, downloads, resumeVideo } }) {
       <div className="six columns main-col">
          <h5 className={`bio ${i18n.language === "ar" && "arabic padding"}`}>{t(bio)}</h5>
          <div className="row">
-            {files.map(file =>
-               <div className={`${filesLength} columns`}>
+            {files.map((file, i) =>
+               <div className={`${filesLength} columns`} key={i}>
                   <a target="_blank" href={file.link} rel="noopener noreferrer" download className={`downloadButton button ${i18n.language === "ar" && "arabic"}`}><FontAwesomeIcon icon={file.icon} /><br />{t(file.text)}</a>
                </div>
             )}

@@ -7,11 +7,11 @@ export default function Header({ data, jobsList, setJob }) {
    const [divs, setDivs] = useState([]);
 
    const setRTL = () => {
-      setDivs([<NameBanner />, <PhotoImage />]);
+      setDivs([<NameBanner key={0} />, <PhotoImage key={1} />]);
    }
 
    const setLTR = () => {
-      setDivs([<PhotoImage />, <NameBanner />]);
+      setDivs([<PhotoImage key={0} />, <NameBanner key={1} />]);
    }
 
    useEffect(() => {
@@ -20,8 +20,8 @@ export default function Header({ data, jobsList, setJob }) {
 
    const { name, profile, socialList } = data;
 
-   const networks = socialList.map(networks => networks.map(network => (
-      <li>
+   const networks = socialList.map((networks, x) => networks.map((network, y) => (
+      <li key={`${x}-${y}`} >
          <a target="_blank" rel="noopener noreferrer" href={network.url}><FontAwesomeIcon icon={network.icon} /></a>
       </li>
    )))
