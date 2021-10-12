@@ -1,5 +1,5 @@
-import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHtml5, faInstagram, faLaravel, faLinkedin, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faChartBar, faDatabase, faEnvelope, faFileAlt, faScroll, faImages, faVectorSquare, faNewspaper, faGlobe, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHtml5, faInstagram, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faChartBar, faDatabase, faEnvelope, faFileAlt, faGlobe, faImages, faNewspaper, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -65,9 +65,9 @@ const Data = {
       gd: {
          bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. I'm highly organized, detail-oriented and timing-particular, and I believe that also what makes me a good programmer. You may scroll down to see it for yourself, and you may also download my...",
          downloads: [
-            { text: "Resume Sheets", link: "/assets/Suhaib%20Ahmad%20GD%20Resume%20Sheet.pdf", icon: faFileAlt },
+            { text: "Resume Sheet", link: "/Suhaib-Ahmad-GD-Resume-Sheet.pdf", icon: faFileAlt },
             { text: "Personality Test", link: "https://www.16personalities.com/profiles/aa175983b37f8", icon: faScroll },
-            { text: "Psychometric Analysis", link: "/assets/Suhaib%20Ahmad%20Psychometric.pdf", icon: faChartBar },
+            { text: "Psychometric Analysis", link: "/Suhaib-Ahmad-Psychometric.pdf", icon: faChartBar },
          ],
          resumeVideo: "https://www.youtube.com/embed/JxHy8wEhrEg"
       }
@@ -134,6 +134,8 @@ const Data = {
             { icon: faDatabase, name: "PostgreSQL", color: "2f6091", website: "https://www.postgresql.org/" },
             { icon: faWordpress, name: "Wordpress", color: "21759b", website: "https://wordpress.com/" },
             { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
+            { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
+            { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
             { icon: faHtml5, name: "HTML", color: "e44d26" },
             { icon: faCss3Alt, name: "CSS", color: "379ad6" }
@@ -178,11 +180,11 @@ const Data = {
             }
          ],
          skillsList: [
-            { icon: faImages, name: "Adobe Photoshop", color: "61dafb", website: "https://www.adobe.com/products/photoshop" },
-            { icon: faVectorSquare, name: "Adobe Illustrator", color: "00bd83", website: "https://www.adobe.com/products/illustrator.html" },
-            { icon: faNewspaper, name: "Adobe InDesign", color: "8bc500", website: "https://www.adobe.com/products/indesign.html" },
-            { icon: faGlobe, name: "Adobe XD", color: "000000", website: "https://www.adobe.com/products/xd.html" },
-            { icon: faVideo, name: "Adobe Premiere Pro", color: "ff2d20", website: "https://www.adobe.com/products/premiere.html" }
+            { icon: faImages, name: "Adobe Photoshop", color: "09375b", website: "https://www.adobe.com/products/photoshop" },
+            { icon: faVectorSquare, name: "Adobe Illustrator", color: "330000", website: "https://www.adobe.com/products/illustrator.html" },
+            { icon: faNewspaper, name: "Adobe InDesign", color: "47021e", website: "https://www.adobe.com/products/indesign.html" },
+            { icon: faGlobe, name: "Adobe XD", color: "470137", website: "https://www.adobe.com/products/xd.html" },
+            { icon: faVideo, name: "Adobe Premiere Pro", color: "00005b", website: "https://www.adobe.com/products/premiere.html" }
          ],
       },
       educationList: [
@@ -198,56 +200,56 @@ const Data = {
       web: {
          projectsList: [
             {
-               "category": "codeBasedApp",
+               "category": "Code-Based Web App",
                "description": "PERN-Based Web App (Collaborative)",
                "image": `${portfolioLink}/7.jpg`,
                "title": "BrandTag",
                "url": "https://app.brandtag.io/"
             },
             {
-               "category": "wordpress",
+               "category": "Wordpress",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/1.jpg`,
                "title": "OneShot Future Company",
                "url": "https://oneshotfuture.com/"
             },
             {
-               "category": "codeBasedApp",
+               "category": "Code-Based Web App",
                "description": "Laravel-Based Web App",
                "image": `${portfolioLink}/8.jpg`,
                "title": "AIS School",
                "url": "https://students.aqsa.edu.my/"
             },
             {
-               "category": "codeBasedWebsite",
+               "category": "Code-Based Website",
                "description": "React.Js-Based Website",
                "image": `${portfolioLink}/5.jpg`,
                "title": "Arromi",
                "url": "https://arromi.net/"
             },
             {
-               "category": "wordpress",
+               "category": "Wordpress",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/6.jpg`,
                "title": "PPAM Organization",
                "url": "https://ppam.org.my/"
             },
             {
-               "category": "wordpress",
+               "category": "Wordpress",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/2.jpg`,
                "title": "AIS School",
                "url": "https://aqsa.edu.my/"
             },
             {
-               "category": "wordpress",
+               "category": "Wordpress",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/4.jpg`,
                "title": "SpeedWheels Company",
                "url": "https://speedwheelstrade.online/"
             },
             {
-               "category": "wordpress",
+               "category": "Wordpress",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/3.jpg`,
                "title": "Team Foundation",
@@ -258,112 +260,112 @@ const Data = {
       gd: {
          projectsList: [
             {
-               "category": "banner",
+               "category": "Banner & Posters",
                "description": "Banner Design",
                "image": `${portfolioLink}/Banners/1.jpg`,
                "title": "SpeedWheels",
                "url": `${portfolioLink}/Banners/1.jpg`
             },
             {
-               "category": "booklet",
+               "category": "Booklet",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/2.jpg`,
                "title": "Mercy Mission World",
-               "url": `${portfolioLink}/Booklets/2.jpg`,
+               "url": `${portfolioLink}/Booklets/2.pdf`,
             },
             {
-               "category": "banner",
+               "category": "Banner & Posters",
                "description": "Banner Design",
                "image": `${portfolioLink}/Banners/2.jpg`,
                "title": "Several University Clubs",
                "url": `${portfolioLink}/Banners/2.jpg`,
             },
             {
-               "category": "booklet",
+               "category": "Booklet",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/5.jpg`,
                "title": "PSAD Southeast Asia",
-               "url": `${portfolioLink}/Booklets/5.jpg`,
+               "url": `${portfolioLink}/Booklets/5.pdf`,
             },
             {
-               "category": "businessCard",
+               "category": "Business Card",
                "description": "Business Card Design",
                "image": `${portfolioLink}/BusinessCards/3.jpg`,
                "title": "AIS School",
                "url": `${portfolioLink}/BusinessCards/3.jpg`,
             },
             {
-               "category": "booklet",
+               "category": "Booklet",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/4.jpg`,
                "title": "QFM Malaysia",
-               "url": `${portfolioLink}/Booklets/4.jpg`,
+               "url": `${portfolioLink}/Booklets/4.pdf`,
             },
             {
-               "category": "logos",
+               "category": "Logos",
                "description": "Logo Design",
                "image": `${portfolioLink}/Logos/4.jpg`,
                "title": "Univeristy Club",
                "url": `${portfolioLink}/Logos/4.jpg`,
             },
             {
-               "category": "banner",
+               "category": "Banner & Posters",
                "description": "Poster Design",
                "image": `${portfolioLink}/Others/2.jpg`,
                "title": "FYP Project",
                "url": `${portfolioLink}/Others/2.jpg`,
             },
             {
-               "category": "others",
+               "category": "Others",
                "description": "CV Design",
                "image": `${portfolioLink}/Others/3.jpg`,
                "title": "An Engineering Graduate",
                "url": `${portfolioLink}/Others/3.jpg`,
             },
             {
-               "category": "logos",
+               "category": "Logos",
                "description": "Logo Re-design",
                "image": `${portfolioLink}/Logos/1.jpg`,
                "title": "QFM Malaysia",
                "url": `${portfolioLink}/Logos/1.jpg`,
             },
             {
-               "category": "banner",
+               "category": "Banner & Posters",
                "description": "Brochure Design",
                "image": `${portfolioLink}/posters/1.jpg`,
                "title": "Makan Sini Resturant",
                "url": `${portfolioLink}/posters/1.jpg`,
             },
             {
-               "category": "businessCard",
+               "category": "Business Card",
                "description": "Business Card Design",
                "image": `${portfolioLink}/BusinessCards/4.jpg`,
                "title": "Global Mediator",
                "url": `${portfolioLink}/BusinessCards/4.jpg`,
             },
             {
-               "category": "booklet",
+               "category": "Booklet",
                "description": "Booklet Design",
                "image": `${portfolioLink}/Booklets/6.jpg`,
                "title": "IIUM",
-               "url": `${portfolioLink}/Booklets/6.jpg`,
+               "url": `${portfolioLink}/Booklets/6.pdf`,
             },
             {
-               "category": "others",
+               "category": "Others",
                "description": "Brochure Design",
                "image": `${portfolioLink}/posters/2.jpg`,
                "title": "IIUM",
                "url": `${portfolioLink}/posters/2.jpg`,
             },
             {
-               "category": "videos",
+               "category": "Videos",
                "description": "Video Producing",
                "image": `${portfolioLink}/Videos/1.png`,
                "title": "ICPC Asia Regional Contest",
                "url": "https://www.youtube.com/watch?v=nwjGLer53sQ"
             },
             {
-               "category": "videos",
+               "category": "Videos",
                "description": "Video Producing",
                "image": `${portfolioLink}/Videos/2.png`,
                "title": "ICPC Asia Regional Contest",
