@@ -13,6 +13,32 @@ header .name-banner h1 {
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
 }
 
+.loaderDiv{
+   text-align: center;
+   align-items: center;
+}
+
+.loader {
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid #ff5d00;
+   width: 20vh;
+   height: 20vh;
+   -webkit-animation: spin 2s linear infinite; /* Safari */
+   animation: spin 2s linear infinite;
+ }
+ 
+ /* Safari */
+ @-webkit-keyframes spin {
+   0% { -webkit-transform: rotate(0deg); }
+   100% { -webkit-transform: rotate(360deg); }
+ }
+ 
+ @keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+ }
+
 .selected {
    background-color: #2b2b2b;
 }
@@ -80,6 +106,7 @@ header {
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   padding-top: 20vh;
    min-height: 100vh;
 }
 

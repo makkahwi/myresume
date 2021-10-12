@@ -3,6 +3,7 @@ import ReactGA from 'react-ga';
 import { useTranslation } from "react-i18next";
 import './App.css';
 import Data from './resumeData';
+import Loading from './Components/Loading';
 
 const Nav = lazy(() => import('./Components/Nav'));
 const Header = lazy(() => import('./Components/Header'));
@@ -46,7 +47,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Suspense fallback={<div className="spinner"></div>}>
+      <Suspense fallback={<Loading />}>
         <Nav />
         <Header data={Data.main} jobsList={jobsList} setJob={setJob} />
         <About data={about} />
