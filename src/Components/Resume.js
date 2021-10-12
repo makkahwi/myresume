@@ -26,7 +26,7 @@ export default function Resume({ data, educations }) {
 
   const jobs = jobsList.map((work, i) => (
     <div key={i}>
-      <h3>{t(work.title)}</h3>
+      <h3>{work.certificate ? <a target="_blank" href={work.certificate} download>{t(work.title)}</a> : t(work.title)}</h3>
       <p className="info"><a target="_blank" href={work.website} >{work.company}</a><span>{" "}&bull;{" "}</span> <em className="date">{work.years}</em></p>
       <p style={{ textAlign: "justify" }}>{t(work.description)}</p>
     </div>

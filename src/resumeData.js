@@ -80,6 +80,7 @@ const Data = {
                website: "https://luxtag.io/",
                description: "Full-time job to develop a flagship PERN-based web-app for an online service.",
                title: "Frontend Developer",
+               certificate: "",
                years: "May 2021 - Oct 2021"
             },
             {
@@ -87,6 +88,7 @@ const Data = {
                website: "https://luxtag.io/",
                description: "Full-time internship to develop a flagship PERN-based web-app for an online service.",
                title: "Full-Stack Developer",
+               certificate: "",
                years: "Nov 2021 - Apr 2021"
             },
             {
@@ -94,6 +96,7 @@ const Data = {
                website: "http://aqsa.edu.my/",
                description: "Part-time job to develop a web app of a student information system.",
                title: "Full-Stack Developer",
+               certificate: "/ais.pdf",
                years: "Sep 2019 - Aug 2020"
             },
             {
@@ -101,7 +104,8 @@ const Data = {
                website: "https://pcomalaysia.com/",
                description: "Part-time job to manage the content of a wordpress-based foundation website, including the update work of news section, outlook and theme color of website.",
                title: "Website Manager",
-               years: "Nov 2015 - May 2016"
+               certificate: "",
+               years: "Feb 2015 - May 2016"
             }
          ],
          freelancesList: [
@@ -148,6 +152,7 @@ const Data = {
                website: "https://qfmalaysia.org/",
                description: "Part-time job to design serveral booklets & brochures.",
                title: "Graphic Designer",
+               certificate: "",
                years: ["Jun 2018", "July 2017", "May 2017", "Jun 2016 - Aug 2016"]
             },
             {
@@ -155,6 +160,7 @@ const Data = {
                website: "https://www.mercymissionworld.org/",
                description: "Part-time work included gaphic designing & events organization.",
                title: "PR Executive",
+               certificate: "",
                years: "Dec 2015 - Jun 2016"
             },
             {
@@ -162,6 +168,7 @@ const Data = {
                website: "https://ppam.org.my/",
                description: "Univeristy club volunteering work to prepare the publicity materials of digital and print-out designs.",
                title: "Media Bureau Head",
+               certificate: "",
                years: "Feb 2013 - Jun 2015"
             }
          ],
