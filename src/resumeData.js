@@ -228,7 +228,7 @@ const Data = {
                "url": "https://students.aqsa.edu.my/"
             },
             {
-               "category": "Code-Based Websites",
+               "category": "Code-Based Sites",
                "description": "React.Js-Based Website",
                "image": `${portfolioLink}/5.jpg`,
                "title": "Arromi",

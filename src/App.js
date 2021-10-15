@@ -14,7 +14,7 @@ const Contact = lazy(() => import('./Components/Contact'));
 const Footer = lazy(() => import('./Components/Footer'));
 
 export default function App() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   document.dir = i18n.dir();
   document.lang = i18n.language;
 
@@ -41,6 +41,11 @@ export default function App() {
     job === "gd" ? setGd()
       : setWeb()
   }, [job])
+
+
+  useEffect(() => {
+    document.title = t("Suhaib Ahmad - Resume Website");
+  }, [i18n, t])
 
   ReactGA.initialize('UA-110570651-1');
   ReactGA.pageview(window.location.pathname);

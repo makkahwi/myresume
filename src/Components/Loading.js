@@ -1,12 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useTranslation } from "react-i18next";
 
 export default function Loading() {
    const { t } = useTranslation();
 
    return (
-      <section id="about">
+      <section id="loading">
          <div className="row">
             <div className="five columns">
             </div>

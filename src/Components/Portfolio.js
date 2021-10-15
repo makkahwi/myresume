@@ -19,7 +19,6 @@ export default function Portfolio({ data }) {
 
   useEffect(() => {
     renderProjects();
-    console.log("filter", filter)
   }, [filter])
 
   const renderProjects = () => {
