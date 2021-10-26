@@ -1,4 +1,4 @@
-import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHtml5, faInstagram, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faChartBar, faDatabase, faEnvelope, faFileAlt, faGlobe, faImages, faNewspaper, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
@@ -141,6 +141,7 @@ const Data = {
             { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
             { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
+            { icon: faJs, name: "JavaScript", color: "f7e018" },
             { icon: faHtml5, name: "HTML", color: "e44d26" },
             { icon: faCss3Alt, name: "CSS", color: "379ad6" }
          ],
