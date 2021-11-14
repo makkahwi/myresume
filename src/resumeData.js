@@ -80,7 +80,7 @@ const Data = {
                website: "https://luxtag.io/",
                description: "Full-time job to develop a flagship PERN-based web-app for an online service.",
                title: "Frontend Developer",
-               certificate: "",
+               certificate: "/luxtag.pdf",
                years: "May 2021 - Oct 2021"
             },
             {
@@ -88,7 +88,7 @@ const Data = {
                website: "https://luxtag.io/",
                description: "Full-time internship to develop a flagship PERN-based web-app for an online service.",
                title: "Full-Stack Developer",
-               certificate: "",
+               certificate: "/luxtag.pdf",
                years: "Nov 2021 - Apr 2021"
             },
             {
