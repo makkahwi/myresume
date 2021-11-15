@@ -30,7 +30,14 @@ export default function Contact({ data }) {
             </div>
 
             <div className="row" style={{ direction: "ltr" }}>
-               <ul className="social-links">
+               <ul
+                  className="social-links"
+                  style={{
+                     width: "70vw",
+                     overflowX: "hidden",
+                     textOverflow: "ellipsis",
+                  }}
+               >
                   {networks}
                </ul>
             </div>
