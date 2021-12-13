@@ -229,6 +229,20 @@ const Data = {
                "url": "https://students.aqsa.edu.my/"
             },
             {
+               "category": "Web App",
+               "description": "PERN-Based Web App",
+               "image": `${portfolioLink}/9.jpg`,
+               "title": "xEdu App",
+               "url": "https://xEdu.best/"
+            },
+            {
+               "category": "Wordpress Websites",
+               "description": "Wordpress Website",
+               "image": `${portfolioLink}/9.jpg`,
+               "title": "xEdu Landing Page",
+               "url": "https://xEdu.best/"
+            },
+            {
                "category": "Code-Based Sites",
                "description": "React.Js-Based Website",
                "image": `${portfolioLink}/5.jpg`,
