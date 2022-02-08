@@ -1,4 +1,4 @@
-import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faChartBar, faDatabase, faEnvelope, faFileAlt, faGlobe, faImages, faNewspaper, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
@@ -11,6 +11,12 @@ const Data = {
             name: "Email",
             url: "mailto:SuhaibAhmadAi@hotmail.com",
             text: "SuhaibAhmadAi@hotmail.com"
+         },
+         {
+            icon: faHackerrank,
+            name: "HackerRank",
+            url: "https://www.hackerrank.com/makkahwi",
+            text: "Makkahwi"
          }],
          [{
             icon: faGithub,
