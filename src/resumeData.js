@@ -11,17 +11,17 @@ const Data = {
             name: "Email",
             url: "mailto:SuhaibAhmadAi@hotmail.com",
             text: "SuhaibAhmadAi@hotmail.com"
-         },
-         {
-            icon: faHackerrank,
-            name: "HackerRank",
-            url: "https://www.hackerrank.com/makkahwi",
-            text: "Makkahwi"
          }],
          [{
             icon: faGithub,
             name: "Github",
             url: "https://github.com/makkahwi",
+            text: "Makkahwi"
+         },
+         {
+            icon: faHackerrank,
+            name: "HackerRank",
+            url: "https://www.hackerrank.com/makkahwi",
             text: "Makkahwi"
          },
          {
