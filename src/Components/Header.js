@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from "react-i18next";
+import ReactTooltip from 'react-tooltip';
 
 export default function Header({ data, jobsList, setJob }) {
    const { t, i18n } = useTranslation();
@@ -22,7 +23,10 @@ export default function Header({ data, jobsList, setJob }) {
 
    const networks = socialList.map((networks, x) => networks.map((network, y) => (
       <li key={`${x}-${y}`} >
-         <a target="_blank" rel="noopener noreferrer" href={network.url}><FontAwesomeIcon icon={network.icon} /></a>
+         <a target="_blank" rel="noopener noreferrer" href={network.url}>
+            <FontAwesomeIcon icon={network.icon} data-tip={network.name} />
+            <ReactTooltip effect="solid" />
+         </a>
       </li>
    )))
 

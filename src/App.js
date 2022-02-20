@@ -2,8 +2,8 @@ import React, { lazy, Suspense, useEffect, useState } from 'react';
 import ReactGA from 'react-ga';
 import { useTranslation } from "react-i18next";
 import './App.css';
-import Data from './resumeData';
 import Loading from './Components/Loading';
+import Data from './resumeData';
 
 const Nav = lazy(() => import('./Components/Nav'));
 const Header = lazy(() => import('./Components/Header'));
