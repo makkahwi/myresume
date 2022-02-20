@@ -188,6 +188,22 @@ body { background: #eaeaea; }
    font-family: 'Calibri', sans-serif;
 }
 
+.options{
+   background-color: #3b3b3b;
+}
+
+.selects {
+   border:none;
+   padding: 0;
+   margin: 0;
+   background-color: rgba(0,0,0,0);
+   color: white;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   -ms-appearance: none;
+ }
+
 .padding {
    padding-top: 5rem;
 }

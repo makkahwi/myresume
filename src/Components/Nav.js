@@ -4,6 +4,12 @@ import { useTranslation } from "react-i18next";
 export default function Header() {
    const { t, i18n } = useTranslation();
 
+   const langs = [
+      { value: "ar", title: "عربي" },
+      { value: "en", title: "English" },
+      { value: "de", title: "Deutsche" }
+   ];
+
    const languageChange = () => {
       if (i18n.language === "en") {
          i18n.changeLanguage("ar");
@@ -27,7 +33,22 @@ export default function Header() {
             <li><a className="smoothscroll" href="#resume">{t("Resume")}</a></li>
             <li><a className="smoothscroll" href="#portfolio">{t("Works")}</a></li>
             <li><a className="smoothscroll" href="#contact">{t("Contact")}</a></li>
-            <li className="arabic"><a className="smoothscroll" style={{ cursor: "pointer" }} onClick={() => languageChange()}>{t("Other Lang")}</a></li>
+            <li>
+               {/* <a>
+                  <u>
+                     <select value={i18n.language} className={"selects arabic"} style={{ cursor: "pointer" }} onChange={e => i18n.changeLanguage(e.target.value)}>
+                        {langs.map(lang => (
+                           <option value={lang.value} className={`options ${lang.class}`}>
+                              {lang.title.toUpperCase()}
+                           </option>
+                        ))}
+                     </select>
+                  </u>
+               </a> */}
+               <a className="smoothscroll arabic" style={{ cursor: "pointer" }} onClick={() => languageChange()}>
+                  {t("Other Lang")}
+               </a>
+            </li>
          </ul>
       </nav>
    );
