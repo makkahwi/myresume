@@ -113,11 +113,18 @@ const Data = {
          school: "International Islamic University Malaysia",
          logo: "images/IIUM.png",
          link: "https://www.iium.edu.my/",
-         project: {
-            link: "https://github.com/makkahwi/iDecide",
-            title: "my FYP project",
-            more: "(a web app)"
-         },
+         projects: [
+            {
+               link: "https://internship.suhaib.dev/",
+               title: "My Internship report",
+               more: "(a web app)"
+            },
+            {
+               link: "https://github.com/makkahwi/iDecide",
+               title: "My FYP project",
+               more: "(a web app)"
+            }
+         ],
          cert: {
             link: "/My-Certificates.pdf",
             title: "My Certificates"
@@ -133,11 +140,13 @@ const Data = {
             school: "Luminus Technical University College (Jordan)",
             logo: "images/LTUC.png",
             link: "https://www.ltuc.com/",
-            // project: {
+            // projects: [
+            // {
             //    link: "https://fyp.suhaib.dev/",
-            //    title: "my FYP project",
+            //    title: "My FYP project",
             //    more: "(a web app)"
-            // },
+            // }
+            // ],
             // cert: {
             //    link: "/LTUC-Certificate.pdf",
             //    title: "The Certificate"
