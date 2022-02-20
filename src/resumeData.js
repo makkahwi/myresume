@@ -114,7 +114,7 @@ const Data = {
          logo: "images/IIUM.png",
          link: "https://www.iium.edu.my/",
          project: {
-            link: "https://fyp.suhaib.dev/",
+            link: "https://github.com/makkahwi/iDecide",
             title: "my FYP project",
             more: "(a web app)"
          },
@@ -210,9 +210,9 @@ const Data = {
             { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
             { icon: faPhp, name: "PhP", color: "4f5c93", website: "https://www.php.net/" },
-            { icon: faHtml5, name: "HTML", color: "e44d26" },
-            { icon: faCss3Alt, name: "CSS", color: "379ad6" },
-            { icon: faJs, name: "JavaScript", color: "f7e018" }
+            { icon: faHtml5, name: "HTML", color: "e44d26", website: "https://html.spec.whatwg.org/" },
+            { icon: faCss3Alt, name: "CSS", color: "379ad6", website: "https://www.w3.org/TR/CSS/#css" },
+            { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/" }
          ],
       },
       gd: {

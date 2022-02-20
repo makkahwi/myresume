@@ -81,9 +81,9 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
                     <p className="info">{t(education.school)}<span>{" "}&bull;{" "}</span><em className="date">{education.graduated}</em></p>
                     <p>{t(education.description)}</p>
 
-                    {education.project && <div> {t("You may check")} < a target="_blank" href={education.project.link} rel="noopener noreferrer" >{education.project.title}</a> {education.project.more}</div>}
+                    {education.project && <div> {t("You may check")} < a target="_blank" href={education.project.link} rel="noopener noreferrer" >{t(education.project.title)}</a> {t(education.project.more)}</div>}
 
-                    {education.cert && <a target="_blank" href={education.cert.link} download className="downloadButton button" style={{ backgroundColor: "#ff5d00", margin: "10px 0", color: "#fff" }}><FontAwesomeIcon icon={faDownload} style={{ margin: "0 5px" }} />{education.cert.title}</a>}
+                    {education.cert && <a target="_blank" href={education.cert.link} download className="downloadButton button" style={{ backgroundColor: "#ff5d00", margin: "10px 0", color: "#fff" }}><FontAwesomeIcon icon={faDownload} style={{ margin: "0 5px" }} />{t(education.cert.title)}</a>}
                   </div>
                 </div>
               </div>

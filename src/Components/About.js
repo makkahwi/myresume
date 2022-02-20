@@ -16,9 +16,11 @@ export default function About({ data: { bio, downloads, resumeVideo } }) {
 
    return (
       <section id="about">
+
          <div className="row">
+            <h1 className={`${i18n.language === "ar" && "arabic"}`}>{t("About Me")}</h1>
+
             <div className="six columns text-center">
-               <h1 className={`${i18n.language === "ar" && "arabic"}`}>{t("About Me")}</h1>
                <iframe width="100%" height="265px" src={resumeVideo}
                   title="YouTube video player" frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

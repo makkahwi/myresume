@@ -14,7 +14,7 @@ const Contact = lazy(() => import('./Components/Contact'));
 const Footer = lazy(() => import('./Components/Footer'));
 
 export default function App() {
-  const { i18n, t } = useTranslation();
+  const { t, i18n } = useTranslation();
   document.dir = i18n.dir();
   document.lang = i18n.language;
 
