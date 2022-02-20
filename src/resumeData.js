@@ -1,5 +1,5 @@
-import { faBootstrap, faCss3Alt, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faReact, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faChartBar, faDatabase, faEnvelope, faFileAlt, faGlobe, faImages, faNewspaper, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faChartBar, faDatabase, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -25,6 +25,12 @@ const Data = {
             text: "Makkahwi"
          },
          {
+            icon: faFan,
+            name: "SoloLearn",
+            url: "https://www.sololearn.com/profile/25072713",
+            text: "Makkahwi"
+         },
+         {
             icon: faLinkedin,
             name: "Linkedin",
             url: "https://linkedin.com/in/makkahwi/",
@@ -41,6 +47,17 @@ const Data = {
             name: "Telegram",
             url: "https://t.me/makkahwi",
             text: "+601128094804"
+         }],
+         [{
+            icon: faDiscord,
+            name: "Discord",
+            url: "https://discordapp.com/users/772634530992619530",
+            text: "Makkahwi"
+         }, {
+            icon: faSlack,
+            name: "Slack",
+            url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
+            text: "Makkahwi"
          }],
          [{
             icon: faFacebook,
@@ -139,6 +156,8 @@ const Data = {
             { icon: faVuejs, name: "Vue.Js", color: "00bd83", website: "https://vuejs.org/" },
             { icon: faNode, name: "Node.Js", color: "8bc500", website: "https://nodejs.org/" },
             { icon: faNodeJs, name: "Express.Js", color: "000000", website: "https://expressjs.com/" },
+            { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/" },
+            { icon: faHashtag, name: "Django", color: "092d1f", website: "https://www.djangoproject.com/" },
             { icon: faLaravel, name: "Laravel", color: "ff2d20", website: "https://laravel.com/" },
             { icon: faDatabase, name: "MySQL", color: "ffa518", website: "https://www.mysql.com/" },
             { icon: faDatabase, name: "PostgreSQL", color: "2f6091", website: "https://www.postgresql.org/" },
@@ -147,9 +166,10 @@ const Data = {
             { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
             { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
-            { icon: faJs, name: "JavaScript", color: "f7e018" },
+            { icon: faPhp, name: "PhP", color: "4f5c93", website: "https://www.php.net/" },
             { icon: faHtml5, name: "HTML", color: "e44d26" },
-            { icon: faCss3Alt, name: "CSS", color: "379ad6" }
+            { icon: faCss3Alt, name: "CSS", color: "379ad6" },
+            { icon: faJs, name: "JavaScript", color: "f7e018" }
          ],
       },
       gd: {
