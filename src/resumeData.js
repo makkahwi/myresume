@@ -1,5 +1,5 @@
 import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faChartBar, faDatabase, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faCamera, faChartBar, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -13,27 +13,21 @@ const Data = {
             text: "SuhaibAhmadAi@hotmail.com"
          }],
          [{
-            icon: faGithub,
-            name: "Github",
-            url: "https://github.com/makkahwi",
-            text: "Makkahwi"
-         },
-         {
-            icon: faHackerrank,
-            name: "HackerRank",
-            url: "https://www.hackerrank.com/makkahwi",
-            text: "Makkahwi"
-         },
-         {
-            icon: faFan,
-            name: "SoloLearn",
-            url: "https://www.sololearn.com/profile/25072713",
-            text: "Makkahwi"
-         },
-         {
             icon: faLinkedin,
             name: "Linkedin",
             url: "https://linkedin.com/in/makkahwi/",
+            text: "Makkahwi"
+         },
+         {
+            icon: faFacebook,
+            name: "Facebook",
+            url: "https://facebook.com/makkahwi",
+            text: "Makkahwi"
+         },
+         {
+            icon: faInstagram,
+            name: "Instagram",
+            url: "https://instagram.com/makkahwi",
             text: "Makkahwi"
          }],
          [{
@@ -47,29 +41,6 @@ const Data = {
             name: "Telegram",
             url: "https://t.me/makkahwi",
             text: "+601128094804"
-         }],
-         [{
-            icon: faDiscord,
-            name: "Discord",
-            url: "https://discordapp.com/users/772634530992619530",
-            text: "Makkahwi"
-         }, {
-            icon: faSlack,
-            name: "Slack",
-            url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
-            text: "Makkahwi"
-         }],
-         [{
-            icon: faFacebook,
-            name: "Facebook",
-            url: "https://facebook.com/makkahwi",
-            text: "Makkahwi"
-         },
-         {
-            icon: faInstagram,
-            name: "Instagram",
-            url: "https://instagram.com/makkahwi",
-            text: "Makkahwi"
          }]
       ],
       name: "Suhaib Ahmad",
@@ -86,7 +57,7 @@ const Data = {
          resumeVideo: "https://www.youtube.com/embed/JxHy8wEhrEg"
       },
       gd: {
-         bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. I'm highly organized, detail-oriented and timing-particular, and I believe that also what makes me a good programmer. You may scroll down to see it for yourself, and you may also download my...",
+         bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. You may scroll down to see it for yourself, and you may also download my...",
          downloads: [
             { text: "Resume Sheet", link: "/Suhaib-Ahmad-GD-Resume-Sheet.pdf", icon: faFileAlt },
             { text: "Personality Test", link: "https://www.16personalities.com/profiles/aa175983b37f8", icon: faScroll },
@@ -94,6 +65,86 @@ const Data = {
          ],
          resumeVideo: "https://www.youtube.com/embed/JxHy8wEhrEg"
       }
+   },
+   links: {
+      web: [
+         [
+            {
+               icon: faGithub,
+               name: "Github",
+               url: "https://github.com/makkahwi",
+               text: "Makkahwi"
+            },
+            {
+               icon: faHackerrank,
+               name: "HackerRank",
+               url: "https://www.hackerrank.com/makkahwi",
+               text: "Makkahwi"
+            },
+            {
+               icon: faFan,
+               name: "SoloLearn",
+               url: "https://www.sololearn.com/profile/25072713",
+               text: "Makkahwi"
+            }
+         ],
+         [
+            {
+               icon: faDiscord,
+               name: "Discord",
+               url: "https://discordapp.com/users/772634530992619530",
+               text: "Makkahwi"
+            },
+            {
+               icon: faSlack,
+               name: "Slack",
+               url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
+               text: "Makkahwi"
+            }
+         ]
+      ],
+      gd: []
+   },
+   education: [
+      {
+         degree: "Bachelor of Computer Science",
+         description: "Specialized in Data Science and Computational Intelligence",
+         graduated: "May 2021",
+         school: "International Islamic University Malaysia",
+         logo: "images/IIUM.png",
+         link: "https://www.iium.edu.my/",
+         project: {
+            link: "https://fyp.suhaib.dev/",
+            title: "my FYP project",
+            more: "(a web app)"
+         },
+         cert: {
+            link: "/My-Certificates.pdf",
+            title: "My Certificates"
+         }
+      }
+   ],
+   training: {
+      web: [
+         {
+            degree: "6-Month Training Camp",
+            description: "Python-Based Web Dev",
+            graduated: "Jan - July 2022",
+            school: "Luminus Technical University College (Jordan)",
+            logo: "images/LTUC.png",
+            link: "https://www.ltuc.com/",
+            // project: {
+            //    link: "https://fyp.suhaib.dev/",
+            //    title: "my FYP project",
+            //    more: "(a web app)"
+            // },
+            // cert: {
+            //    link: "/LTUC-Certificate.pdf",
+            //    title: "The Certificate"
+            // }
+         }
+      ],
+      gd: []
    },
    resume: {
       web: {
@@ -121,14 +172,6 @@ const Data = {
                title: "Full-Stack Developer",
                certificate: "/ais.pdf",
                years: "Sep 2019 - Aug 2020"
-            },
-            {
-               company: "PCOM",
-               website: "https://pcomalaysia.com/",
-               description: "Part-time job to manage the content of a wordpress-based foundation website, including the update work of news section, outlook and theme color of website.",
-               title: "Website Manager",
-               certificate: "",
-               years: "Feb 2015 - May 2016"
             }
          ],
          freelancesList: [
@@ -180,12 +223,12 @@ const Data = {
                description: "Part-time job to design serveral booklets & brochures.",
                title: "Graphic Designer",
                certificate: "",
-               years: ["Jun 2018", "July 2017", "May 2017", "Jun 2016 - Aug 2016"]
+               years: "Jun - Aug 2016, May & July 2017, Jun 2018"
             },
             {
                company: "Mercy Mission World",
                website: "https://www.mercymissionworld.org/",
-               description: "Part-time work included gaphic designing & events organization.",
+               description: "Part-time work included gaphic designing & events management.",
                title: "PR Executive",
                certificate: "",
                years: "Dec 2015 - Jun 2016"
@@ -194,7 +237,7 @@ const Data = {
                company: "PSA Malaysia",
                website: "https://ppam.org.my/",
                description: "Univeristy club volunteering work to prepare the publicity materials of digital and print-out designs.",
-               title: "Media Bureau Head",
+               title: "Media Bureau",
                certificate: "",
                years: "Feb 2013 - Jun 2015"
             }
@@ -218,17 +261,13 @@ const Data = {
             { icon: faVectorSquare, name: "Adobe Illustrator", color: "330000", website: "https://www.adobe.com/products/illustrator.html" },
             { icon: faNewspaper, name: "Adobe InDesign", color: "47021e", website: "https://www.adobe.com/products/indesign.html" },
             { icon: faGlobe, name: "Adobe XD", color: "470137", website: "https://www.adobe.com/products/xd.html" },
-            { icon: faVideo, name: "Adobe Premiere Pro", color: "00005b", website: "https://www.adobe.com/products/premiere.html" }
+            { icon: faVideo, name: "Adobe Premiere Pro", color: "00005b", website: "https://www.adobe.com/products/premiere.html" },
+            { icon: faPaintBrush, name: "Graphic Design", color: "8bc500" },
+            { icon: faPaintRoller, name: "UI / UX Design", color: "7952b3" },
+            { icon: faEdit, name: "Photo Editing", color: "e44d26" },
+            { icon: faCamera, name: "Photography", color: "0082cf" }
          ],
-      },
-      educationList: [
-         {
-            degree: "Bachelor of Computer Science",
-            description: "Specialized in Data Science and Computational Intelligence",
-            graduated: "May 2021",
-            school: "International Islamic University Malaysia"
-         }
-      ]
+      }
    },
    portfolio: {
       web: {

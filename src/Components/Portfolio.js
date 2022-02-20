@@ -4,26 +4,21 @@ import { useTranslation } from "react-i18next";
 export default function Portfolio({ data }) {
   const { t, i18n } = useTranslation();
 
-  const { projectsList } = data;
-
   const [filters, setFilters] = useState([]);
   const [filter, setFilter] = useState();
-  const [projects, setProjects] = useState(projectsList);
+  const [projects, setProjects] = useState(data);
 
   const filtersLength = count => count === 2 ? "six" : count === 3 ? "four" : count === 4 ? "three" :
     count < 7 ? "two" : count < 9 ? "three" : "two";
 
   useEffect(() => {
-    setFilters([...new Set(projectsList.map(project => project.category))])
-  }, [])
+    setFilters([...new Set(data.map(project => project.category))]);
+    setFilter();
+  }, [data]);
 
   useEffect(() => {
-    renderProjects();
-  }, [filter])
-
-  const renderProjects = () => {
-    setProjects(filter ? projectsList.filter(project => project.category === filter) : projectsList);
-  }
+    setProjects(filter ? data.filter(project => project.category === filter) : data);
+  }, [filter, data]);
 
   return (
     <section id="portfolio">

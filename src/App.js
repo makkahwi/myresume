@@ -19,29 +19,8 @@ export default function App() {
   document.lang = i18n.language;
 
   const [job, setJob] = useState("web");
-  const [about, setAbout] = useState(Data.about.web);
-  const [resume, setResume] = useState(Data.resume.web);
-  const [portfolio, setPortfolio] = useState(Data.portfolio.web);
 
   const jobsList = [{ value: "web", title: "Full-Stack Web Developer" }, { value: "gd", title: "UI / UX & Graphic Designer" }];
-
-  const setWeb = () => {
-    setAbout(Data.about.web);
-    setResume(Data.resume.web);
-    setPortfolio(Data.portfolio.web);
-  }
-
-  const setGd = () => {
-    setAbout(Data.about.gd);
-    setResume(Data.resume.gd);
-    setPortfolio(Data.portfolio.gd);
-  }
-
-  useEffect(() => {
-    job === "gd" ? setGd()
-      : setWeb()
-  }, [job])
-
 
   useEffect(() => {
     document.title = t("Suhaib Ahmad - Resume Website");
@@ -54,11 +33,11 @@ export default function App() {
     <div className="App">
       <Suspense fallback={<Loading />}>
         <Nav />
-        <Header data={Data.main} jobsList={jobsList} setJob={setJob} />
-        <About data={about} />
-        <Resume data={resume} educations={Data.resume.educationList} />
-        <Portfolio data={portfolio} />
-        <Contact data={Data.main} />
+        <Header data={Data.main} contacts={[...Data.main.socialList, ...Data.links[job]]} jobsList={jobsList} setJob={setJob} />
+        <About data={Data.about[job]} />
+        <Resume data={Data.resume[job]} educations={[...Data.training[job], ...Data.education]} />
+        <Portfolio data={Data.portfolio[job].projectsList} />
+        <Contact data={[...Data.main.socialList, ...Data.links[job]]} />
         <Footer data={Data.main} />
       </Suspense>
     </div>

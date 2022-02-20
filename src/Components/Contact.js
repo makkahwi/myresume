@@ -5,9 +5,7 @@ import { useTranslation } from "react-i18next";
 export default function Contact({ data }) {
    const { t, i18n } = useTranslation();
 
-   const { socialList } = data;
-
-   const networks = socialList.map((netwoks, x) =>
+   const networks = data.map((netwoks, x) =>
       <li key={x}>
          <h2>
             {netwoks.map((network, y) =>
