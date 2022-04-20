@@ -227,6 +227,14 @@ const Data = {
       gd: {
          jobsList: [
             {
+               company: "Speed Wheels",
+               website: "https://speedwheelstrade.online/",
+               description: "Part-time temporary work about designing and preparing for a social-media promotional campaign.",
+               title: "Graphic Designer",
+               certificate: "",
+               years: "Jan 2017 - Feb 2017"
+            },
+            {
                company: "QFM Malaysia",
                website: "https://qfmalaysia.org/",
                description: "Part-time job to design serveral booklets & brochures.",
