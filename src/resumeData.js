@@ -200,7 +200,7 @@ const Data = {
                company: "Freelance",
                description: "Several wordpress-based website projects.",
                title: "Wordpress Developer",
-               years: "Dec 2015 - Apr 2019"
+               years: "Oct 2015 - Apr 2019"
             }
          ],
          skillsList: [
@@ -208,20 +208,20 @@ const Data = {
             { icon: faVuejs, name: "Vue.Js", color: "00bd83", website: "https://vuejs.org/" },
             { icon: faNode, name: "Node.Js", color: "8bc500", website: "https://nodejs.org/" },
             { icon: faNodeJs, name: "Express.Js", color: "000000", website: "https://expressjs.com/" },
-            { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/" },
-            { icon: faHashtag, name: "Django", color: "092d1f", website: "https://www.djangoproject.com/" },
             { icon: faLaravel, name: "Laravel", color: "ff2d20", website: "https://laravel.com/" },
-            { icon: faDatabase, name: "MySQL", color: "ffa518", website: "https://www.mysql.com/" },
-            { icon: faDatabase, name: "PostgreSQL", color: "2f6091", website: "https://www.postgresql.org/" },
-            { icon: faWordpress, name: "Wordpress", color: "21759b", website: "https://wordpress.com/" },
-            { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
+            { icon: faHashtag, name: "Django", color: "092d1f", website: "https://www.djangoproject.com/" },
             { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
+            { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
             { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
-            { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
+            { icon: faWordpress, name: "Wordpress", color: "21759b", website: "https://wordpress.com/" },
+            { icon: faDatabase, name: "PostgreSQL", color: "2f6091", website: "https://www.postgresql.org/" },
+            { icon: faDatabase, name: "MySQL", color: "ffa518", website: "https://www.mysql.com/" },
+            { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/" },
+            { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/" },
             { icon: faPhp, name: "PhP", color: "4f5c93", website: "https://www.php.net/" },
             { icon: faHtml5, name: "HTML", color: "e44d26", website: "https://html.spec.whatwg.org/" },
             { icon: faCss3Alt, name: "CSS", color: "379ad6", website: "https://www.w3.org/TR/CSS/#css" },
-            { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/" }
+            { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
          ],
       },
       gd: {
