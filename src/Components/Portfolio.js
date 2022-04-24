@@ -40,7 +40,7 @@ export default function Portfolio({ data }) {
           <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
             {projects.map((project, i) => (
               <div key={`${project.title}-${i}`} className="columns portfolio-item">
-                <a target="_blank" href={project.url}>
+                <a target="_blank" href={project.url} download>
                   <div className="item-wrap">
                     <img alt={project.title} src={project.image} />
                     <div className="overlay">
