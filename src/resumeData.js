@@ -59,7 +59,7 @@ const Data = {
       gd: {
          bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. You may scroll down to see it for yourself, and you may also download my...",
          downloads: [
-            { text: "Resume Sheet", link: "/Suhaib-Ahmad-WD-Resume-Sheet.pdf", icon: faFileAlt },
+            { text: "Resume Sheet", link: "/Suhaib-Ahmad-GD-Resume-Sheet.pdf", icon: faFileAlt },
             { text: "Personality Test", link: "https://www.16personalities.com/profiles/aa175983b37f8", icon: faScroll },
             { text: "Psychometric Analysis", link: "/Suhaib-Ahmad-Psychometric.pdf", icon: faChartBar },
          ],
