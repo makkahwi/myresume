@@ -1,5 +1,5 @@
 import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faCamera, faChartBar, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faColumns, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -140,13 +140,13 @@ const Data = {
             school: "Luminus Technical University College (Jordan)",
             logo: "images/LTUC.png",
             link: "https://www.ltuc.com/",
-            // projects: [
-            // {
-            //    link: "https://fyp.suhaib.dev/",
-            //    title: "My FYP project",
-            //    more: "(a web app)"
-            // }
-            // ],
+            projects: [
+               {
+                  link: "https://silent-speakers.github.io/silent-speakers/",
+                  title: "Mid-term project",
+                  more: "(a desktop app)"
+               }
+            ],
             // cert: {
             //    link: "/LTUC-Certificate.pdf",
             //    title: "The Certificate"
@@ -177,7 +177,7 @@ const Data = {
             {
                company: "AIS School",
                website: "http://aqsa.edu.my/",
-               description: "Part-time job to develop a web app of a student information system.",
+               description: "Part-time job to develop a Laravel-based web-app of a student information system.",
                title: "Full-Stack Developer",
                certificate: "/ais.pdf",
                years: "Sep 2019 - Aug 2020"
@@ -192,36 +192,43 @@ const Data = {
             },
             {
                company: "Freelance",
-               description: "Few code-based frontend-only website projects.",
+               description: "Several code-based frontend-only landing-page projects.",
                title: "Frontend Developer",
-               years: "May 2019 - Aug 2019"
+               years: "May 2018 - Aug 2019"
             },
             {
                company: "Freelance",
                description: "Several wordpress-based website projects.",
                title: "Wordpress Developer",
-               years: "Oct 2015 - Apr 2019"
+               years: "Oct 2015 - Apr 2018"
             }
          ],
          skillsList: [
             { icon: faReact, name: "React.Js", color: "61dafb", website: "https://reactjs.org/" },
+            { icon: faNodeJs, name: "Next.Js", color: "000000", website: "https://nextjs.org/" },
             { icon: faVuejs, name: "Vue.Js", color: "00bd83", website: "https://vuejs.org/" },
             { icon: faNode, name: "Node.Js", color: "8bc500", website: "https://nodejs.org/" },
             { icon: faNodeJs, name: "Express.Js", color: "000000", website: "https://expressjs.com/" },
             { icon: faLaravel, name: "Laravel", color: "ff2d20", website: "https://laravel.com/" },
             { icon: faHashtag, name: "Django", color: "092d1f", website: "https://www.djangoproject.com/" },
-            { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
-            { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
-            { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
             { icon: faWordpress, name: "Wordpress", color: "21759b", website: "https://wordpress.com/" },
             { icon: faDatabase, name: "PostgreSQL", color: "2f6091", website: "https://www.postgresql.org/" },
             { icon: faDatabase, name: "MySQL", color: "ffa518", website: "https://www.mysql.com/" },
-            { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/" },
+            { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
+            { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
+            { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
             { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/" },
+            { icon: faArrowsSpin, name: "jQuery", color: "0868ac", website: "https://jquery.com/" },
+            { icon: faRing, name: "JSON", color: "0f0f0f", website: "https://www.json.org/" },
+            { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/" },
             { icon: faPhp, name: "PhP", color: "4f5c93", website: "https://www.php.net/" },
             { icon: faHtml5, name: "HTML", color: "e44d26", website: "https://html.spec.whatwg.org/" },
             { icon: faCss3Alt, name: "CSS", color: "379ad6", website: "https://www.w3.org/TR/CSS/#css" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
+            { icon: faArrowsSpin, name: "Agile", color: "00a99d" },
+            { icon: faArrowsRotate, name: "SCRUM", color: "1f93b8", website: "https://www.scrum.org/" },
+            { icon: faColumns, name: "Kanban", color: "1b7d9e" },
+            { icon: faCloud, name: "REST API", color: "176985" },
          ],
       },
       gd: {
