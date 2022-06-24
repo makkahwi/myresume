@@ -1,5 +1,5 @@
 import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faColumns, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -143,8 +143,23 @@ const Data = {
             projects: [
                {
                   link: "https://silent-speakers.github.io/silent-speakers/",
-                  title: "Mid-term project",
-                  more: "(a desktop app)"
+                  title: "Mid-term group project",
+                  more: "(Desktop app)"
+               },
+               {
+                  link: "https://cookie-stand-api-suhaib.herokuapp.com/admin",
+                  title: "Mid-term individual project",
+                  more: "(BE Django web app)"
+               },
+               {
+                  link: "https://github.com/Tadreebi",
+                  title: "Final group project",
+                  more: "(React-Django web app)"
+               },
+               {
+                  link: "https://cookie-stand-admin-chi-two.vercel.app/",
+                  title: "Final individual project",
+                  more: "(React-Django web app)"
                }
             ],
             // cert: {
@@ -204,20 +219,20 @@ const Data = {
             }
          ],
          skillsList: [
-            { icon: faReact, name: "React.Js", color: "61dafb", website: "https://reactjs.org/" },
-            { icon: faNodeJs, name: "Next.Js", color: "000000", website: "https://nextjs.org/" },
-            { icon: faVuejs, name: "Vue.Js", color: "00bd83", website: "https://vuejs.org/" },
-            { icon: faNode, name: "Node.Js", color: "8bc500", website: "https://nodejs.org/" },
-            { icon: faNodeJs, name: "Express.Js", color: "000000", website: "https://expressjs.com/" },
-            { icon: faLaravel, name: "Laravel", color: "ff2d20", website: "https://laravel.com/" },
-            { icon: faHashtag, name: "Django", color: "092d1f", website: "https://www.djangoproject.com/" },
+            { icon: faReact, name: "React.Js", color: "61dafb", website: "https://reactjs.org/", subskills: ["Redux", "Material-UI", "TailwindCSS", "Axios", "i18next", "React Hook Form"] },
+            { icon: faReact, name: "Next.Js", color: "000000", website: "https://nextjs.org/" },
+            { icon: faVuejs, name: "Vue.Js", color: "00bd83", website: "https://vuejs.org/", subskills: ["VueX", "Vuetify", "Axios", "Webpack", "i18next"] },
+            { icon: faNode, name: "Node.Js", color: "8bc500", website: "https://nodejs.org/", subskills: ["npm", " yarn"] },
+            { icon: faNodeJs, name: "Express.Js", color: "000000", website: "https://expressjs.com/", subskills: [""] },
+            { icon: faLaravel, name: "Laravel", color: "ff2d20", website: "https://laravel.com/", subskills: [""] },
+            { icon: faHashtag, name: "Django", color: "092d1f", website: "https://www.djangoproject.com/", subskills: ["DJ REST API", "DJ Simple JWT", "DJ Environ"] },
             { icon: faWordpress, name: "Wordpress", color: "21759b", website: "https://wordpress.com/" },
             { icon: faDatabase, name: "PostgreSQL", color: "2f6091", website: "https://www.postgresql.org/" },
             { icon: faDatabase, name: "MySQL", color: "ffa518", website: "https://www.mysql.com/" },
             { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
             { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
             { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
-            { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/" },
+            { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/", subskills: ["ES6", "ES5"] },
             { icon: faArrowsSpin, name: "jQuery", color: "0868ac", website: "https://jquery.com/" },
             { icon: faRing, name: "JSON", color: "0f0f0f", website: "https://www.json.org/" },
             { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/" },
@@ -225,9 +240,8 @@ const Data = {
             { icon: faHtml5, name: "HTML", color: "e44d26", website: "https://html.spec.whatwg.org/" },
             { icon: faCss3Alt, name: "CSS", color: "379ad6", website: "https://www.w3.org/TR/CSS/#css" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
-            { icon: faArrowsSpin, name: "Agile", color: "00a99d" },
+            { icon: faArrowsSpin, name: "Agile", color: "00a99d", website: "https://www.scrum.org/", subskills: ["SCRUM", "Kanban"] },
             { icon: faArrowsRotate, name: "SCRUM", color: "1f93b8", website: "https://www.scrum.org/" },
-            { icon: faColumns, name: "Kanban", color: "1b7d9e" },
             { icon: faCloud, name: "REST API", color: "176985" },
          ],
       },
@@ -243,7 +257,7 @@ const Data = {
             },
             {
                company: "QFM Malaysia",
-               website: "https://qfmalaysia.org/",
+               website: "http://qfmalaysia.org/",
                description: "Part-time job to design serveral booklets & brochures.",
                title: "Graphic Designer",
                certificate: "",
@@ -298,10 +312,38 @@ const Data = {
          projectsList: [
             {
                "category": "Web App",
+               "description": "Vue-Symfony-Based Web App (Collaborative, Soon to be Launched)",
+               "image": `${portfolioLink}/10.jpg`,
+               "title": "Trellah",
+               // "url": "https://trellah.com/"
+            },
+            {
+               "category": "Wordpress Websites",
+               "description": "Wordpress Website (Soon to be Launched)",
+               "image": `${portfolioLink}/12.jpg`,
+               "title": "Dr. Ahmad Abdu Mahfouth",
+               "url": "https://aam.arromi.net/"
+            },
+            {
+               "category": "Web App",
                "description": "PERN-Based Web App (Collaborative)",
                "image": `${portfolioLink}/7.jpg`,
                "title": "BrandTag",
                "url": "https://app.brandtag.io/"
+            },
+            {
+               "category": "Wordpress Websites",
+               "description": "Wordpress Website (Soon to be Launched)",
+               "image": `${portfolioLink}/10.jpg`,
+               "title": "R&K ",
+               // "url": "#portfolio"
+            },
+            {
+               "category": "Web App",
+               "description": "Vue-Django-Based Web App (Soon to be Launched)",
+               "image": `${portfolioLink}/11.jpg`,
+               "title": "Currency Showroom",
+               "url": "https://github.com/makkahwi/currencies-showroom"
             },
             {
                "category": "Wordpress Websites",
@@ -318,17 +360,17 @@ const Data = {
                "url": "https://students.aqsa.edu.my/"
             },
             {
-               "category": "Web App",
-               "description": "PERN-Based Web App",
+               "category": "Wordpress Websites",
+               "description": "Wordpress Website (Soon to be Launched)",
                "image": `${portfolioLink}/9.jpg`,
-               "title": "xEdu App",
+               "title": "xEdu Landing Page",
                "url": "https://xEdu.best/"
             },
             {
-               "category": "Wordpress Websites",
-               "description": "Wordpress Website",
+               "category": "Web App",
+               "description": "PERN-Based Web App (Soon to be Launched)",
                "image": `${portfolioLink}/9.jpg`,
-               "title": "xEdu Landing Page",
+               "title": "xEdu App",
                "url": "https://xEdu.best/"
             },
             {
@@ -370,6 +412,13 @@ const Data = {
       },
       gd: {
          projectsList: [
+            {
+               "category": "Logos",
+               "description": "Logo Design",
+               "image": `${portfolioLink}/Logos/2.jpg`,
+               "title": "Finger Speak",
+               "url": `https://silent-speakers.github.io/silent-speakers/#overview`,
+            },
             {
                "category": "Banners & Posters",
                "description": "Banner Design",
@@ -438,7 +487,7 @@ const Data = {
                "description": "Logo Re-design",
                "image": `${portfolioLink}/Logos/1.jpg`,
                "title": "QFM Malaysia",
-               "url": `${portfolioLink}/Logos/1.jpg`,
+               "url": `http://qfmalaysia.org/`,
             },
             {
                "category": "Banners & Posters",
