@@ -1,5 +1,16 @@
 {
   "name": "resumewebsite",
+  "description": "A  React.js-based resume website without API",
+  "repo": "https://github.com/makkahwi/myresume",
+  "demo": "https://Suhaib.dev",
+  "author": {
+    "name": "Suhaib Ahmad",
+    "url": "https://Suhaib.dev",
+    "github": "https://github.com/makkahwi",
+    "facebook": "https://facebook.com/makkahwi",
+    "linkedin": "https://linkedin.com/in/makkahwi",
+    "email": "SuhaibAhmadAi@hotmail.com"
+  },
   "version": "5.0.0",
   "private": true,
   "dependencies": {
