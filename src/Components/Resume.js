@@ -53,8 +53,10 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
           <div className="twelve columns main-col" style={{ direction: "ltr" }}>
             <div className="skill">
               {skillsList.map((skill, i) => (
-                <div className="four columns skill" key={i}>
-                  <em><h4><a target="_blank" href={skill.website} style={{ color: `#${skill.color}` }} ><FontAwesomeIcon icon={skill.icon} />{" "}{skill.name}</a></h4></em>
+                <div>
+                  <div className="four columns skill" key={i}>
+                    <em><h4><a target="_blank" href={skill.website} style={{ color: `#${skill.color}` }} data-tip={skill.subskills && skill.subskills.join(", ")} ><FontAwesomeIcon icon={skill.icon} />{" "}{skill.name}</a></h4></em>
+                  </div>
                 </div>
               ))}
             </div>
