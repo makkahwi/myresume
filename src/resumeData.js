@@ -1,4 +1,4 @@
-import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
@@ -85,6 +85,12 @@ const Data = {
                icon: faFan,
                name: "SoloLearn",
                url: "https://www.sololearn.com/profile/25072713",
+               text: "Makkahwi"
+            },
+            {
+               icon: faKaggle,
+               name: "Kaggle",
+               url: "https://www.kaggle.com/makkahwi",
                text: "Makkahwi"
             }
          ],
@@ -174,6 +180,14 @@ const Data = {
       web: {
          jobsList: [
             {
+               company: "ArabWork",
+               website: "https://www.linkedin.com/company/arabwork/",
+               description: "Full-time job to develop a Vue-Symfony web-app for an online service.",
+               title: "Frontend Developer",
+               // certificate: "/luxtag.pdf",
+               years: "Jun 2022 - Present"
+            },
+            {
                company: "LuxTag",
                website: "https://luxtag.io/",
                description: "Full-time job to develop a flagship PERN-based web-app for an online service.",
@@ -235,7 +249,7 @@ const Data = {
             { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/", subskills: ["ES6", "ES5"] },
             { icon: faArrowsSpin, name: "jQuery", color: "0868ac", website: "https://jquery.com/" },
             { icon: faRing, name: "JSON", color: "0f0f0f", website: "https://www.json.org/" },
-            { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/" },
+            { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/", subskills: ["Numpy", "Pandas", "Matplotlib"] },
             { icon: faPhp, name: "PhP", color: "4f5c93", website: "https://www.php.net/" },
             { icon: faHtml5, name: "HTML", color: "e44d26", website: "https://html.spec.whatwg.org/" },
             { icon: faCss3Alt, name: "CSS", color: "379ad6", website: "https://www.w3.org/TR/CSS/#css" },
@@ -300,6 +314,8 @@ const Data = {
             { icon: faNewspaper, name: "Adobe InDesign", color: "47021e", website: "https://www.adobe.com/products/indesign.html" },
             { icon: faGlobe, name: "Adobe XD", color: "470137", website: "https://www.adobe.com/products/xd.html" },
             { icon: faVideo, name: "Adobe Premiere Pro", color: "00005b", website: "https://www.adobe.com/products/premiere.html" },
+            { icon: faImages, name: "Figma", color: "09375b", website: "https://www.figma.com" },
+            { icon: faImages, name: "Draw.io", color: "09375b", website: "https://draw.io" },
             { icon: faPaintBrush, name: "Graphic Design", color: "8bc500" },
             { icon: faPaintRoller, name: "UI / UX Design", color: "7952b3" },
             { icon: faEdit, name: "Photo Editing", color: "e44d26" },
@@ -312,7 +328,7 @@ const Data = {
          projectsList: [
             {
                "category": "Web App",
-               "description": "Vue-Symfony-Based Web App (Collaborative, Soon to be Launched)",
+               "description": "Frontend Dev of Vue-Based Web App (Collaborative, Soon to be Launched)",
                "image": `${portfolioLink}/10.jpg`,
                "title": "Trellah",
                // "url": "https://trellah.com/"
@@ -321,12 +337,12 @@ const Data = {
                "category": "Wordpress Websites",
                "description": "Wordpress Website (Soon to be Launched)",
                "image": `${portfolioLink}/12.jpg`,
-               "title": "Dr. Ahmad Abdu Mahfouth",
+               "title": "Dr. Ahmad Abu Mahfouth",
                "url": "https://aam.arromi.net/"
             },
             {
                "category": "Web App",
-               "description": "PERN-Based Web App (Collaborative)",
+               "description": "Frontend Dev of PERN-Based Web App (Collaborative)",
                "image": `${portfolioLink}/7.jpg`,
                "title": "BrandTag",
                "url": "https://app.brandtag.io/"
@@ -340,7 +356,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Vue-Django-Based Web App (Soon to be Launched)",
+               "description": "Full-Stack Dev of Vue-Django-Based Web App (Soon to be Launched)",
                "image": `${portfolioLink}/11.jpg`,
                "title": "Currency Showroom",
                "url": "https://github.com/makkahwi/currencies-showroom"
@@ -354,7 +370,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Laravel-Based Web App",
+               "description": "Full-Stack Dev of Laravel-Based Web App",
                "image": `${portfolioLink}/8.jpg`,
                "title": "AIS School",
                "url": "https://students.aqsa.edu.my/"
@@ -368,7 +384,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "PERN-Based Web App (Soon to be Launched)",
+               "description": "Full-Stack Dev of PERN-Based Web App (Soon to be Launched)",
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu App",
                "url": "https://xEdu.best/"
