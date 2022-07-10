@@ -16,7 +16,7 @@ export default function Header({ data: { name, profile }, contacts, jobsList, se
             <div className="six columns name-banner">
                <h1 className={`${i18n.language === "ar" && "arabic padding"}`}>{t(name)}</h1>
 
-               <h3 className="mb-4">Jordan's Lead <a href='https://commits.top/jordan_public.html' target="_blank">Github Contributor</a></h3>
+               <h3 className="mb-4">{t("Jordan's Lead")} <a href='https://commits.top/jordan_public.html' target="_blank">{t("Github Contributor")}</a></h3>
 
                <h3>
                   {/* {t("Full-Stack Web Developer")} */}
