@@ -121,7 +121,7 @@ const Data = {
          link: "https://www.iium.edu.my/",
          projects: [
             {
-               link: "https://internship.suhaib.dev/",
+               link: "/Suhaib's-Internship-Final-Report.pdf",
                title: "My Internship report",
                more: "(a web app)"
             },
