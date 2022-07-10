@@ -141,7 +141,7 @@ const Data = {
       web: [
          {
             degree: "6-Month Training Camp",
-            description: "Python-Based Web Dev",
+            description: "Python-Based Web Dev (Code Fellows Curriculum)",
             graduated: "Jan - July 2022",
             school: "Luminus Technical University College (Jordan)",
             logo: "images/LTUC.png",
@@ -150,23 +150,13 @@ const Data = {
                {
                   link: "https://silent-speakers.github.io/silent-speakers/",
                   title: "Mid-term group project",
-                  more: "(Desktop app)"
-               },
-               {
-                  link: "https://cookie-stand-api-suhaib.herokuapp.com/admin",
-                  title: "Mid-term individual project",
-                  more: "(BE Django web app)"
+                  more: "(Desktop Python app)"
                },
                {
                   link: "https://github.com/Tadreebi",
                   title: "Final group project",
                   more: "(React-Django web app)"
                },
-               {
-                  link: "https://cookie-stand-admin-chi-two.vercel.app/",
-                  title: "Final individual project",
-                  more: "(React-Django web app)"
-               }
             ],
             // cert: {
             //    link: "/LTUC-Certificate.pdf",
