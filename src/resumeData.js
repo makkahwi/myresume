@@ -153,7 +153,7 @@ const Data = {
                   more: "(Desktop Python app)"
                },
                {
-                  link: "https://github.com/Tadreebi",
+                  link: "https://tadreebi.netlify.app/",
                   title: "Final group project",
                   more: "(React-Django web app)"
                },
