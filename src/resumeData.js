@@ -153,7 +153,6 @@ const Data = {
                   more: "(Several Python & Web Apps)"
                },
                {
-               {
                   link: "https://silent-speakers.github.io/silent-speakers/",
                   title: "Mid-term group project",
                   more: "(Desktop Python App)"
