@@ -143,19 +143,24 @@ const Data = {
             degree: "6-Month Training Camp",
             description: "Python-Based Web Dev (Code Fellows Curriculum)",
             graduated: "Jan - July 2022",
-            school: "Luminus Technical University College (Jordan)",
+            school: "ASAC of LTUC College (Jordan)",
             logo: "images/LTUC.png",
             link: "https://www.ltuc.com/",
             projects: [
                {
-                  link: "https://silent-speakers.github.io/silent-speakers/",
-                  title: "Mid-term group project",
-                  more: "(Desktop Python app)"
+                  link: "https://github.com/makkahwi/asac-works",
+                  title: "Individual works",
+                  more: "(Several Python & Web Apps)"
                },
                {
+               {
+                  link: "https://silent-speakers.github.io/silent-speakers/",
+                  title: "Mid-term group project",
+                  more: "(Desktop Python App)"
+               },
                   link: "https://tadreebi.netlify.app/",
                   title: "Final group project",
-                  more: "(React-Django web app)"
+                  more: "(React-Django Web App)"
                },
             ],
             // cert: {
