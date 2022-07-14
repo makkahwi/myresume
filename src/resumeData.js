@@ -157,6 +157,7 @@ const Data = {
                   title: "Mid-term group project",
                   more: "(Desktop Python App)"
                },
+               {
                   link: "https://tadreebi.netlify.app/",
                   title: "Final group project",
                   more: "(React-Django Web App)"
