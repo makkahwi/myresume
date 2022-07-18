@@ -88,7 +88,7 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
                         {t("You may check")}...
                         {education.projects.map(project => (
                           <div>
-                            <a target="_blank" href={project.link} rel="noopener noreferrer" >{t(project.title)}</a> {t(project.more)}
+                            <a target="_blank" href={project.link} download={project.download} rel="noopener noreferrer" >{t(project.title)}</a> {t(project.more)}
                           </div>
                         ))}
                       </span>

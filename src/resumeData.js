@@ -123,7 +123,8 @@ const Data = {
             {
                link: "/Suhaib's-Internship-Final-Report.pdf",
                title: "My Internship report",
-               more: "(a web app)"
+               more: "(a web app)",
+               download: true
             },
             {
                link: "https://github.com/makkahwi/iDecide",
