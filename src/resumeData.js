@@ -338,7 +338,7 @@ const Data = {
             {
                "category": "Web App",
                "description": "Frontend Dev of PERN-Based Web App (Collaborative)",
-               "image": `${portfolioLink}/7.jpg`,
+               "image": `${portfolioLink}/11.jpg`,
                "title": "BrandTag",
                "url": "https://app.brandtag.io/"
             },
@@ -352,7 +352,7 @@ const Data = {
             {
                "category": "Web App",
                "description": "Full-Stack Dev of Vue-Django-Based Web App (Soon to be Launched)",
-               "image": `${portfolioLink}/11.jpg`,
+               "image": `${portfolioLink}/7.jpg`,
                "title": "Currency Showroom",
                "url": "https://github.com/makkahwi/currencies-showroom"
             },
@@ -408,9 +408,9 @@ const Data = {
             {
                "category": "Web App",
                "description": "Full-Stack Dev of React-Django-Based Web App (Coollebraive)",
-               "image": `${portfolioLink}/10.jpg`,
+               "image": `${portfolioLink}/13.jpg`,
                "title": "Tadreebi",
-               "url": "https://tadreebi.vercel.app/"
+               "url": "https://tadreebi.netlify.app/"
             },
             {
                "category": "Wordpress Websites",
