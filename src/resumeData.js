@@ -176,6 +176,14 @@ const Data = {
       web: {
          jobsList: [
             {
+               company: "Digizyn",
+               website: "https://digizyn.com/",
+               description: "Freelance job to develop a React-Based web-app for an online governmental services portal.",
+               title: "Frontend Developer",
+               // certificate: "/luxtag.pdf",
+               years: "Jul 2022 - Present"
+            },
+            {
                company: "ArabWork",
                website: "https://www.linkedin.com/company/arabwork/",
                description: "Full-time job to develop a Vue-Symfony web-app for an online service.",
@@ -328,6 +336,13 @@ const Data = {
                "image": `${portfolioLink}/10.jpg`,
                "title": "Trellah",
                // "url": "https://trellah.com/"
+            },
+            {
+               "category": "Web App",
+               "description": "Frontend Dev of React-Based Web App (Collaborative, Soon to be Launched)",
+               "image": `${portfolioLink}/14.jpg`,
+               "title": "Sanad",
+               "url": "https://sanad.gov.jo/"
             },
             {
                "category": "Wordpress Websites",
