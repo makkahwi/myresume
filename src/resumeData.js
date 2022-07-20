@@ -176,14 +176,6 @@ const Data = {
       web: {
          jobsList: [
             {
-               company: "Digizyn",
-               website: "https://digizyn.com/",
-               description: "Freelance job to develop a React-Based web-app for an online governmental services portal.",
-               title: "Frontend Developer",
-               // certificate: "/luxtag.pdf",
-               years: "Jul 2022 - Present"
-            },
-            {
                company: "ArabWork",
                website: "https://www.linkedin.com/company/arabwork/",
                description: "Full-time job to develop a Vue-Symfony web-app for an online service.",
@@ -217,6 +209,14 @@ const Data = {
             }
          ],
          freelancesList: [
+            {
+               company: "Digizyn",
+               website: "https://digizyn.com/",
+               description: "Freelance job to develop a React-Based web-app for an online governmental services portal.",
+               title: "Frontend Developer",
+               // certificate: "/luxtag.pdf",
+               years: "Jul 2022 - Present"
+            },
             {
                company: "Freelance",
                description: "Executed several Laravel-based & PERN-based web app projects.",
