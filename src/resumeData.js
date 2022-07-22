@@ -214,23 +214,31 @@ const Data = {
                website: "https://digizyn.com/",
                description: "Freelance job to develop a React-Based web-app for an online governmental services portal.",
                title: "Frontend Developer",
-               // certificate: "/luxtag.pdf",
+               // certificate: "/digizyn.pdf",
                years: "Jul 2022 - Present"
             },
             {
-               company: "Freelance",
+               company: "Ellegra",
+               website: "https://www.ellegra.com.my/",
+               description: "Freelance job to develop an Express.Js-Based Backend web-app for an online fashion shopping service.",
+               title: "Backend Developer",
+               // certificate: "/ellegra.pdf",
+               years: "Jun - Jul 2021"
+            },
+            {
+               company: "Individually",
                description: "Executed several Laravel-based & PERN-based web app projects.",
                title: "Full-Stack Developer",
                years: "Sep 2019 - Present"
             },
             {
-               company: "Freelance",
+               company: "Individually",
                description: "Several code-based frontend-only landing-page projects.",
                title: "Frontend Developer",
                years: "May 2018 - Aug 2019"
             },
             {
-               company: "Freelance",
+               company: "Individually",
                description: "Several wordpress-based website projects.",
                title: "Wordpress Developer",
                years: "Oct 2015 - Apr 2018"
