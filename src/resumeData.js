@@ -181,7 +181,8 @@ const Data = {
                description: "Full-time job to develop a Vue-Symfony web-app for an online service.",
                title: "Frontend Developer",
                // certificate: "/luxtag.pdf",
-               years: "Jun 2022 - Present"
+               years: "Jun 2022 - Present",
+               projects: ["Trellah"]
             },
             {
                company: "LuxTag",
@@ -189,7 +190,8 @@ const Data = {
                description: "Full-time job to develop a flagship PERN-based web-app for an online service.",
                title: "Frontend Developer",
                certificate: "/luxtag.pdf",
-               years: "May 2021 - Oct 2021"
+               years: "May 2021 - Oct 2021",
+               projects: ["BrandTag"]
             },
             {
                company: "LuxTag",
@@ -197,7 +199,8 @@ const Data = {
                description: "Full-time internship to develop a flagship PERN-based web-app for an online service.",
                title: "Full-Stack Developer",
                certificate: "/luxtag.pdf",
-               years: "Nov 2021 - Apr 2021"
+               years: "Nov 2021 - Apr 2021",
+               projects: ["BrandTag"]
             },
             {
                company: "AIS School",
@@ -205,7 +208,8 @@ const Data = {
                description: "Part-time job to develop a Laravel-based web-app of a student information system.",
                title: "Full-Stack Developer",
                certificate: "/ais.pdf",
-               years: "Sep 2019 - Aug 2020"
+               years: "Sep 2019 - Aug 2020",
+               projects: ["AIS_Students", "AIS_Staff"]
             }
          ],
          freelancesList: [
@@ -215,37 +219,33 @@ const Data = {
                description: "Freelance job to develop a React-Based web-app for an online governmental services portal.",
                title: "Frontend Developer",
                // certificate: "/digizyn.pdf",
-               years: "Jul 2022 - Present"
-            },
-            {
-               company: "Ellegra",
-               website: "https://www.ellegra.com.my/",
-               description: "Freelance job to develop an Express.Js-Based Backend web-app for an online fashion shopping service.",
-               title: "Backend Developer",
-               // certificate: "/ellegra.pdf",
-               years: "Jun - Jul 2021"
+               years: "Jul 2022 - Present",
+               projects: ["Sanad"]
             },
             {
                company: "Individually",
-               description: "Executed several Laravel-based & PERN-based web app projects.",
+               description: "Executed several Laravel-based & PERN-based web app private & open-source projects.",
                title: "Full-Stack Developer",
-               years: "Sep 2019 - Present"
+               years: "Sep 2019 - Present",
+               projects: ["Currency_Showroom", "xEdu", "Tadreebi"]
             },
             {
                company: "Individually",
                description: "Several code-based frontend-only landing-page projects.",
                title: "Frontend Developer",
-               years: "May 2018 - Aug 2019"
+               years: "May 2018 - Aug 2019",
+               projects: ["Arromi"]
             },
             {
                company: "Individually",
                description: "Several wordpress-based website projects.",
                title: "Wordpress Developer",
-               years: "Oct 2015 - Apr 2018"
+               years: "Oct 2015 - Apr 2018",
+               projects: ["AAM", "xEdu_Landing", "R&K", "OSF", "PPAM", "AIS_Landing", "SpeedWheels", "Team_Foundation"]
             }
          ],
          skillsList: [
-            { icon: faReact, name: "React.Js", color: "61dafb", website: "https://reactjs.org/", subskills: ["Redux", "Material-UI", "TailwindCSS", "Axios", "i18next", "React Hook Form"] },
+            { icon: faReact, name: "React.Js", color: "61dafb", website: "https://reactjs.org/", subskills: ["Redux", "Material-UI", "TailwindCSS", "Axios", "i18next", "React Hook Form", "PrimeReact", "Charts.Js"] },
             { icon: faReact, name: "Next.Js", color: "000000", website: "https://nextjs.org/" },
             { icon: faVuejs, name: "Vue.Js", color: "00bd83", website: "https://vuejs.org/", subskills: ["VueX", "Vuetify", "Axios", "Webpack", "i18next"] },
             { icon: faNode, name: "Node.Js", color: "8bc500", website: "https://nodejs.org/", subskills: ["npm", " yarn"] },
@@ -258,7 +258,7 @@ const Data = {
             { icon: faGithub, name: "Github", color: "000000", website: "https://www.github.com/" },
             { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
             { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
-            { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/", subskills: ["ES6", "ES5"] },
+            { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/", subskills: ["ES6", "ES5", "Embedded JS"] },
             { icon: faArrowsSpin, name: "jQuery", color: "0868ac", website: "https://jquery.com/" },
             { icon: faRing, name: "JSON", color: "0f0f0f", website: "https://www.json.org/" },
             { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/", subskills: ["Numpy", "Pandas", "Matplotlib"] },
@@ -267,7 +267,7 @@ const Data = {
             { icon: faCss3Alt, name: "CSS", color: "379ad6", website: "https://www.w3.org/TR/CSS/#css" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
             { icon: faArrowsSpin, name: "Agile", color: "00a99d", website: "https://www.scrum.org/", subskills: ["SCRUM", "Kanban"] },
-            { icon: faArrowsRotate, name: "SCRUM", color: "1f93b8", website: "https://www.scrum.org/" },
+            { icon: faArrowsRotate, name: "SCRUM", color: "1f93b8", website: "https://www.scrum.org/", subskills: ["Jira", "ClickUp", "YouTrack"] },
             { icon: faCloud, name: "REST API", color: "176985" },
          ],
       },
@@ -343,6 +343,7 @@ const Data = {
                "description": "Frontend Dev of Vue-Based Web App (Collaborative, Soon to be Launched)",
                "image": `${portfolioLink}/10.jpg`,
                "title": "Trellah",
+               "link": "trellah",
                // "url": "https://trellah.com/"
             },
             {
@@ -350,6 +351,7 @@ const Data = {
                "description": "Frontend Dev of React-Based Web App (Collaborative, Soon to be Launched)",
                "image": `${portfolioLink}/14.jpg`,
                "title": "Sanad",
+               "link": "sanad",
                "url": "https://sanad.gov.jo/"
             },
             {
@@ -357,6 +359,7 @@ const Data = {
                "description": "Wordpress Website (Soon to be Launched)",
                "image": `${portfolioLink}/12.jpg`,
                "title": "Dr. Ahmad Abu Mahfouth",
+               "link": "aam",
                "url": "https://aam.arromi.net/"
             },
             {
@@ -364,6 +367,7 @@ const Data = {
                "description": "Frontend Dev of PERN-Based Web App (Collaborative)",
                "image": `${portfolioLink}/11.jpg`,
                "title": "BrandTag",
+               "link": "brandtag",
                "url": "https://app.brandtag.io/"
             },
             {
@@ -371,6 +375,7 @@ const Data = {
                "description": "Wordpress Website (Soon to be Launched)",
                "image": `${portfolioLink}/10.jpg`,
                "title": "R&K ",
+               "link": "r&k",
                // "url": "#portfolio"
             },
             {
@@ -378,6 +383,7 @@ const Data = {
                "description": "Full-Stack Dev of Vue-Django-Based Web App (Soon to be Launched)",
                "image": `${portfolioLink}/7.jpg`,
                "title": "Currency Showroom",
+               "link": "currency_showroom",
                "url": "https://github.com/makkahwi/currencies-showroom"
             },
             {
@@ -385,20 +391,31 @@ const Data = {
                "description": "Wordpress Website",
                "image": `${portfolioLink}/1.jpg`,
                "title": "OneShot Future Company",
+               "link": "osf",
                "url": "https://oneshotfuture.com/"
             },
             {
                "category": "Web App",
                "description": "Full-Stack Dev of Laravel-Based Web App",
                "image": `${portfolioLink}/8.jpg`,
-               "title": "AIS School",
+               "title": "AIS Students Portal",
+               "link": "ais_students",
                "url": "https://students.aqsa.edu.my/"
+            },
+            {
+               "category": "Web App",
+               "description": "Full-Stack Dev of React.Js-Express.Js Web App",
+               "image": `${portfolioLink}/8.jpg`,
+               "title": "AIS Staff Portal",
+               "link": "ais_students",
+               "url": "https://staff.aqsa.edu.my/"
             },
             {
                "category": "Wordpress Websites",
                "description": "Wordpress Website (Soon to be Launched)",
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu Landing Page",
+               "link": "xedu_landing",
                "url": "https://xEdu.best/"
             },
             {
@@ -406,6 +423,7 @@ const Data = {
                "description": "Full-Stack Dev of PERN-Based Web App (Soon to be Launched)",
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu App",
+               "link": "xedu",
                "url": "https://xEdu.best/"
             },
             {
@@ -413,20 +431,15 @@ const Data = {
                "description": "Wordpress Website",
                "image": `${portfolioLink}/6.jpg`,
                "title": "PPAM Organization",
+               "link": "ppam",
                "url": "https://ppam.org.my/"
-            },
-            {
-               "category": "Code-Based Sites",
-               "description": "React.Js-Based Website",
-               "image": `${portfolioLink}/5.jpg`,
-               "title": "Arromi",
-               "url": "https://arromi.net/"
             },
             {
                "category": "Wordpress Websites",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/2.jpg`,
                "title": "AIS School",
+               "link": "ais_landing",
                "url": "https://aqsa.edu.my/"
             },
             {
@@ -434,6 +447,7 @@ const Data = {
                "description": "Full-Stack Dev of React-Django-Based Web App (Coollebraive)",
                "image": `${portfolioLink}/13.jpg`,
                "title": "Tadreebi",
+               "link": "tadreebi",
                "url": "https://tadreebi.netlify.app/"
             },
             {
@@ -441,6 +455,7 @@ const Data = {
                "description": "Wordpress Website",
                "image": `${portfolioLink}/4.jpg`,
                "title": "SpeedWheels Company",
+               "link": "speedwheels",
                "url": "https://speedwheelstrade.online/"
             },
             {
@@ -448,6 +463,7 @@ const Data = {
                "description": "Wordpress Website",
                "image": `${portfolioLink}/3.jpg`,
                "title": "Team Foundation",
+               "link": "team_foundation",
                "url": "https://teamtr.me/"
             }
          ]
