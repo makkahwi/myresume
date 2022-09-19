@@ -176,18 +176,27 @@ const Data = {
       web: {
          jobsList: [
             {
+               company: "AgileTz",
+               website: "https://www.linkedin.com/company/agiletz/",
+               description: "Full-time job to develop React-Node.Js web apps for online public (government) services.",
+               title: "Senior Full-Stack Developer",
+               // certificate: "/agiletz.pdf",
+               years: "Aug 2022 - Present",
+               projects: ["Sanad"]
+            },
+            {
                company: "ArabWork",
                website: "https://www.linkedin.com/company/arabwork/",
-               description: "Full-time job to develop a Vue-Symfony web-app for an online service.",
+               description: "Full-time job to develop a Vue-Symfony web app for an online service.",
                title: "Frontend Developer",
-               // certificate: "/luxtag.pdf",
-               years: "Jun 2022 - Present",
+               // certificate: "/arabwork.pdf",
+               years: "Jun 2022 - Aug 2022",
                projects: ["Trellah"]
             },
             {
                company: "LuxTag",
                website: "https://luxtag.io/",
-               description: "Full-time job to develop a flagship PERN-based web-app for an online service.",
+               description: "Full-time job to develop a flagship PERN-based web app for an online service.",
                title: "Frontend Developer",
                certificate: "/luxtag.pdf",
                years: "May 2021 - Oct 2021",
@@ -196,7 +205,7 @@ const Data = {
             {
                company: "LuxTag",
                website: "https://luxtag.io/",
-               description: "Full-time internship to develop a flagship PERN-based web-app for an online service.",
+               description: "Full-time internship to develop a flagship PERN-based web app for an online service.",
                title: "Full-Stack Developer",
                certificate: "/luxtag.pdf",
                years: "Nov 2021 - Apr 2021",
@@ -205,7 +214,7 @@ const Data = {
             {
                company: "AIS School",
                website: "http://aqsa.edu.my/",
-               description: "Part-time job to develop a Laravel-based web-app of a student information system.",
+               description: "Part-time job to develop a Laravel-based web app of a student information system.",
                title: "Full-Stack Developer",
                certificate: "/ais.pdf",
                years: "Sep 2019 - Aug 2020",
@@ -213,15 +222,15 @@ const Data = {
             }
          ],
          freelancesList: [
-            {
-               company: "Digizyn",
-               website: "https://digizyn.com/",
-               description: "Freelance job to develop a React-Based web-app for an online governmental services portal.",
-               title: "Frontend Developer",
-               // certificate: "/digizyn.pdf",
-               years: "Jul 2022 - Present",
-               projects: ["Sanad"]
-            },
+            // {
+            //    company: "Digizyn",
+            //    website: "https://digizyn.com/",
+            //    description: "Freelance job to develop a React-Based web app for an online governmental services portal.",
+            //    title: "Frontend Developer",
+            //    // certificate: "/digizyn.pdf",
+            //    years: "Jul 2022 - Present",
+            //    projects: ["Sanad"]
+            // },
             {
                company: "Individually",
                description: "Executed several Laravel-based & PERN-based web app private & open-source projects.",
