@@ -177,7 +177,7 @@ const Data = {
          jobsList: [
             {
                company: "AgileTz",
-               website: "https://www.linkedin.com/company/agiletz/",
+               website: "https://www.agiletz.com/",
                description: "Full-time job to develop React-Node.Js web apps for online public (government) services.",
                title: "Senior Full-Stack Developer",
                // certificate: "/agiletz.pdf",
@@ -222,15 +222,15 @@ const Data = {
             }
          ],
          freelancesList: [
-            // {
-            //    company: "Digizyn",
-            //    website: "https://digizyn.com/",
-            //    description: "Freelance job to develop a React-Based web app for an online governmental services portal.",
-            //    title: "Frontend Developer",
-            //    // certificate: "/digizyn.pdf",
-            //    years: "Jul 2022 - Present",
-            //    projects: ["Sanad"]
-            // },
+            {
+               company: "Digizyn",
+               website: "https://digizyn.com/",
+               description: "Freelance job to develop a React-Based web app for an online governmental services portal.",
+               title: "Frontend Developer",
+               // certificate: "/digizyn.pdf",
+               years: "Jul 2022 - Jul 2022",
+               projects: ["Sanad"]
+            },
             {
                company: "Individually",
                description: "Executed several Laravel-based & PERN-based web app private & open-source projects.",
@@ -284,7 +284,7 @@ const Data = {
          jobsList: [
             {
                company: "Speed Wheels",
-               website: "https://speedwheelstrade.online/",
+               website: "https://speedwheels.shop/",
                description: "Part-time temporary work about designing and preparing for a social-media promotional campaign.",
                title: "Graphic Designer",
                certificate: "",
@@ -353,7 +353,7 @@ const Data = {
                "image": `${portfolioLink}/10.jpg`,
                "title": "Trellah",
                "link": "trellah",
-               // "url": "https://trellah.com/"
+               "url": "https://trellah.com/"
             },
             {
                "category": "Web App",
@@ -473,7 +473,7 @@ const Data = {
                "image": `${portfolioLink}/3.jpg`,
                "title": "Team Foundation",
                "link": "team_foundation",
-               "url": "https://teamtr.me/"
+               "url": "https://teamtr.media/"
             }
          ]
       },
