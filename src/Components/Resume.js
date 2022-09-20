@@ -23,14 +23,16 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
               <div key={i}>
                 <h3>{work.certificate ? <a target="_blank" href={work.certificate} download>{t(work.title)}</a> : t(work.title)}</h3>
                 <p className="info"><a target="_blank" href={work.website} >{work.company}</a><span>{" "}&bull;{" "}</span> <em className="date">{work.years}</em></p>
-                <p>
-                  {work.projects.length > 1 ? t("Projects") : t("Project")}{": "}
-                  {work.projects.map((project, i) => (
-                    <span key={i} >
-                      <span>{i > 0 ? " | " : ""}</span> <a href={`#${project.toLowerCase()}`}>{project.replaceAll("_", " ")}</a>
-                    </span>
-                  ))}
-                </p>
+                {work.projects && (
+                  <p>
+                    {work.projects.length > 1 ? t("Projects") : t("Project")}{": "}
+                    {work.projects.map((project, i) => (
+                      <span key={i} >
+                        <span>{i > 0 ? " | " : ""}</span> <a href={`#${project.toLowerCase()}`}>{project.replaceAll("_", " ")}</a>
+                      </span>
+                    ))}
+                  </p>
+                )}
                 <p style={{ textAlign: "justify" }}>{t(work.description)}</p>
               </div>
             ))}
@@ -43,14 +45,16 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
               <div key={i}>
                 <h3>{t(work.title)}</h3>
                 <p className="info">{work.website ? (<a target="_blank" href={work.website}>{work.company}</a>) : (work.company)}<span>{" "}&bull;{" "}</span> <em className="date">{work.years}</em></p>
-                <p>
-                  {work.projects.length > 1 ? t("Projects") : t("Project")}{": "}
-                  {work.projects.map((project, i) => (
-                    <span key={i} >
-                      <span>{i > 0 ? " | " : ""}</span> <a href={`#${project.toLowerCase()}`}>{project.replaceAll("_", " ")}</a>
-                    </span>
-                  ))}
-                </p>
+                {work.projects && (
+                  <p>
+                    {work.projects.length > 1 ? t("Projects") : t("Project")}{": "}
+                    {work.projects.map((project, i) => (
+                      <span key={i} >
+                        <span>{i > 0 ? " | " : ""}</span> <a href={`#${project.toLowerCase()}`}>{project.replaceAll("_", " ")}</a>
+                      </span>
+                    ))}
+                  </p>
+                )}
                 <p style={{ textAlign: "justify" }}>{t(work.description)}</p>
               </div>
             ))}
