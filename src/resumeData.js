@@ -1,5 +1,5 @@
 import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faF, faFan, faFileAlt, faGlobe, faGraduationCap, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -222,21 +222,21 @@ const Data = {
             }
          ],
          freelancesList: [
-            {
-               company: "Digizyn",
-               website: "https://digizyn.com/",
-               description: "Freelance job to develop a React-Based web app for an online governmental services portal.",
-               title: "Frontend Developer",
-               // certificate: "/digizyn.pdf",
-               years: "Jul 2022 - Jul 2022",
-               projects: ["Sanad"]
-            },
+            // {
+            //    company: "Digizyn",
+            //    website: "https://digizyn.com/",
+            //    description: "Freelance job to develop a React-Based web app for an online governmental services portal.",
+            //    title: "Frontend Developer",
+            //    // certificate: "/digizyn.pdf",
+            //    years: "Jul 2022 - Jul 2022",
+            //    projects: ["Sanad"]
+            // },
             {
                company: "Individually",
                description: "Executed several Laravel-based & PERN-based web app private & open-source projects.",
                title: "Full-Stack Developer",
                years: "Sep 2019 - Present",
-               projects: ["Currency_Showroom", "xEdu", "Tadreebi"]
+               projects: ["Currency_Showroom", "xEdu", "Tadreebi", "Zaytouna", "R&K"]
             },
             {
                company: "Individually",
@@ -250,7 +250,7 @@ const Data = {
                description: "Several wordpress-based website projects.",
                title: "Wordpress Developer",
                years: "Oct 2015 - Apr 2018",
-               projects: ["AAM", "xEdu_Landing", "R&K", "OSF", "PPAM", "AIS_Landing", "SpeedWheels", "Team_Foundation"]
+               projects: ["AAM", "xEdu_Landing", "OSF", "PPAM", "AIS_Landing", "SpeedWheels", "Team_Foundation"]
             }
          ],
          skillsList: [
@@ -349,14 +349,6 @@ const Data = {
          projectsList: [
             {
                "category": "Web App",
-               "description": "Frontend Dev of Vue-Based Web App (Collaborative, Soon to be Launched)",
-               "image": `${portfolioLink}/10.jpg`,
-               "title": "Trellah",
-               "link": "trellah",
-               "url": "https://trellah.com/"
-            },
-            {
-               "category": "Web App",
                "description": "Frontend Dev of React-Based Web App (Collaborative, Soon to be Launched)",
                "image": `${portfolioLink}/14.jpg`,
                "title": "Sanad",
@@ -364,12 +356,20 @@ const Data = {
                "url": "https://sanad.gov.jo/"
             },
             {
-               "category": "Wordpress Websites",
-               "description": "Wordpress Website (Soon to be Launched)",
-               "image": `${portfolioLink}/12.jpg`,
-               "title": "Dr. Ahmad Abu Mahfouth",
-               "link": "aam",
-               "url": "https://aam.arromi.net/"
+               "category": "Web App",
+               "description": "Frontend Dev of Vue-Based Web App (Collaborative, Soon to be Launched)",
+               "image": `${portfolioLink}/10.jpg`,
+               "title": "Trellah",
+               "link": "trellah",
+               "url": "https://trellah.com/"
+            },
+            {
+               "category": "Landing Pages",
+               "description": "Next.Js-Based (Soon to be Launched)",
+               "image": `${portfolioLink}/10.jpg`,
+               "title": "Rasmi & Kiwan",
+               "link": "R&K",
+               "url": "https://rnk.vercel.app/"
             },
             {
                "category": "Web App",
@@ -380,12 +380,12 @@ const Data = {
                "url": "https://app.brandtag.io/"
             },
             {
-               "category": "Wordpress Websites",
+               "category": "Landing Pages",
                "description": "Wordpress Website (Soon to be Launched)",
-               "image": `${portfolioLink}/10.jpg`,
-               "title": "R&K ",
-               "link": "r&k",
-               // "url": "#portfolio"
+               "image": `${portfolioLink}/12.jpg`,
+               "title": "Dr. Ahmad Abu Mahfouth",
+               "link": "aam",
+               "url": "https://aam.arromi.net/"
             },
             {
                "category": "Web App",
@@ -396,7 +396,7 @@ const Data = {
                "url": "https://github.com/makkahwi/currencies-showroom"
             },
             {
-               "category": "Wordpress Websites",
+               "category": "Landing Pages",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/1.jpg`,
                "title": "OneShot Future Company",
@@ -412,6 +412,14 @@ const Data = {
                "url": "https://students.aqsa.edu.my/"
             },
             {
+               "category": "Landing Pages",
+               "description": "React.Js-Based (Soon to be Launched)",
+               "image": `${portfolioLink}/10.jpg`,
+               "title": "Zaytouna Club",
+               "link": "Zaytouna",
+               "url": "https://zaytouna-tau.vercel.app/"
+            },
+            {
                "category": "Web App",
                "description": "Full-Stack Dev of React.Js-Express.Js Web App",
                "image": `${portfolioLink}/8.jpg`,
@@ -420,7 +428,7 @@ const Data = {
                "url": "https://staff.aqsa.edu.my/"
             },
             {
-               "category": "Wordpress Websites",
+               "category": "Landing Pages",
                "description": "Wordpress Website (Soon to be Launched)",
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu Landing Page",
@@ -436,7 +444,7 @@ const Data = {
                "url": "https://xEdu.best/"
             },
             {
-               "category": "Wordpress Websites",
+               "category": "Landing Pages",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/6.jpg`,
                "title": "PPAM Organization",
@@ -444,7 +452,7 @@ const Data = {
                "url": "https://ppam.org.my/"
             },
             {
-               "category": "Wordpress Websites",
+               "category": "Landing Pages",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/2.jpg`,
                "title": "AIS School",
@@ -460,7 +468,7 @@ const Data = {
                "url": "https://tadreebi.netlify.app/"
             },
             {
-               "category": "Wordpress Websites",
+               "category": "Landing Pages",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/4.jpg`,
                "title": "SpeedWheels Company",
@@ -468,7 +476,7 @@ const Data = {
                "url": "https://speedwheelstrade.online/"
             },
             {
-               "category": "Wordpress Websites",
+               "category": "Landing Pages",
                "description": "Wordpress Website",
                "image": `${portfolioLink}/3.jpg`,
                "title": "Team Foundation",
