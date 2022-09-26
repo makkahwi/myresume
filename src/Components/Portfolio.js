@@ -46,6 +46,9 @@ export default function Portfolio({ data }) {
                     <div className="overlay">
                       <div className="portfolio-item-meta">
                         <h5>{project.title}</h5>
+                        {project.openSource && (<p>{t("OPEN SOURCE")}</p>)}
+                        {project.comingSoon && (<p>{t("Soon To be Launched")}</p>)}
+                        <p>{project.company ? project.company : t("Freelancing")}</p>
                         <p>{t(project.description)}</p>
                       </div>
                     </div>

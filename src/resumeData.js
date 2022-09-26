@@ -356,7 +356,9 @@ const Data = {
          projectsList: [
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of React.js-Node.js Based (Collaborative, Soon to be Launched)",
+               "description": "Full-Stack Dev of React.js-Node.js Based",
+               "company": "AgileTz",
+               "comingSoon": true,
                "image": `${portfolioLink}/14.jpg`,
                "title": "Sanad",
                "link": "sanad",
@@ -364,7 +366,8 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Frontend Dev of Vue.js Based (Collaborative)",
+               "description": "Frontend Dev of Vue.js Based",
+               "company": "Trellah",
                "image": `${portfolioLink}/10.jpg`,
                "title": "Trellah",
                "link": "trellah",
@@ -372,7 +375,8 @@ const Data = {
             },
             {
                "category": "Landing Pages",
-               "description": "Frontend Dev of Next.Js-Node.Js Based (Soon to be Launched)",
+               "description": "Frontend Dev of Next.Js-Node.Js Based",
+               "comingSoon": true,
                "image": `${portfolioLink}/10.jpg`,
                "title": "Rasmi & Kiwan",
                "link": "R&K",
@@ -380,7 +384,8 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Frontend Dev of PERN Based (Collaborative)",
+               "description": "Frontend Dev of PERN Based",
+               "company": "Luxtag",
                "image": `${portfolioLink}/11.jpg`,
                "title": "BrandTag",
                "link": "brandtag",
@@ -388,7 +393,8 @@ const Data = {
             },
             {
                "category": "Landing Pages",
-               "description": "Wordpress Website (Soon to be Launched)",
+               "description": "Wordpress Website",
+               "comingSoon": true,
                "image": `${portfolioLink}/12.jpg`,
                "title": "Dr. Ahmad Abu Mahfouth",
                "link": "aam",
@@ -396,7 +402,8 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of Vue.js-Django Based (Soon to be Launched)",
+               "description": "Full-Stack Dev of Vue.js-Django Based",
+               "comingSoon": true,
                "openSource": true,
                "image": `${portfolioLink}/7.jpg`,
                "title": "Currency Showroom",
@@ -421,7 +428,8 @@ const Data = {
             },
             {
                "category": "Landing Pages",
-               "description": "React.Js-Based (Soon to be Launched)",
+               "description": "React.Js-Based",
+               "comingSoon": true,
                "openSource": true,
                "image": `${portfolioLink}/10.jpg`,
                "title": "Zaytouna Club",
@@ -438,7 +446,8 @@ const Data = {
             },
             {
                "category": "Landing Pages",
-               "description": "Wordpress Website (Soon to be Launched)",
+               "description": "Wordpress Website",
+               "comingSoon": true,
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu Landing Page",
                "link": "xedu_landing",
@@ -446,7 +455,8 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of PERN-Based (Soon to be Launched)",
+               "description": "Full-Stack Dev of PERN-Based",
+               "comingSoon": true,
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu App",
                "link": "xedu",
