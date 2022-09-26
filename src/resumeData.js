@@ -1,4 +1,4 @@
-import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
+import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
 import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faF, faFan, faFileAlt, faGlobe, faGraduationCap, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
@@ -109,7 +109,14 @@ const Data = {
             }
          ]
       ],
-      gd: []
+      gd: [
+         {
+            icon: faFigma,
+            name: "Figma",
+            url: "https://www.figma.com/@makkahwi",
+            text: "Makkahwi"
+         }
+      ]
    },
    education: [
       {
@@ -349,7 +356,7 @@ const Data = {
          projectsList: [
             {
                "category": "Web App",
-               "description": "Frontend Dev of React-Based Web App (Collaborative, Soon to be Launched)",
+               "description": "Full-Stack Dev of React.js-Node.js Based (Collaborative, Soon to be Launched)",
                "image": `${portfolioLink}/14.jpg`,
                "title": "Sanad",
                "link": "sanad",
@@ -357,7 +364,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Frontend Dev of Vue-Based Web App (Collaborative, Soon to be Launched)",
+               "description": "Frontend Dev of Vue.js Based (Collaborative)",
                "image": `${portfolioLink}/10.jpg`,
                "title": "Trellah",
                "link": "trellah",
@@ -365,7 +372,7 @@ const Data = {
             },
             {
                "category": "Landing Pages",
-               "description": "Next.Js-Based (Soon to be Launched)",
+               "description": "Frontend Dev of Next.Js-Node.Js Based (Soon to be Launched)",
                "image": `${portfolioLink}/10.jpg`,
                "title": "Rasmi & Kiwan",
                "link": "R&K",
@@ -373,7 +380,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Frontend Dev of PERN-Based Web App (Collaborative)",
+               "description": "Frontend Dev of PERN Based (Collaborative)",
                "image": `${portfolioLink}/11.jpg`,
                "title": "BrandTag",
                "link": "brandtag",
@@ -389,7 +396,8 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of Vue-Django-Based Web App (Soon to be Launched)",
+               "description": "Full-Stack Dev of Vue.js-Django Based (Soon to be Launched)",
+               "openSource": true,
                "image": `${portfolioLink}/7.jpg`,
                "title": "Currency Showroom",
                "link": "currency_showroom",
@@ -405,7 +413,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of Laravel-Based Web App",
+               "description": "Full-Stack Dev of Laravel Based",
                "image": `${portfolioLink}/8.jpg`,
                "title": "AIS Students Portal",
                "link": "ais_students",
@@ -414,6 +422,7 @@ const Data = {
             {
                "category": "Landing Pages",
                "description": "React.Js-Based (Soon to be Launched)",
+               "openSource": true,
                "image": `${portfolioLink}/10.jpg`,
                "title": "Zaytouna Club",
                "link": "Zaytouna",
@@ -421,7 +430,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of React.Js-Express.Js Web App",
+               "description": "Full-Stack Dev of React.Js-Express.Js",
                "image": `${portfolioLink}/8.jpg`,
                "title": "AIS Staff Portal",
                "link": "ais_students",
@@ -437,7 +446,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of PERN-Based Web App (Soon to be Launched)",
+               "description": "Full-Stack Dev of PERN-Based (Soon to be Launched)",
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu App",
                "link": "xedu",
@@ -461,7 +470,8 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of React-Django-Based Web App (Coollebraive)",
+               "description": "Full-Stack Dev of React-Django-Based (Coollebraive)",
+               "openSource": true,
                "image": `${portfolioLink}/13.jpg`,
                "title": "Tadreebi",
                "link": "tadreebi",
