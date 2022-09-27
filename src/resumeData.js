@@ -229,15 +229,15 @@ const Data = {
             }
          ],
          freelancesList: [
-            // {
-            //    company: "Digizyn",
-            //    website: "https://digizyn.com/",
-            //    description: "Freelance job to develop a React-Based web app for an online governmental services portal.",
-            //    title: "Frontend Developer",
-            //    // certificate: "/digizyn.pdf",
-            //    years: "Jul 2022 - Jul 2022",
-            //    projects: ["Sanad"]
-            // },
+            {
+               company: "Digizyn",
+               website: "https://digizyn.com/",
+               description: "Freelance job to develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
+               title: "Full-Stack Developer",
+               // certificate: "/digizyn.pdf",
+               years: "Jul 2022 - Jul 2022",
+               projects: ["Sanad"]
+            },
             {
                company: "Individually",
                description: "Executed several Laravel-based & PERN-based web app private & open-source projects.",
@@ -356,17 +356,17 @@ const Data = {
          projectsList: [
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of React.js-Node.js Based",
+               "description": "Full-Stack Dev of React.js-Node.js Based Multi-Front Public (Governmental) Service App",
                "company": "AgileTz",
                "comingSoon": true,
                "image": `${portfolioLink}/14.jpg`,
                "title": "Sanad",
                "link": "sanad",
-               "url": "https://sanad.gov.jo/"
+               "url": "https://portal.dls.gov.jo/"
             },
             {
                "category": "Web App",
-               "description": "Frontend Dev of Vue.js Based",
+               "description": "Frontend Dev of Vue.js Based App",
                "company": "Trellah",
                "image": `${portfolioLink}/10.jpg`,
                "title": "Trellah",
@@ -375,7 +375,7 @@ const Data = {
             },
             {
                "category": "Landing Pages",
-               "description": "Frontend Dev of Next.Js-Node.Js Based",
+               "description": "Frontend Dev of Next.Js-Node.Js Based App",
                "comingSoon": true,
                "image": `${portfolioLink}/10.jpg`,
                "title": "Rasmi & Kiwan",
@@ -384,7 +384,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Frontend Dev of PERN Based",
+               "description": "Frontend Dev of PERN Based App",
                "company": "Luxtag",
                "image": `${portfolioLink}/11.jpg`,
                "title": "BrandTag",
@@ -402,7 +402,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of Vue.js-Django Based",
+               "description": "Full-Stack Dev of Vue.js-Django Based App",
                "comingSoon": true,
                "openSource": true,
                "image": `${portfolioLink}/7.jpg`,
@@ -420,7 +420,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of Laravel Based",
+               "description": "Full-Stack Dev of Laravel Based App",
                "image": `${portfolioLink}/8.jpg`,
                "title": "AIS Students Portal",
                "link": "ais_students",
@@ -428,7 +428,7 @@ const Data = {
             },
             {
                "category": "Landing Pages",
-               "description": "React.Js-Based",
+               "description": "React.Js-Based App",
                "comingSoon": true,
                "openSource": true,
                "image": `${portfolioLink}/10.jpg`,
@@ -455,7 +455,7 @@ const Data = {
             },
             {
                "category": "Web App",
-               "description": "Full-Stack Dev of PERN-Based",
+               "description": "Full-Stack Dev of PERN-Based App",
                "comingSoon": true,
                "image": `${portfolioLink}/9.jpg`,
                "title": "xEdu App",
