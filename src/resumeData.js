@@ -189,7 +189,7 @@ const Data = {
                title: "Senior Full-Stack Developer",
                // certificate: "/agiletz.pdf",
                years: "Aug 2022 - Present",
-               projects: ["Sanad"]
+               projects: ["DLS"]
             },
             {
                company: "ArabWork",
@@ -236,7 +236,7 @@ const Data = {
                title: "Full-Stack Developer",
                // certificate: "/digizyn.pdf",
                years: "Jul 2022 - Jul 2022",
-               projects: ["Sanad"]
+               projects: ["DLS"]
             },
             {
                company: "Individually",
@@ -360,8 +360,8 @@ const Data = {
                "company": "AgileTz",
                "comingSoon": true,
                "image": `${portfolioLink}/14.jpg`,
-               "title": "Sanad",
-               "link": "sanad",
+               "title": "DLS",
+               "link": "DLS",
                "url": "https://portal.dls.gov.jo/"
             },
             {
@@ -376,11 +376,11 @@ const Data = {
             {
                "category": "Landing Pages",
                "description": "Frontend Dev of Next.Js-Node.Js Based App",
-               "comingSoon": true,
+               "comingSoon": false,
                "image": `${portfolioLink}/10.jpg`,
                "title": "Rasmi & Kiwan",
                "link": "R&K",
-               "url": "https://rnk.vercel.app/"
+               "url": "https://rasmiandkiwan.com/"
             },
             {
                "category": "Web App",
