@@ -1,5 +1,5 @@
 import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faArrowsRotate, faArrowsSpin, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faF, faFan, faFileAlt, faGlobe, faGraduationCap, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faRing, faScroll, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faBroadcastTower, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faSyncAlt, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -41,6 +41,12 @@ const Data = {
             name: "Telegram",
             url: "https://t.me/makkahwi",
             text: "+601128094804"
+         }],
+         [{
+            icon: faPhoneVolume,
+            name: "Phone",
+            url: "tel:+962788424973",
+            text: "+962788424973"
          }]
       ],
       name: "Suhaib Ahmad",
@@ -275,15 +281,15 @@ const Data = {
             { icon: faDocker, name: "Docker", color: "2496ed", website: "https://www.docker.com/" },
             { icon: faMicrosoft, name: "VS Code", color: "0082cf", website: "https://code.visualstudio.com/" },
             { icon: faJs, name: "JavaScript", color: "f7e018", website: "https://www.javascript.com/", subskills: ["ES6", "ES5", "Embedded JS"] },
-            { icon: faArrowsSpin, name: "jQuery", color: "0868ac", website: "https://jquery.com/" },
+            { icon: faBroadcastTower, name: "jQuery", color: "0868ac", website: "https://jquery.com/" },
             { icon: faRing, name: "JSON", color: "0f0f0f", website: "https://www.json.org/" },
             { icon: faPython, name: "Python", color: "3771a1", website: "https://www.python.org/", subskills: ["Numpy", "Pandas", "Matplotlib"] },
             { icon: faPhp, name: "PhP", color: "4f5c93", website: "https://www.php.net/" },
             { icon: faHtml5, name: "HTML", color: "e44d26", website: "https://html.spec.whatwg.org/" },
             { icon: faCss3Alt, name: "CSS", color: "379ad6", website: "https://www.w3.org/TR/CSS/#css" },
             { icon: faBootstrap, name: "Bootstrap", color: "7952b3", website: "https://getbootstrap.com/" },
-            { icon: faArrowsSpin, name: "Agile", color: "00a99d", website: "https://www.scrum.org/", subskills: ["SCRUM", "Kanban"] },
-            { icon: faArrowsRotate, name: "SCRUM", color: "1f93b8", website: "https://www.scrum.org/", subskills: ["Jira", "ClickUp", "YouTrack"] },
+            { icon: faSyncAlt, name: "Agile", color: "00a99d", website: "https://www.scrum.org/", subskills: ["SCRUM", "Kanban"] },
+            { icon: faSyncAlt, name: "SCRUM", color: "1f93b8", website: "https://www.scrum.org/", subskills: ["Jira", "ClickUp", "YouTrack"] },
             { icon: faCloud, name: "REST API", color: "176985" },
          ],
       },
