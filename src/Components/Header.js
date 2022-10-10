@@ -21,8 +21,8 @@ export default function Header({ data: { name, profile }, contacts, jobsList, se
                <h3>
                   {/* {t("Full-Stack Web Developer")} */}
                   <select style={{ width: "100%", textAlign: "center" }} className={`${i18n.language === "ar" && "arabic"}`} onChange={job => setJob(job.target.value)}>
-                     {jobsList.map(job => (
-                        <option value={job.value} key={`job${job.value}`}>
+                     {jobsList.map((job, i) => (
+                        <option value={job.value} key={i}>
                            {t(job.title)}
                         </option>
                      ))}

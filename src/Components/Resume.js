@@ -73,8 +73,8 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
           <div className="twelve columns main-col" style={{ direction: "ltr" }}>
             <div className="skill">
               {skillsList.map((skill, i) => (
-                <div>
-                  <div className="four columns skill" key={i}>
+                <div key={i}>
+                  <div className="four columns skill" >
                     <em><h4><a target="_blank" href={skill.website} style={{ color: `#${skill.color}` }} data-tip={skill.subskills && skill.subskills.join(", ")} ><FontAwesomeIcon icon={skill.icon} />{" "}{skill.name}</a></h4></em>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
 
           <div className="twelve columns main-col">
             {educations.map((education, i) => (
-              <div className="row item" style={{ padding: "5vh 0" }}>
+              <div className="row item" style={{ padding: "5vh 0" }} key={i}>
                 <div className="six columns">
                   {(education.link && education.logo) && (<a target="_blank" href={education.link} ><img alt={"profilePhoto"} src={education.logo} /></a>)}
                 </div>
@@ -106,8 +106,8 @@ export default function Resume({ data: { freelancesList, jobsList, skillsList },
                     {(education.projects && education.projects.length) &&
                       <span>
                         {t("You may check")}...
-                        {education.projects.map(project => (
-                          <div>
+                        {education.projects.map((project, y) => (
+                          <div key={y}>
                             <a target="_blank" href={project.link} download={project.download} rel="noopener noreferrer" >{t(project.title)}</a> {t(project.more)}
                           </div>
                         ))}
