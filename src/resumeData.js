@@ -249,7 +249,7 @@ const Data = {
                description: "Executed several Laravel-based & PERN-based web app private & open-source projects.",
                title: "Full-Stack Developer",
                years: "Sep 2019 - Present",
-               projects: ["Currency_Showroom", "xEdu", "Tadreebi", "Zaytouna", "R&K"]
+               projects: ["Currency_Showroom", "xEdu", "Tadreebi", "Zaytouna", "R&K_Landing", "R&K_App"]
             },
             {
                company: "Individually",
@@ -371,6 +371,15 @@ const Data = {
                "url": "https://portal.dls.gov.jo/"
             },
             {
+               "category": "Landing Pages",
+               "description": "Full-Stack Dev of Next.Js-Node.Js Based App",
+               "comingSoon": false,
+               "image": `${portfolioLink}/10.jpg`,
+               "title": "Rasmi & Kiwan",
+               "link": "R&K_Landing",
+               "url": "https://rasmiandkiwan.com/"
+            },
+            {
                "category": "Web App",
                "description": "Frontend Dev of Vue.js Based App",
                "company": "Trellah",
@@ -380,13 +389,13 @@ const Data = {
                "url": "https://trellah.com/"
             },
             {
-               "category": "Landing Pages",
-               "description": "Frontend Dev of Next.Js-Node.Js Based App",
-               "comingSoon": false,
+               "category": "Web App",
+               "description": "Full-Stack Dev of React.Js-Node.Js Based App",
+               "comingSoon": true,
                "image": `${portfolioLink}/10.jpg`,
                "title": "Rasmi & Kiwan",
-               "link": "R&K",
-               "url": "https://rasmiandkiwan.com/"
+               "link": "R&K_App",
+               // "url": "https://rasmiandkiwan.com/"
             },
             {
                "category": "Web App",
