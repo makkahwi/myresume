@@ -267,8 +267,8 @@ const Data = {
             }
          ],
          skillsList: [
-            { icon: faReact, name: "React.Js", color: "61dafb", website: "https://reactjs.org/", subskills: ["Redux", "Material-UI", "TailwindCSS", "Axios", "i18next", "React Hook Form", "PrimeReact", "Charts.Js"] },
-            { icon: faReact, name: "Next.Js", color: "000000", website: "https://nextjs.org/" },
+            { icon: faReact, name: "React.Js", color: "61dafb", website: "https://reactjs.org/", subskills: ["Redux", "Axios", "i18next", "Material-UI", "TailwindCSS", "Ant Design", "PrimeReact", "Styled Components", "React Hook Form", "Formik", "Moment", "Charts.Js"] },
+            { icon: faReact, name: "Next.Js", color: "000000", website: "https://nextjs.org/", subskills: ["Same as React.Js"] },
             { icon: faVuejs, name: "Vue.Js", color: "00bd83", website: "https://vuejs.org/", subskills: ["VueX", "Vuetify", "Axios", "Webpack", "i18next"] },
             { icon: faNode, name: "Node.Js", color: "8bc500", website: "https://nodejs.org/", subskills: ["npm", "yarn", "strapi.io"] },
             { icon: faNodeJs, name: "Express.Js", color: "000000", website: "https://expressjs.com/", subskills: [""] },
