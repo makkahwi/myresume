@@ -374,7 +374,7 @@ const Data = {
                "category": "Web App",
                "description": "Frontend Dev of Vue.js Based App",
                "company": "Trellah",
-               "image": `${portfolioLink}/10.jpg`,
+               "image": `${portfolioLink}/16.jpg`,
                "title": "Trellah",
                "link": "trellah",
                "url": "https://trellah.com/"
@@ -383,7 +383,7 @@ const Data = {
                "category": "Landing Pages",
                "description": "Frontend Dev of Next.Js-Node.Js Based App",
                "comingSoon": false,
-               "image": `${portfolioLink}/10.jpg`,
+               "image": `${portfolioLink}/17.jpg`,
                "title": "Rasmi & Kiwan",
                "link": "R&K",
                "url": "https://rasmiandkiwan.com/"
@@ -409,7 +409,6 @@ const Data = {
             {
                "category": "Web App",
                "description": "Full-Stack Dev of Vue.js-Django Based App",
-               "comingSoon": true,
                "openSource": true,
                "image": `${portfolioLink}/7.jpg`,
                "title": "Currency Showroom",
@@ -437,7 +436,7 @@ const Data = {
                "description": "React.Js-Based App",
                "comingSoon": true,
                "openSource": true,
-               "image": `${portfolioLink}/10.jpg`,
+               "image": `${portfolioLink}/18.jpg`,
                "title": "Zaytouna Club",
                "link": "Zaytouna",
                "url": "https://zaytouna-tau.vercel.app/"
@@ -463,7 +462,7 @@ const Data = {
                "category": "Web App",
                "description": "Full-Stack Dev of PERN-Based App",
                "comingSoon": true,
-               "image": `${portfolioLink}/9.jpg`,
+               "image": `${portfolioLink}/10.jpg`,
                "title": "xEdu App",
                "link": "xedu",
                "url": "https://xEdu.best/"
