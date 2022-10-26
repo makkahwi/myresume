@@ -1,5 +1,5 @@
 import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faBroadcastTower, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faSyncAlt, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faSyncAlt, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -113,6 +113,14 @@ const Data = {
                url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
                text: "Makkahwi"
             }
+         ],
+         [
+            {
+               icon: faCoffee,
+               name: "BuyMeACoffee",
+               url: "https://www.buymeacoffee.com/makkahwi",
+               text: "Buy Me a Coffee"
+            },
          ]
       ],
       gd: [
