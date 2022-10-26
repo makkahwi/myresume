@@ -116,12 +116,14 @@ const Data = {
          ]
       ],
       gd: [
-         {
-            icon: faFigma,
-            name: "Figma",
-            url: "https://www.figma.com/@makkahwi",
-            text: "Makkahwi"
-         }
+         [
+            {
+               icon: faFigma,
+               name: "Figma",
+               url: "https://www.figma.com/@makkahwi",
+               text: "Makkahwi"
+            }
+         ]
       ]
    },
    education: [
