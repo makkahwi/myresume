@@ -419,11 +419,12 @@ const Data = {
             {
                "category": "Web App",
                "description": "Full-Stack Dev of Vue.js-Django Based App",
+               "comingSoon": true,
                "openSource": true,
                "image": `${portfolioLink}/7.jpg`,
                "title": "Currency Showroom",
                "link": "currency_showroom",
-               "url": "https://github.com/makkahwi/currencies-showroom"
+               "url": "https://currencies-showroom.vercel.app/"
             },
             {
                "category": "Landing Pages",
@@ -454,7 +455,7 @@ const Data = {
             {
                "category": "Web App",
                "description": "Full-Stack Dev of React.Js-Express.Js",
-               "image": `${portfolioLink}/8.jpg`,
+               "image": `${portfolioLink}/15.jpg`,
                "title": "AIS Staff Portal",
                "link": "ais_students",
                "url": "https://staff.aqsa.edu.my/"
