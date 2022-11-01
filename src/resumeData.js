@@ -1,5 +1,5 @@
 import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from '@fortawesome/free-brands-svg-icons';
-import { faBroadcastTower, faCamera, faChartBar, faCloud, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faSyncAlt, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
+import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faSyncAlt, faVectorSquare, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 const portfolioLink = 'images/portfolio';
 
@@ -113,15 +113,25 @@ const Data = {
                url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
                text: "Makkahwi"
             }
+         ],
+         [
+            {
+               icon: faCoffee,
+               name: "BuyMeACoffee",
+               url: "https://www.buymeacoffee.com/makkahwi",
+               text: "Buy Me a Coffee"
+            },
          ]
       ],
       gd: [
-         {
-            icon: faFigma,
-            name: "Figma",
-            url: "https://www.figma.com/@makkahwi",
-            text: "Makkahwi"
-         }
+         [
+            {
+               icon: faFigma,
+               name: "Figma",
+               url: "https://www.figma.com/@makkahwi",
+               text: "Makkahwi"
+            }
+         ]
       ]
    },
    education: [
@@ -371,19 +381,10 @@ const Data = {
                "url": "https://portal.dls.gov.jo/"
             },
             {
-               "category": "Landing Pages",
-               "description": "Full-Stack Dev of Next.Js-Node.Js Based App",
-               "comingSoon": false,
-               "image": `${portfolioLink}/10.jpg`,
-               "title": "Rasmi & Kiwan",
-               "link": "R&K_Landing",
-               "url": "https://rasmiandkiwan.com/"
-            },
-            {
                "category": "Web App",
                "description": "Frontend Dev of Vue.js Based App",
                "company": "Trellah",
-               "image": `${portfolioLink}/10.jpg`,
+               "image": `${portfolioLink}/16.jpg`,
                "title": "Trellah",
                "link": "trellah",
                "url": "https://trellah.com/"
@@ -396,6 +397,15 @@ const Data = {
                "title": "Rasmi & Kiwan",
                "link": "R&K_App",
                // "url": "https://rasmiandkiwan.com/"
+            },
+            {
+               "category": "Landing Pages",
+               "description": "Frontend Dev of Next.Js-Node.Js Based App",
+               "comingSoon": false,
+               "image": `${portfolioLink}/17.jpg`,
+               "title": "Rasmi & Kiwan",
+               "link": "R&K_Landing",
+               "url": "https://rasmiandkiwan.com/"
             },
             {
                "category": "Web App",
@@ -423,7 +433,7 @@ const Data = {
                "image": `${portfolioLink}/7.jpg`,
                "title": "Currency Showroom",
                "link": "currency_showroom",
-               "url": "https://github.com/makkahwi/currencies-showroom"
+               "url": "https://currencies-showroom.vercel.app/"
             },
             {
                "category": "Landing Pages",
@@ -446,7 +456,7 @@ const Data = {
                "description": "React.Js-Based App",
                "comingSoon": true,
                "openSource": true,
-               "image": `${portfolioLink}/10.jpg`,
+               "image": `${portfolioLink}/18.jpg`,
                "title": "Zaytouna Club",
                "link": "Zaytouna",
                "url": "https://zaytouna-tau.vercel.app/"
@@ -454,7 +464,7 @@ const Data = {
             {
                "category": "Web App",
                "description": "Full-Stack Dev of React.Js-Express.Js",
-               "image": `${portfolioLink}/8.jpg`,
+               "image": `${portfolioLink}/15.jpg`,
                "title": "AIS Staff Portal",
                "link": "ais_students",
                "url": "https://staff.aqsa.edu.my/"
@@ -472,7 +482,7 @@ const Data = {
                "category": "Web App",
                "description": "Full-Stack Dev of PERN-Based App",
                "comingSoon": true,
-               "image": `${portfolioLink}/9.jpg`,
+               "image": `${portfolioLink}/10.jpg`,
                "title": "xEdu App",
                "link": "xedu",
                "url": "https://xEdu.best/"
@@ -484,6 +494,15 @@ const Data = {
                "title": "PPAM Organization",
                "link": "ppam",
                "url": "https://ppam.org.my/"
+            },
+            {
+               "category": "Web App",
+               "description": "Full-Stack Dev of React.Js-Node.Js Based App",
+               "comingSoon": true,
+               "image": `${portfolioLink}/10.jpg`,
+               "title": "Dr. Ahmad Abu Mahfouth Clinic Mgmt System",
+               "link": "R&K_App",
+               // "url": "https://rasmiandkiwan.com/"
             },
             {
                "category": "Landing Pages",
@@ -530,25 +549,18 @@ const Data = {
                "url": `https://silent-speakers.github.io/silent-speakers/#overview`,
             },
             {
-               "category": "Banners & Posters",
-               "description": "Banner Design",
-               "image": `${portfolioLink}/Banners/1.jpg`,
-               "title": "SpeedWheels",
-               "url": `${portfolioLink}/Banners/1.jpg`
+               "category": "Business Cards",
+               "description": "Business Card Design",
+               "image": `${portfolioLink}/BusinessCards/3.jpg`,
+               "title": "AIS School",
+               "url": `${portfolioLink}/BusinessCards/3.jpg`,
             },
             {
-               "category": "Booklets",
-               "description": "Booklet Design",
-               "image": `${portfolioLink}/Booklets/2.jpg`,
-               "title": "Mercy Mission World",
-               "url": `${portfolioLink}/Booklets/2.pdf`,
-            },
-            {
-               "category": "Banners & Posters",
-               "description": "Banner Design",
-               "image": `${portfolioLink}/Banners/2.jpg`,
-               "title": "Several University Clubs",
-               "url": `${portfolioLink}/Banners/2.jpg`,
+               "category": "Logos",
+               "description": "Logo Design",
+               "image": `${portfolioLink}/Logos/3.png`,
+               "title": "Al-Aqsa Staff Portal",
+               "url": `http://staff.aqsa.edu.my/`,
             },
             {
                "category": "Booklets",
@@ -558,18 +570,33 @@ const Data = {
                "url": `${portfolioLink}/Booklets/5.pdf`,
             },
             {
-               "category": "Business Cards",
-               "description": "Business Card Design",
-               "image": `${portfolioLink}/BusinessCards/3.jpg`,
-               "title": "AIS School",
-               "url": `${portfolioLink}/BusinessCards/3.jpg`,
+               "category": "Logos",
+               "description": "Logo Design",
+               "image": `${portfolioLink}/Logos/5.png`,
+               "title": "Dr. Ahmad Abu Mahfouth Clinic",
+               "link": "aam_app",
+               "url": `https://aam.arromi.net/`,
             },
             {
                "category": "Booklets",
                "description": "Booklet Design",
-               "image": `${portfolioLink}/Booklets/4.jpg`,
-               "title": "QFM Malaysia",
-               "url": `${portfolioLink}/Booklets/4.pdf`,
+               "image": `${portfolioLink}/Booklets/2.jpg`,
+               "title": "Mercy Mission World",
+               "url": `${portfolioLink}/Booklets/2.pdf`,
+            },
+            {
+               "category": "Logos",
+               "description": "Logo Design",
+               "image": `${portfolioLink}/Logos/6.png`,
+               "title": "xEdu",
+               "url": "https://xEdu.best/"
+            },
+            {
+               "category": "Banners & Posters",
+               "description": "Banner Design",
+               "image": `${portfolioLink}/Banners/2.jpg`,
+               "title": "Several University Clubs",
+               "url": `${portfolioLink}/Banners/2.jpg`,
             },
             {
                "category": "Logos",
@@ -577,6 +604,27 @@ const Data = {
                "image": `${portfolioLink}/Logos/4.jpg`,
                "title": "Univeristy Club",
                "url": `${portfolioLink}/Logos/4.jpg`,
+            },
+            {
+               "category": "Banners & Posters",
+               "description": "Banner Design",
+               "image": `${portfolioLink}/Banners/1.jpg`,
+               "title": "SpeedWheels",
+               "url": `${portfolioLink}/Banners/1.jpg`
+            },
+            {
+               "category": "Logos",
+               "description": "Logo Re-design",
+               "image": `${portfolioLink}/Logos/1.jpg`,
+               "title": "QFM Malaysia",
+               "url": `http://qfmalaysia.org/`,
+            },
+            {
+               "category": "Booklets",
+               "description": "Booklet Design",
+               "image": `${portfolioLink}/Booklets/4.jpg`,
+               "title": "QFM Malaysia",
+               "url": `${portfolioLink}/Booklets/4.pdf`,
             },
             {
                "category": "Banners & Posters",
@@ -591,13 +639,6 @@ const Data = {
                "image": `${portfolioLink}/Others/3.jpg`,
                "title": "An Engineering Graduate",
                "url": `${portfolioLink}/Others/3.jpg`,
-            },
-            {
-               "category": "Logos",
-               "description": "Logo Re-design",
-               "image": `${portfolioLink}/Logos/1.jpg`,
-               "title": "QFM Malaysia",
-               "url": `http://qfmalaysia.org/`,
             },
             {
                "category": "Banners & Posters",
