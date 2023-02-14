@@ -1,5 +1,54 @@
-import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from "@fortawesome/free-brands-svg-icons";
-import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faSyncAlt, faVectorSquare, faVideo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBootstrap,
+  faCss3Alt,
+  faDiscord,
+  faDocker,
+  faFacebook,
+  faFigma,
+  faGithub,
+  faHackerrank,
+  faHtml5,
+  faInstagram,
+  faJs,
+  faKaggle,
+  faLaravel,
+  faLinkedin,
+  faMicrosoft,
+  faNode,
+  faNodeJs,
+  faPhp,
+  faPython,
+  faReact,
+  faSlack,
+  faTelegram,
+  faVuejs,
+  faWhatsapp,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faBroadcastTower,
+  faCamera,
+  faChartBar,
+  faCloud,
+  faCoffee,
+  faDatabase,
+  faEdit,
+  faEnvelope,
+  faFan,
+  faFileAlt,
+  faGlobe,
+  faHashtag,
+  faImages,
+  faNewspaper,
+  faPaintBrush,
+  faPaintRoller,
+  faPhoneVolume,
+  faRing,
+  faScroll,
+  faSyncAlt,
+  faVectorSquare,
+  faVideo,
+} from "@fortawesome/free-solid-svg-icons";
 
 const portfolioLink = "images/portfolio";
 
@@ -238,7 +287,7 @@ const Data = {
           title: "Senior Full-Stack Developer",
           // certificate: "/agiletz.pdf",
           years: "Aug 2022 - Present",
-          projects: [ "DLS"],
+          projects: ["Sanad", "DLS"],
         },
         {
           company: "ArabWork",
@@ -604,6 +653,17 @@ const Data = {
   portfolio: {
     web: {
       projectsList: [
+        {
+          category: "Web App",
+          description:
+            "Frontend Dev of React.js Based Public (Governmental) Service App",
+          company: "AgileTz",
+          comingSoon: true,
+          image: `${portfolioLink}/14.jpg`,
+          title: "Sanad",
+          link: "Sanad",
+          url: "https://sanadfront.agiletz.com/",
+        },
         {
           category: "Web App",
           description:
