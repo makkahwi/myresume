@@ -350,9 +350,9 @@ const Data = {
           years: "Sep 2019 - Present",
           projects: [
             "Currency_Showroom",
-            "xEdu",
+            "Semesteer",
             "Tadreebi",
-            "Zaytouna",
+            // "Zaytouna",
             "R&K_Landing",
             "R&K_App",
           ],
