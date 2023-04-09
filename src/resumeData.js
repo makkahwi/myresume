@@ -1,5 +1,55 @@
-import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from "@fortawesome/free-brands-svg-icons";
-import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faSyncAlt, faVectorSquare, faVideo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBootstrap,
+  faCss3Alt,
+  faDiscord,
+  faDocker,
+  faFacebook,
+  faFigma,
+  faGithub,
+  faHackerrank,
+  faHtml5,
+  faInstagram,
+  faJs,
+  faKaggle,
+  faLaravel,
+  faLinkedin,
+  faMicrosoft,
+  faNode,
+  faNodeJs,
+  faPhp,
+  faPython,
+  faReact,
+  faSlack,
+  faTelegram,
+  faVuejs,
+  faWhatsapp,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faBroadcastTower,
+  faCamera,
+  faChartBar,
+  faCloud,
+  faCoffee,
+  faDatabase,
+  faEdit,
+  faEnvelope,
+  faFan,
+  faFileAlt,
+  faGlobe,
+  faHashtag,
+  faImages,
+  faNewspaper,
+  faPaintBrush,
+  faPaintRoller,
+  faPhoneVolume,
+  faRing,
+  faScroll,
+  faShapes,
+  faSyncAlt,
+  faVectorSquare,
+  faVideo,
+} from "@fortawesome/free-solid-svg-icons";
 
 const portfolioLink = "images/portfolio";
 
@@ -350,6 +400,8 @@ const Data = {
             "Formik",
             "Moment",
             "Charts.Js",
+            "Eslint",
+            "prettier",
           ],
         },
         {
@@ -358,6 +410,12 @@ const Data = {
           color: "000000",
           website: "https://nextjs.org/",
           subskills: ["Same as React.Js"],
+        },
+        {
+          icon: faShapes,
+          name: "Three.Js",
+          color: "000000",
+          website: "https://threejs.org/",
         },
         {
           icon: faVuejs,
@@ -379,6 +437,13 @@ const Data = {
           color: "000000",
           website: "https://expressjs.com/",
           subskills: [""],
+        },
+        {
+          icon: faNodeJs,
+          name: "Nest.Js",
+          color: "E0234E",
+          website: "https://nestjs.com/",
+          subskills: ["Typeorm"],
         },
         {
           icon: faLaravel,
@@ -437,6 +502,12 @@ const Data = {
           color: "f7e018",
           website: "https://www.javascript.com/",
           subskills: ["ES6", "ES5", "Embedded JS"],
+        },
+        {
+          icon: faJs,
+          name: "TypeScript",
+          color: "3178C6",
+          website: "https://www.typescriptlang.org/",
         },
         {
           icon: faBroadcastTower,
