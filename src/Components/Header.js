@@ -31,7 +31,7 @@ export default function Header({
             {t("Jordan's Lead")}
             <br />
             <a href="https://commits.top/jordan_public.html" target="_blank">
-              {t("Github Public Contributor")}
+              {t("Github Contributor")}
             </a>
           </h3>
 
