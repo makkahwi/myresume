@@ -88,14 +88,14 @@ const Data = {
         {
           icon: faWhatsapp,
           name: "Whatsapp",
-          url: "https://wasap.my/601128094804",
-          text: "+601128094804",
+          url: "https://wasap.my/962788424973",
+          text: "+962788424973",
         },
         {
           icon: faTelegram,
           name: "Telegram",
           url: "https://t.me/makkahwi",
-          text: "+601128094804",
+          text: "+962788424973",
         },
       ],
       [
