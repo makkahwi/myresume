@@ -2,7 +2,13 @@ import data from "@/resumeData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
-  const socials = [...data.main.socialList, ...data.links.web];
+  const socials = [
+    ...data.main.socialList.reduce(
+      (final, current) => [...final, ...current],
+      []
+    ),
+    ...data.links.web.reduce((final, current) => [...final, ...current], []),
+  ];
 
   return (
     <div className="row g-0 justify-content-center align-items-center">
