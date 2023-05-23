@@ -1,3 +1,4 @@
+import Navbar from "@/Components/Navbar";
 import data from "@/resumeData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.css";
@@ -52,7 +53,9 @@ export default function RootLayout({
               </div>
             </div>
 
-            <div className="col-md-1 p-0 m-0"></div>
+            <div className="col-md-1 p-0 m-0">
+              <Navbar />
+            </div>
 
             <div className="col-md-6 p-4">{children}</div>
           </div>
