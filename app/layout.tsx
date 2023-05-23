@@ -10,11 +10,7 @@ export const metadata = {
   description: "Suhaib Ahmad Resume Website",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body className={"bg-light " + inter.className}>
@@ -23,7 +19,7 @@ export default function RootLayout({
           style={{ height: "90vh", width: "95vw", margin: "5vh 2.5vw" }}
         >
           <div className="card-body p-0 row g-0 border-0 w-100">
-            <div className="col-md-5 m-0 p-4 text-center text-white bg-warning">
+            <div className="col-md-5 p-4 m-0 text-center text-white bg-warning">
               <Header />
             </div>
 
@@ -31,10 +27,12 @@ export default function RootLayout({
               <Navbar />
             </div>
 
-            <div className="col-md-6 p-4">{children}</div>
+            <div className="col-md-6 p-4 m-0">{children}</div>
           </div>
         </div>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
