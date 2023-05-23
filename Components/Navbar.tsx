@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
   const navLinks = [
     { text: "Home" },
@@ -9,26 +11,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div
-      className="nav flex-column nav-pills h-100"
-      role="tablist"
-      aria-orientation="vertical"
-    >
+    <div className="row g-0 h-100">
       {navLinks.map(({ text }, i) => (
-        <div
-          className={`nav-link rounded-0 text-white text-center 
-                        ${i % 2 === 0 ? "bg-dark" : "active"}`}
-          data-toggle="pill"
-          role="tab"
-          aria-selected="true"
-          style={{
-            height: `${(1 / navLinks.length) * 100}%`,
-            cursor: "pointer",
-          }}
+        <Link
+          className={`col-md-12 col-2 text-white text-center text-decoration-none py-3
+                        ${i % 2 === 0 ? "bg-dark" : "bg-primary"}`}
+          href="/"
           key={i}
         >
           {text}
-        </div>
+        </Link>
       ))}
     </div>
   );
