@@ -825,7 +825,7 @@ const data = {
         },
         {
           category: "Web Apps",
-          description: "Full-Stack Dev of React-Django-Based (Coollebraive)",
+          description: "Full-Stack Dev of React-Django-Based (Collaborative)",
           openSource: true,
           image: `${portfolioLink}/13.jpg`,
           title: "Tadreebi",
