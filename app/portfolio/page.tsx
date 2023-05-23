@@ -1,8 +1,43 @@
+import PageLayout from "@/Components/PageLayout";
+import data from "@/resumeData";
+
 const Portfolio = () => {
   return (
-    <main>
-      <div className="text-center">Portfolio is Here</div>
-    </main>
+    <PageLayout title={"My Portfolio"}>
+      {data.portfolio.web.projectsList.map(
+        (
+          {
+            category,
+            description,
+            company,
+            comingSoon,
+            image,
+            title,
+            link,
+            url,
+          },
+          i
+        ) => (
+          <a
+            href={url}
+            className="row justify-content-center text-decoration-none my-2"
+            key={i}
+          >
+            <div className="col-md-4">
+              <img src={image} width="100%" />
+            </div>
+
+            <div className="col-md-8">
+              <h4>{title}</h4>
+              {comingSoon && <h6>{"Coming Soon"}</h6>}
+              <h6>{company}</h6>
+              <h5>{category}</h5>
+              <p className="text-justify">{description}</p>
+            </div>
+          </a>
+        )
+      )}
+    </PageLayout>
   );
 };
 
