@@ -53,59 +53,51 @@ import {
 
 const portfolioLink = "images/portfolio";
 
-const Data = {
+const data = {
   main: {
     socialList: [
-      [
-        {
-          icon: faEnvelope,
-          name: "Email",
-          url: "mailto:SuhaibAhmadAi@hotmail.com",
-          text: "SuhaibAhmadAi@hotmail.com",
-        },
-      ],
-      [
-        {
-          icon: faLinkedin,
-          name: "Linkedin",
-          url: "https://linkedin.com/in/makkahwi/",
-          text: "Makkahwi",
-        },
-        {
-          icon: faFacebook,
-          name: "Facebook",
-          url: "https://facebook.com/makkahwi",
-          text: "Makkahwi",
-        },
-        {
-          icon: faInstagram,
-          name: "Instagram",
-          url: "https://instagram.com/makkahwi",
-          text: "Makkahwi",
-        },
-      ],
-      [
-        {
-          icon: faWhatsapp,
-          name: "Whatsapp",
-          url: "https://wasap.my/962788424973",
-          text: "+962788424973",
-        },
-        {
-          icon: faTelegram,
-          name: "Telegram",
-          url: "https://t.me/makkahwi",
-          text: "+962788424973",
-        },
-      ],
-      [
-        {
-          icon: faPhoneVolume,
-          name: "Phone",
-          url: "tel:+962788424973",
-          text: "+962788424973",
-        },
-      ],
+      {
+        icon: faEnvelope,
+        name: "Email",
+        url: "mailto:SuhaibAhmadAi@hotmail.com",
+        text: "SuhaibAhmadAi@hotmail.com",
+      },
+      {
+        icon: faLinkedin,
+        name: "Linkedin",
+        url: "https://linkedin.com/in/makkahwi/",
+        text: "Makkahwi",
+      },
+      {
+        icon: faFacebook,
+        name: "Facebook",
+        url: "https://facebook.com/makkahwi",
+        text: "Makkahwi",
+      },
+      {
+        icon: faInstagram,
+        name: "Instagram",
+        url: "https://instagram.com/makkahwi",
+        text: "Makkahwi",
+      },
+      {
+        icon: faWhatsapp,
+        name: "Whatsapp",
+        url: "https://wasap.my/962788424973",
+        text: "+962788424973",
+      },
+      {
+        icon: faTelegram,
+        name: "Telegram",
+        url: "https://t.me/makkahwi",
+        text: "+962788424973",
+      },
+      {
+        icon: faPhoneVolume,
+        name: "Phone",
+        url: "tel:+962788424973",
+        text: "+962788424973",
+      },
     ],
     name: "Suhaib Ahmad",
     profile: "profile.jpg",
@@ -156,54 +148,48 @@ const Data = {
   },
   links: {
     web: [
-      [
-        {
-          icon: faGithub,
-          name: "Github",
-          url: "https://github.com/makkahwi",
-          text: "Makkahwi",
-        },
-        {
-          icon: faHackerrank,
-          name: "HackerRank",
-          url: "https://www.hackerrank.com/makkahwi",
-          text: "Makkahwi",
-        },
-        {
-          icon: faFan,
-          name: "SoloLearn",
-          url: "https://www.sololearn.com/profile/25072713",
-          text: "Makkahwi",
-        },
-        {
-          icon: faKaggle,
-          name: "Kaggle",
-          url: "https://www.kaggle.com/makkahwi",
-          text: "Makkahwi",
-        },
-      ],
-      [
-        {
-          icon: faDiscord,
-          name: "Discord",
-          url: "https://discordapp.com/users/772634530992619530",
-          text: "Makkahwi",
-        },
-        {
-          icon: faSlack,
-          name: "Slack",
-          url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
-          text: "Makkahwi",
-        },
-      ],
-      [
-        {
-          icon: faCoffee,
-          name: "BuyMeACoffee",
-          url: "https://www.buymeacoffee.com/makkahwi",
-          text: "Buy Me a Coffee",
-        },
-      ],
+      {
+        icon: faGithub,
+        name: "Github",
+        url: "https://github.com/makkahwi",
+        text: "Makkahwi",
+      },
+      {
+        icon: faHackerrank,
+        name: "HackerRank",
+        url: "https://www.hackerrank.com/makkahwi",
+        text: "Makkahwi",
+      },
+      {
+        icon: faFan,
+        name: "SoloLearn",
+        url: "https://www.sololearn.com/profile/25072713",
+        text: "Makkahwi",
+      },
+      {
+        icon: faKaggle,
+        name: "Kaggle",
+        url: "https://www.kaggle.com/makkahwi",
+        text: "Makkahwi",
+      },
+      {
+        icon: faDiscord,
+        name: "Discord",
+        url: "https://discordapp.com/users/772634530992619530",
+        text: "Makkahwi",
+      },
+      {
+        icon: faSlack,
+        name: "Slack",
+        url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
+        text: "Makkahwi",
+      },
+      {
+        icon: faCoffee,
+        name: "BuyMeACoffee",
+        url: "https://www.buymeacoffee.com/makkahwi",
+        text: "Buy Me a Coffee",
+      },
     ],
     gd: [
       [
@@ -1012,4 +998,4 @@ const Data = {
   },
 };
 
-export default Data;
+export default data;

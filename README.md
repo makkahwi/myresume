@@ -1,3 +1,3 @@
 # My Resume Website
 
-Next.Js-based resume website
+Next & Typescript based resume website
