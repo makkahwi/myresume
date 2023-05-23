@@ -1,5 +1,6 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
+import { faScroll } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
 
@@ -38,7 +39,7 @@ const Resume = () => {
       </PageLayout>
 
       <PageLayout title={"My Skills"}>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mt-5">
           {data.resume.web.skillsList.map(
             ({ icon, name, color, website, subskills }, i) => (
               <div className="col-md-2 col-2 text-center" key={i}>
@@ -57,29 +58,53 @@ const Resume = () => {
       </PageLayout>
 
       <PageLayout title={"My Education"}>
-        <div className="row justify-content-center">
-          {data.education.map(
+        <div className="row justify-content-center mt-5">
+          {[...data.education, ...data.training.web].map(
             (
-              { degree, description, graduated, school, logo, link, projects },
+              {
+                degree,
+                description,
+                graduated,
+                school,
+                logo,
+                link,
+                projects,
+                cert,
+              },
               i
             ) => (
-              <div className="col-12 text-center" key={i}>
-                <a target="_blank" className="text-decoration-none">
-                  {degree}
+              <div className="justify-content-center" key={i}>
+                <a href={link} target="_blank" className="text-decoration-none">
+                  <img src={logo} width="100%" />
                 </a>
-              </div>
-            )
-          )}
 
-          {data.training.web.map(
-            (
-              { degree, description, graduated, school, logo, link, projects },
-              i
-            ) => (
-              <div className="col-12 text-center" key={i}>
-                <a target="_blank" className="text-decoration-none">
-                  {degree}
-                </a>
+                <h5>{degree}</h5>
+
+                <h6>{school}</h6>
+
+                <p className="text-justify">{description}</p>
+
+                <p className="text-justify">{"You may check..."}</p>
+
+                {projects.map(({ title, link, more }, i) => (
+                  <a
+                    href={link}
+                    target="_blank"
+                    className="text-decoration-none"
+                    key={i}
+                  >
+                    <h6 className="text-justify">{title}</h6>
+
+                    <p className="text-justify">{more}</p>
+                  </a>
+                ))}
+
+                {cert?.title && (
+                  <a href={cert?.link} className="btn btn-theme" download>
+                    {/* <FontAwesomeIcon icon={faScroll} className="me-2" /> */}
+                    {cert?.title}
+                  </a>
+                )}
               </div>
             )
           )}
