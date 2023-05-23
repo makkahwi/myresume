@@ -15,23 +15,45 @@ const Header = () => {
         />
       </div>
 
-      <div className="col-md-12 col-6 py-4">
+      <div className="col-md-12 col-6 py-3">
         <h2>{data.main.name}</h2>
 
         <h4>Full-Stack Web Developer</h4>
       </div>
 
       <div className="col-12">
-        <div className="row justify-content-center py-4">
+        <div className="row justify-content-center py-3">
           {socials.map(({ icon, url }, i) => (
-            <div className="col-lg-1 col-md-2 col-1 p-2" key={i}>
-              <small>
-                <a href={url} target="_blank" className="text-white">
+            <div className="col-lg-1 col-md-2 col-1 px-2" key={i}>
+              <a href={url} target="_blank" className="text-white">
+                <small>
                   <FontAwesomeIcon icon={icon} />
-                </a>
-              </small>
+                </small>
+              </a>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="col-12">
+        <div className="btn-group py-3" role="group">
+          <a
+            href="/documents/Suhaib-Ahmad-WD-Resume-Sheet.pdf"
+            download
+            type="button"
+            className="btn btn-light text-warning"
+          >
+            Download Resume
+          </a>
+
+          <a
+            href="/documents/Suhaib-Ahmad-WD-Resume-Sheet.pdf"
+            download
+            type="button"
+            className="btn btn-outline-light"
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </div>
