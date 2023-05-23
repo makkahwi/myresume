@@ -41,7 +41,7 @@ const Header = () => {
             href="/documents/Suhaib-Ahmad-WD-Resume-Sheet.pdf"
             download
             type="button"
-            className="btn btn-light text-warning"
+            className="btn btn-light text-theme"
           >
             Download Resume
           </a>
