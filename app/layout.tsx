@@ -15,7 +15,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={"bg-light " + inter.className}>
+        <div
+          className="card"
+          style={{ height: "90vh", width: "95vw", margin: "5vh 2.5vw" }}
+        >
+          <div className="card-body p-4 row">
+            <div className="col-md-6 text-center"></div>
+
+            <div className="col-md-6">{children}</div>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
