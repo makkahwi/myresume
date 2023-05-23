@@ -1,13 +1,16 @@
+"use client";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = usePathname();
+
   const navLinks = [
     { text: "Home", link: "/" },
-    // { text: "About", link: "/about" },
+    { text: "About", link: "/about" },
     { text: "Resume", link: "/resume" },
     { text: "Portfolio", link: "/portfolio" },
     { text: "Contacts", link: "/contacts" },
-    { text: "Lang", link: "#" },
   ];
 
   return (
@@ -23,7 +26,7 @@ const Navbar = () => {
         <Link
           className={`col-md-12 col-2 text-center text-decoration-none py-3 border border-1 border-dark
                         ${
-                          i === 0
+                          router === link
                             ? "text-dark bg-white shadow-lg"
                             : "text-white bg-dark"
                         }`}
