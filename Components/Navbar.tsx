@@ -3,10 +3,10 @@ import Link from "next/link";
 const Navbar = () => {
   const navLinks = [
     { text: "Home", link: "/" },
-    { text: "About", link: "/about" },
+    // { text: "About", link: "/about" },
     { text: "Resume", link: "/resume" },
     { text: "Portfolio", link: "/portfolio" },
-    // { text: "Contacts", link: "/contacts" },
+    { text: "Contacts", link: "/contacts" },
     { text: "Lang", link: "#" },
   ];
 
