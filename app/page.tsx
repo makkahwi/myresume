@@ -1,8 +1,10 @@
+import PageLayout from "@/Components/PageLayout";
+
 const Home = () => {
   return (
-    <main>
-      <div className="text-center">Start Here</div>
-    </main>
+    <PageLayout title={"Welcome to My Resume Website"}>
+      <h3>Welcome to My Resume Website</h3>
+    </PageLayout>
   );
 };
 

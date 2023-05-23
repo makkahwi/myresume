@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About = () => {
   return (
-    <PageLayout>
-      <h3 className="text-center mb-4">About Me</h3>
+    <PageLayout title={"About Me"}>
       <p className="text-justify lh-lg">{data.about.web.bio}</p>
 
       <iframe
