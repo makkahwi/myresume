@@ -16,7 +16,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body className={"bg-light " + inter.className}>
         <div
           className="card border border-2 border-warning"
-          style={{ height: "90vh", width: "95vw", margin: "5vh 2.5vw" }}
+          style={{
+            minHeight: "90vh",
+            width: "95vw",
+            margin: "5vh 2.5vw",
+            overflowX: "hidden",
+          }}
         >
           <div className="card-body p-0 row g-0 border-0 w-100">
             <div className="col-md-5 p-4 m-0 text-center text-white bg-warning">
