@@ -50,7 +50,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
             </div>
 
             <div
-              className="col-md-6 p-4 py-5 m-0"
+              className="col-md-6 px-5 py-4 m-0"
               style={{
                 backgroundImage: 'url("images/BG2.png")',
                 backgroundSize: "cover",

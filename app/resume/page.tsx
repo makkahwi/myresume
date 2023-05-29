@@ -39,7 +39,7 @@ const Resume = () => {
       </PageLayout>
 
       <PageLayout title={"My Skills"}>
-        <div className="row justify-content-center mt-5">
+        <div className="row justify-content-center">
           {data.resume.web.skillsList.map(
             ({ icon, name, color, website, subskills }, i) => (
               <div className="col-md-2 col-2 text-center" key={i}>
@@ -58,7 +58,7 @@ const Resume = () => {
       </PageLayout>
 
       <PageLayout title={"My Education"}>
-        <div className="row justify-content-center mt-5">
+        <div className="row justify-content-center">
           {[...data.education, ...data.training.web].map(
             (
               {

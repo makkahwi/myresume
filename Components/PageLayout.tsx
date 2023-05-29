@@ -2,7 +2,7 @@ const PageLayout = ({ title, children }) => {
   return (
     <main>
       <div className="justify-content-center">
-        <h3 className="text-center mb-5 text-theme text-decoration-underline">
+        <h3 className="text-center my-4 text-theme text-decoration-underline">
           {title}
         </h3>
         {children}
