@@ -28,10 +28,11 @@ const Portfolio = () => {
             </div>
 
             <div className="col-md-8">
-              <h4>{title}</h4>
-              {comingSoon && <h6>{"Coming Soon"}</h6>}
+              <h4>
+                {title} <span className="h6">{`(${category})`}</span>
+              </h4>
               <h6>{company}</h6>
-              <h5>{category}</h5>
+              {comingSoon && <h6>{"Coming Soon"}</h6>}
               <p className="text-justify">{description}</p>
             </div>
           </a>

@@ -282,7 +282,7 @@ const data = {
           company: "AgileTz",
           website: "https://www.agiletz.com/",
           description:
-            "Full-time job to develop React.Js-Node.Js web apps for online public (government) services.",
+            "Full-time job to develop React.Js-Node.Js web app for online public (government) services.",
           title: "Senior Full-Stack Developer",
           // certificate: "/agiletz.pdf",
           years: "Aug 2022 - Present",
@@ -674,7 +674,7 @@ const data = {
     web: {
       projectsList: [
         {
-          category: "Web Apps",
+          category: "Web App",
           description:
             "Frontend Dev of React.js Based Public (Governmental) Service App",
           company: "AgileTz",
@@ -685,7 +685,7 @@ const data = {
           url: "https://sanadfront.agiletz.com/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description:
             "Full-Stack Dev of React.js-Node.js Based Multi-Front Public (Governmental) Service App",
           company: "AgileTz",
@@ -695,7 +695,7 @@ const data = {
           url: "https://portal.dls.gov.jo/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Full-Stack Dev of React.Js-Laravel Based App",
           comingSoon: true,
           image: `${portfolioLink}/10.jpg`,
@@ -704,7 +704,7 @@ const data = {
           url: "https://semesteer.com/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Frontend Dev of Vue.js Based App",
           company: "Trellah",
           image: `${portfolioLink}/16.jpg`,
@@ -713,7 +713,7 @@ const data = {
           url: "https://trellah.com/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Full-Stack Dev of React.Js-Node.Js Based App",
           comingSoon: true,
           image: `${portfolioLink}/10.jpg`,
@@ -731,7 +731,7 @@ const data = {
           url: "https://rasmiandkiwan.com/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Frontend Dev of PERN Based App",
           company: "Luxtag",
           image: `${portfolioLink}/11.jpg`,
@@ -749,7 +749,7 @@ const data = {
           url: "https://aam.arromi.net/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Full-Stack Dev of Vue.js-Django Based App",
           comingSoon: true,
           openSource: true,
@@ -767,7 +767,7 @@ const data = {
           url: "https://oneshotfuture.com/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Full-Stack Dev of Laravel Based App",
           image: `${portfolioLink}/8.jpg`,
           title: "AIS Students Portal",
@@ -785,7 +785,7 @@ const data = {
         //   url: "https://zaytouna-tau.vercel.app/",
         // },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Full-Stack Dev of React.Js-Express.Js",
           image: `${portfolioLink}/15.jpg`,
           title: "AIS Staff Portal",
@@ -802,7 +802,7 @@ const data = {
         //   url: "https://xEdu.best/",
         // },
         // {
-        //   category: "Web Apps",
+        //   category: "Web App",
         //   description: "Full-Stack Dev of PERN-Based App",
         //   comingSoon: true,
         //   image: `${portfolioLink}/10.jpg`,
@@ -819,7 +819,7 @@ const data = {
         //   url: "https://ppam.org.my/",
         // },
         // {
-        //   category: "Web Apps",
+        //   category: "Web App",
         //   description: "Full-Stack Dev of React.Js-Node.Js Based App",
         //   comingSoon: true,
         //   image: `${portfolioLink}/10.jpg`,
@@ -836,7 +836,7 @@ const data = {
           url: "https://aqsa.edu.my/",
         },
         {
-          category: "Web Apps",
+          category: "Web App",
           description: "Full-Stack Dev of React-Django-Based (Collaborative)",
           openSource: true,
           image: `${portfolioLink}/13.jpg`,
