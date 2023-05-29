@@ -20,6 +20,7 @@ const Portfolio = () => {
         ) => (
           <a
             href={url}
+            target="_blank"
             className="row justify-content-center text-decoration-none my-2"
             key={i}
           >

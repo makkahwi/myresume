@@ -25,7 +25,11 @@ const Resume = () => {
                 <h4>{title}</h4>
               </a>
 
-              <a href={website} className="text-decoration-none">
+              <a
+                href={website}
+                className="text-decoration-none"
+                target="_blank"
+              >
                 <h6>{"@ " + company + " | " + years}</h6>
               </a>
 
@@ -85,12 +89,13 @@ const Resume = () => {
 
                 <p className="text-justify">{"You may check..."}</p>
 
-                {projects.map(({ title, link, more }, i) => (
+                {projects.map(({ title, link, more, download }, i) => (
                   <a
                     href={link}
                     target="_blank"
                     className="text-decoration-none"
                     key={i}
+                    download={download}
                   >
                     <h6 className="text-justify">{title}</h6>
 

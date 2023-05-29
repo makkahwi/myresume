@@ -108,7 +108,7 @@ const data = {
   },
   about: {
     web: {
-      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. I'm highly organized, detail-oriented and timing-particular, and I believe that also what makes me a good programmer. You may scroll down to see it for yourself, and you may also download my...",
+      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. I'm highly organized, detail-oriented and timing-particular, and I believe that also what makes me a good programmer. You may keep browsing to see it for yourself to see it for yourself, and you may also download my...",
       downloads: [
         {
           text: "Resume Sheet",
@@ -129,7 +129,7 @@ const data = {
       resumeVideo: "https://www.youtube.com/embed/JxHy8wEhrEg",
     },
     gd: {
-      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. You may scroll down to see it for yourself, and you may also download my...",
+      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. You may keep browsing to see it for yourself to see it for yourself, and you may also download my...",
       downloads: [
         {
           text: "Resume Sheet",
@@ -280,7 +280,7 @@ const data = {
           company: "AgileTz",
           website: "https://www.agiletz.com/",
           description:
-            "Full-time job to develop React.Js-Node.Js web app for online public (government) services.",
+            "Full-time job to develop React.Js-Node.Js web apps for online public (government) services.",
           title: "Senior Full-Stack Developer",
           // certificate: "/agiletz.pdf",
           years: "Aug 2022 - Present",
@@ -288,7 +288,7 @@ const data = {
         },
         {
           company: "ArabWork",
-          website: "https://www.linkedin.com/company/arabwork/",
+          website: "https://arabwork.com/",
           description:
             "Full-time job to develop a Vue-Symfony web app for an online service.",
           title: "Frontend Developer",
@@ -696,7 +696,8 @@ const data = {
           category: "Web App",
           description: "Full-Stack Dev of React.Js-Laravel Based App",
           comingSoon: true,
-          image: `${portfolioLink}/10.jpg`,
+          company: "Freelance",
+          image: `${portfolioLink}/19.jpg`,
           title: "Semesteer",
           link: "semesteer",
           url: "https://semesteer.com/",
