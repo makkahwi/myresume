@@ -1,5 +1,6 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
+import ContactForm from "./ContactForm";
 
 const Contacts = () => {
   const socials = [...data.main.socialList, ...data.links.web];
@@ -17,6 +18,8 @@ const Contacts = () => {
           <span className="text-theme h5">{social[0].text}</span>
         </div>
       ))}
+
+      <ContactForm />
     </PageLayout>
   );
 };
