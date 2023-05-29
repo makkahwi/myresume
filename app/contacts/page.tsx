@@ -20,6 +20,14 @@ const Contacts = () => {
       ))}
 
       <ContactForm />
+
+      {/* <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d698.600803271303!2d35.90988694719205!3d32.037112182595486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjo!4v1685368327429!5m2!1sen!2sjo"
+        width="100%"
+        height="365px"
+        style={{ border: 0 }}
+        loading="lazy"
+      /> */}
     </PageLayout>
   );
 };

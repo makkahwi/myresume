@@ -27,3 +27,20 @@
 .text-justify {
   text-align: justify;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5d00;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d75d00;
+}
