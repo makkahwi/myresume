@@ -8,7 +8,7 @@ const About = () => {
       <p className="text-justify lh-lg">{data.about.web.bio}</p>
 
       <div className="btn-group w-100 py-3">
-        {data.about.web.downloads.map(({ link, text, icon }, i) => (
+        {data.about.web.downloads.map(({ link, text, Icon }, i) => (
           <a
             href={link}
             className={`btn ${
@@ -16,8 +16,7 @@ const About = () => {
             } py-3`}
             key={i}
           >
-            {/* <FontAwesomeIcon icon={icon} size="2xs" /> */}
-            {text}
+            <Icon /> {text}
           </a>
         ))}
       </div>

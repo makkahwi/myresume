@@ -8,14 +8,14 @@ const Contacts = () => {
   return (
     <PageLayout title={"My Contacts"}>
       {socials.map((social, i) => (
-        <div className="row px-2 align-items-center" key={i}>
-          {social.map(({ icon, url, text }, y) => (
-            <a href={url} target="_blank" className="col-2 text-theme" key={y}>
-              <FontAwesomeIcon icon={icon} size="2xs" />
+        <div className="py-3 align-items-center" key={i}>
+          {social.map(({ Icon, url, text }, y) => (
+            <a href={url} target="_blank" className="text-theme px-3" key={y}>
+              <Icon size={44} />
             </a>
           ))}
 
-          <span className="col text-theme">{social[0].text}</span>
+          <span className="text-theme h5">{social[0].text}</span>
         </div>
       ))}
     </PageLayout>

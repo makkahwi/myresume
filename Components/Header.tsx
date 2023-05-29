@@ -28,15 +28,11 @@ const Header = () => {
       </div>
 
       <div className="col-12">
-        <div className="row justify-content-center py-3">
-          {socials.map(({ icon, url }, i) => (
-            <div className="col-lg-1 col-md-2 col-1 px-2" key={i}>
-              <a href={url} target="_blank" className="text-white">
-                <small>
-                  <FontAwesomeIcon icon={icon} size="2xs" />
-                </small>
-              </a>
-            </div>
+        <div className="justify-content-center py-3">
+          {socials.map(({ Icon, url }, i) => (
+            <a href={url} target="_blank" className="text-white mx-2" key={i}>
+              <Icon size={30} />
+            </a>
           ))}
         </div>
       </div>

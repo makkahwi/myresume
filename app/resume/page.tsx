@@ -1,6 +1,6 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
-import { faScroll } from "@fortawesome/free-solid-svg-icons";
+import { FaScroll } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
 
@@ -41,7 +41,7 @@ const Resume = () => {
       <PageLayout title={"My Skills"}>
         <div className="row justify-content-center">
           {data.resume.web.skillsList.map(
-            ({ icon, name, color, website, subskills }, i) => (
+            ({ Icon, name, color, website, subskills }, i) => (
               <div className="col-md-2 col-2 text-center" key={i}>
                 <a
                   href={website}
@@ -49,7 +49,7 @@ const Resume = () => {
                   style={{ color: `#${color}` }}
                   className="text-decoration-none"
                 >
-                  <FontAwesomeIcon icon={icon} size="2xs" /> {name}
+                  <Icon size={44} /> {name}
                 </a>
               </div>
             )
@@ -101,8 +101,7 @@ const Resume = () => {
 
                 {cert?.title && (
                   <a href={cert?.link} className="btn btn-theme" download>
-                    {/* <FontAwesomeIcon icon={faScroll} className="me-2" size="2xs" /> */}
-                    {cert?.title}
+                    <FaScroll /> {cert?.title}
                   </a>
                 )}
               </div>
