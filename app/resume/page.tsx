@@ -49,7 +49,7 @@ const Resume = () => {
                   style={{ color: `#${color}` }}
                   className="text-decoration-none"
                 >
-                  <FontAwesomeIcon icon={icon} /> {name}
+                  <FontAwesomeIcon icon={icon} size="2xs" /> {name}
                 </a>
               </div>
             )
@@ -101,7 +101,7 @@ const Resume = () => {
 
                 {cert?.title && (
                   <a href={cert?.link} className="btn btn-theme" download>
-                    {/* <FontAwesomeIcon icon={faScroll} className="me-2" /> */}
+                    {/* <FontAwesomeIcon icon={faScroll} className="me-2" size="2xs" /> */}
                     {cert?.title}
                   </a>
                 )}

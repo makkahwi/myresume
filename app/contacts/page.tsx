@@ -11,7 +11,7 @@ const Contacts = () => {
         <div className="row px-2 align-items-center" key={i}>
           {social.map(({ icon, url, text }, y) => (
             <a href={url} target="_blank" className="col-2 text-theme" key={y}>
-              <FontAwesomeIcon icon={icon} />
+              <FontAwesomeIcon icon={icon} size="2xs" />
             </a>
           ))}
 

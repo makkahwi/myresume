@@ -33,7 +33,7 @@ const Header = () => {
             <div className="col-lg-1 col-md-2 col-1 px-2" key={i}>
               <a href={url} target="_blank" className="text-white">
                 <small>
-                  <FontAwesomeIcon icon={icon} />
+                  <FontAwesomeIcon icon={icon} size="2xs" />
                 </small>
               </a>
             </div>

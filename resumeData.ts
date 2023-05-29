@@ -722,7 +722,7 @@ const data = {
           // "url": "https://rasmiandkiwan.com/"
         },
         {
-          category: "Landing Pages",
+          category: "Landing Page",
           description: "Frontend Dev of Next.Js-Node.Js Based App",
           comingSoon: false,
           image: `${portfolioLink}/17.jpg`,
@@ -740,7 +740,7 @@ const data = {
           url: "https://app.brandtag.io/",
         },
         {
-          category: "Landing Pages",
+          category: "Landing Page",
           description: "Wordpress Website",
           comingSoon: true,
           image: `${portfolioLink}/12.jpg`,
@@ -759,7 +759,7 @@ const data = {
           url: "https://currencies-showroom.vercel.app/",
         },
         {
-          category: "Landing Pages",
+          category: "Landing Page",
           description: "Wordpress Website",
           image: `${portfolioLink}/1.jpg`,
           title: "OneShot Future Company",
@@ -775,7 +775,7 @@ const data = {
           url: "https://students.aqsa.edu.my/",
         },
         // {
-        //   category: "Landing Pages",
+        //   category: "Landing Page",
         //   description: "React.Js-Based App",
         //   comingSoon: true,
         //   openSource: true,
@@ -793,7 +793,7 @@ const data = {
           url: "https://staff.aqsa.edu.my/",
         },
         // {
-        //   category: "Landing Pages",
+        //   category: "Landing Page",
         //   description: "Wordpress Website",
         //   comingSoon: true,
         //   image: `${portfolioLink}/9.jpg`,
@@ -811,7 +811,7 @@ const data = {
         //   url: "https://xEdu.best/",
         // },
         // {
-        //   category: "Landing Pages",
+        //   category: "Landing Page",
         //   description: "Wordpress Website",
         //   image: `${portfolioLink}/6.jpg`,
         //   title: "PPAM Organization",
@@ -828,7 +828,7 @@ const data = {
         //   // "url": "https://rasmiandkiwan.com/"
         // },
         {
-          category: "Landing Pages",
+          category: "Landing Page",
           description: "Wordpress Website",
           image: `${portfolioLink}/2.jpg`,
           title: "AIS School",
@@ -845,7 +845,7 @@ const data = {
           url: "https://tadreebi.netlify.app/",
         },
         // {
-        //   category: "Landing Pages",
+        //   category: "Landing Page",
         //   description: "Wordpress Website",
         //   image: `${portfolioLink}/4.jpg`,
         //   title: "SpeedWheels Company",
@@ -853,7 +853,7 @@ const data = {
         //   url: "https://speedwheelstrade.online/",
         // },
         // {
-        //   category: "Landing Pages",
+        //   category: "Landing Page",
         //   description: "Wordpress Website",
         //   image: `${portfolioLink}/3.jpg`,
         //   title: "Team Foundation",

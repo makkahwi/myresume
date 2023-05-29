@@ -16,7 +16,7 @@ const About = () => {
             } py-3`}
             key={i}
           >
-            {/* <FontAwesomeIcon icon={icon} /> */}
+            {/* <FontAwesomeIcon icon={icon} size="2xs" /> */}
             {text}
           </a>
         ))}
