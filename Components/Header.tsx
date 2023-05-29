@@ -1,5 +1,4 @@
 import data from "@/resumeData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   const socials = [

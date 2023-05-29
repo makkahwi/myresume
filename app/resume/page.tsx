@@ -1,8 +1,7 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
-import { FaScroll } from "react-icons/fa";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
+import { FaScroll } from "react-icons/fa";
 
 const Resume = () => {
   return (

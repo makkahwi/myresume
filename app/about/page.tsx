@@ -1,6 +1,5 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About = () => {
   return (

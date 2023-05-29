@@ -1,6 +1,5 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contacts = () => {
   const socials = [...data.main.socialList, ...data.links.web];
