@@ -3,6 +3,7 @@ import Navbar from "@/Components/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
 import { Inter } from "next/font/google";
 import "../public/css/style.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,20 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           overflowX: "hidden",
         }}
       >
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-WDD6QTCBFJ"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WDD6QTCBFJ');
+          `}
+        </Script>
+
         <div
           className="card border border-1"
           style={{
