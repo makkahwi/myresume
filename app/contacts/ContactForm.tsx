@@ -13,6 +13,25 @@ const ContactForm = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    const { sent, error, ...data } = formData;
+
+    fetch(
+      "https://myresume-6ab68-default-rtdb.europe-west1.firebasedatabase.app/contact-form.json",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    )
+      .then((res) =>
+        setFormData({ ...defaultFormData, sent: true, error: false })
+      )
+      .catch((err) =>
+        setFormData((current) => ({ ...current, sent: false, error: true }))
+      );
   };
 
   const onFieldChange = (e) =>
