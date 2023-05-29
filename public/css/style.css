@@ -10,10 +10,18 @@
   color: #ff5d00;
 }
 
-.btn-theme {
+.btn-theme,
+.btn-outline-theme:hover {
   background-color: #ff5d00;
   border-color: #ff5d00;
   color: white;
+}
+
+.btn-outline-theme,
+.btn-theme:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #ff5d00;
+  color: #ff5d00;
 }
 
 .text-justify {

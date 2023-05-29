@@ -27,10 +27,10 @@ const Resume = () => {
               </a>
 
               <a href={website} className="text-decoration-none">
-                <h6>{company + " | " + years}</h6>
+                <h6>{"@ " + company + " | " + years}</h6>
               </a>
 
-              <h6>{"Projects | " + projects.join(", ")}</h6>
+              <h6>{"Projects: " + projects.join(", ")}</h6>
 
               <p className="text-justify">{description}</p>
             </div>

@@ -9,8 +9,14 @@ const About = () => {
 
       <div className="btn-group w-100 py-3">
         {data.about.web.downloads.map(({ link, text, icon }, i) => (
-          <a href={link} className="btn btn-theme py-3" key={i}>
-            {/* <FontAwesomeIcon icon={icon} className="text-sm" /> */}
+          <a
+            href={link}
+            className={`btn ${
+              i % 2 === 0 ? "btn-theme" : "btn-outline-theme"
+            } py-3`}
+            key={i}
+          >
+            {/* <FontAwesomeIcon icon={icon} /> */}
             {text}
           </a>
         ))}
