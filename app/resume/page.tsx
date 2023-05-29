@@ -4,10 +4,12 @@ import { Fragment } from "react";
 import { FaScroll } from "react-icons/fa";
 
 const Resume = () => {
+  const list = [...data.resume.web.jobsList, ...data.resume.web.freelancesList];
+
   return (
     <Fragment>
       <PageLayout title={"My Resume"}>
-        {data.resume.web.jobsList.map(
+        {list.map(
           (
             {
               company,
