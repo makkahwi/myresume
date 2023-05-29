@@ -24,7 +24,7 @@ const Header = () => {
       <div className="col-md-12 col-6 py-3">
         <h2>{data.main.name}</h2>
 
-        <h4>Full-Stack Web Developer</h4>
+        <h4>Senior Full-Stack Web Developer</h4>
       </div>
 
       <div className="col-12">

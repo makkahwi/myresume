@@ -326,7 +326,7 @@ const data = {
           title: "Full-Stack Developer",
           certificate: "/ais.pdf",
           years: "Sep 2019 - Aug 2020",
-          projects: ["AIS_Students", "AIS_Staff"],
+          projects: ["AIS Landing Page", "AIS Students", "AIS Staff"],
         },
       ],
       freelancesList: [
