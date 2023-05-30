@@ -30,7 +30,7 @@ const Header = () => {
         <div className="justify-content-center py-3">
           {socials.map(({ Icon, url }, i) => (
             <a href={url} target="_blank" className="text-white mx-2" key={i}>
-              <Icon size={30} />
+              <Icon size={30} className="my-1" />
             </a>
           ))}
         </div>
