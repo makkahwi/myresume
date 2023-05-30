@@ -35,7 +35,7 @@ const Education = () => {
 
               {projects.map(({ title, link, more, download }, i) => (
                 <a
-                  href={link}
+                  href={(download ? "documents" : "") + link}
                   target="_blank"
                   className="text-decoration-none text-dark"
                   key={i}
@@ -49,7 +49,11 @@ const Education = () => {
               ))}
 
               {cert?.title && (
-                <a href={cert?.link} className="btn btn-theme" download>
+                <a
+                  href={"documents" + cert?.link}
+                  className="btn btn-theme"
+                  download
+                >
                   <FaScroll /> {cert?.title}
                 </a>
               )}

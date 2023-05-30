@@ -13,13 +13,17 @@ const Experiences = () => {
     projects,
   }) => (
     <div className="mb-5">
-      <a
-        href={certificate}
-        download
-        className="text-decoration-none text-theme"
-      >
+      {certificate ? (
+        <a
+          href={"documents" + certificate}
+          download
+          className="text-decoration-none text-theme"
+        >
+          <h4>{title}</h4>
+        </a>
+      ) : (
         <h4>{title}</h4>
-      </a>
+      )}
 
       <a
         href={website}
