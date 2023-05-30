@@ -21,7 +21,7 @@ const Portfolio = () => {
           <a
             href={url}
             target="_blank"
-            className="row justify-content-center text-decoration-none my-2"
+            className="row justify-content-center text-decoration-none my-2 text-dark"
             key={i}
           >
             <div className="col-md-4">
@@ -29,8 +29,8 @@ const Portfolio = () => {
             </div>
 
             <div className="col-md-8">
-              <h4>
-                {title} <span className="h6">{`(${category})`}</span>
+              <h4 className="text-theme">
+                {title} <span className="h6 text-dark">{`(${category})`}</span>
               </h4>
               <h6>{company}</h6>
               {comingSoon && <h6>{"Coming Soon"}</h6>}

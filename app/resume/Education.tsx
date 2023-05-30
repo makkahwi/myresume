@@ -37,13 +37,14 @@ const Education = () => {
                 <a
                   href={link}
                   target="_blank"
-                  className="text-decoration-none"
+                  className="text-decoration-none text-dark"
                   key={i}
                   download={download}
                 >
-                  <h6 className="text-justify">{title}</h6>
-
-                  <p className="text-justify">{more}</p>
+                  <h6 className="text-justify text-theme">
+                    {title}{" "}
+                    <span className="text-justify text-dark">{more}</span>
+                  </h6>
                 </a>
               ))}
 
