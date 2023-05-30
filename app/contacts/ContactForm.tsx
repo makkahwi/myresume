@@ -81,7 +81,7 @@ const ContactForm = () => {
           </div>
 
           <div className="col-md-4 my-4">
-            <button type="submit" className="btn btn-theme my-3 w-100">
+            <button type="submit" className="btn btn-theme w-100">
               Submit
             </button>
           </div>
