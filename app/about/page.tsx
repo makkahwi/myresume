@@ -9,10 +9,11 @@ const About = () => {
       <div className="btn-group w-100 py-3">
         {data.about.web.downloads.map(({ link, text, Icon }, i) => (
           <a
-            href={link}
+            href={link.includes("http") ? link : "documents" + link}
             className={`btn ${
               i % 2 === 0 ? "btn-theme" : "btn-outline-theme"
             } py-3`}
+            target="_blank"
             key={i}
           >
             <Icon /> {text}
