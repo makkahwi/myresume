@@ -1,5 +1,5 @@
 "use client";
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 
 const ContactForm = () => {
   const defaultFormData = {
@@ -11,7 +11,7 @@ const ContactForm = () => {
   };
   const [formData, setFormData] = useState(defaultFormData);
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     const { sent, error, ...data } = formData;
@@ -34,7 +34,7 @@ const ContactForm = () => {
       );
   };
 
-  const onFieldChange = (e) =>
+  const onFieldChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setFormData((current) => ({
       ...current,
       [e.target.name]: e.target.value,
@@ -72,7 +72,8 @@ const ContactForm = () => {
 
           <div className="col-md-12">
             <label className="form-label">Message</label>
-            <textarea
+            <input
+              type="text"
               name="message"
               className="form-control"
               value={formData.message}

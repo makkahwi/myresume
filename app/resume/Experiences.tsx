@@ -11,6 +11,14 @@ const Experiences = () => {
     certificate,
     years,
     projects,
+  }: {
+    company: string;
+    website?: string;
+    description: string;
+    title: string;
+    certificate?: string;
+    years: string;
+    projects: string[];
   }) => (
     <div className="mb-5">
       {certificate ? (
@@ -39,7 +47,21 @@ const Experiences = () => {
     </div>
   );
 
-  const JobsListView = ({ title, jobs }) => (
+  const JobsListView = ({
+    title,
+    jobs,
+  }: {
+    title: string;
+    jobs: {
+      company: string;
+      website?: string;
+      description: string;
+      title: string;
+      certificate?: string;
+      years: string;
+      projects: string[];
+    }[];
+  }) => (
     <Fragment>
       <h5 className="my-3 text-decoration-underline">{title}</h5>
 

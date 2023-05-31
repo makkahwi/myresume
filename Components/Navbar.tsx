@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -26,7 +27,7 @@ const Navbar = () => {
         className="col-md-12 col-2 text-center text-decoration-none py-3 border-0 text-dark bg-theme"
         href={""}
       >
-        <img src="/images/logo.png" width="50%" />
+        <img src="/images/logo.png" width="50%" alt="logo" />
       </Link>
 
       {navLinks.map(({ text, link, Icon }, i) => (

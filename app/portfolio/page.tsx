@@ -1,5 +1,6 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
+import Image from "next/image";
 
 const Portfolio = () => {
   return (
@@ -25,7 +26,7 @@ const Portfolio = () => {
             key={i}
           >
             <div className="col-md-4">
-              <img src={image} width="100%" />
+              <img src={image} width="100%" alt={"project" + (i + 1)} />
             </div>
 
             <div className="col-md-8">

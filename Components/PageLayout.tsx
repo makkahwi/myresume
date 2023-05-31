@@ -1,4 +1,4 @@
-const PageLayout = ({ title, children }) => {
+const PageLayout = ({ title, children }: { title: string; children: any }) => {
   return (
     <main>
       <div className="justify-content-center">

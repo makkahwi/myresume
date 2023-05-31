@@ -231,6 +231,7 @@ const data = {
           link: "https://github.com/makkahwi/iDecide",
           title: "My FYP project",
           more: "(a web app)",
+          download: false,
         },
       ],
       cert: {
@@ -253,22 +254,25 @@ const data = {
             link: "https://github.com/makkahwi/asac-works",
             title: "Individual works",
             more: "(Several Python & Web Apps)",
+            download: false,
           },
           {
             link: "https://silent-speakers.github.io/silent-speakers/",
             title: "Mid-term group project",
             more: "(Desktop Python App)",
+            download: false,
           },
           {
             link: "https://tadreebi.netlify.app/",
             title: "Final group project",
             more: "(React-Django Web App)",
+            download: false,
           },
         ],
-        // cert: {
-        //    link: "/LTUC-Certificate.pdf",
-        //    title: "The Certificate"
-        // }
+        cert: {
+          link: "/LTUC-Certificate.pdf",
+          title: "The Certificate",
+        },
       },
     ],
     gd: [],

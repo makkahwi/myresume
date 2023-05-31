@@ -1,5 +1,6 @@
 import PageLayout from "@/Components/PageLayout";
 import data from "@/resumeData";
+import Image from "next/image";
 import { FaScroll } from "react-icons/fa";
 
 const Education = () => {
@@ -22,7 +23,7 @@ const Education = () => {
           ) => (
             <div className="justify-content-center" key={i}>
               <a href={link} target="_blank" className="text-decoration-none">
-                <img src={logo} width="100%" />
+                <img src={logo} width="100%" alt={"cert " + (i + 1)} />
               </a>
 
               <h5>{degree}</h5>
