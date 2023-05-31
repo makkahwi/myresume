@@ -11,26 +11,26 @@ const Header = () => {
 
   return (
     <div className="row g-0 justify-content-center align-items-center">
-      <div className="col-md-6 col-6">
+      <div className="col-md-12 col-12">
         <img
           src={"/images/" + data.main.profile}
-          width="90%"
+          width="100%"
           alt="profileImage"
-          className="rounded-circle border border-5 border-white"
+          className="border border-5 border-white rounded-5"
         />
       </div>
 
       <div className="col-md-12 col-6 py-3">
-        <h2>{data.main.name}</h2>
+        <h3>{data.main.name}</h3>
 
-        <h4>Senior Full-Stack Web Developer</h4>
+        <h5>Senior Full-Stack Developer</h5>
       </div>
 
       <div className="col-12">
-        <div className="justify-content-center py-3">
+        <div className="justify-content-center py-2">
           {socials.map(({ Icon, url }, i) => (
             <a href={url} target="_blank" className="text-white mx-2" key={i}>
-              <Icon size={30} className="my-1" />
+              <Icon size={25} className="my-1" />
             </a>
           ))}
         </div>

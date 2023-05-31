@@ -1,9 +1,10 @@
 import Header from "@/Components/Header";
 import Navbar from "@/Components/Navbar";
-import "bootstrap/dist/css/bootstrap.css";
 import { Inter } from "next/font/google";
-import "../public/css/style.css";
 import Script from "next/script";
+
+import "../public/css/style.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +43,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <div
           className="card border border-1"
           style={{
-            minHeight: "90vh",
+            height: "89vh",
             width: "95vw",
             margin: "5vh 2.5vw",
           }}
@@ -55,12 +56,18 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center right",
+                height: "89vh",
               }}
             >
               <Header />
             </div>
 
-            <div className="col-md-1 p-0 m-0">
+            <div
+              className="col-md-1 p-0 m-0"
+              style={{
+                height: "89vh",
+              }}
+            >
               <Navbar />
             </div>
 
@@ -71,7 +78,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center center",
-                height: "90vh",
+                height: "89vh",
                 overflowY: "scroll",
               }}
             >
