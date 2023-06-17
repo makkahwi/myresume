@@ -8,8 +8,7 @@ class MyDocument extends Document {
   }
 
   render() {
-    const title = metadata.title;
-    const description = metadata.description;
+    const { title, description } = metadata;
 
     return (
       <Html dir="ltr" lang="en">
