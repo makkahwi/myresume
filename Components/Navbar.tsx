@@ -22,27 +22,31 @@ const Navbar = () => {
 
   return (
     <div className="row g-0 h-100 shadow">
-      <Link
+      <span
         className="col-md-12 col-2 text-center text-decoration-none py-3 border-0 text-dark bg-theme"
-        href={""}
+        style={{ cursor: "pointer" }}
       >
-        <img src="/images/logo.png" width="50%" alt="logo" />
-      </Link>
+        <Link href={""}>
+          <img src="/images/logo.png" width="50%" alt="logo" />
+        </Link>
+      </span>
 
       {navLinks.map(({ text, link, Icon }, i) => (
-        <Link
+        <span
           className={`col-md-12 col-2 text-center text-decoration-none py-4 border border-1 border-dark
                         ${
                           asPath === link
                             ? "text-dark bg-white shadow-lg"
                             : "text-white bg-dark"
                         }`}
-          href={link}
+          style={{ cursor: "pointer" }}
           key={i}
         >
-          <Icon className="h3" />
-          {/* {text} */}
-        </Link>
+          <Link href={link}>
+            <Icon className="h3" />
+            {/* {text} */}
+          </Link>
+        </span>
       ))}
     </div>
   );
