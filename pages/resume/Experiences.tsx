@@ -50,6 +50,7 @@ const Experiences = () => {
   const JobsListView = ({
     title,
     jobs,
+    subtitle,
   }: {
     title: string;
     jobs: {
@@ -61,9 +62,11 @@ const Experiences = () => {
       years: string;
       projects: string[];
     }[];
+    subtitle: string;
   }) => (
     <Fragment>
-      <h5 className="my-3 text-decoration-underline">{title}</h5>
+      <h5 className="mt-3 text-decoration-underline">{title}</h5>
+      <h6 className="mb-3">{subtitle}</h6>
 
       {jobs.map((job, i) => (
         <JobView key={i} {...job} />
@@ -73,9 +76,17 @@ const Experiences = () => {
 
   return (
     <PageLayout title={"My Experiences"}>
-      <JobsListView title="Jobs" jobs={data.resume.web.jobsList} />
+      <JobsListView
+        title="Jobs"
+        subtitle="Jobs are important for soft skills and collaboration"
+        jobs={data.resume.web.jobsList}
+      />
 
-      <JobsListView title="Freelancing" jobs={data.resume.web.freelancesList} />
+      <JobsListView
+        title="Freelancing"
+        subtitle="Freelancing helps to explore whatever the job is restricting or disallowing to discover"
+        jobs={data.resume.web.freelancesList}
+      />
     </PageLayout>
   );
 };
