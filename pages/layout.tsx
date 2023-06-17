@@ -1,12 +1,6 @@
 import Header from "@/Components/Header";
 import Navbar from "@/Components/Navbar";
-import { Inter } from "next/font/google";
 import Script from "next/script";
-
-import "../public/css/style.css";
-import "bootstrap/dist/css/bootstrap.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Suhaib Ahmad - Resume Website",
@@ -17,7 +11,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body
-        className={"bg-light " + inter.className}
+        className="bg-light"
         style={{
           backgroundImage: 'url("images/BG3.png")',
           backgroundSize: "cover",

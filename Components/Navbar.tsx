@@ -1,7 +1,6 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 import {
   FaHome,
   FaIndustry,
@@ -11,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
-  const router = usePathname();
+  const router = useRouter();
 
   const navLinks = [
     { text: "Home", link: "/", Icon: FaHome },
