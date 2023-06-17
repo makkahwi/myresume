@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
-  const router = useRouter();
+  const { asPath } = useRouter();
 
   const navLinks = [
     { text: "Home", link: "/", Icon: FaHome },
@@ -33,7 +33,7 @@ const Navbar = () => {
         <Link
           className={`col-md-12 col-2 text-center text-decoration-none py-4 border border-1 border-dark
                         ${
-                          router === link
+                          asPath === link
                             ? "text-dark bg-white shadow-lg"
                             : "text-white bg-dark"
                         }`}

@@ -1,6 +1,7 @@
 import Header from "@/Components/Header";
 import Navbar from "@/Components/Navbar";
-import Script from "next/script";
+import Head from "next/head";
+import { Fragment } from "react";
 
 export const metadata = {
   title: "Suhaib Ahmad - Resume Website",
@@ -9,7 +10,14 @@ export const metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <html lang="en">
+    <Fragment>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>{metadata.title}</title>
+      </Head>
+
       <body
         className="bg-light"
         style={{
@@ -20,20 +28,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           overflowX: "hidden",
         }}
       >
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-WDD6QTCBFJ"
-        />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-WDD6QTCBFJ');
-          `}
-        </Script>
-
         <div
           className="card border border-1"
           style={{
@@ -81,7 +75,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           </div>
         </div>
       </body>
-    </html>
+    </Fragment>
   );
 };
 
