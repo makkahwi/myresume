@@ -281,13 +281,24 @@ const Data = {
     web: {
       jobsList: [
         {
+          company: "Deloitte Digital",
+          website:
+            "https://www2.deloitte.com/xe/en/pages/strategy-operations/solutions/deloitte-jordan-digital-center.html",
+          description:
+            "Full-time job to develop JS-based web apps for online public (government) services.",
+          title: "Delivery Consultant",
+          // certificate: "/agiletz.pdf",
+          years: "Jun 2023 - Present",
+          // projects: ["Sanad", "DLS"],
+        },
+        {
           company: "AgileTz",
           website: "https://www.agiletz.com/",
           description:
             "Full-time job to develop React.Js-Node.Js web apps for online public (government) services.",
           title: "Senior Full-Stack Developer",
           // certificate: "/agiletz.pdf",
-          years: "Aug 2022 - Present",
+          years: "Aug 2022 - May 2023",
           projects: ["Sanad", "DLS"],
         },
         {
