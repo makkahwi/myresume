@@ -301,16 +301,16 @@ const Data = {
           years: "Aug 2022 - May 2023",
           projects: ["Sanad", "DLS"],
         },
-        {
-          company: "ArabWork",
-          website: "https://www.linkedin.com/company/arabwork/",
-          description:
-            "Full-time job to develop a Vue-Symfony web app for an online service.",
-          title: "Frontend Developer",
-          // certificate: "/arabwork.pdf",
-          years: "Jun 2022 - Aug 2022",
-          projects: ["Trellah"],
-        },
+        // {
+        //   company: "ArabWork",
+        //   website: "https://www.linkedin.com/company/arabwork/",
+        //   description:
+        //     "Full-time job to develop a Vue-Symfony web app for an online service.",
+        //   title: "Frontend Developer",
+        //   // certificate: "/arabwork.pdf",
+        //   years: "Jun 2022 - Aug 2022",
+        //   projects: ["Trellah"],
+        // },
         {
           company: "LuxTag",
           website: "https://luxtag.io/",
@@ -318,17 +318,7 @@ const Data = {
             "Full-time job to develop a flagship PERN-based web app for an online service.",
           title: "Frontend Developer",
           certificate: "/luxtag.pdf",
-          years: "May 2021 - Oct 2021",
-          projects: ["BrandTag"],
-        },
-        {
-          company: "LuxTag",
-          website: "https://luxtag.io/",
-          description:
-            "Full-time internship to develop a flagship PERN-based web app for an online service.",
-          title: "Full-Stack Developer",
-          certificate: "/luxtag.pdf",
-          years: "Nov 2021 - Apr 2021",
+          years: "Nov 2020 - Oct 2021",
           projects: ["BrandTag"],
         },
         {
