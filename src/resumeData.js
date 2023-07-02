@@ -247,7 +247,7 @@ const Data = {
     web: [
       {
         degree: "6-Month Training Camp",
-        description: "Python-Based Web Dev (Code Fellows Curriculum)",
+        description: "Python Based Web Dev (Code Fellows Curriculum)",
         graduated: "Jan - July 2022",
         school: "ASAC of LTUC College (Jordan)",
         logo: "images/LTUC.png",
@@ -285,7 +285,7 @@ const Data = {
           website:
             "https://www2.deloitte.com/xe/en/pages/strategy-operations/solutions/deloitte-jordan-digital-center.html",
           description:
-            "Full-time job to develop JS-based web apps for online public (government) services.",
+            "Full-time job to develop JS based web apps for online public (government) services.",
           title: "Delivery Consultant",
           // certificate: "/agiletz.pdf",
           years: "Jun 2023 - Present",
@@ -315,7 +315,7 @@ const Data = {
           company: "LuxTag",
           website: "https://luxtag.io/",
           description:
-            "Full-time job to develop a flagship PERN-based web app for an online service.",
+            "Full-time job to develop a flagship PERN based web app for an online service.",
           title: "Frontend Developer",
           certificate: "/luxtag.pdf",
           years: "Nov 2020 - Oct 2021",
@@ -325,7 +325,7 @@ const Data = {
           company: "AIS School",
           website: "http://aqsa.edu.my/",
           description:
-            "Part-time job to develop a Laravel-based web app of a student information system.",
+            "Part-time job to develop a Laravel based web app of a student information system.",
           title: "Full-Stack Developer",
           certificate: "/ais.pdf",
           years: "Sep 2019 - Aug 2020",
@@ -346,7 +346,7 @@ const Data = {
         {
           company: "Individually",
           description:
-            "Executed several Laravel-based & PERN-based web app private & open-source projects.",
+            "Executed several Laravel based & PERN based web app private & open-source projects.",
           title: "Full-Stack Developer",
           years: "Sep 2019 - Present",
           projects: [
@@ -361,14 +361,14 @@ const Data = {
         {
           company: "Individually",
           description:
-            "Several code-based frontend-only landing-page projects.",
+            "Several code based frontend-only landing-page projects.",
           title: "Frontend Developer",
           years: "May 2018 - Aug 2019",
           projects: ["Arromi"],
         },
         {
           company: "Individually",
-          description: "Several wordpress-based website projects.",
+          description: "Several wordpress based website projects.",
           title: "Wordpress Developer",
           years: "Oct 2015 - Apr 2018",
           projects: [
@@ -685,7 +685,7 @@ const Data = {
           image: `${portfolioLink}/20.jpg`,
           title: "Sanad",
           link: "Sanad",
-          url: "https://sanadfront.agiletz.com/",
+          // url: "https://sanadfront.agiletz.com/",
         },
         {
           category: "Web Apps",
@@ -744,12 +744,12 @@ const Data = {
         },
         {
           category: "Landing Pages",
-          description: "Wordpress Website",
-          comingSoon: true,
+          description: "Frontend Dev of Next.Js Based Landing Page",
+          comingSoon: false,
           image: `${portfolioLink}/12.jpg`,
           title: "Dr. Ahmad Abu Mahfouth",
           link: "aam",
-          url: "https://aam.arromi.net/",
+          url: "drahmadabumahfouth.com",
         },
         {
           category: "Web Apps",
@@ -779,7 +779,7 @@ const Data = {
         },
         // {
         //   category: "Landing Pages",
-        //   description: "React.Js-Based App",
+        //   description: "React.Js Based App",
         //   comingSoon: true,
         //   openSource: true,
         //   image: `${portfolioLink}/18.jpg`,
@@ -806,7 +806,7 @@ const Data = {
         // },
         // {
         //   category: "Web Apps",
-        //   description: "Full-Stack Dev of PERN-Based App",
+        //   description: "Full-Stack Dev of PERN Based App",
         //   comingSoon: true,
         //   image: `${portfolioLink}/10.jpg`,
         //   title: "xEdu App",
@@ -840,7 +840,7 @@ const Data = {
         },
         {
           category: "Web Apps",
-          description: "Full-Stack Dev of React-Django-Based (Coollebraive)",
+          description: "Full-Stack Dev of React-Django Based (Coollebraive)",
           openSource: true,
           image: `${portfolioLink}/13.jpg`,
           title: "Tadreebi",
