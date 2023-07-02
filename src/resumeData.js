@@ -749,7 +749,7 @@ const Data = {
           image: `${portfolioLink}/12.jpg`,
           title: "Dr. Ahmad Abu Mahfouth",
           link: "aam",
-          url: "drahmadabumahfouth.com",
+          url: "https://drahmadabumahfouth.com",
         },
         {
           category: "Web Apps",
