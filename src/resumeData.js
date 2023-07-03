@@ -426,6 +426,13 @@ const Data = {
           subskills: ["VueX", "Vuetify", "Axios", "Webpack", "i18next"],
         },
         {
+          icon: faVuejs,
+          name: "Nuxt.Js",
+          color: "00DC82",
+          website: "https://nuxt.com/",
+          subskills: ["Same as Vue.Js"],
+        },
+        {
           icon: faNode,
           name: "Node.Js",
           color: "8bc500",
