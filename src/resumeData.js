@@ -288,7 +288,7 @@ const Data = {
             "Full-time job to develop JS based web apps for online public (government) services.",
           title: "Delivery Consultant",
           // certificate: "/agiletz.pdf",
-          years: "Jun 2023 - Present",
+          years: "Jun - Jul 2023",
           // projects: ["Sanad", "DLS"],
         },
         {
@@ -334,16 +334,6 @@ const Data = {
       ],
       freelancesList: [
         {
-          company: "Digizyn",
-          website: "https://digizyn.com/",
-          description:
-            "Freelance job to develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
-          title: "Full-Stack Developer",
-          // certificate: "/digizyn.pdf",
-          years: "Jul 2022 - Jul 2022",
-          projects: ["DLS"],
-        },
-        {
           company: "Individually",
           description:
             "Executed several Laravel based & PERN based web app private & open-source projects.",
@@ -357,6 +347,16 @@ const Data = {
             "R&K_Landing",
             "R&K_App",
           ],
+        },
+        {
+          company: "Digizyn",
+          website: "https://digizyn.com/",
+          description:
+            "Freelance job to develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
+          title: "Full-Stack Developer",
+          // certificate: "/digizyn.pdf",
+          years: "Jul 2022 - Jul 2022",
+          projects: ["DLS"],
         },
         {
           company: "Individually",
