@@ -47,6 +47,7 @@ import {
   faScroll,
   faShapes,
   faSyncAlt,
+  faV,
   faVectorSquare,
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";
@@ -393,6 +394,7 @@ const Data = {
             "Axios",
             "i18next",
             "Material-UI",
+            "Chakra-UI",
             "TailwindCSS",
             "Ant Design",
             "PrimeReact",
@@ -410,6 +412,13 @@ const Data = {
           name: "Next.Js",
           color: "000000",
           website: "https://nextjs.org/",
+          subskills: ["Same as React.Js"],
+        },
+        {
+          icon: faV,
+          name: "Vite",
+          color: "B63DFE",
+          website: "https://vitejs.dev/",
           subskills: ["Same as React.Js"],
         },
         {
@@ -683,6 +692,15 @@ const Data = {
   portfolio: {
     web: {
       projectsList: [
+        {
+          category: "Web Apps",
+          description: "Frontend Dev of React.js Based SaaS App",
+          comingSoon: true,
+          image: `${portfolioLink}/10.jpg`,
+          title: "Entreviable",
+          link: "Entreviable",
+          // url: "https://entreviable.com",
+        },
         {
           category: "Web Apps",
           description:
