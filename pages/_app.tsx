@@ -1,11 +1,18 @@
 import Script from "next/script";
 import { Fragment } from "react";
 
-import "bootstrap/dist/css/bootstrap.css";
-import "../public/css/style.css";
 import RootLayout from "./layout";
 
-const MyApp = ({ Component, pageProps }) => {
+import "../public/css/style.css";
+import "bootstrap/dist/css/bootstrap.css";
+
+const MyApp = ({
+  Component,
+  pageProps,
+}: {
+  Component: any;
+  pageProps: any;
+}) => {
   return (
     <Fragment>
       {/* Google tag (gtag.js) */}
