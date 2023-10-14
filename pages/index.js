@@ -51,13 +51,14 @@ const ComingSoon = () => {
             <div className="coming-soon-content">
               <div className="d-table">
                 <div className="d-table-cell">
-                  <Link href="/">
-                    <span className="logo">
-                      <img src="/images/logo.png" alt="image" />
-                    </span>
-                  </Link>
-                  <h2>Rebranding Is In-Progress</h2>
-                  <h3 className="my-4 text-primary">We will be back in...</h3>
+                  <span className="logo bg-primary p-1 rounded-circle">
+                    <img src="/images/logo.png" alt="image" />
+                  </span>
+                  <h2>Suhaib Ahmad</h2>
+                  <h3 className="my-2">Resume Website</h3>
+                  <h4 className="my-4 text-primary">
+                    Rebranding is in-progress, we will be back in...
+                  </h4>
                   <div
                     id="timer"
                     className="flex-wrap d-flex justify-content-center"
