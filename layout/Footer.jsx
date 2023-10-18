@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <Navbar className="py-2 mt-4" color="dark" dark>
+    <Navbar className="py-2 px-4" color="dark" dark>
       <NavbarBrand href="/">Reactstrap</NavbarBrand>
 
       <Nav>

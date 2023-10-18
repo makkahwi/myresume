@@ -31,7 +31,7 @@ const NavbarComp = () => {
   ];
 
   return (
-    <Navbar className="py-2 mb-4" color="dark" dark sticky>
+    <Navbar className="py-2 px-4" color="dark" dark sticky>
       <NavbarBrand href="/">Reactstrap</NavbarBrand>
 
       <Nav>
