@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import AboutSection from "sections/home/about";
+import StatsSection from "sections/home/stats";
 import WelcomeSection from "sections/home/welcome";
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
     <Fragment>
       <WelcomeSection />
       <AboutSection />
+      <StatsSection />
     </Fragment>
   );
 };

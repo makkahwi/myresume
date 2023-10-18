@@ -11,10 +11,11 @@ const WelcomeSection = () => {
   );
 
   const texts = [
-    "Innovation & shaping education digital solutions",
-    "Entrepreneuring to overcome educational challenges",
-    "Entrepreneuring to revolutionize education section",
-    "Investing technology passion & experience into education solutions",
+    "Founder & CEO of Semesteer, Entrepreneur, Innovator & Web Developer",
+    "Innovating & Shaping Education Digital Solutions",
+    "Entrepreneuring to Overcome Educational Challenges",
+    "Entrepreneuring to Revolutionize Education Section",
+    "Investing Rechnology Passion & Experience Into Education Solutions",
   ];
 
   return (
