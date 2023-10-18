@@ -14,7 +14,7 @@ const Footer = () => {
       <ButtonToolbar>
         {socialLinksList.map(({ icon, link }, i) => (
           <a href={link} target="_blank" key={i}>
-            <Button color="ghost" className="text-white">
+            <Button color="ghost" outline className="text-white ms-2" size="sm">
               <FontAwesomeIcon icon={icon} />
             </Button>
           </a>
