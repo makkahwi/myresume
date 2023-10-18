@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Typography from "components/typography";
 import { socialLinksList } from "pages/_document";
 import { Button, ButtonToolbar, Navbar, NavbarText } from "reactstrap";
 
@@ -6,9 +7,9 @@ const Footer = () => {
   return (
     <Navbar className="py-4 px-4" color="secondary" dark>
       <NavbarText>
-        <small className="text-white p-0 m-0">
+        <Typography color="white">
           All Rights Reserved For Suhaib Ahmad © {new Date().getFullYear()}
-        </small>
+        </Typography>
       </NavbarText>
 
       <ButtonToolbar>
