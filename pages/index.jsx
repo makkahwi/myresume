@@ -1,5 +1,12 @@
+import { Fragment } from "react";
+import WelcomeSection from "sections/home/welcome";
+
 const HomePage = () => {
-  return <div>Welcome</div>;
+  return (
+    <Fragment>
+      <WelcomeSection />
+    </Fragment>
+  );
 };
 
 export default HomePage;
