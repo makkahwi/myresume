@@ -1,64 +1,25 @@
-import { useState } from "react";
-import {
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Nav,
-  NavItem,
-  NavLink,
-  Navbar,
-  NavbarBrand,
-} from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { socialLinksList } from "pages/_document";
+import { Button, ButtonToolbar, Navbar, NavbarText } from "reactstrap";
 
 const Footer = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggle = () => setDropdownOpen(!dropdownOpen);
-
-  const links = [
-    { title: "Home", link: "/" },
-    {
-      title: "About",
-      links: [
-        { title: "About 1", links: "1" },
-        { title: "About 2", links: "2" },
-        { title: "About 3", links: "3" },
-      ],
-    },
-    { title: "Blog", link: "/" },
-    { title: "Contact", link: "/" },
-  ];
-
   return (
-    <Navbar className="py-2 px-4" color="dark" dark>
-      <NavbarBrand href="/">Reactstrap</NavbarBrand>
+    <Navbar className="py-4 px-4" color="dark" dark>
+      <NavbarText>
+        <small className="text-white p-0 m-0">
+          All Rights Reserved For Suhaib Ahmad © {new Date().getFullYear()}
+        </small>
+      </NavbarText>
 
-      <Nav>
-        {links.map(({ title, link, links }, i) => (
-          <NavItem key={i}>
-            {links ? (
-              <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-                <DropdownToggle nav caret className="text-white">
-                  {title}
-                </DropdownToggle>
-
-                <DropdownMenu>
-                  {/* <DropdownItem header>Header</DropdownItem> */}
-                  {links.map(({ title, link }, y) => (
-                    <DropdownItem key={y}>{title}</DropdownItem>
-                  ))}
-                  {/* <DropdownItem divider /> */}
-                </DropdownMenu>
-              </Dropdown>
-            ) : (
-              <NavLink href={link} className="text-white">
-                {title}
-              </NavLink>
-            )}
-          </NavItem>
+      <ButtonToolbar>
+        {socialLinksList.map(({ icon, link }, i) => (
+          <a href={link} target="_blank" key={i}>
+            <Button color="ghost" className="text-white">
+              <FontAwesomeIcon icon={icon} />
+            </Button>
+          </a>
         ))}
-      </Nav>
+      </ButtonToolbar>
     </Navbar>
   );
 };

@@ -1,31 +1,54 @@
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedinIn,
+  faTelegram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 import { Fragment } from "react";
 
 export const socialLinksList = [
   {
-    icon: "ri-linkedin-fill",
+    name: "linkedin",
+    icon: faLinkedinIn,
     link: "https://linkedin.com/in/makkahwi/",
   },
-  { icon: "ri-github-fill", link: "https://github.com/makkahwi" },
   {
-    icon: "ri-whatsapp-fill",
+    name: "github",
+    icon: faGithub,
+    link: "https://github.com/makkahwi",
+  },
+  {
+    name: "whatsapp",
+    icon: faWhatsapp,
     link: "https://wasap.my/962788424973",
   },
   {
-    icon: "ri-telegram-fill",
+    name: "telegram",
+    icon: faTelegram,
     link: "https://t.me/makkahwi",
   },
   {
-    icon: "ri-phone-fill",
+    name: "phone",
+    icon: faPhone,
     link: "tel:+962788424973",
   },
-  { icon: "ri-mail-fill", link: "mailto:SuhaibAhmadAi@hotmail.com" },
   {
-    icon: "ri-facebook-fill",
+    name: "email",
+    icon: faEnvelope,
+    link: "mailto:SuhaibAhmadAi@hotmail.com",
+  },
+  {
+    name: "facebook",
+    icon: faFacebook,
     link: "https://facebook.com/makkahwi",
   },
   {
-    icon: "ri-instagram-fill",
+    name: "instagram",
+    icon: faInstagram,
     link: "https://instagram.com/makkahwi",
   },
 ];

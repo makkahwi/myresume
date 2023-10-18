@@ -14,7 +14,7 @@ import {
 const NavbarComp = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggle = () => setDropdownOpen(!dropdownOpen);
+  const toggle = () => setDropdownOpen((current) => !current);
 
   const links = [
     { title: "Home", link: "/" },
@@ -31,7 +31,7 @@ const NavbarComp = () => {
   ];
 
   return (
-    <Navbar className="py-2 px-4" color="dark" dark sticky>
+    <Navbar className="py-3 px-4" color="dark" dark sticky>
       <NavbarBrand href="/">Reactstrap</NavbarBrand>
 
       <Nav>
