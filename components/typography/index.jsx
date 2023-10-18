@@ -7,7 +7,7 @@ const Typography = ({
 }) => {
   const classes = `text-${color} text-${justify} ${className}`;
 
-  switch (`${size}`) {
+  switch (String(size)) {
     case "1":
       return <h1 className={classes}>{children}</h1>;
     case "2":
