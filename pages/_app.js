@@ -1,11 +1,6 @@
 import Script from "next/script";
 import { Fragment } from "react";
 
-import "@/public/css/animate.min.css";
-import "@/public/css/bootstrap.min.css";
-import "@/public/css/remixicon.css";
-import "@/public/css/styles.css";
-
 const MyApp = ({ Component, pageProps }) => {
   return (
     <Fragment>
