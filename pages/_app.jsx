@@ -1,10 +1,11 @@
 import Script from "next/script";
 import { Fragment } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Layout from "layout";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <Fragment>
-      {/* Google tag (gtag.js) */}
       <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-Q3F7EETTSK"
@@ -20,7 +21,9 @@ const MyApp = ({ Component, pageProps }) => {
         `}
       </Script>
 
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Fragment>
   );
 };

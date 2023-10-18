@@ -31,20 +31,12 @@ export const socialLinksList = [
 ];
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps, locale: ctx?.locale || "en" };
-  }
-
   render() {
-    const title = "Suhaib Ahmad - Resume Website (Coming Soon)";
-    const description = "Suhaib Ahmad - Coming Soon";
+    const title = "Suhaib Ahmad - Resume Website";
+    const description = "Suhaib Ahmad";
 
     return (
-      <Html
-        dir={this.props.locale === "ar" ? "rtl" : "ltr"}
-        lang={this.props.locale}
-      >
+      <Html dir="ltr" lang="en">
         <Head>
           <link rel="icon" type="image/png" href="/images/logo.png" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
