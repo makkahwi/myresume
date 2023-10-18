@@ -20,26 +20,33 @@ const NavbarComp = () => {
     { title: "Home", link: "/" },
     {
       title: "About",
-      links: [
-        { title: "About 1", links: "1" },
-        { title: "About 2", links: "2" },
-        { title: "About 3", links: "3" },
-      ],
+      link: "/",
     },
+    // {
+    //   title: "About",
+    //   links: [
+    //     { title: "About 1", links: "1" },
+    //     { title: "About 2", links: "2" },
+    //     { title: "About 3", links: "3" },
+    //   ],
+    // },
     { title: "Blog", link: "/" },
     { title: "Contact", link: "/" },
   ];
 
   return (
-    <Navbar className="py-3 px-4" color="dark" dark sticky>
-      <NavbarBrand href="/">Reactstrap</NavbarBrand>
+    <Navbar className="py-3 px-4" color="warning" light sticky>
+      <NavbarBrand href="/" className="fw-bold">
+        <img src="/images/logo.png" width="40px" className="me-3" />
+        Suhaib Ahmad
+      </NavbarBrand>
 
       <Nav>
         {links.map(({ title, link, links }, i) => (
           <NavItem key={i}>
             {links ? (
               <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
-                <DropdownToggle nav caret className="text-white">
+                <DropdownToggle nav caret className="text-dark">
                   {title}
                 </DropdownToggle>
 
@@ -52,7 +59,7 @@ const NavbarComp = () => {
                 </DropdownMenu>
               </Dropdown>
             ) : (
-              <NavLink href={link} className="text-white">
+              <NavLink href={link} className="text-dark fw-bold">
                 {title}
               </NavLink>
             )}

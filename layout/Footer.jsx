@@ -4,7 +4,7 @@ import { Button, ButtonToolbar, Navbar, NavbarText } from "reactstrap";
 
 const Footer = () => {
   return (
-    <Navbar className="py-4 px-4" color="dark" dark>
+    <Navbar className="py-4 px-4" color="secondary" dark>
       <NavbarText>
         <small className="text-white p-0 m-0">
           All Rights Reserved For Suhaib Ahmad © {new Date().getFullYear()}
