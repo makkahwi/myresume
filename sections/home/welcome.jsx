@@ -14,7 +14,7 @@ const WelcomeSection = () => {
     "Founder & CEO of Semesteer, Entrepreneur, Innovator & Web Developer",
     "Innovating & Shaping Education Digital Solutions",
     "Entrepreneuring to Overcome Educational Challenges",
-    "Entrepreneuring to Revolutionize Education Section",
+    "Entrepreneuring to Revolutionize Education Sector",
     "Investing Rechnology Passion & Experience Into Education Solutions",
   ];
 
