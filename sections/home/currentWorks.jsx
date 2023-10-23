@@ -1,6 +1,6 @@
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
-import { Fragment } from "react";
+import { Col, Row } from "reactstrap";
 
 const CurrentWorksSection = () => {
   const works = [
@@ -16,10 +16,6 @@ const CurrentWorksSection = () => {
       title: "Learngine",
       desc: "Another supporting product to cover the needs of digitizing the learning communication of students & their instructors. Product MVP is now buidling built to be tested by pilot client.",
     },
-    {
-      title: "...etc",
-      desc: "With plans to study and release more than 10 other educational solutions.",
-    },
   ];
 
   return (
@@ -28,17 +24,20 @@ const CurrentWorksSection = () => {
       subtitle="What I'm Fully Dedicated to Make Happen"
       color="secondary"
     >
-      {works.map(({ title, desc }, i) => (
-        <Fragment key={i}>
-          <Typography size={3} className="py-5" color="white">
-            {title}
-          </Typography>
-
-          <Typography size={3} color="white">
-            {desc}
-          </Typography>
-        </Fragment>
-      ))}
+      <Row>
+        {works.map(({ title, desc }, i) => (
+          <Col md={4} key={i}>
+            <Typography
+              size={3}
+              className="py-5"
+              color="white"
+              justify="center"
+            >
+              {title}
+            </Typography>
+          </Col>
+        ))}
+      </Row>
     </PageSection>
   );
 };
