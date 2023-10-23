@@ -10,11 +10,11 @@ const CurrentWorksSection = () => {
     },
     {
       title: "TeamsLine",
-      desc: "Another supporting product to help managing the staff of the educational institute. MVP was build and now under progress of testing & updating.",
+      desc: "A supporting product to help managing the staff of the educational institute. MVP was build and now under progress of testing & updating.",
     },
     {
       title: "Learngine",
-      desc: "A supporting product to cover the needs of digitizing the learning communication of students & their instructors. Product MVP is now buidling built to be tested by pilot client.",
+      desc: "Another supporting product to cover the needs of digitizing the learning communication of students & their instructors. Product MVP is now buidling built to be tested by pilot client.",
     },
     {
       title: "...etc",
@@ -23,10 +23,14 @@ const CurrentWorksSection = () => {
   ];
 
   return (
-    <PageSection color="secondary">
+    <PageSection
+      title="My Works"
+      subtitle="What I'm Fully Dedicated to Make Happen"
+      color="secondary"
+    >
       {works.map(({ title, desc }, i) => (
         <Fragment key={i}>
-          <Typography size={3} justify="center" className="p-5" color="white">
+          <Typography size={3} className="py-5" color="white">
             {title}
           </Typography>
 
