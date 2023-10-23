@@ -1,6 +1,8 @@
 import CarouselComp from "components/carousel";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
+import { useEffect, useState } from "react";
+import ReactPlayer from "react-player";
 import { Col, Row } from "reactstrap";
 
 const WelcomeSection = () => {
@@ -18,6 +20,12 @@ const WelcomeSection = () => {
     "Investing Rechnology Passion & Experience Into Education Solutions",
   ];
 
+  const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    setShowVideo(true);
+  }, []);
+
   return (
     <PageSection>
       <Row>
@@ -34,7 +42,14 @@ const WelcomeSection = () => {
         </Col>
 
         <Col md={6}>
-          <img src="/images/profile.jpg" width="100%" />
+          {showVideo ? (
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+              light="/images/profile.jpg"
+            />
+          ) : (
+            <img src="/images/profile.jpg" />
+          )}
         </Col>
       </Row>
     </PageSection>
