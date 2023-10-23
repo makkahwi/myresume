@@ -10,7 +10,15 @@ import WelcomeSection from "sections/home/welcome";
 export const getServerSideProps = async () => {
   let posts = [];
 
-  await getBlogEnPosts().then((res) => (posts = res.data));
+  await getBlogEnPosts().then(
+    (res) =>
+      (posts = res.data
+        ?.filter(({ category }) => category === "Articles")
+        .map(({ category, ...rest }) => ({
+          ...rest,
+          category: "Digitizing Education",
+        })))
+  );
 
   return {
     props: { posts },

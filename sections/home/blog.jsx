@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PageSection from "components/pageSection";
+import { useState } from "react";
 import {
   Button,
   ButtonGroup,
@@ -20,6 +21,8 @@ import {
 } from "reactstrap";
 
 const BlogSection = ({ posts }) => {
+  const [pickedCategory, setPickedCategory] = useState("");
+
   const buttons = [
     { text: "All", category: "", icon: faArrowsRotate },
     {
@@ -53,7 +56,11 @@ const BlogSection = ({ posts }) => {
     <PageSection title="My Blog">
       <ButtonGroup className="my-5 w-100">
         {buttons.map(({ text, category, icon }, i) => (
-          <Button color={i % 2 === 1 ? "warning" : "secondary"} key={i}>
+          <Button
+            onClick={() => setPickedCategory(category)}
+            color={i % 2 === 1 ? "warning" : "secondary"}
+            key={i}
+          >
             <FontAwesomeIcon icon={icon} className="me-2" />
             <span>{text}</span>
           </Button>
@@ -62,7 +69,9 @@ const BlogSection = ({ posts }) => {
 
       <Row className="justify-content-center">
         {posts
-          ?.filter(({ category }) => category === "Articles")
+          ?.filter(({ category }) =>
+            pickedCategory ? category === pickedCategory : true
+          )
           ?.map(({ category, date, image, title, body }, i) => (
             <Col md={3} className="mb-4" key={i}>
               <Card>
