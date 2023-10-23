@@ -1,7 +1,9 @@
+import Layout from "layout";
 import Script from "next/script";
 import { Fragment } from "react";
+
+import "../public/css/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Layout from "layout";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
