@@ -7,9 +7,7 @@ import {
   faSeedling,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { getBlogEnPosts } from "api";
 import PageSection from "components/pageSection";
-import { useEffect, useState } from "react";
 import {
   Button,
   ButtonGroup,
@@ -21,13 +19,7 @@ import {
   Row,
 } from "reactstrap";
 
-const BlogSection = () => {
-  const [posts, setPosts] = useState([]);
-
-  useEffect(async () => {
-    await getBlogEnPosts().then((res) => setPosts(res.data));
-  }, []);
-
+const BlogSection = ({ posts }) => {
   const buttons = [
     { text: "All", category: "", icon: faArrowsRotate },
     {

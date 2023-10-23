@@ -1,3 +1,4 @@
+import { getBlogEnPosts } from "api";
 import { Fragment } from "react";
 import AboutSection from "sections/home/about";
 import BlogSection from "sections/home/blog";
@@ -6,7 +7,17 @@ import CurrentWorksSection from "sections/home/currentWorks";
 import StatsSection from "sections/home/stats";
 import WelcomeSection from "sections/home/welcome";
 
-const HomePage = () => {
+export const getServerSideProps = async () => {
+  let posts = [];
+
+  await getBlogEnPosts().then((res) => (posts = res.data));
+
+  return {
+    props: { posts },
+  };
+};
+
+const HomePage = ({ posts }) => {
   return (
     <Fragment>
       <WelcomeSection />
@@ -17,7 +28,7 @@ const HomePage = () => {
 
       <CurrentWorksSection />
 
-      <BlogSection />
+      <BlogSection posts={posts} />
 
       <CtaSection />
     </Fragment>
