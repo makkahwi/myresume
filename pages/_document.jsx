@@ -53,9 +53,10 @@ export const socialLinksList = [
   },
 ];
 
+export const title = "Suhaib Ahmad - Resume Website";
+
 class MyDocument extends Document {
   render() {
-    const title = "Suhaib Ahmad - Resume Website";
     const description = "Suhaib Ahmad";
 
     return (
@@ -63,12 +64,6 @@ class MyDocument extends Document {
         <Head>
           <link rel="icon" type="image/png" href="/images/logo.png" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
-
-          <title>{title}</title>
 
           <meta name="description" content={description} />
 

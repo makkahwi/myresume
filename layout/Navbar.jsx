@@ -35,7 +35,7 @@ const NavbarComp = () => {
   ];
 
   return (
-    <Navbar className="py-3 px-4" color="warning" light sticky>
+    <Navbar className="py-3 px-4" color="warning" light sticky="true">
       <NavbarBrand href="/" className="fw-bold">
         <img src="/images/logo.png" width="40px" className="me-3" />
         Suhaib Ahmad

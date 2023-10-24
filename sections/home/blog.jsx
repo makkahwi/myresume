@@ -170,7 +170,7 @@ const BlogSection = ({ posts }) => {
             </Col>
           ))}
 
-        <Modal isOpen={pickedArticle.title} size="xl">
+        <Modal isOpen={!!pickedArticle.title} size="xl">
           <ModalHeader>
             {pickedArticle.title}
             <Button
