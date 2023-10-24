@@ -6,6 +6,8 @@ const CtaSection = () => {
   const formInputs = [
     { name: "name", title: "Name", required: true },
     { name: "org", title: "Organization", required: false },
+    { name: "email", title: "Email", required: true },
+    { name: "phone", title: "Phone", required: false },
     {
       name: "message",
       title: "Message",
@@ -41,6 +43,7 @@ const CtaSection = () => {
                         name={name}
                         placeholder={title}
                         type={type}
+                        className="py-3"
                       />
                     </FormGroup>
                   </Col>
