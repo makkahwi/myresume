@@ -7,7 +7,9 @@ const Layout = ({ children }) => {
     <Fragment>
       <Navbar />
 
-      {children}
+      <div className="mx-0 mb-0 p-0 w-100" style={{ marginTop: "11vh" }}>
+        {children}
+      </div>
 
       <Footer />
     </Fragment>
