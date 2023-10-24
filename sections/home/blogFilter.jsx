@@ -2,6 +2,7 @@ import {
   faArrowsRotate,
   faCode,
   faLaptop,
+  faListCheck,
   faSchool,
   faSeedling,
 } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +11,7 @@ import { Button, ButtonGroup } from "reactstrap";
 
 const BlogFilter = ({ setPickedCategory }) => {
   const buttons = [
-    { text: "All", category: "", icon: faArrowsRotate },
+    { text: "All", category: "", icon: faListCheck },
     {
       text: "Digitizing Education",
       category: "Digitizing Education",
@@ -42,7 +43,7 @@ const BlogFilter = ({ setPickedCategory }) => {
           key={i}
         >
           <FontAwesomeIcon icon={icon} className="me-2" />
-          <span>{text}</span>
+          <span className="d-none d-md-inline">{text}</span>
         </Button>
       ))}
     </ButtonGroup>

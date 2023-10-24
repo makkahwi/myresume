@@ -46,9 +46,10 @@ const WelcomeSection = () => {
             <ReactPlayer
               url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
               light="/images/profile.jpg"
+              width="100%"
             />
           ) : (
-            <img src="/images/profile.jpg" />
+            <img src="/images/profile.jpg" width="100%" />
           )}
         </Col>
       </Row>
