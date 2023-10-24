@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import {
   Dropdown,
   DropdownItem,
@@ -17,10 +18,10 @@ const NavbarComp = () => {
   const toggle = () => setDropdownOpen((current) => !current);
 
   const links = [
-    { title: "Home", link: "/" },
+    { title: "Home", link: "home" },
     {
       title: "About",
-      link: "/",
+      link: "about",
     },
     // {
     //   title: "About",
@@ -30,12 +31,19 @@ const NavbarComp = () => {
     //     { title: "About 3", links: "3" },
     //   ],
     // },
-    { title: "Blog", link: "/" },
-    { title: "Contact", link: "/" },
+    { title: "Works", link: "works" },
+    { title: "Blog", link: "blog" },
+    { title: "Contact", link: "contact" },
   ];
 
   return (
-    <Navbar className="py-3 px-4" color="warning" light sticky="true">
+    <Navbar
+      className="py-3 px-4 border-bottom border-light"
+      color="warning"
+      light
+      fixed="top"
+      full
+    >
       <NavbarBrand href="/" className="fw-bold">
         <img src="/images/logo.png" width="40px" className="me-3" />
         Suhaib Ahmad
@@ -59,9 +67,9 @@ const NavbarComp = () => {
                 </DropdownMenu>
               </Dropdown>
             ) : (
-              <NavLink href={link} className="text-dark fw-bold">
-                {title}
-              </NavLink>
+              <Link to={link} style={{ cursor: "pointer" }}>
+                <NavLink className="text-dark fw-bold">{title}</NavLink>
+              </Link>
             )}
           </NavItem>
         ))}

@@ -3,7 +3,7 @@ import Typography from "components/typography";
 
 const AboutSection = () => {
   return (
-    <PageSection color="warning">
+    <PageSection color="warning" id="about">
       <Typography size={4} justify="center" className="p-5">
         Passionate entrepreneur with a vision to revolutionize the edtech
         industry. Founder and CEO of Semesteer, dedicated to creating

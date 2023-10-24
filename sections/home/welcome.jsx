@@ -27,7 +27,7 @@ const WelcomeSection = () => {
   }, []);
 
   return (
-    <PageSection>
+    <PageSection id="home">
       <Row>
         <Col md={6}>
           <Typography size={2} justify="center" className="pb-5">

@@ -9,7 +9,7 @@ const BlogSection = ({ posts }) => {
   const [pickedArticle, setPickedArticle] = useState({ title: "" });
 
   return (
-    <PageSection title="My Blog">
+    <PageSection title="My Blog" id="blog">
       <BlogFilter setPickedCategory={setPickedCategory} />
 
       <Row className="justify-content-center">

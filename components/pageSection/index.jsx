@@ -7,9 +7,10 @@ const PageSection = ({
   color = "light",
   rounded = false,
   card = false,
+  id = "",
 }) => {
   const Content = () => (
-    <div className={`bg-${color} p-5 ${rounded && "rounded"}`}>
+    <div className={`bg-${color} p-5 ${rounded && "rounded"}`} id={id}>
       {title && (
         <SectionTitle title={title} subtitle={subtitle} color={color} />
       )}

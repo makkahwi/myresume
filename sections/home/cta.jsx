@@ -16,7 +16,13 @@ const CtaSection = () => {
   ];
 
   return (
-    <PageSection title="Interested To Support?" color="warning" rounded card>
+    <PageSection
+      title="Interested To Support?"
+      color="warning"
+      rounded
+      card
+      id="contact"
+    >
       <Row>
         <Col md={12}>
           <Typography size={5} justify="center" className="mb-5">

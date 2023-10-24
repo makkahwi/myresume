@@ -14,6 +14,7 @@ const CurrentWorksSection = () => {
       title="My Works"
       subtitle="What I'm Fully Dedicated to Make Happen"
       color="secondary"
+      id="works"
     >
       <Row>
         {products.map(({ name, link }, i) => (
