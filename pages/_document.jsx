@@ -12,42 +12,42 @@ import { Fragment } from "react";
 
 export const socialLinksList = [
   {
-    name: "linkedin",
+    name: "LinkedIn",
     icon: faLinkedinIn,
     link: "https://linkedin.com/in/makkahwi/",
   },
   {
-    name: "github",
+    name: "Github",
     icon: faGithub,
     link: "https://github.com/makkahwi",
   },
   {
-    name: "whatsapp",
+    name: "WhatsApp",
     icon: faWhatsapp,
     link: "https://wasap.my/962788424973",
   },
   {
-    name: "telegram",
+    name: "Telegram",
     icon: faTelegram,
     link: "https://t.me/makkahwi",
   },
   {
-    name: "phone",
+    name: "Phone",
     icon: faPhone,
     link: "tel:+962788424973",
   },
   {
-    name: "email",
+    name: "Email",
     icon: faEnvelope,
     link: "mailto:SuhaibAhmadAi@hotmail.com",
   },
   {
-    name: "facebook",
+    name: "Facebook",
     icon: faFacebook,
     link: "https://facebook.com/makkahwi",
   },
   {
-    name: "instagram",
+    name: "Instagram",
     icon: faInstagram,
     link: "https://instagram.com/makkahwi",
   },

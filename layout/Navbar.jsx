@@ -1,5 +1,15 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
+import {
+  faBriefcase,
+  faContactBook,
+  faHome,
+  faMobile,
+  faNewspaper,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { socialLinksList } from "pages/_document";
+import { Fragment, useState } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import {
   Dropdown,
   DropdownItem,
@@ -18,23 +28,34 @@ const NavbarComp = () => {
   const toggle = () => setDropdownOpen((current) => !current);
 
   const links = [
-    { title: "Home", link: "home" },
     {
       title: "About",
       link: "about",
+      icon: faUser,
     },
-    // {
-    //   title: "About",
-    //   links: [
-    //     { title: "About 1", links: "1" },
-    //     { title: "About 2", links: "2" },
-    //     { title: "About 3", links: "3" },
-    //   ],
-    // },
-    { title: "Works", link: "works" },
-    { title: "Blog", link: "blog" },
-    { title: "Contact", link: "contact" },
+    { title: "Works", link: "works", icon: faBriefcase },
+    { title: "Blog", link: "blog", icon: faNewspaper },
+    { title: "Contact", link: "contact", icon: faMobile },
+    {
+      icon: faContactBook,
+      links: socialLinksList.map(({ icon, link, name }) => ({
+        title: (
+          <span>
+            <FontAwesomeIcon icon={icon} /> {name}
+          </span>
+        ),
+        link,
+        target: "_blank",
+      })),
+    },
   ];
+
+  const NavTitle = ({ title, icon }) => (
+    <Fragment>
+      <FontAwesomeIcon icon={icon} className="me-1" />
+      <span className="d-none d-lg-inline">{title}</span>
+    </Fragment>
+  );
 
   return (
     <Navbar
@@ -44,32 +65,53 @@ const NavbarComp = () => {
       fixed="top"
       full
     >
-      <NavbarBrand href="/" className="fw-bold">
-        <img src="/images/logo.png" width="40px" className="me-3" />
-        Suhaib Ahmad
+      <NavbarBrand
+        className="fw-bold"
+        onClick={() => scroll.scrollToTop()}
+        role="button"
+      >
+        <img src="/images/logo.png" width="40px" className="me-3" />{" "}
+        <span className="d-none d-lg-inline">Suhaib Ahmad</span>
       </NavbarBrand>
 
       <Nav>
-        {links.map(({ title, link, links }, i) => (
+        <NavItem>
+          <NavLink
+            onClick={() => scroll.scrollToTop()}
+            role="button"
+            className="text-dark fw-bold mx-2 text-decoration-none"
+          >
+            <NavTitle icon={faHome} title="Home" />
+          </NavLink>
+        </NavItem>
+
+        {links.map(({ title, link, links, icon }, i) => (
           <NavItem key={i}>
             {links ? (
-              <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+              <Dropdown nav isOpen={dropdownOpen} toggle={toggle} tag="span">
                 <DropdownToggle nav caret className="text-dark">
-                  {title}
+                  <NavTitle icon={icon} title={title} />
                 </DropdownToggle>
 
                 <DropdownMenu>
-                  {/* <DropdownItem header>Header</DropdownItem> */}
-                  {links.map(({ title, link }, y) => (
-                    <DropdownItem key={y}>{title}</DropdownItem>
+                  {links.map(({ title, link, target }, y) => (
+                    <a className="p-0 m-0" href={link} target={target}>
+                      <DropdownItem tag="span" key={y}>
+                        {title}
+                      </DropdownItem>
+                    </a>
                   ))}
-                  {/* <DropdownItem divider /> */}
                 </DropdownMenu>
               </Dropdown>
             ) : (
-              <Link to={link} style={{ cursor: "pointer" }}>
-                <NavLink className="text-dark fw-bold">{title}</NavLink>
-              </Link>
+              <NavLink role="button" tag="span">
+                <Link
+                  to={link}
+                  className="text-dark fw-bold text-decoration-none"
+                >
+                  <NavTitle icon={icon} title={title} />
+                </Link>
+              </NavLink>
             )}
           </NavItem>
         ))}
