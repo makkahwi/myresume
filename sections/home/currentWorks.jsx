@@ -3,19 +3,10 @@ import Typography from "components/typography";
 import { Col, Row } from "reactstrap";
 
 const CurrentWorksSection = () => {
-  const works = [
-    {
-      title: "Semesteer",
-      desc: "The flagship project of building a revolutionary SaaS service of student information system. MVP was developed & tested already, and Go-To-Market plan is now in execution.",
-    },
-    {
-      title: "TeamsLine",
-      desc: "A supporting product to help managing the staff of the educational institute. MVP was build and now under progress of testing & updating.",
-    },
-    {
-      title: "Learngine",
-      desc: "Another supporting product to cover the needs of digitizing the learning communication of students & their instructors. Product MVP is now buidling built to be tested by pilot client.",
-    },
+  const products = [
+    { name: "Semesteer", link: "https://www.semesteer.com/" },
+    { name: "TeamsLine", link: "http://teamsline.com/" },
+    { name: "Learngine", link: "https://www.alembicsoft.com/" },
   ];
 
   return (
@@ -25,7 +16,7 @@ const CurrentWorksSection = () => {
       color="secondary"
     >
       <Row>
-        {works.map(({ title, desc }, i) => (
+        {products.map(({ name, link }, i) => (
           <Col md={4} key={i}>
             <Typography
               size={3}
@@ -33,7 +24,13 @@ const CurrentWorksSection = () => {
               color="white"
               justify="center"
             >
-              {title}
+              <a
+                href={link}
+                target="_blank"
+                className="text-decoration-none text-inherit"
+              >
+                {name}
+              </a>
             </Typography>
           </Col>
         ))}

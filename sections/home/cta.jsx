@@ -3,12 +3,6 @@ import Typography from "components/typography";
 import { Button, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 
 const CtaSection = () => {
-  const products = [
-    { name: "Semesteer", link: "https://www.semesteer.com/" },
-    { name: "TeamsLine", link: "http://teamsline.com/" },
-    { name: "Learngine", link: "https://www.alembicsoft.com/" },
-  ];
-
   const formInputs = [
     { name: "name", title: "Name", required: true },
     { name: "org", title: "Organization", required: false },
@@ -22,7 +16,7 @@ const CtaSection = () => {
   ];
 
   return (
-    <PageSection title="Interested To Support?" color="warning">
+    <PageSection title="Interested To Support?" color="warning" rounded card>
       <Row>
         <Col md={12}>
           <Typography size={5} justify="center" className="mb-5">
