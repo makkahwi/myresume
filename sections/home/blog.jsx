@@ -23,7 +23,7 @@ const BlogSection = ({ posts }) => {
                 onClick={() =>
                   setPickedArticle({ category, date, image, title, body })
                 }
-                style={{ cursor: "pointer" }}
+                role="button"
               >
                 <img alt="Sample" src={image} width="100%" />
                 <CardBody>

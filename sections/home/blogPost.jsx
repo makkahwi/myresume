@@ -81,11 +81,15 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
   return (
     <Modal isOpen={!!pickedArticle.title} size="xl">
       <ModalHeader>
-        {pickedArticle.title}
-
-        <Button color="ghost" onClick={() => setPickedArticle({ title: "" })}>
+        <Button
+          color="ghost"
+          onClick={() => setPickedArticle({ title: "" })}
+          className="me-2"
+        >
           <FontAwesomeIcon icon={faClose} />
         </Button>
+
+        {pickedArticle.title}
       </ModalHeader>
 
       <ModalBody>
