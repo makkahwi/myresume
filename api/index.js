@@ -29,3 +29,14 @@ export const getPersonalBlogArPosts = async () =>
   local ? { data: localData.ar } : await personalApi.get("ar.json");
 export const getPersonalBlogEnPosts = async () =>
   local ? { data: localData.en } : await personalApi.get("en.json");
+
+const api = axios.create({
+  baseURL:
+    "https://semesteer-mailing-list-default-rtdb.europe-west1.firebasedatabase.app/",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+export const sendContacts = (data) =>
+  api.post("personal-contact-forms.json", data);

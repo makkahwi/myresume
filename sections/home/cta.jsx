@@ -1,8 +1,21 @@
+import { sendContacts } from "api";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
-import { Button, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
+import { useState } from "react";
+import {
+  Alert,
+  Button,
+  Col,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+  Row,
+} from "reactstrap";
 
 const CtaSection = () => {
+  const [sent, setSent] = useState(false);
+
   const formInputs = [
     { name: "name", title: "Name", required: true },
     { name: "org", title: "Organization", required: false },
@@ -16,6 +29,20 @@ const CtaSection = () => {
       type: "textarea",
     },
   ];
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const data = formInputs.reduce((final, current) => {
+      const value = e.target[current.name]["value"];
+      return {
+        ...final,
+        [current.name]: value,
+      };
+    }, {});
+
+    sendContacts(data);
+    setSent(true);
+  };
 
   return (
     <PageSection
@@ -31,7 +58,7 @@ const CtaSection = () => {
             You may contact directly for support or any other concern
           </Typography>
 
-          <Form>
+          <Form onSubmit={onSubmit}>
             <Row>
               {formInputs.map(
                 ({ title, name, required, fullWidth, type }, i) => (
@@ -57,6 +84,12 @@ const CtaSection = () => {
           </Form>
         </Col>
       </Row>
+
+      {sent && (
+        <Alert color="success" className="mt-5">
+          Message has been sent successfully
+        </Alert>
+      )}
     </PageSection>
   );
 };
