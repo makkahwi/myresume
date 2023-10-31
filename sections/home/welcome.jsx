@@ -27,10 +27,10 @@ const WelcomeSection = () => {
   }, []);
 
   return (
-    <PageSection id="home">
-      <Row>
-        <Col md={6}>
-          <Typography size={2} justify="center" className="pb-5">
+    <PageSection>
+      <Row style={{ minHeight: "70vh" }}>
+        <Col lg={6} style={{ margin: "auto 0" }} className="py-5">
+          <Typography size={1} justify="center" className="pb-5">
             Suhaib Ahmad
           </Typography>
 
@@ -41,7 +41,7 @@ const WelcomeSection = () => {
           />
         </Col>
 
-        <Col md={6}>
+        <Col lg={6} style={{ margin: "auto 0" }}>
           {showVideo ? (
             <ReactPlayer
               url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
