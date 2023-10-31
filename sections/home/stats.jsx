@@ -17,11 +17,15 @@ const StatsSection = () => {
           <Col md={3} key={i}>
             <Card className="my-2" color="warning" inverse>
               <CardBody>
-                <Typography size={2} justify="center">
+                <Typography
+                  size={2}
+                  justify="center"
+                  style={{ fontSize: "3vw" }}
+                >
                   {count}
                 </Typography>
 
-                <Typography size={5} justify="center">
+                <Typography size={3} justify="center">
                   {text}
                 </Typography>
               </CardBody>

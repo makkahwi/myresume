@@ -32,7 +32,7 @@ const HomePage = ({ posts }) => {
 
       <AboutSection />
 
-      <StatsSection />
+      {/* <StatsSection /> */}
 
       <CurrentWorksSection />
 

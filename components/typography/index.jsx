@@ -4,26 +4,59 @@ const Typography = ({
   justify = "justify",
   className,
   children,
+  ...rest
 }) => {
   const classes = `text-${color} text-${justify} ${className}`;
 
   switch (String(size)) {
     case "1":
-      return <h1 className={classes}>{children}</h1>;
+      return (
+        <h1 className={classes} {...rest}>
+          {children}
+        </h1>
+      );
     case "2":
-      return <h2 className={classes}>{children}</h2>;
+      return (
+        <h2 className={classes} {...rest}>
+          {children}
+        </h2>
+      );
     case "3":
-      return <h3 className={classes}>{children}</h3>;
+      return (
+        <h3 className={classes} {...rest}>
+          {children}
+        </h3>
+      );
     case "4":
-      return <h4 className={classes}>{children}</h4>;
+      return (
+        <h4 className={classes} {...rest}>
+          {children}
+        </h4>
+      );
     case "5":
-      return <h5 className={classes}>{children}</h5>;
+      return (
+        <h5 className={classes} {...rest}>
+          {children}
+        </h5>
+      );
     case "6":
-      return <h6 className={classes}>{children}</h6>;
+      return (
+        <h6 className={classes} {...rest}>
+          {children}
+        </h6>
+      );
     case "sm":
-      return <small className={classes}>{children}</small>;
+      return (
+        <small className={classes} {...rest}>
+          {children}
+        </small>
+      );
     default:
-      return <p className={classes}>{children}</p>;
+      return (
+        <p className={classes} {...rest}>
+          {children}
+        </p>
+      );
   }
 };
 
