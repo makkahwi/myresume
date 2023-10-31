@@ -23,7 +23,7 @@ const WelcomeSection = () => {
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
-    setShowVideo(true);
+    setShowVideo(false);
   }, []);
 
   return (
@@ -49,7 +49,7 @@ const WelcomeSection = () => {
               width="100%"
             />
           ) : (
-            <img src="/images/profile.jpg" width="100%" />
+            <img src="/images/profile.jpg" width="70%" />
           )}
         </Col>
       </Row>
