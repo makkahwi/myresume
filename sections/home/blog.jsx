@@ -1,12 +1,14 @@
 import PageSection from "components/pageSection";
 import { useState } from "react";
-import { Card, CardBody, CardSubtitle, CardTitle, Col, Row } from "reactstrap";
+import { Button, Card, CardBody, CardSubtitle, CardTitle, Col, Row } from "reactstrap";
+
 import BlogFilter from "./blogFilter";
 import BlogPostViewer from "./blogPost";
 
 const BlogSection = ({ posts }) => {
   const [pickedCategory, setPickedCategory] = useState("");
   const [pickedArticle, setPickedArticle] = useState({ title: "" });
+  const [pageSize, setPageSize] = useState(4);
 
   return (
     <PageSection title="My Blog" id="blog">
@@ -14,8 +16,10 @@ const BlogSection = ({ posts }) => {
 
       <Row className="justify-content-center">
         {posts
-          ?.filter(({ category }) =>
-            pickedCategory ? category === pickedCategory : true
+          ?.filter(
+            ({ category }, i) =>
+              (pickedCategory ? category === pickedCategory : true) &&
+              i < pageSize
           )
           ?.map(({ category, date, image, title, body }, i) => (
             <Col md={3} className="mb-4" key={i}>
@@ -40,6 +44,18 @@ const BlogSection = ({ posts }) => {
               </Card>
             </Col>
           ))}
+
+        {posts?.filter(({ category }) =>
+          pickedCategory ? category === pickedCategory : true
+        ).length >= pageSize ? (
+          <Col md={12} className="mb-4 text-center">
+            <Button onClick={() => setPageSize((current) => current + 4)}>
+              Show More
+            </Button>
+          </Col>
+        ) : (
+          ""
+        )}
       </Row>
 
       <BlogPostViewer

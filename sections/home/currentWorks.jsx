@@ -49,7 +49,7 @@ const CurrentWorksSection = () => {
               </a>
             </Typography>
 
-            <Typography className="pt-0 px-4" color="white">
+            <Typography className="pt-0 px-4 lh-lg" color="white">
               {desc}
             </Typography>
           </Col>
