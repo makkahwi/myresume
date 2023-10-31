@@ -62,7 +62,7 @@ const CtaSection = () => {
             <Row>
               {formInputs.map(
                 ({ title, name, required, fullWidth, type }, i) => (
-                  <Col md={fullWidth ? 12 : 6} className="my-1" key={i}>
+                  <Col md={fullWidth ? 12 : 3} className="my-1" key={i}>
                     <FormGroup>
                       <Label for={name}>{title + (required ? " *" : "")}</Label>
                       <Input
@@ -77,7 +77,7 @@ const CtaSection = () => {
                 )
               )}
 
-              <Col md={12}>
+              <Col md={12} className="text-end">
                 <Button color="light">Submit</Button>
               </Col>
             </Row>
