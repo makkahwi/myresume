@@ -20,7 +20,7 @@ const SectionTitle = ({ title = "", subtitle = "", color = "" }) => {
       <Typography
         size={2}
         justify="center"
-        className="py-3"
+        className="py-3 mb-5"
         color={textColor()}
       >
         {title}

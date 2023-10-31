@@ -36,7 +36,7 @@ const CurrentWorksSection = () => {
           <Col md={4} key={i}>
             <Typography
               size={3}
-              className="py-5"
+              className="pb-5"
               color="white"
               justify="center"
             >

@@ -1,5 +1,4 @@
 import {
-  faArrowsRotate,
   faCode,
   faLaptop,
   faListCheck,
@@ -35,7 +34,7 @@ const BlogFilter = ({ setPickedCategory }) => {
   ];
 
   return (
-    <ButtonGroup className="my-5 w-100">
+    <ButtonGroup className="mb-5 w-100">
       {buttons.map(({ text, category, icon }, i) => (
         <Button
           onClick={() => setPickedCategory(category)}
