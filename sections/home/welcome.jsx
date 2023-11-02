@@ -41,7 +41,7 @@ const WelcomeSection = () => {
           />
         </Col>
 
-        <Col lg={6} style={{ margin: "auto 0" }}>
+        <Col lg={6} style={{ margin: "auto 0" }} className="text-center">
           {showVideo ? (
             <ReactPlayer
               url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
