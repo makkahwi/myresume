@@ -1,26 +1,9 @@
-import {
-  faBriefcase,
-  faContactBook,
-  faHome,
-  faMobile,
-  faNewspaper,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faContactBook, faHome, faMobile, faNewspaper, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinksList } from "pages/_document";
 import { Fragment, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import {
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  Nav,
-  Navbar,
-  NavbarBrand,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
 
 const NavbarComp = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -69,7 +52,7 @@ const NavbarComp = () => {
         onClick={() => scroll.scrollToTop()}
         role="button"
       >
-        <img src="/images/logo.png" width="40px" className="me-3" />{" "}
+        <img src="/images/logo-black.png" width="40px" className="me-3" />{" "}
         <span className="d-none d-lg-inline">Suhaib Ahmad</span>
       </NavbarBrand>
 
