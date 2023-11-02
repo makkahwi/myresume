@@ -16,10 +16,10 @@ import {
   DropdownMenu,
   DropdownToggle,
   Nav,
-  NavItem,
-  NavLink,
   Navbar,
   NavbarBrand,
+  NavItem,
+  NavLink,
 } from "reactstrap";
 
 const NavbarComp = () => {
@@ -63,7 +63,6 @@ const NavbarComp = () => {
       color="warning"
       light
       fixed="top"
-      full
     >
       <NavbarBrand
         className="fw-bold"
@@ -95,10 +94,8 @@ const NavbarComp = () => {
 
                 <DropdownMenu>
                   {links.map(({ title, link, target }, y) => (
-                    <a className="p-0 m-0" href={link} target={target}>
-                      <DropdownItem tag="span" key={y}>
-                        {title}
-                      </DropdownItem>
+                    <a className="p-0 m-0" href={link} target={target} key={y}>
+                      <DropdownItem tag="span">{title}</DropdownItem>
                     </a>
                   ))}
                 </DropdownMenu>

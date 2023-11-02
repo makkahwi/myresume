@@ -108,7 +108,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
 
           <Col md={12} className="my-4">
             {pickedArticle.body?.map((body, i) => (
-              <Typography>{generateBodySections(body)}</Typography>
+              <Typography key={i}>{generateBodySections(body)}</Typography>
             ))}
           </Col>
         </Row>
