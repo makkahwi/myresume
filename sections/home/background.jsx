@@ -1,9 +1,21 @@
-import { faBriefcase, faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faCode,
+  faPaintBrush,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
 import Link from "next/link";
-import { Button, Card, CardBody, CardText, CardTitle, Col, Row } from "reactstrap";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardText,
+  CardTitle,
+  Col,
+  Row,
+} from "reactstrap";
 
 export const careers = [
   {
@@ -19,7 +31,7 @@ export const careers = [
           "To develop JS based web apps for online public (government) services.",
         title: "Delivery Consultant",
         type: "Full-Time",
-        years: "Jun - Jul 2023",
+        period: "Jun - Jul 2023",
       },
       {
         company: "AgileTz",
@@ -28,7 +40,7 @@ export const careers = [
           "To develop React.Js-Node.Js web apps for online public (government) services.",
         title: "Senior Full-Stack Developer",
         type: "Full-Time",
-        years: "Aug 2022 - May 2023",
+        period: "Aug 2022 - May 2023",
       },
       // {
       //   company: "ArabWork",
@@ -36,7 +48,7 @@ export const careers = [
       //   description:
       //     "Full-time job to develop a Vue-Symfony web app for an online service.",
       //   title: "Frontend Developer",
-      //   years: "Jun 2022 - Aug 2022",
+      //   period: "Jun 2022 - Aug 2022",
       // },
       {
         company: "LuxTag",
@@ -45,7 +57,7 @@ export const careers = [
           "To develop a flagship PERN based web app for an online service.",
         title: "Frontend Developer",
         type: "Full-Time",
-        years: "Nov 2020 - Oct 2021",
+        period: "Nov 2020 - Oct 2021",
       },
       {
         company: "AIS School",
@@ -54,7 +66,7 @@ export const careers = [
           "To develop a Laravel based web app of a student information system.",
         title: "Full-Stack Developer",
         type: "Part-Time",
-        years: "Sep 2019 - Aug 2020",
+        period: "Sep 2019 - Aug 2020",
       },
       {
         company: "Individually",
@@ -62,7 +74,7 @@ export const careers = [
           "Executed several Laravel based & PERN based web app private & open-source projects.",
         title: "Full-Stack Developer",
         type: "Freelance",
-        years: "Sep 2019 - Present",
+        period: "Sep 2019 - Present",
       },
       {
         company: "Digizyn",
@@ -71,21 +83,21 @@ export const careers = [
           "To develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
         title: "Full-Stack Developer",
         type: "Freelance",
-        years: "Jul 2022 - Jul 2022",
+        period: "Jul 2022 - Jul 2022",
       },
       {
         company: "Individually",
         description: "Several code based frontend-only landing-page projects.",
         title: "Frontend Developer",
         type: "Freelance",
-        years: "May 2018 - Aug 2019",
+        period: "May 2018 - Aug 2019",
       },
       {
         company: "Individually",
         description: "Several wordpress based website projects.",
         title: "Wordpress Developer",
         type: "Freelance",
-        years: "Oct 2015 - Apr 2018",
+        period: "Oct 2015 - Apr 2018",
       },
     ],
   },
@@ -102,7 +114,7 @@ export const careers = [
         title: "Graphic Designer",
         type: "Part-time",
         certificate: "",
-        years: "Jan 2017 - Feb 2017",
+        period: "Jan 2017 - Feb 2017",
       },
       {
         company: "QFM Malaysia",
@@ -111,7 +123,7 @@ export const careers = [
         title: "Graphic Designer",
         type: "Part-time",
         certificate: "",
-        years: "Jun - Aug 2016, May & July 2017, Jun 2018",
+        period: "Jun - Aug 2016, May & July 2017, Jun 2018",
       },
       {
         company: "Mercy Mission World",
@@ -120,7 +132,7 @@ export const careers = [
         title: "PR Executive",
         type: "Part-time",
         certificate: "",
-        years: "Dec 2015 - Jun 2016",
+        period: "Dec 2015 - Jun 2016",
       },
       // {
       //   company: "PSA Malaysia",
@@ -130,14 +142,14 @@ export const careers = [
       //   title: "Media Bureau",
       //   type: "Volunteering",
       //   certificate: "",
-      //   years: "Feb 2013 - Jun 2015",
+      //   period: "Feb 2013 - Jun 2015",
       // },
       {
         company: "Freelance",
         description: "One experience to edit & produce videos for an event.",
         title: "Video Editor",
         type: "Freelance",
-        years: "Oct 2019 - Nov 2019",
+        period: "Oct 2019 - Nov 2019",
       },
       {
         company: "Freelance",
@@ -145,7 +157,7 @@ export const careers = [
           "Executed enormous number of graphic designs for both print-out & digital uses.",
         title: "Graphic Designer",
         type: "Freelance",
-        years: "Feb 2015 - Apr 2019",
+        period: "Feb 2015 - Apr 2019",
       },
     ],
   },
@@ -156,7 +168,6 @@ export const careers = [
   },
 ];
 
-
 const BackgroundSection = ({ page }) => {
   const stats = [
     { title: "ABC", count: 20 },
@@ -164,8 +175,6 @@ const BackgroundSection = ({ page }) => {
     { title: "ABC", count: 20 },
     { title: "ABC", count: 20 },
   ];
-
-  
 
   return (
     <PageSection

@@ -46,15 +46,16 @@ function CarouselComp({ items, controls, indicators, ...rest }) {
       previous={previous}
       {...rest}
     >
+      {slides}
+
       {indicators && (
         <CarouselIndicators
           items={items}
           activeIndex={activeIndex}
           onClickHandler={goToIndex}
+          className="bg-warning position-relative mt-5 px-5"
         />
       )}
-
-      {slides}
 
       {controls && (
         <Fragment>
@@ -62,12 +63,14 @@ function CarouselComp({ items, controls, indicators, ...rest }) {
             direction="prev"
             directionText="Previous"
             onClickHandler={previous}
+            className="bg-warning"
           />
 
           <CarouselControl
             direction="next"
             directionText="Next"
             onClickHandler={next}
+            className="bg-warning"
           />
         </Fragment>
       )}
