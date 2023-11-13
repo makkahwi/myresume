@@ -1,5 +1,6 @@
 import PagesLayout from "layout/PagesLayout";
 import CareerSection from "sections/career/career";
+import WorksSection from "sections/career/works";
 import BackgroundSection from "sections/home/background";
 
 const CareerPage = () => {
@@ -8,6 +9,8 @@ const CareerPage = () => {
       <BackgroundSection page />
 
       <CareerSection />
+
+      <WorksSection />
     </PagesLayout>
   );
 };
