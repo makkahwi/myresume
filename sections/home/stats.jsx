@@ -1,6 +1,7 @@
+import CardComp from "components/Card";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
-import { Card, CardBody, Col, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 
 const StatsSection = () => {
   const stats = [
@@ -15,21 +16,15 @@ const StatsSection = () => {
       <Row>
         {stats.map(({ text, count }, i) => (
           <Col md={3} key={i}>
-            <Card className="my-2" color="warning" inverse>
-              <CardBody>
-                <Typography
-                  size={2}
-                  justify="center"
-                  style={{ fontSize: "3vw" }}
-                >
-                  {count}
-                </Typography>
+            <CardComp color="transparent">
+              <Typography size={2} justify="center" style={{ fontSize: "3vw" }}>
+                {count}
+              </Typography>
 
-                <Typography size={3} justify="center">
-                  {text}
-                </Typography>
-              </CardBody>
-            </Card>
+              <Typography size={3} justify="center">
+                {text}
+              </Typography>
+            </CardComp>
           </Col>
         ))}
       </Row>

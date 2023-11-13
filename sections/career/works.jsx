@@ -339,9 +339,7 @@ const WorksSection = () => {
       <Row>
         {works?.map(({ image, title, url, category, roles, org }, i) => (
           <Col md={4} className="p-2" key={i}>
-            <CardComp>
-              <img src={image} height="15vh" width="autp" />
-
+            <CardComp image={image}>
               <Typography size={3} justify="center">
                 {title}
               </Typography>

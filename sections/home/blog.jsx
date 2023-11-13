@@ -12,6 +12,7 @@ import {
 
 import BlogFilter from "./blogFilter";
 import BlogPostViewer from "./blogPost";
+import CardComp from "components/Card";
 
 const BlogSection = ({ posts }) => {
   const [pickedCategory, setPickedCategory] = useState("");
@@ -38,25 +39,25 @@ const BlogSection = ({ posts }) => {
           )
           ?.map(({ category, date, image, title, body }, i) => (
             <Col md={3} className="mb-4" key={i}>
-              <Card
+              <CardComp
                 onClick={() =>
                   setPickedArticle({ category, date, image, title, body })
                 }
-                role="button"
+                color="dark"
+                image={image}
               >
-                <img alt="Sample" src={image} width="100%" />
-                <CardBody>
-                  <CardTitle tag="h6">{title}</CardTitle>
+                <CardTitle tag="h6" className="text-dark">
+                  {title}
+                </CardTitle>
 
-                  <CardSubtitle className="text-muted" tag="small">
-                    {date}
-                  </CardSubtitle>
+                <CardSubtitle className="text-muted" tag="small">
+                  {date}
+                </CardSubtitle>
 
-                  {/* <CardText tag="p" className="text-justify my-3">
+                {/* <CardText tag="p" className="text-justify my-3">
                     {body[0]?.content.slice(0, 70)}
                   </CardText> */}
-                </CardBody>
-              </Card>
+              </CardComp>
             </Col>
           ))}
 

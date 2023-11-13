@@ -4,18 +4,12 @@ import {
   faPaintBrush,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CardComp from "components/Card";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
 import Link from "next/link";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardText,
-  CardTitle,
-  Col,
-  Row,
-} from "reactstrap";
+import { Fragment } from "react";
+import { Button, CardText, Col, Row } from "reactstrap";
 
 export const careers = [
   {
@@ -198,33 +192,33 @@ const BackgroundSection = ({ page }) => {
       <Row>
         {careers.map(({ title, desc, icon }, i) => (
           <Col md={4} key={i}>
-            <Card className="bg-transparent text-white border-white border-5">
-              <CardBody>
-                <Typography
-                  size={1}
-                  justify="center"
-                  // color="warning"
-                  style={{ fontSize: "5vw" }}
-                  className="my-5"
-                >
-                  <FontAwesomeIcon icon={icon} />
-                </Typography>
+            <CardComp
+              title={
+                <Fragment>
+                  <Typography
+                    size={1}
+                    justify="center"
+                    // color="warning"
+                    style={{ fontSize: "5vw" }}
+                    className="my-5"
+                  >
+                    <FontAwesomeIcon icon={icon} />
+                  </Typography>
 
-                <CardTitle>
-                  <Typography size={3} justify="center" className="my-4">
+                  <Typography size={3} justify="center">
                     {title}
                   </Typography>
-                </CardTitle>
-
-                {page && (
-                  <CardText>
-                    <Typography size={6} className="lh-lg">
-                      {desc}
-                    </Typography>
-                  </CardText>
-                )}
-              </CardBody>
-            </Card>
+                </Fragment>
+              }
+            >
+              {page && (
+                <CardText>
+                  <Typography size={6} className="lh-lg">
+                    {desc}
+                  </Typography>
+                </CardText>
+              )}
+            </CardComp>
           </Col>
         ))}
 
