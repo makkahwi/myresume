@@ -9,6 +9,13 @@ import Typography from "components/typography";
 import { Card, CardBody, CardText, CardTitle, Col, Row } from "reactstrap";
 
 const BackgroundSection = () => {
+  const stats = [
+    { title: "ABC", count: 20 },
+    { title: "ABC", count: 20 },
+    { title: "ABC", count: 20 },
+    { title: "ABC", count: 20 },
+  ];
+
   const careers = [
     {
       title: "Web Development",
@@ -28,18 +35,25 @@ const BackgroundSection = () => {
   ];
 
   return (
-    <PageSection title="Professional Background">
+    <PageSection title="Professional Background" color="light">
+      <Row className="my-5">
+        {stats.map(({ title, count }, i) => (
+          <Col md={3} className="my-3" key={i}>
+            <Typography justify="center" size={1}>
+              {count}
+            </Typography>
+            <Typography justify="center" size={4}>
+              {title}
+            </Typography>
+          </Col>
+        ))}
+      </Row>
+
       <Row>
         {careers.map(({ title, desc, icon }, i) => (
           <Col md={4} key={i}>
             <Card>
               <CardBody>
-                <CardTitle>
-                  <Typography size={3} justify="center" className="my-4">
-                    {title}
-                  </Typography>
-                </CardTitle>
-
                 <Typography
                   size={1}
                   justify="center"
@@ -50,11 +64,17 @@ const BackgroundSection = () => {
                   <FontAwesomeIcon icon={icon} />
                 </Typography>
 
-                <CardText>
+                <CardTitle>
+                  <Typography size={3} justify="center" className="my-4">
+                    {title}
+                  </Typography>
+                </CardTitle>
+
+                {/* <CardText>
                   <Typography size={6} className="lh-lg">
                     {desc}
                   </Typography>
-                </CardText>
+                </CardText> */}
               </CardBody>
             </Card>
           </Col>

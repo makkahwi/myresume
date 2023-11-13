@@ -28,7 +28,7 @@ const CurrentWorksSection = () => {
     <PageSection
       title="My Works"
       subtitle="What I'm Fully Dedicated to Make Happen"
-      color="secondary"
+      color="warning"
       id="works"
     >
       <Row>
