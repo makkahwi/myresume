@@ -6,6 +6,8 @@ const SectionTitle = ({ title = "", subtitle = "", color = "" }) => {
     switch (color) {
       case "secondary":
         return "white";
+      case "warning":
+        return "white";
       default:
         return "dark";
     }
