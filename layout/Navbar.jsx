@@ -33,7 +33,7 @@ const NavbarComp = () => {
       link: "about",
       icon: faUser,
     },
-    { title: "Works", link: "works", icon: faBriefcase },
+    { title: "Projects", link: "works", icon: faBriefcase },
     { title: "Blog", link: "blog", icon: faNewspaper },
     { title: "Contact", link: "contact", icon: faMobile },
     {
