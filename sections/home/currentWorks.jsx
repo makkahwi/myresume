@@ -1,6 +1,7 @@
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
-import { Col, Row } from "reactstrap";
+import Link from "next/link";
+import { Button, Col, Row } from "reactstrap";
 
 const CurrentWorksSection = () => {
   const products = [
@@ -50,6 +51,14 @@ const CurrentWorksSection = () => {
             </Typography>
           </Col>
         ))}
+
+        <Col md={12} className="my-5 text-center">
+          <Link href="/projects">
+            <Button color="light" className="w-25">
+              Discover Projects
+            </Button>
+          </Link>
+        </Col>
       </Row>
     </PageSection>
   );

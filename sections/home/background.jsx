@@ -6,7 +6,16 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
-import { Card, CardBody, CardText, CardTitle, Col, Row } from "reactstrap";
+import Link from "next/link";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardText,
+  CardTitle,
+  Col,
+  Row,
+} from "reactstrap";
 
 const BackgroundSection = () => {
   const stats = [
@@ -83,6 +92,14 @@ const BackgroundSection = () => {
             </Card>
           </Col>
         ))}
+
+        <Col md={12} className="my-5 text-center">
+          <Link href="/career">
+            <Button color="light" className="w-25">
+              Explore My Career
+            </Button>
+          </Link>
+        </Col>
       </Row>
     </PageSection>
   );
