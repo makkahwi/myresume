@@ -26,8 +26,8 @@ const CurrentWorksSection = () => {
 
   return (
     <PageSection
-      title="My Works"
-      subtitle="What I'm Fully Dedicated to Make Happen"
+      title="Innovative Ventures"
+      subtitle="Current Entrepreneurial Pursuits"
       color="warning"
       id="works"
     >

@@ -1,4 +1,8 @@
-import { faBriefcase, faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faCode,
+  faPaintBrush,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
@@ -31,7 +35,11 @@ const BackgroundSection = () => {
   ];
 
   return (
-    <PageSection title="Professional Background" color="secondary">
+    <PageSection
+      title="Professional Journey"
+      subtitle="Navigating Careers and Experiences"
+      color="secondary"
+    >
       <Row className="my-5">
         {stats.map(({ title, count }, i) => (
           <Col md={3} className="my-3 text-white" key={i}>

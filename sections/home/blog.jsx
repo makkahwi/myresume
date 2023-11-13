@@ -1,6 +1,14 @@
 import PageSection from "components/pageSection";
 import { useState } from "react";
-import { Button, Card, CardBody, CardSubtitle, CardTitle, Col, Row } from "reactstrap";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardSubtitle,
+  CardTitle,
+  Col,
+  Row,
+} from "reactstrap";
 
 import BlogFilter from "./blogFilter";
 import BlogPostViewer from "./blogPost";
@@ -11,7 +19,11 @@ const BlogSection = ({ posts }) => {
   const [pageSize, setPageSize] = useState(4);
 
   return (
-    <PageSection title="My Blog" id="blog">
+    <PageSection
+      title="Insights Corner"
+      subtitle="Exploring Ideas, Trends, and Perspectives"
+      id="blog"
+    >
       <BlogFilter setPickedCategory={setPickedCategory} />
 
       <Row className="justify-content-center">

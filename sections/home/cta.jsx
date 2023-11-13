@@ -4,16 +4,7 @@ import PageSection from "components/pageSection";
 import Typography from "components/typography";
 import { socialLinksList } from "pages/_document";
 import { useState } from "react";
-import {
-  Alert,
-  Button,
-  Col,
-  Form,
-  FormGroup,
-  Input,
-  Label,
-  Row,
-} from "reactstrap";
+import { Alert, Button, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
 
 const CtaSection = () => {
   const [sent, setSent] = useState(false);
@@ -47,7 +38,14 @@ const CtaSection = () => {
   };
 
   return (
-    <PageSection title="Contact Me" color="light" rounded card id="contact">
+    <PageSection
+      title="Get in Touch"
+      subtitle="Connect with Me"
+      color="light"
+      rounded
+      card
+      id="contact"
+    >
       <Row>
         {socialLinksList.map(({ name, icon, link, color, label }, i) => (
           <Col md={3} key={i}>
