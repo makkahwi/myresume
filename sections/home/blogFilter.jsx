@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup } from "reactstrap";
 
-const BlogFilter = ({ setPickedCategory }) => {
+const BlogFilter = ({ pickedCategory, setPickedCategory }) => {
   const buttons = [
     { text: "All", category: "", icon: faListCheck },
     {
@@ -38,7 +38,13 @@ const BlogFilter = ({ setPickedCategory }) => {
       {buttons.map(({ text, category, icon }, i) => (
         <Button
           onClick={() => setPickedCategory(category)}
-          color={i % 2 === 1 ? "warning" : "secondary"}
+          color={
+            pickedCategory === category
+              ? "warning"
+              : i % 2 === 1
+              ? "dark"
+              : "secondary"
+          }
           key={i}
         >
           <FontAwesomeIcon icon={icon} className="me-2" />

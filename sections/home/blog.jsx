@@ -24,7 +24,10 @@ const BlogSection = ({ posts }) => {
       subtitle="Exploring Ideas, Trends, and Perspectives"
       id="blog"
     >
-      <BlogFilter setPickedCategory={setPickedCategory} />
+      <BlogFilter
+        pickedCategory={pickedCategory}
+        setPickedCategory={setPickedCategory}
+      />
 
       <Row className="justify-content-center">
         {posts
