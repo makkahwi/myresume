@@ -1,4 +1,5 @@
 import { getBlogEnPosts } from "api";
+import NavbarComp from "layout/Navbar";
 import { Fragment } from "react";
 import AboutSection from "sections/home/about";
 import BackgroundSection from "sections/home/background";
@@ -30,6 +31,7 @@ const HomePage = ({ posts }) => {
   return (
     <Fragment>
       <WelcomeSection />
+      <NavbarComp />
 
       <AboutSection />
 

@@ -1,9 +1,26 @@
-import { faBriefcase, faContactBook, faHome, faMobile, faNewspaper, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faContactBook,
+  faHome,
+  faMobile,
+  faNewspaper,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinksList } from "pages/_document";
 import { Fragment, useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, NavItem, NavLink } from "reactstrap";
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavItem,
+  NavLink,
+} from "reactstrap";
 
 const NavbarComp = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -42,10 +59,10 @@ const NavbarComp = () => {
 
   return (
     <Navbar
-      className="py-3 px-4 border-bottom border-light"
+      className="py-3 px-5 border-bottom border-light position-sticky w-100"
       color="warning"
       light
-      fixed="top"
+      // fixed="top"
     >
       <NavbarBrand
         className="fw-bold"

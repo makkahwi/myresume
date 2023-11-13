@@ -4,7 +4,7 @@ const PageSection = ({
   title,
   subtitle,
   children,
-  color = "light",
+  color = "white",
   rounded = false,
   card = false,
   id = "",
