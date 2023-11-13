@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { sendContacts } from "api";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
+import { socialLinksList } from "pages/_document";
 import { useState } from "react";
 import {
   Alert,
@@ -47,12 +49,20 @@ const CtaSection = () => {
   return (
     <PageSection
       title="Interested To Support?"
-      color="warning"
+      color="secondary"
       rounded
       card
       id="contact"
     >
       <Row>
+        {socialLinksList.map(({ name, icon, link }, i) => (
+          <Col md={3} key={i}>
+            <Button>
+              <FontAwesomeIcon icon={icon} />
+            </Button>
+          </Col>
+        ))}
+
         <Col md={12}>
           <Typography size={5} justify="center" className="mb-5">
             You may contact directly for support or any other concern
