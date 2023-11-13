@@ -12,7 +12,8 @@ const PageSection = ({
 }) => {
   const Content = () => (
     <div
-      className={`bg-${color} p-5 ${rounded && "rounded"}`}
+      className={`bg-${color} ${rounded && "rounded"}`}
+      style={{ padding: "12.5vh 10vw" }}
       id={id}
       {...rest}
     >

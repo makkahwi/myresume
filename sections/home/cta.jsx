@@ -47,25 +47,29 @@ const CtaSection = () => {
   };
 
   return (
-    <PageSection
-      title="Interested To Support?"
-      color="secondary"
-      rounded
-      card
-      id="contact"
-    >
+    <PageSection title="Contact Me" color="light" rounded card id="contact">
       <Row>
-        {socialLinksList.map(({ name, icon, link }, i) => (
+        {socialLinksList.map(({ name, icon, link, color, label }, i) => (
           <Col md={3} key={i}>
-            <Button>
-              <FontAwesomeIcon icon={icon} />
+            <Button
+              style={{ backgroundColor: color }}
+              className="w-100 p-3 my-3"
+            >
+              <Typography size={5} justify="center">
+                <FontAwesomeIcon icon={icon} /> {label}
+              </Typography>
             </Button>
           </Col>
         ))}
 
         <Col md={12}>
-          <Typography size={5} justify="center" className="mb-5">
-            You may contact directly for support or any other concern
+          <Typography
+            size={3}
+            justify="center"
+            className="my-5"
+            color="warning"
+          >
+            Or Reach Me Here
           </Typography>
 
           <Form onSubmit={onSubmit}>
@@ -88,7 +92,7 @@ const CtaSection = () => {
               )}
 
               <Col md={12} className="text-end">
-                <Button color="light">Submit</Button>
+                <Button color="warning">Submit</Button>
               </Col>
             </Row>
           </Form>

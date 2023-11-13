@@ -8,8 +8,10 @@ const SectionTitle = ({ title = "", subtitle = "", color = "" }) => {
         return "white";
       case "warning":
         return "white";
+      case "light":
+        return "warning";
       default:
-        return "dark";
+        return "warning";
     }
   };
 
