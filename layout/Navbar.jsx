@@ -22,7 +22,7 @@ import {
   NavLink,
 } from "reactstrap";
 
-const NavbarComp = () => {
+const NavbarComp = ({ fixed }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((current) => !current);
@@ -38,11 +38,13 @@ const NavbarComp = () => {
     { title: "Contact", link: "contact", icon: faMobile },
     {
       icon: faContactBook,
-      links: socialLinksList.map(({ icon, link, name }) => ({
+      links: socialLinksList.map(({ icon, link, label, name }) => ({
         title: (
-          <span>
-            <FontAwesomeIcon icon={icon} /> {name}
-          </span>
+          <Fragment>
+            <FontAwesomeIcon icon={icon} />
+            <span className="d-none d-lg-inline"> {label}</span>
+            <span className="d-inline d-lg-none"> {name}</span>
+          </Fragment>
         ),
         link,
         target: "_blank",
@@ -59,9 +61,12 @@ const NavbarComp = () => {
 
   return (
     <Navbar
-      className="py-3 px-5 border-bottom border-light position-sticky w-100"
+      className={`py-3 px-5 border-bottom border-light position-${
+        fixed ? "fixed" : "sticky"
+      } w-100`}
       color="warning"
       light
+      style={{ zIndex: 999 }}
       // fixed="top"
     >
       <NavbarBrand
@@ -94,7 +99,12 @@ const NavbarComp = () => {
 
                 <DropdownMenu>
                   {links.map(({ title, link, target }, y) => (
-                    <a className="p-0 m-0" href={link} target={target} key={y}>
+                    <a
+                      className="p-0 m-0 text-decoration-none"
+                      href={link}
+                      target={target}
+                      key={y}
+                    >
                       <DropdownItem tag="span">{title}</DropdownItem>
                     </a>
                   ))}

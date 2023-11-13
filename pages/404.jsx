@@ -1,13 +1,11 @@
 import Typography from "components/typography";
 import NavbarComp from "layout/Navbar";
-import Link from "next/link";
 import { Fragment } from "react";
-import { Button, Navbar } from "reactstrap";
 
 const ErrorPage = () => {
   return (
     <Fragment>
-      <NavbarComp />
+      <NavbarComp fixed />
 
       <div className="d-flex align-items-center justify-content-center vh-100 bg-dark">
         <div className="text-center text-white">
