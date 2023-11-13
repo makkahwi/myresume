@@ -5,7 +5,7 @@ import { Fragment } from "react";
 const ErrorPage = () => {
   return (
     <Fragment>
-      <NavbarComp fixed />
+      <NavbarComp />
 
       <div className="d-flex align-items-center justify-content-center vh-100 bg-dark">
         <div className="text-center text-white">

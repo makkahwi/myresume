@@ -22,7 +22,7 @@ import {
   NavLink,
 } from "reactstrap";
 
-const NavbarComp = ({ fixed }) => {
+const NavbarComp = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((current) => !current);
@@ -61,29 +61,24 @@ const NavbarComp = ({ fixed }) => {
 
   return (
     <Navbar
-      className={`py-3 px-5 border-bottom border-light position-${
-        fixed ? "fixed" : "sticky"
-      } w-100`}
+      className={`py-3 px-5 border-bottom border-light sticky-top w-100 `}
       color="warning"
       light
       style={{ zIndex: 999 }}
       // fixed="top"
     >
-      <NavbarBrand
-        className="fw-bold"
-        onClick={() => scroll.scrollToTop()}
-        role="button"
-      >
-        <img src="/images/logo-black.png" width="40px" className="me-3" />{" "}
-        <span className="d-none d-lg-inline">Suhaib Ahmad</span>
-      </NavbarBrand>
+      <Link href="/" className="text-decoration-none">
+        <NavbarBrand className="fw-bold">
+          <img src="/images/logo.png" width="40px" className="me-3" />{" "}
+          <span className="d-none d-lg-inline text-white">Suhaib Ahmad</span>
+        </NavbarBrand>
+      </Link>
 
       <Nav>
         <NavItem>
           <NavLink
-            onClick={() => scroll.scrollToTop()}
             role="button"
-            className="text-dark fw-bold mx-2 text-decoration-none"
+            className="text-white fw-bold mx-2 text-decoration-none"
           >
             <NavTitle icon={faHome} title="Home" />
           </NavLink>
@@ -93,7 +88,7 @@ const NavbarComp = ({ fixed }) => {
           <NavItem key={i}>
             {links ? (
               <Dropdown nav isOpen={dropdownOpen} toggle={toggle} tag="span">
-                <DropdownToggle nav caret className="text-dark">
+                <DropdownToggle nav caret className="text-white">
                   <NavTitle icon={icon} title={title} />
                 </DropdownToggle>
 
@@ -114,7 +109,7 @@ const NavbarComp = ({ fixed }) => {
               <NavLink role="button" tag="span">
                 <Link
                   to={link}
-                  className="text-dark fw-bold text-decoration-none"
+                  className="text-white fw-bold text-decoration-none"
                 >
                   <NavTitle icon={icon} title={title} />
                 </Link>

@@ -5,9 +5,9 @@ import NavbarComp from "./Navbar";
 const PagesLayout = ({ children }) => {
   return (
     <Fragment>
-      <NavbarComp fixed />
+      <NavbarComp />
 
-      <div className="mx-0 mb-0 p-0 w-100 py-5">{children}</div>
+      <div className="mx-0 mb-0 p-0 w-100 pb-5">{children}</div>
     </Fragment>
   );
 };
