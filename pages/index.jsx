@@ -4,9 +4,7 @@ import { Fragment } from "react";
 import AboutSection from "sections/home/about";
 import BackgroundSection from "sections/home/background";
 import BlogSection from "sections/home/blog";
-import CtaSection from "sections/home/cta";
 import CurrentWorksSection from "sections/home/currentWorks";
-import StatsSection from "sections/home/stats";
 import WelcomeSection from "sections/home/welcome";
 
 export const getServerSideProps = async () => {
@@ -42,8 +40,6 @@ const HomePage = ({ posts }) => {
       <CurrentWorksSection />
 
       <BlogSection posts={posts} />
-
-      <CtaSection />
     </Fragment>
   );
 };
