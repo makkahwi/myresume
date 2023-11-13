@@ -1,8 +1,4 @@
-import {
-  faBriefcase,
-  faCode,
-  faPaintBrush,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faCode, faPaintBrush } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
@@ -35,10 +31,10 @@ const BackgroundSection = () => {
   ];
 
   return (
-    <PageSection title="Professional Background" color="light">
+    <PageSection title="Professional Background" color="secondary">
       <Row className="my-5">
         {stats.map(({ title, count }, i) => (
-          <Col md={3} className="my-3" key={i}>
+          <Col md={3} className="my-3 text-white" key={i}>
             <Typography justify="center" size={1}>
               {count}
             </Typography>
@@ -52,12 +48,12 @@ const BackgroundSection = () => {
       <Row>
         {careers.map(({ title, desc, icon }, i) => (
           <Col md={4} key={i}>
-            <Card>
+            <Card className="bg-transparent text-white border-white border-5">
               <CardBody>
                 <Typography
                   size={1}
                   justify="center"
-                  color="warning"
+                  // color="warning"
                   style={{ fontSize: "5vw" }}
                   className="my-5"
                 >
