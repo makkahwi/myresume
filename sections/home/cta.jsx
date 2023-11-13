@@ -4,7 +4,16 @@ import PageSection from "components/pageSection";
 import Typography from "components/typography";
 import { socialLinksList } from "pages/_document";
 import { useState } from "react";
-import { Alert, Button, Col, Form, FormGroup, Input, Label, Row } from "reactstrap";
+import {
+  Alert,
+  Button,
+  Col,
+  Form,
+  FormGroup,
+  Input,
+  Label,
+  Row,
+} from "reactstrap";
 
 const CtaSection = () => {
   const [sent, setSent] = useState(false);
@@ -49,14 +58,16 @@ const CtaSection = () => {
       <Row>
         {socialLinksList.map(({ name, icon, link, color, label }, i) => (
           <Col md={3} key={i}>
-            <Button
-              style={{ backgroundColor: color }}
-              className="w-100 p-3 my-3"
-            >
-              <Typography size={5} justify="center">
-                <FontAwesomeIcon icon={icon} /> {label}
-              </Typography>
-            </Button>
+            <a href={link} target="_blank">
+              <Button
+                style={{ backgroundColor: color }}
+                className="w-100 p-3 my-3"
+              >
+                <Typography size={5} justify="center">
+                  <FontAwesomeIcon icon={icon} /> {label}
+                </Typography>
+              </Button>
+            </a>
           </Col>
         ))}
 
