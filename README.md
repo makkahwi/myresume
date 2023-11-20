@@ -4,6 +4,12 @@
 
 ## To Do
 
+- Build pages header
+- Fix slider UI
+- Fix Navbar
 - Background cols euqal height
+- Add project photos
 - Rebuild background content into points
-- List job expirences
+- List administrative job expirences
+- Update background statistics
+- Fix TeamsLine Logo
