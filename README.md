@@ -4,7 +4,6 @@
 
 ## To Do
 
-- Background cols euqal height
 - Add project photos
 - List administrative job expirences
 - Update background statistics

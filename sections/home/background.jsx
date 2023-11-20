@@ -212,7 +212,7 @@ const BackgroundSection = ({ page }) => {
 
       <Row>
         {careers.map(({ title, desc, icon }, i) => (
-          <Col md={4} key={i}>
+          <Col md={4} className="d-flex" key={i}>
             <CardComp
               title={
                 <Fragment>
@@ -233,7 +233,7 @@ const BackgroundSection = ({ page }) => {
               }
             >
               {page && (
-                <CardText>
+                <CardText className="w-100">
                   {desc.map((par, y) => (
                     <Typography size={6} className="lh-lg" key={y}>
                       - {par}
