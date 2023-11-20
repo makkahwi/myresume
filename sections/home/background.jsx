@@ -94,7 +94,8 @@ export const careers = [
       },
       {
         company: "Individually",
-        description: "Several wordpress based website projects.",
+        description:
+          "Several wordpress based landing-page & simple web app projects.",
         title: "Wordpress Developer",
         type: "Freelance",
         period: "Oct 2015 - Apr 2018",

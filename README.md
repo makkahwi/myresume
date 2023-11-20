@@ -10,3 +10,4 @@
 - Fix TeamsLine Logo
 - Build resume data file
 - Build resume data API
+- Fix responsivness
