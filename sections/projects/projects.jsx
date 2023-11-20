@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       highlight: true,
     },
     {
-      logo: "teamsline.png",
+      logo: "teamsline-dark.png",
       texts: [
         "As Semesteer requested to have all the staff data and have own access to the system, the second most important matter within a school was to organize its HR management, work reporting and all staff-to-staff issues. And that’s how TeamsLine was born.",
         "TeamsLine is a human resources management system (HRMS), merged with tasks and works reporting system, which will be possible to be integrated with Semesteer to use the same user data of schools staff and management.",
