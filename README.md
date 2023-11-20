@@ -6,7 +6,6 @@
 
 - Background cols euqal height
 - Add project photos
-- Rebuild background content into points
 - List administrative job expirences
 - Update background statistics
 - Fix TeamsLine Logo

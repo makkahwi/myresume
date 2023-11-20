@@ -14,7 +14,13 @@ import { Button, CardText, Col, Row } from "reactstrap";
 export const careers = [
   {
     title: "Web Development",
-    desc: "8 years of web developing many solutions, systems and applications on various scales. Almost covered all technical aspects of the process, starting with system features plan & design, and ending up with building the infrastructure and deliver the product. It also covered the soft skills of team leadership, team development planning and so many things. Most notable works are the building of web application of Jordan's public services platform of Sanad, and Jordan's Land and Survey Department digital services portal.",
+    desc: [
+      "8 Years of Web Development",
+      "Developed solutions, systems, and applications on various scales.",
+      "Covered all technical aspects of the development process, from planning and design to infrastructure and delivery.",
+      "Acquired soft skills, including team leadership and development planning.",
+      "Notable projects include building the web application for Jordan's public services platform (Sanad) and Jordan's Land and Survey Department digital services portal.",
+    ],
     icon: faCode,
     jobs: [
       {
@@ -97,7 +103,17 @@ export const careers = [
   },
   {
     title: "Graphics & UI Design",
-    desc: "3 years as graphic & UI designer to know the basics, learn many tricks and understand how to signify good vs bad designs. Since adopting web development career, designing was a practise on the side to keep the skills and to build designs for projects when needed. Many web application designs were built, beside a lot of graphic designing works like rebuilding foundation brand identities.",
+    desc: [
+      "3 Years as Graphic & UI Designer",
+
+      "Worked as a graphic and UI designer for 3 years.",
+      "Gained foundational knowledge and learned design tricks.",
+      "Developed an understanding of distinguishing good vs bad designs.",
+      "Transitioned to a web development career.",
+      "Continued design as a side practice to maintain skills.",
+      "Created designs for various web applications.",
+      "Executed graphic design projects, including rebuilding foundation brand identities.",
+    ],
     icon: faPaintBrush,
     jobs: [
       {
@@ -157,7 +173,12 @@ export const careers = [
   },
   {
     title: "Managment Works",
-    desc: "Had an experience for 3 years in doing management-related jobs of secretary and financial management, which established the skills of work documentation and organization beside the work of foundational cumulative experience build.",
+    desc: [
+      "3 Years of Management-Related Experience",
+      "Worked in management-related roles, including secretary and financial management.",
+      "Developed skills in work documentation and organization.",
+      "Accumulated foundational experience in management roles over the years.",
+    ],
     icon: faBriefcase,
   },
 ];
@@ -213,9 +234,11 @@ const BackgroundSection = ({ page }) => {
             >
               {page && (
                 <CardText>
-                  <Typography size={6} className="lh-lg">
-                    {desc}
-                  </Typography>
+                  {desc.map((par, y) => (
+                    <Typography size={6} className="lh-lg" key={y}>
+                      - {par}
+                    </Typography>
+                  ))}
                 </CardText>
               )}
             </CardComp>
