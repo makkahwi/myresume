@@ -46,16 +46,16 @@ function CarouselComp({ items, controls, indicators, ...rest }) {
       previous={previous}
       {...rest}
     >
-      {slides}
-
       {indicators && (
         <CarouselIndicators
           items={items}
           activeIndex={activeIndex}
           onClickHandler={goToIndex}
-          className="bg-warning position-relative mt-5 px-5"
+          className="bg-warning position-relative m-0 py-0 w-100"
         />
       )}
+
+      {slides}
 
       {controls && (
         <Fragment>

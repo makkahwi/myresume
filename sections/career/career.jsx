@@ -32,7 +32,7 @@ const CareerSection = () => {
 
   const CareerSlide = ({ title, desc, icon, jobs }) => (
     <CardComp color="warning">
-      <Typography size={3} justify="center" color="warning">
+      <Typography size={3} justify="center" color="warning" className="mt-5">
         <FontAwesomeIcon icon={icon} /> {title}
         <div className="m-5">
           <Row>
@@ -53,7 +53,7 @@ const CareerSection = () => {
         items={careers.map((career, i) => (
           <CareerSlide {...career} key={i} />
         ))}
-        controls
+        // controls
         indicators
       />
     </PageSection>

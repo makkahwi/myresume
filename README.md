@@ -4,7 +4,6 @@
 
 ## To Do
 
-- Fix slider UI
 - Background cols euqal height
 - Add project photos
 - Rebuild background content into points
