@@ -10,7 +10,7 @@ const Footer = () => {
         <img src="/images/logo.png" width="100vw" className="my-5" />
 
         <Typography color="white" justify="center">
-          All Rights Reserved For <b>Suhaib Ahmad</b> ©{" "}
+          All Rights Reserved For <b>Suhaib Ahmad</b> © 2018 -{" "}
           {new Date().getFullYear()}
         </Typography>
 
