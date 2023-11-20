@@ -40,7 +40,7 @@ const NavbarComp = () => {
       icon: faUser,
     },
     { title: "Projects", link: "projects", icon: faBriefcase },
-    { title: "Blog", link: "blog", icon: faNewspaper, scroll: true },
+    { title: "Blog", link: "blog", icon: faNewspaper },
     { title: "Contact", link: "contact", icon: faMobile, scroll: true },
     {
       icon: faContactBook,
@@ -67,7 +67,7 @@ const NavbarComp = () => {
 
   return (
     <Navbar
-      className={`py-3 px-5 border-bottom border-light sticky-top w-100 `}
+      className="py-3 px-5 border-bottom border-light sticky-top w-100 navbar-expand-md"
       color="warning"
       light
       style={{ zIndex: 999 }}

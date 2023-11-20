@@ -1,34 +1,29 @@
 import PageSection from "components/pageSection";
 import { useState } from "react";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardSubtitle,
-  CardTitle,
-  Col,
-  Row,
-} from "reactstrap";
+import { Button, CardSubtitle, CardTitle, Col, Row } from "reactstrap";
 
+import CardComp from "components/Card";
+import Link from "next/link";
 import BlogFilter from "./blogFilter";
 import BlogPostViewer from "./blogPost";
-import CardComp from "components/Card";
 
-const BlogSection = ({ posts }) => {
+const BlogSection = ({ page, posts }) => {
   const [pickedCategory, setPickedCategory] = useState("");
   const [pickedArticle, setPickedArticle] = useState({ title: "" });
   const [pageSize, setPageSize] = useState(4);
 
   return (
     <PageSection
-      title="Insights Corner"
-      subtitle="Exploring Ideas, Trends, and Perspectives"
+      title={page ? "" : "Insights Corner"}
+      subtitle={page ? "" : "Exploring Ideas, Trends, and Perspectives"}
       id="blog"
     >
-      <BlogFilter
-        pickedCategory={pickedCategory}
-        setPickedCategory={setPickedCategory}
-      />
+      {page && (
+        <BlogFilter
+          pickedCategory={pickedCategory}
+          setPickedCategory={setPickedCategory}
+        />
+      )}
 
       <Row className="justify-content-center">
         {posts
@@ -61,16 +56,24 @@ const BlogSection = ({ posts }) => {
             </Col>
           ))}
 
-        {posts?.filter(({ category }) =>
-          pickedCategory ? category === pickedCategory : true
-        ).length >= pageSize ? (
-          <Col md={12} className="mb-4 text-center">
-            <Button onClick={() => setPageSize((current) => current + 4)}>
-              Show More
-            </Button>
-          </Col>
+        {page ? (
+          posts?.filter(({ category }) =>
+            pickedCategory ? category === pickedCategory : true
+          ).length >= pageSize ? (
+            <Col md={12} className="mb-4 text-center">
+              <Button onClick={() => setPageSize((current) => current + 4)}>
+                Show More
+              </Button>
+            </Col>
+          ) : (
+            ""
+          )
         ) : (
-          ""
+          <Col md={12} className="mb-4 text-center">
+            <Link href="/blog">
+              <Button>Show More</Button>
+            </Link>
+          </Col>
         )}
       </Row>
 
