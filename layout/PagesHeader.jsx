@@ -9,7 +9,8 @@ const PagesHeader = ({ title }) => {
         backgroundSize: "cover",
         backgroundPosition: "center center",
         padding: "12.5vh 10vw",
-        width: "100vw",
+        margin: 0,
+        width: "100%",
       }}
     >
       <Typography
