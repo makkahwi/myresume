@@ -5,7 +5,6 @@
 ## To Do
 
 - Fix slider UI
-- Fix Navbar
 - Background cols euqal height
 - Add project photos
 - Rebuild background content into points

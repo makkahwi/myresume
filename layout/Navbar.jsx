@@ -7,19 +7,20 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import { socialLinksList } from "pages/_document";
 import { Fragment, useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link as ScroolLink } from "react-scroll";
 import {
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
   Nav,
-  Navbar,
-  NavbarBrand,
   NavItem,
   NavLink,
+  Navbar,
+  NavbarBrand,
 } from "reactstrap";
 
 const NavbarComp = () => {
@@ -29,13 +30,18 @@ const NavbarComp = () => {
 
   const links = [
     {
-      title: "About",
-      link: "about",
+      title: "Home",
+      link: "/",
+      icon: faHome,
+    },
+    {
+      title: "Career",
+      link: "career",
       icon: faUser,
     },
-    { title: "Projects", link: "works", icon: faBriefcase },
-    { title: "Blog", link: "blog", icon: faNewspaper },
-    { title: "Contact", link: "contact", icon: faMobile },
+    { title: "Projects", link: "projects", icon: faBriefcase },
+    { title: "Blog", link: "blog", icon: faNewspaper, scroll: true },
+    { title: "Contact", link: "contact", icon: faMobile, scroll: true },
     {
       icon: faContactBook,
       links: socialLinksList.map(({ icon, link, label, name }) => ({
@@ -54,8 +60,8 @@ const NavbarComp = () => {
 
   const NavTitle = ({ title, icon }) => (
     <Fragment>
-      <FontAwesomeIcon icon={icon} className="me-1" />
-      <span className="d-none d-lg-inline">{title}</span>
+      <FontAwesomeIcon icon={icon} className="me-1 text-white fw-bold" />
+      <span className="d-none d-lg-inline text-white fw-bold">{title}</span>
     </Fragment>
   );
 
@@ -68,26 +74,23 @@ const NavbarComp = () => {
       // fixed="top"
     >
       <Link href="/" className="text-decoration-none">
-        <NavbarBrand className="fw-bold">
+        <NavbarBrand className="fw-bold" role="button">
           <img src="/images/logo.png" width="40px" className="me-3" />{" "}
           <span className="d-none d-lg-inline text-white">Suhaib Ahmad</span>
         </NavbarBrand>
       </Link>
 
       <Nav>
-        <NavItem>
-          <NavLink
-            role="button"
-            className="text-white fw-bold mx-2 text-decoration-none"
-          >
-            <NavTitle icon={faHome} title="Home" />
-          </NavLink>
-        </NavItem>
-
-        {links.map(({ title, link, links, icon }, i) => (
+        {links.map(({ title, link, links, icon, scroll }, i) => (
           <NavItem key={i}>
             {links ? (
-              <Dropdown nav isOpen={dropdownOpen} toggle={toggle} tag="span">
+              <Dropdown
+                nav
+                isOpen={dropdownOpen}
+                toggle={toggle}
+                tag="span"
+                direction="start"
+              >
                 <DropdownToggle nav caret className="text-white">
                   <NavTitle icon={icon} title={title} />
                 </DropdownToggle>
@@ -105,15 +108,24 @@ const NavbarComp = () => {
                   ))}
                 </DropdownMenu>
               </Dropdown>
-            ) : (
-              <NavLink role="button" tag="span">
-                <Link
-                  to={link}
-                  className="text-white fw-bold text-decoration-none"
-                >
+            ) : scroll ? (
+              <ScroolLink
+                to={link}
+                className="text-white fw-bold text-decoration-none"
+              >
+                <NavLink role="button" tag="span">
                   <NavTitle icon={icon} title={title} />
-                </Link>
-              </NavLink>
+                </NavLink>
+              </ScroolLink>
+            ) : (
+              <Link
+                href={link}
+                className="text-white fw-bold text-decoration-none"
+              >
+                <NavLink role="button" tag="span">
+                  <NavTitle icon={icon} title={title} />
+                </NavLink>
+              </Link>
             )}
           </NavItem>
         ))}
