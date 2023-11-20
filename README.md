@@ -4,7 +4,6 @@
 
 ## To Do
 
-- Build pages header
 - Fix slider UI
 - Fix Navbar
 - Background cols euqal height
