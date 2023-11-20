@@ -180,13 +180,13 @@ const WorksSection = () => {
     //   title: "SpeedWheels Company",
     //   url: "https://speedwheelstrade.online/",
     // },
-    // {
-    //   category: "Landing Pages",
-    //   description: "Wordpress Website",
-    //   image: `/3.jpg`,
-    //   title: "Team Foundation",
-    //   url: "https://teamtr.media/",
-    // },
+    {
+      category: "Landing Pages",
+      description: "Wordpress Website",
+      image: `/3.jpg`,
+      title: "Team Foundation",
+      url: "https://teamtr.media/",
+    },
     {
       category: "Logos",
       description: "Logo Design",
@@ -230,13 +230,13 @@ const WorksSection = () => {
       title: "Mercy Mission World",
       url: `/Booklets/2.pdf`,
     },
-    {
-      category: "Logos",
-      description: "Logo Design",
-      image: `/Logos/6.png`,
-      title: "xEdu",
-      url: "https://xEdu.best/",
-    },
+    // {
+    //   category: "Logos",
+    //   description: "Logo Design",
+    //   image: `/Logos/6.png`,
+    //   title: "xEdu",
+    //   url: "https://xEdu.best/",
+    // },
     {
       category: "Banners & Posters",
       description: "Banner Design",
@@ -337,39 +337,33 @@ const WorksSection = () => {
       color="warning"
     >
       <Row>
-        {works?.map(({ image, title, url, category, roles, org }, i) => (
-          <Col md={4} className="p-2" key={i}>
-            <CardComp image={image}>
-              <Typography size={3} justify="center">
-                {title}
-              </Typography>
+        {works?.map(
+          ({ image, title, description, category, roles, org }, i) => (
+            <Col xl={2} lg={3} md={4} sm={6} className="p-2 d-flex" key={i}>
+              <CardComp image={`/images/portfolio/${image}`}>
+                <Typography size={4} justify="center">
+                  {title}
+                </Typography>
 
-              <Typography size={5} className="my-3">
-                Type
-                <br />
-                {category}
-              </Typography>
+                {/* <Typography size={6} className="my-3">
+                  {category}
+                </Typography> */}
 
-              <Typography size={5} className="my-3">
-                Roles
-                <br />
-                {roles}
-              </Typography>
+                <Typography size={6} className="my-3">
+                  {roles}
+                </Typography>
 
-              <Typography size={5} className="my-3">
-                Type
-                <br />
-                {category}
-              </Typography>
+                <Typography size={6} className="my-3">
+                  {description}
+                </Typography>
 
-              <Typography size={5} className="my-3">
-                Organization
-                <br />
-                {org}
-              </Typography>
-            </CardComp>
-          </Col>
-        ))}
+                <Typography size={6} className="my-3">
+                  {org}
+                </Typography>
+              </CardComp>
+            </Col>
+          )
+        )}
       </Row>
     </PageSection>
   );

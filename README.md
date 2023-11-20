@@ -4,7 +4,6 @@
 
 ## To Do
 
-- Add project photos
 - Build resume data file
 - Build resume data API
 - Fix responsivness
