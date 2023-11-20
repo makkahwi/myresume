@@ -32,6 +32,8 @@ export const careers = [
         title: "Delivery Consultant",
         type: "Full-Time",
         period: "Jun - Jul 2023",
+        monthsCount: 2,
+        projectsCount: 0,
       },
       {
         company: "AgileTz",
@@ -41,15 +43,19 @@ export const careers = [
         title: "Senior Full-Stack Developer",
         type: "Full-Time",
         period: "Aug 2022 - May 2023",
+        monthsCount: 10,
+        projectsCount: 2,
       },
-      // {
-      //   company: "ArabWork",
-      //   website: "https://www.linkedin.com/company/arabwork/",
-      //   description:
-      //     "Full-time job to develop a Vue-Symfony web app for an online service.",
-      //   title: "Frontend Developer",
-      //   period: "Jun 2022 - Aug 2022",
-      // },
+      {
+        company: "ArabWork",
+        website: "https://www.linkedin.com/company/arabwork/",
+        description:
+          "Full-time job to develop a Vue-Symfony web app for an online service.",
+        title: "Frontend Developer",
+        period: "Jun 2022 - Aug 2022",
+        monthsCount: 2,
+        projectsCount: 1,
+      },
       {
         company: "LuxTag",
         website: "https://luxtag.io/",
@@ -58,6 +64,8 @@ export const careers = [
         title: "Frontend Developer",
         type: "Full-Time",
         period: "Nov 2020 - Oct 2021",
+        monthsCount: 12,
+        projectsCount: 1,
       },
       {
         company: "AIS School",
@@ -67,6 +75,8 @@ export const careers = [
         title: "Full-Stack Developer",
         type: "Part-Time",
         period: "Sep 2019 - Aug 2020",
+        monthsCount: 12,
+        projectsCount: 1,
       },
       {
         company: "Individually",
@@ -83,7 +93,9 @@ export const careers = [
           "To develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
         title: "Full-Stack Developer",
         type: "Freelance",
-        period: "Jul 2022 - Jul 2022",
+        period: "Jul 2022 - Aug 2022",
+        monthsCount: 2,
+        projectsCount: 1,
       },
       {
         company: "Individually",
@@ -126,6 +138,8 @@ export const careers = [
         type: "Part-time",
         certificate: "",
         period: "Jan 2017 - Feb 2017",
+        monthsCount: 2,
+        projectsCount: 5,
       },
       {
         company: "QFM Malaysia",
@@ -135,6 +149,8 @@ export const careers = [
         type: "Part-time",
         certificate: "",
         period: "Jun - Aug 2016, May & July 2017, Jun 2018",
+        monthsCount: 6,
+        projectsCount: 8,
       },
       {
         company: "Mercy Mission World",
@@ -144,6 +160,8 @@ export const careers = [
         type: "Part-time",
         certificate: "",
         period: "Dec 2015 - Jun 2016",
+        monthsCount: 7,
+        projectsCount: 8,
       },
       // {
       //   company: "PSA Malaysia",
@@ -176,20 +194,90 @@ export const careers = [
     title: "Managment Works",
     desc: [
       "3 Years of Management-Related Experience",
-      "Worked in management-related roles, including secretary and financial management.",
+      "Worked in management-related roles, including Secretariat and financial management.",
       "Developed skills in work documentation and organization.",
       "Accumulated foundational experience in management roles over the years.",
     ],
     icon: faBriefcase,
+    jobs: [
+      {
+        company: "WAMY",
+        // website: "https://speedwheels.shop/",
+        description: "Work as managment board member to run the organization",
+        title: "Board Member",
+        type: "Part-time",
+        // certificate: "",
+        period: "Feb 2014 - Jan 2015",
+        monthsCount: 12,
+      },
+      {
+        company: "WAMY",
+        // website: "https://speedwheels.shop/",
+        description: "Job about documenting all foundation paper works.",
+        title: "Secretariat",
+        type: "Part-time",
+        // certificate: "",
+        period: "Feb 2013 - Jan 2014",
+        monthsCount: 12,
+      },
+      {
+        company: "Shamy",
+        // website: "https://speedwheels.shop/",
+        description:
+          "Job about documenting all foundation paper works, and included graphic design tasks.",
+        title: "Secretariat",
+        type: "Part-time",
+        // certificate: "",
+        period: "Feb 2013 - Jan 2014",
+        monthsCount: 12,
+        projectsCount: 8,
+      },
+      {
+        company: "Al-Masar",
+        // website: "https://speedwheels.shop/",
+        description: "Job about documenting all foundation paper works.",
+        title: "Secretariat & Financial Managment",
+        type: "Part-time",
+        // certificate: "",
+        period: "Dec 2008 - May 2011",
+        monthsCount: 30,
+        projectsCount: 15,
+      },
+    ],
   },
 ];
 
 const BackgroundSection = ({ page }) => {
   const stats = [
-    { title: "ABC", count: 20 },
-    { title: "ABC", count: 20 },
-    { title: "ABC", count: 20 },
-    { title: "ABC", count: 20 },
+    {
+      title: "Months in Jobs",
+      count: careers.reduce(
+        (careerFinal, careerCurrent) =>
+          (careerFinal += careerCurrent.jobs.reduce(
+            (jobFinal, jobCurrent) =>
+              jobCurrent.projectsCount
+                ? (jobFinal += jobCurrent.monthsCount)
+                : jobFinal,
+            0
+          )),
+        0
+      ),
+    },
+    {
+      title: "Projects Exectued",
+      count: careers.reduce(
+        (careerFinal, careerCurrent) =>
+          (careerFinal += careerCurrent.jobs.reduce(
+            (jobFinal, jobCurrent) =>
+              jobCurrent.projectsCount
+                ? (jobFinal += jobCurrent.projectsCount)
+                : jobFinal,
+            0
+          )),
+        0
+      ),
+    },
+    { title: "Career Shifts", count: 3 },
   ];
 
   return (
@@ -200,7 +288,7 @@ const BackgroundSection = ({ page }) => {
     >
       <Row className="my-5">
         {stats.map(({ title, count }, i) => (
-          <Col md={3} className="my-3 text-white" key={i}>
+          <Col md={4} className="my-3 text-white" key={i}>
             <Typography justify="center" size={1}>
               {count}
             </Typography>

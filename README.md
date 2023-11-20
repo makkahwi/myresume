@@ -5,8 +5,6 @@
 ## To Do
 
 - Add project photos
-- List administrative job expirences
-- Update background statistics
 - Fix TeamsLine Logo
 - Build resume data file
 - Build resume data API
