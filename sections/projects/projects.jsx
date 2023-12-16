@@ -1,6 +1,6 @@
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
-import { Col, Row } from "reactstrap";
+import { Col, Row } from "react-bootstrap";
 
 const ProjectsSection = () => {
   const texts = [
