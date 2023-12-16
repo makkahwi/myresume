@@ -29,10 +29,10 @@ const AboutSection = () => {
         <Col className="my-auto">
           <Typography size={5} justify="center" className="p-5 lh-lg">
             Passionate entrepreneur with a vision to revolutionize the edtech
-            industry. Founder and CEO of Semesteer, dedicated to creating
-            cutting-edge solutions to digitize schools education. Bringing 8
-            years of experience in IT jobs, corporate world and proven track
-            record in bringing new products to market.
+            industry. Founder of Semesteer, dedicated to creating cutting-edge
+            solutions to digitize schools education. Bringing 8 years of
+            experience in IT jobs, corporate world and proven track record in
+            bringing new products to market.
           </Typography>
         </Col>
       </Row>

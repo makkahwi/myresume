@@ -7,7 +7,7 @@ const WelcomeSection = () => {
   const SlideComp = ({ text }) => <Typography size={3}>{text}</Typography>;
 
   const texts = [
-    "Founder & CEO of Semesteer, Entrepreneur, Innovator & Web Developer",
+    "Founder of Semesteer, Entrepreneur, Innovator & Web Developer",
     "Innovating & Shaping Education Digital Solutions",
     "Entrepreneuring to Overcome Educational Challenges",
     "Entrepreneuring to Revolutionize Education Sector",
