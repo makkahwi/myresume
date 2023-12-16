@@ -1,4 +1,5 @@
 import { getBlogEnPosts } from "api";
+import LandingPopUp from "components/LandingPopUp";
 import NavbarComp from "layout/Navbar";
 import { Fragment } from "react";
 import AboutSection from "sections/home/about";
@@ -28,6 +29,7 @@ export const getServerSideProps = async () => {
 const HomePage = ({ posts }) => {
   return (
     <Fragment>
+      <LandingPopUp />
       <WelcomeSection />
       <NavbarComp />
 
