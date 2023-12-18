@@ -69,3 +69,5 @@ export const socialLinksList = [
 
 export const appTitle = "Suhaib Ahmad";
 export const appDesc = "Personal Website";
+
+export const revalidationTimer = 60 * 60 * 24 * 5; // seconds * mins * hours * days

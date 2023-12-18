@@ -1,7 +1,5 @@
-import { getBlogEnPosts } from "@/api";
 import CardComp from "@/components/Card";
 import PageSection from "@/components/pageSection";
-import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { useState } from "react";
 import { Button, CardSubtitle, CardTitle, Col, Row } from "react-bootstrap";
@@ -38,27 +36,6 @@ interface props {
   page?: boolean;
   posts: post[];
 }
-
-export const getServerSideProps = (async () => {
-  let posts: post[] = [];
-
-  await getBlogEnPosts().then(
-    (res: { data: post[] }) =>
-      (posts = res.data
-        ?.filter(({ category }) => category === "Articles")
-        .map(({ category, ...rest }) => ({
-          ...rest,
-          category: "Digitizing Education",
-        })))
-  );
-
-  return {
-    props: {
-      posts,
-      revalidate: 60 * 60 * 24 * 5, // seconds * mins * hours * days
-    },
-  };
-}) satisfies GetServerSideProps<{ posts: post[] }>;
 
 const BlogSection = ({ page, posts }: props) => {
   const [pickedCategory, setPickedCategory] = useState("");

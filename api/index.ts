@@ -14,7 +14,7 @@ const local = false;
 
 export const getBlogArPosts = async () =>
   local ? { data: localData.ar } : await alembicApi.get("ar.json");
-export const getBlogEnPosts = async () =>
+export const getSemesteerBlogEnPosts = async () =>
   local ? { data: localData.en } : await alembicApi.get("en.json");
 
 const personalApi = axios.create({
