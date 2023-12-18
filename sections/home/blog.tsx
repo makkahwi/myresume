@@ -5,16 +5,34 @@ import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { useState } from "react";
 import { Button, CardSubtitle, CardTitle, Col, Row } from "react-bootstrap";
+
 import BlogFilter from "./blogFilter";
 import BlogPostViewer from "./blogPost";
 
-interface post {
+export interface postBody {
+  type: string;
+  content:
+    | string
+    | string[]
+    | { title: string; link: string }[]
+    | { body: string; author: string };
+}
+
+export interface post {
   category: string;
   date: string;
   image: string;
   title: string;
   body: object[];
 }
+
+export const defaultPost = {
+  category: "",
+  date: "",
+  image: "",
+  title: "",
+  body: [{}],
+};
 
 interface props {
   page?: boolean;
@@ -44,13 +62,7 @@ export const getServerSideProps = (async () => {
 
 const BlogSection = ({ page, posts }: props) => {
   const [pickedCategory, setPickedCategory] = useState("");
-  const [pickedArticle, setPickedArticle] = useState<post>({
-    category: "",
-    date: "",
-    image: "",
-    title: "",
-    body: [{}],
-  });
+  const [pickedArticle, setPickedArticle] = useState<post>(defaultPost);
   const [pageSize, setPageSize] = useState(4);
 
   return (

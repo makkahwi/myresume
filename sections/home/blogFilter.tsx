@@ -1,14 +1,13 @@
-import {
-  faCode,
-  faLaptop,
-  faListCheck,
-  faSchool,
-  faSeedling,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode, faLaptop, faListCheck, faSchool, faSeedling } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup } from "react-bootstrap";
 
-const BlogFilter = ({ pickedCategory, setPickedCategory }) => {
+interface props {
+  pickedCategory: string;
+  setPickedCategory: (a: string) => void;
+}
+
+const BlogFilter = ({ pickedCategory, setPickedCategory }: props) => {
   const buttons = [
     { text: "All", category: "", icon: faListCheck },
     {

@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CardComp from "@/components/Card";
 import CarouselComp from "@/components/carousel";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
-import { Col, Row } from "react-bootstrap";
 import { careers } from "@/sections/home/background";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Col, Row } from "react-bootstrap";
 
 const CareerSection = () => {
   const JobBox = ({
@@ -44,8 +44,8 @@ const CareerSection = () => {
     jobs,
   }: {
     title: string;
-    desc: string;
-    icon: React.ReactNode;
+    desc: string[];
+    icon: any;
     jobs: {}[];
   }) => (
     <CardComp color="warning">

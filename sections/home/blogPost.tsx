@@ -1,18 +1,17 @@
+import Typography from "@/components/typography";
 import { faClock, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Typography from "@/components/typography";
-import {
-  Button,
-  Col,
-  Modal,
-  ModalBody,
-  ModalFooter,
-  ModalHeader,
-  Row,
-} from "react-bootstrap";
+import { Button, Col, Modal, ModalBody, ModalFooter, ModalHeader, Row } from "react-bootstrap";
 
-const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
-  const generateBodySections = (section) => {
+import { defaultPost, post } from "./blog";
+
+interface props {
+  pickedArticle: post;
+  setPickedArticle: (a: post) => void;
+}
+
+const BlogPostViewer = ({ pickedArticle, setPickedArticle }: props) => {
+  const generateBodySections = (section: any) => {
     const { type, content } = section;
 
     switch (type) {
@@ -21,7 +20,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
       case "orderedList":
         return (
           <ol>
-            {content.map((text, i) => (
+            {content.map((text = "", i = 0) => (
               <li key={i}>{text}</li>
             ))}
           </ol>
@@ -29,7 +28,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
       case "unorderedList":
         return (
           <ul>
-            {content.map((text, i) => (
+            {content.map((text = "", i = 0) => (
               <li key={i}>{text}</li>
             ))}
           </ul>
@@ -37,7 +36,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
       case "images":
         return (
           <ul className="wp-block-gallery columns-3">
-            {content.map((image, i) => (
+            {content.map((image = "", i = 0) => (
               <li className="blocks-gallery-item" key={i}>
                 <figure>
                   <img src={image} alt="image" />
@@ -49,9 +48,9 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
       case "sources":
         return (
           <p className="text-justify lh-lg">
-            {t("Sources")}
+            {"Sources"}
             {": "}
-            {content.map(({ title, link }, i) => (
+            {content.map(({ title = "", link = "" }, i = 0) => (
               <span key={i}>
                 <a href={link} target="_blank">
                   {title}
@@ -83,7 +82,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
       <ModalHeader>
         <Button
           color="ghost"
-          onClick={() => setPickedArticle({ title: "" })}
+          onClick={() => setPickedArticle(defaultPost)}
           className="me-2"
         >
           <FontAwesomeIcon icon={faClose} />
@@ -115,10 +114,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }) => {
       </ModalBody>
 
       <ModalFooter>
-        <Button
-          color="secondary"
-          onClick={() => setPickedArticle({ title: "" })}
-        >
+        <Button color="secondary" onClick={() => setPickedArticle(defaultPost)}>
           Close
         </Button>
       </ModalFooter>
