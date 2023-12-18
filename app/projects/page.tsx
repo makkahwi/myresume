@@ -1,5 +1,6 @@
 "use client";
-import View from "./index";
+
+import View from "./view";
 
 export default function Page() {
   return <View />;

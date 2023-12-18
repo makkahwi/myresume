@@ -1,13 +1,13 @@
 import { getSemesteerBlogEnPosts } from "@/api";
 import { revalidationTimer } from "@/consts/data";
 import PagesLayout from "@/layout/PagesLayout";
-import BlogSection from "@/sections/home/blog";
+import BlogSection, { post } from "@/sections/home/blog";
 
 export const getServerSideProps = async () => {
-  let posts = [];
+  let posts: post[] = [];
 
   await getSemesteerBlogEnPosts().then(
-    (res) =>
+    (res: { data: post[] }) =>
       (posts = res.data
         ?.filter(({ category }) => category === "Articles")
         .map(({ category, ...rest }) => ({
@@ -24,7 +24,7 @@ export const getServerSideProps = async () => {
   };
 };
 
-const BlogPage = ({ posts }) => {
+const BlogPage = ({ posts }: { posts: post[] }) => {
   return (
     <PagesLayout>
       <BlogSection page posts={posts} />

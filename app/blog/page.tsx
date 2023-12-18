@@ -1,6 +1,6 @@
 "use client";
 
-import View from "./index";
+import View from "./view";
 import { getSemesteerBlogEnPosts } from "@/api";
 // import { GetServerSideProps } from "next";
 // import { revalidationTimer } from "@/consts/data";
