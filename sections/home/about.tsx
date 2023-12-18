@@ -14,7 +14,7 @@ const AboutSection = () => {
   return (
     <PageSection id="about">
       <Row>
-        <Col className="text-center">
+        <Col md={6} className="text-center">
           {showVideo ? (
             <ReactPlayer
               url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
@@ -26,7 +26,7 @@ const AboutSection = () => {
           )}
         </Col>
 
-        <Col className="my-auto">
+        <Col md={6} className="my-auto">
           <Typography size={5} justify="center" className="p-5 lh-lg">
             Passionate entrepreneur with a vision to revolutionize the edtech
             industry. Founder of Semesteer, dedicated to creating cutting-edge

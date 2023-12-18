@@ -18,7 +18,7 @@ const CardComp = ({
 }: props) => {
   return (
     <Card
-      className={`bg-transparent text-white w-100 border-${color} border-${
+      className={`bg-transparent text-white w-100 my-2 border-${color} border-${
         onClick ? 1 : 5
       }`}
       onClick={onClick}

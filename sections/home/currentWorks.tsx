@@ -26,9 +26,7 @@ const CurrentWorksSection = () => {
 
         <Col md={12} className="my-5 text-center">
           <Link href="/projects">
-            <Button variant="light" className="w-25">
-              Read More
-            </Button>
+            <Button variant="light">Read More</Button>
           </Link>
         </Col>
       </Row>

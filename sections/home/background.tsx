@@ -340,9 +340,7 @@ const BackgroundSection = ({ page }: props) => {
         {!page && (
           <Col md={12} className="my-5 text-center">
             <Link href="/career">
-              <Button variant="light" className="w-25">
-                Explore My Career
-              </Button>
+              <Button variant="light">Explore My Career</Button>
             </Link>
           </Col>
         )}
