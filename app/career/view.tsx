@@ -1,9 +1,11 @@
 import PagesLayout from "@/layout/PagesLayout";
-import CareerSection from "@/sections/career/career";
-import WorksSection from "@/sections/career/works";
-import BackgroundSection from "@/sections/home/background";
+import dynamic from "next/dynamic";
 
 const CareerPage = () => {
+  const BackgroundSection = dynamic(() => import("@/sections/home/background"));
+  const WorksSection = dynamic(() => import("@/sections/career/works"));
+  const CareerSection = dynamic(() => import("@/sections/career/career"));
+
   return (
     <PagesLayout>
       <BackgroundSection page />

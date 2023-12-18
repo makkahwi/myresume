@@ -1,16 +1,13 @@
 "use client";
 
-import NavbarComp from "@/layout/Navbar";
-import AboutSection from "@/sections/home/about";
-import BackgroundSection from "@/sections/home/background";
-import BlogSection, { defaultPost } from "@/sections/home/blog";
-import CurrentWorksSection from "@/sections/home/currentWorks";
-import WelcomeSection from "@/sections/home/welcome";
-import { Fragment, useEffect, useState } from "react";
 import { getSemesteerBlogEnPosts } from "@/api";
+import NavbarComp from "@/layout/Navbar";
+import { defaultPost } from "@/sections/home/blog";
+import { Fragment, useEffect, useState } from "react";
 // import { GetServerSideProps } from "next";
 // import { revalidationTimer } from "@/consts/data";
 import { post } from "@/sections/home/blog";
+import dynamic from "next/dynamic";
 
 interface props {
   posts: post[];
@@ -52,6 +49,14 @@ export default function Home() {
       )
     );
   }, []);
+
+  const WelcomeSection = dynamic(() => import("@/sections/home/welcome"));
+  const CurrentWorksSection = dynamic(
+    () => import("@/sections/home/currentWorks")
+  );
+  const BlogSection = dynamic(() => import("@/sections/home/blog"));
+  const BackgroundSection = dynamic(() => import("@/sections/home/background"));
+  const AboutSection = dynamic(() => import("@/sections/home/about"));
 
   return (
     <Fragment>

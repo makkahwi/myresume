@@ -1,8 +1,10 @@
 import PagesLayout from "@/layout/PagesLayout";
-import ProjectsSection from "@/sections/projects/projects";
-import WhySection from "@/sections/projects/why";
+import dynamic from "next/dynamic";
 
 const ProjectsPage = () => {
+  const WhySection = dynamic(() => import("@/sections/projects/why"));
+  const ProjectsSection = dynamic(() => import("@/sections/projects/projects"));
+
   return (
     <PagesLayout>
       <WhySection />
