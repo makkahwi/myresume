@@ -86,7 +86,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }: props) => {
   };
 
   return (
-    <Modal isOpen={!!pickedArticle.title} size="xl">
+    <Modal show={!!pickedArticle.title} size="xl">
       <ModalHeader>
         <Button
           variant="ghost"
@@ -95,8 +95,6 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }: props) => {
         >
           <FontAwesomeIcon icon={faClose} />
         </Button>
-
-        {pickedArticle.title}
       </ModalHeader>
 
       <ModalBody>
