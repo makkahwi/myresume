@@ -6,3 +6,4 @@
 
 - Navbar Stick
 - Localize App
+- Fix Responsivness
