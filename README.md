@@ -5,6 +5,4 @@
 ## To Do
 
 - Navbar Stick
-- Form OnSubmit
-- Form Success Msg
 - Localize App

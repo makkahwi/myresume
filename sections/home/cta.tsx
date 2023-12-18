@@ -1,8 +1,10 @@
+"use client";
+
 import { sendContacts } from "@/api";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { useState } from "react";
+import { useState } from "react";
 import { socialLinksList } from "@/consts/data";
 import {
   Alert,
@@ -15,7 +17,7 @@ import {
 } from "react-bootstrap";
 
 const CtaSection = () => {
-  // const [sent, setSent] = useState(false);
+  const [sent, setSent] = useState("");
 
   const formInputs = [
     { name: "name", title: "Name", required: true },
@@ -41,8 +43,9 @@ const CtaSection = () => {
       };
     }, {});
 
-    sendContacts(data);
-    // setSent(true);
+    sendContacts({ ...data, timestamp: new Date() }).then(() =>
+      setSent("done")
+    );
   };
 
   return (
@@ -75,9 +78,7 @@ const CtaSection = () => {
             Or Reach Me Here
           </Typography>
 
-          <Form
-          // onSubmit={onSubmit}
-          >
+          <Form onSubmit={onSubmit}>
             <Row>
               {formInputs.map(
                 ({ title, name, required, fullWidth, type }, i) => (
@@ -89,13 +90,14 @@ const CtaSection = () => {
                       placeholder={title}
                       type={type}
                       className="py-3"
+                      required={required}
                     />
                   </Col>
                 )
               )}
 
               <Col md={12} className="text-end">
-                <Button variant="info" className="mt-3">
+                <Button variant="info" className="mt-3" type="submit">
                   Submit
                 </Button>
               </Col>
@@ -104,11 +106,18 @@ const CtaSection = () => {
         </Col>
       </Row>
 
-      {/* {sent && ( */}
-      {/* <Alert variant="success" className="mt-5">
-        Message has been sent successfully
-      </Alert> */}
-      {/* )} */}
+      {sent === "done" ? (
+        <Alert variant="success" className="mt-5">
+          Message has been sent successfully.
+        </Alert>
+      ) : sent === "error" ? (
+        <Alert variant="danger" className="mt-5">
+          Message has not been sent successfully. Sorry for inconvenience and
+          you may try again.
+        </Alert>
+      ) : (
+        ""
+      )}
     </PageSection>
   );
 };
