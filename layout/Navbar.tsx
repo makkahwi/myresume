@@ -36,22 +36,22 @@ const NavbarComp = () => {
     },
     { title: "Projects", link: "projects", icon: faBriefcase },
     { title: "Blog", link: "blog", icon: faNewspaper },
-    { title: "Contact", link: "contact", icon: faMobile },
-    {
-      icon: faContactBook,
-      links: socialLinksList.map(({ icon, link, label, name, color }) => ({
-        title: (
-          <Fragment>
-            <FontAwesomeIcon icon={icon} />
-            <span className="d-none d-lg-inline"> {label}</span>
-            <span className="d-inline d-lg-none"> {name}</span>
-          </Fragment>
-        ),
-        link,
-        color,
-        target: "_blank",
-      })),
-    },
+    { title: "Contact", link: "contact", icon: faMobile, scroll: true },
+    // {
+    //   icon: faContactBook,
+    //   links: socialLinksList.map(({ icon, link, label, name, color }) => ({
+    //     title: (
+    //       <Fragment>
+    //         <FontAwesomeIcon icon={icon} />
+    //         <span className="d-none d-lg-inline"> {label}</span>
+    //         <span className="d-inline d-lg-none"> {name}</span>
+    //       </Fragment>
+    //     ),
+    //     link,
+    //     color,
+    //     target: "_blank",
+    //   })),
+    // },
   ];
 
   const NavTitle = ({ title, icon }: { title?: string; icon: any }) => (
@@ -79,37 +79,49 @@ const NavbarComp = () => {
 
       <NavbarCollapse className="justify-content-end">
         <Nav>
-          {links.map(({ title, link, links, icon }, i) => (
+          {links.map(({ title, link, icon, scroll }, i) => (
             <NavItem key={i}>
-              {links ? (
-                <DropdownButton
-                  variant="transparent"
-                  drop="start"
-                  data-bs-theme="dark"
-                  title={<NavTitle icon={icon} title={title} />}
-                >
-                  {links.map(({ title, link, target, color }, y) => (
-                    <DropdownItem
-                      href={link}
-                      target={target}
-                      style={{ backgroundColor: color, color: "white" }}
-                      className="py-2"
-                      key={y}
+              {
+                // links ? (
+                //   <DropdownButton
+                //     variant="transparent"
+                //     drop="start"
+                //     data-bs-theme="dark"
+                //     title={<NavTitle icon={icon} title={title} />}
+                //   >
+                //     {links.map(({ title, link, target, color }, y) => (
+                //       <DropdownItem
+                //         href={link}
+                //         target={target}
+                //         style={{ backgroundColor: color, color: "white" }}
+                //         className="py-2"
+                //         key={y}
+                //       >
+                //         {title}
+                //       </DropdownItem>
+                //     ))}
+                //   </DropdownButton>
+                // ) :
+                scroll ? (
+                  <NavLink>
+                    <Link
+                      href={"#" + link}
+                      className="text-white fw-bold text-decoration-none"
                     >
-                      {title}
-                    </DropdownItem>
-                  ))}
-                </DropdownButton>
-              ) : (
-                <NavLink>
-                  <Link
-                    href={link}
-                    className="text-white fw-bold text-decoration-none"
-                  >
-                    <NavTitle icon={icon} title={title} />
-                  </Link>
-                </NavLink>
-              )}
+                      <NavTitle icon={icon} title={title} />
+                    </Link>
+                  </NavLink>
+                ) : (
+                  <NavLink>
+                    <Link
+                      href={link}
+                      className="text-white fw-bold text-decoration-none"
+                    >
+                      <NavTitle icon={icon} title={title} />
+                    </Link>
+                  </NavLink>
+                )
+              }
             </NavItem>
           ))}
         </Nav>
