@@ -63,7 +63,7 @@ const BlogSection = ({ page, posts }: props) => {
               i < pageSize
           )
           ?.map(({ category, date, image, title, body }, i) => (
-            <Col md={3} className="mb-4" key={i}>
+            <Col md={3} className="mb-4 d-flex" key={i}>
               <CardComp
                 onClick={() =>
                   setPickedArticle({ category, date, image, title, body })
