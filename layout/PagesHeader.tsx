@@ -8,14 +8,15 @@ const PagesHeader = ({ title }: props) => {
   const Content = () => (
     <div
       style={{
-        background:
-          "linear-gradient(0deg, rgba(23, 162, 184, 0.5), rgba(23, 162, 184, 0.5)), url(/images/profile.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
+        // background:
+        //   "linear-gradient(0deg, rgba(23, 162, 184, 0.5), rgba(23, 162, 184, 0.5)), url(/images/bg.jpg)",
+        // backgroundSize: "cover",
+        // backgroundPosition: "center center",
         padding: "12.5vh 10vw",
-        margin: 0,
-        width: "100%",
+        // margin: 0,
+        // width: "100%",
       }}
+      className="bg-info"
     >
       <Typography
         size={1}

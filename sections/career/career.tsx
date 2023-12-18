@@ -54,7 +54,7 @@ const CareerSection = () => {
         <div className="m-5">
           <Row>
             {jobs?.map((job, i) => (
-              <Col md={4} className="p-2" key={i}>
+              <Col md={4} className="p-2 d-flex" key={i}>
                 <JobBox {...job} />
               </Col>
             ))}
