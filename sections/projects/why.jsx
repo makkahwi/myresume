@@ -20,7 +20,7 @@ const WhySection = () => {
 
         <Typography size={4} color="warning">
           {
-            "As a matter of fact, my very first solution was developed and tested within the most recent experience of working with a school. So that convinced me of the tech impact over education, and the initial success of my first experience is what made me start this journey."
+            "As a matter of fact, my solution (Semesteer) MVP was developed and tested within the most recent experience of working with a school. So that convinced me of the tech impact over education, and the initial success of my first experience is what made me start this journey."
           }
         </Typography>
       </CardComp>

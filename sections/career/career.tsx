@@ -67,11 +67,12 @@ const CareerSection = () => {
   return (
     <PageSection title="Careers" subtitle="Navigating Careers and Experiences">
       <CarouselComp
+        controls
+        indicators
         items={careers.map((career, i) => (
           <CareerSlide {...career} key={i} />
         ))}
-        // controls
-        indicators
+        dark
       />
     </PageSection>
   );

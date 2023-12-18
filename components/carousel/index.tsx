@@ -4,16 +4,23 @@ interface props {
   items: React.ReactNode[];
   controls?: boolean;
   indicators?: boolean;
+  dark?: boolean;
 }
 
 function CarouselComp({
   items,
   controls = false,
   indicators = false,
+  dark = false,
   ...rest
 }: props) {
   return (
-    <Carousel controls={controls} indicators={indicators} {...rest}>
+    <Carousel
+      controls={controls}
+      indicators={indicators}
+      variant={dark ? "dark" : "light"}
+      {...rest}
+    >
       {items.map((slide, i) => (
         <Carousel.Item key={i}>{slide}</Carousel.Item>
       ))}
