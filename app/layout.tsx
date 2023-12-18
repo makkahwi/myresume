@@ -7,6 +7,7 @@ import { Inter } from "next/font/google";
 import { Fragment } from "react";
 import "./global.scss";
 import "./globals.css";
+import LandingPopUp from "@/components/LandingPopUp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Fragment>
           <main className="mx-0 mb-0 p-0 w-100 pb-5">{children}</main>
 
+          <LandingPopUp />
           <CtaSection />
           <Footer />
         </Fragment>
