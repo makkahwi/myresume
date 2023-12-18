@@ -15,7 +15,7 @@ const CareerSection = () => {
     type = "",
     period = "",
   }) => (
-    <CardComp color="warning">
+    <CardComp color="info">
       <Typography size={6} color="dark">
         {period + " @ "}
         <a
@@ -48,8 +48,8 @@ const CareerSection = () => {
     icon: any;
     jobs: {}[];
   }) => (
-    <CardComp color="warning">
-      <Typography size={3} justify="center" color="warning" className="mt-5">
+    <CardComp color="info">
+      <Typography size={3} justify="center" color="info" className="mt-5">
         <FontAwesomeIcon icon={icon} /> {title}
         <div className="m-5">
           <Row>

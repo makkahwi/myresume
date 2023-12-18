@@ -1,7 +1,15 @@
 import Typography from "@/components/typography";
 import { faClock, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, Col, Modal, ModalBody, ModalFooter, ModalHeader, Row } from "react-bootstrap";
+import {
+  Button,
+  Col,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
+  Row,
+} from "react-bootstrap";
 
 import { defaultPost, post } from "./blog";
 
@@ -81,7 +89,7 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }: props) => {
     <Modal isOpen={!!pickedArticle.title} size="xl">
       <ModalHeader>
         <Button
-          color="ghost"
+          variant="ghost"
           onClick={() => setPickedArticle(defaultPost)}
           className="me-2"
         >
@@ -114,7 +122,10 @@ const BlogPostViewer = ({ pickedArticle, setPickedArticle }: props) => {
       </ModalBody>
 
       <ModalFooter>
-        <Button color="secondary" onClick={() => setPickedArticle(defaultPost)}>
+        <Button
+          variant="secondary"
+          onClick={() => setPickedArticle(defaultPost)}
+        >
           Close
         </Button>
       </ModalFooter>

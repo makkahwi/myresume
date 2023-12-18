@@ -1,6 +1,6 @@
-import { getBlogEnPosts } from "api";
-import PagesLayout from "layout/PagesLayout";
-import BlogSection from "sections/home/blog";
+import { getBlogEnPosts } from "@/api";
+import PagesLayout from "@/layout/PagesLayout";
+import BlogSection from "@/sections/home/blog";
 
 export const getServerSideProps = async () => {
   let posts = [];

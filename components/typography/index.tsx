@@ -9,7 +9,7 @@ interface props {
 
 const Typography = ({
   size,
-  color,
+  color = "dark",
   justify = "justify",
   className,
   children,

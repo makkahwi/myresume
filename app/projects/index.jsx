@@ -1,6 +1,6 @@
-import PagesLayout from "layout/PagesLayout";
-import ProjectsSection from "sections/projects/projects";
-import WhySection from "sections/projects/why";
+import PagesLayout from "@/layout/PagesLayout";
+import ProjectsSection from "@/sections/projects/projects";
+import WhySection from "@/sections/projects/why";
 
 const ProjectsPage = () => {
   return (

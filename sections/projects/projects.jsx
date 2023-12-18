@@ -12,7 +12,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <PageSection color="warning">
+    <PageSection color="info">
       <Row className="align-items-center">
         <Col md={6} className="text-center">
           <a href="https://www.semesteer.com/" target="_blank">

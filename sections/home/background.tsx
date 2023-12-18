@@ -293,10 +293,10 @@ const BackgroundSection = ({ page }: props) => {
       <Row className="my-5">
         {stats.map(({ title, count }, i) => (
           <Col md={4} className="my-3 text-white" key={i}>
-            <Typography justify="center" size={1}>
+            <Typography justify="center" color="white" size={1}>
               {count}
             </Typography>
-            <Typography justify="center" size={4}>
+            <Typography justify="center" color="white" size={4}>
               {title}
             </Typography>
           </Col>
@@ -314,11 +314,12 @@ const BackgroundSection = ({ page }: props) => {
                     justify="center"
                     style={{ fontSize: "5vw" }}
                     className="my-5"
+                    color="white"
                   >
                     <FontAwesomeIcon icon={icon} />
                   </Typography>
 
-                  <Typography size={3} justify="center">
+                  <Typography size={3} justify="center" color="white">
                     {title}
                   </Typography>
                 </Fragment>
@@ -327,7 +328,12 @@ const BackgroundSection = ({ page }: props) => {
               {page && (
                 <CardText className="w-100">
                   {desc.map((par, y) => (
-                    <Typography size={6} className="lh-lg" key={y}>
+                    <Typography
+                      size={6}
+                      className="lh-lg"
+                      color="white"
+                      key={y}
+                    >
                       - {par}
                     </Typography>
                   ))}

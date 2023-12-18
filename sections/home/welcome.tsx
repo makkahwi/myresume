@@ -2,7 +2,7 @@ import CarouselComp from "@/components/carousel";
 import PageSection from "@/components/pageSection";
 import Typography from "@/components/typography";
 import { Fragment } from "react";
-import { Carousel, Col, Row } from "react-bootstrap";
+import { CarouselCaption, Col, Row } from "react-bootstrap";
 
 const WelcomeSection = () => {
   const texts = [
@@ -17,7 +17,12 @@ const WelcomeSection = () => {
     <PageSection color="dark">
       <Row style={{ minHeight: "70vh" }} className="text-white">
         <Col lg={6} style={{ margin: "auto 0" }} className="py-5">
-          <Typography size={1} className="pb-4" style={{ fontSize: "3.5vw" }}>
+          <Typography
+            size={1}
+            className="pb-4"
+            color="white"
+            style={{ fontSize: "3.5vw" }}
+          >
             Suhaib Ahmad
           </Typography>
 
@@ -26,16 +31,18 @@ const WelcomeSection = () => {
               <Fragment key={i}>
                 <img src="/images/logo.png" />
 
-                <Carousel.Caption>
-                  <Typography size={3}>{text}</Typography>
-                </Carousel.Caption>
+                <CarouselCaption>
+                  <Typography size={4} color="white">
+                    {text}
+                  </Typography>
+                </CarouselCaption>
               </Fragment>
             ))}
           />
         </Col>
 
         <Col lg={6} style={{ margin: "auto 0" }} className="text-center">
-          <img src="/images/profile.jpg" width="70%" />
+          {/* <img src="/images/profile.jpg" width="70%" /> */}
         </Col>
       </Row>
     </PageSection>

@@ -65,7 +65,7 @@ const NavbarComp = () => {
     <Navbar
       expand="lg"
       className="py-3 px-5 border-bottom border-light"
-      bg="warning"
+      bg="info"
       sticky="top"
     >
       <NavbarBrand className="fw-bold" role="button">

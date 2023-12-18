@@ -1,4 +1,10 @@
-import { faCode, faLaptop, faListCheck, faSchool, faSeedling } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCode,
+  faLaptop,
+  faListCheck,
+  faSchool,
+  faSeedling,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, ButtonGroup } from "react-bootstrap";
 
@@ -37,9 +43,9 @@ const BlogFilter = ({ pickedCategory, setPickedCategory }: props) => {
       {buttons.map(({ text, category, icon }, i) => (
         <Button
           onClick={() => setPickedCategory(category)}
-          color={
+          variant={
             pickedCategory === category
-              ? "warning"
+              ? "info"
               : i % 2 === 1
               ? "dark"
               : "secondary"

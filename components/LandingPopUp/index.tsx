@@ -7,7 +7,7 @@ const LandingPopUp = () => {
 
   return open ? (
     <div
-      className="alert alert-warning position-fixed bottom-0 mb-5 mx-5"
+      className="alert alert-info position-fixed bottom-0 mb-5 mx-5"
       role="alert"
       style={{ zIndex: 9999 }}
     >

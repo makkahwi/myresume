@@ -116,7 +116,7 @@ const BlogSection = ({ page, posts }: props) => {
             <Col md={12} className="mb-4 text-center">
               <Button
                 onClick={() => setPageSize((current) => current + 4)}
-                variant="warning"
+                variant="info"
               >
                 Show More
               </Button>
@@ -127,7 +127,7 @@ const BlogSection = ({ page, posts }: props) => {
         ) : (
           <Col md={12} className="mb-4 text-center">
             <Link href="/blog">
-              <Button variant="warning">Show More</Button>
+              <Button variant="info">Show More</Button>
             </Link>
           </Col>
         )}

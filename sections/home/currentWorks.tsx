@@ -8,12 +8,12 @@ const CurrentWorksSection = () => {
     <PageSection
       title="Innovative Venture"
       subtitle="Current Entrepreneurial Pursuit"
-      color="warning"
+      color="info"
       id="works"
     >
       <Row className="justify-content-center">
         <Col md={6}>
-          <Typography size={3} className="pb-5" color="white" justify="center">
+          <Typography size={3} className="pb-5" color="info" justify="center">
             <a
               href="https://www.semesteer.com/"
               target="_blank"

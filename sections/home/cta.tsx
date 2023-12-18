@@ -95,7 +95,7 @@ const CtaSection = () => {
               )}
 
               <Col md={12} className="text-end">
-                <Button variant="warning" className="mt-3">
+                <Button variant="info" className="mt-3">
                   Submit
                 </Button>
               </Col>

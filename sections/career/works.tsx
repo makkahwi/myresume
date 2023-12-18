@@ -334,29 +334,29 @@ const WorksSection = () => {
     <PageSection
       title="Works"
       subtitle="Most Significant Projects"
-      color="warning"
+      color="info"
     >
       <Row>
         {works?.map(({ image, title, description, category }, i) => (
           <Col xl={2} lg={3} md={4} sm={6} className="p-2 d-flex" key={i}>
             <CardComp image={`/images/portfolio/${image}`}>
-              <Typography size={4} justify="center">
+              <Typography size={4} justify="center" color="white">
                 {title}
               </Typography>
 
-              {/* <Typography size={6} className="my-3">
+              {/* <Typography size={6} className="my-3" color="white">
                   {category}
                 </Typography> */}
 
-              {/* <Typography size={6} className="my-3">
+              {/* <Typography size={6} className="my-3" color="white">
                   {roles}
                 </Typography> */}
 
-              <Typography size={6} className="my-3">
+              <Typography size={6} className="my-3" color="white">
                 {description}
               </Typography>
 
-              {/* <Typography size={6} className="my-3">
+              {/* <Typography size={6} className="my-3" color="white">
                   {org}
                 </Typography> */}
             </CardComp>
