@@ -1,20 +1,16 @@
 import { CarouselCaption, CarouselItem } from "react-bootstrap";
 
 interface props {
-  setAnimating: (x: boolean) => void;
   src?: string;
   title?: string;
 }
 
-function CarouselSlide({ setAnimating, src, title }: props) {
+function CarouselSlide({ src, title }: props) {
   return (
-    <CarouselItem
-      onExiting={() => setAnimating(true)}
-      onExited={() => setAnimating(false)}
-    >
+    <CarouselItem>
       <img src={src} alt={title} />
 
-      {title && <CarouselCaption captionText={title} captionHeader={title} />}
+      {title && <CarouselCaption>{title}</CarouselCaption>}
     </CarouselItem>
   );
 }
