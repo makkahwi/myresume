@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import SectionTitle from "./SectionTitle";
 
 interface props {
@@ -23,15 +24,17 @@ const PageSection = ({
   const Content = () => (
     <div
       className={`bg-${color} ${rounded && "rounded"}`}
-      style={{ padding: "12.5vh 10vw" }}
+      style={{ padding: "12.5vh 0" }}
       id={id}
       {...rest}
     >
-      {title && (
-        <SectionTitle title={title} subtitle={subtitle} color={color} />
-      )}
+      <Container>
+        {title && (
+          <SectionTitle title={title} subtitle={subtitle} color={color} />
+        )}
 
-      {children}
+        {children}
+      </Container>
     </div>
   );
 
