@@ -29,7 +29,7 @@ const WelcomeSection = () => {
           <CarouselComp
             items={texts.map((text, i) => (
               <Fragment key={i}>
-                <img src="/images/logo.png" />
+                <img src="/images/empty.png" />
 
                 <CarouselCaption>
                   <Typography size={4} color="white">
@@ -42,7 +42,7 @@ const WelcomeSection = () => {
         </Col>
 
         <Col lg={6} style={{ margin: "auto 0" }} className="text-center">
-          {/* <img src="/images/profile.jpg" width="70%" /> */}
+          <img src="/images/profile.jpg" width="70%" />
         </Col>
       </Row>
     </PageSection>
