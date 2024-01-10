@@ -19,8 +19,8 @@ function CarouselComp({
       controls={controls}
       indicators={indicators}
       variant={dark ? "dark" : "light"}
-      pause={false}
-      interval={3000}
+      pause="hover"
+      interval={7000}
       {...rest}
     >
       {items.map((slide, i) => (

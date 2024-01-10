@@ -26,7 +26,11 @@ const WelcomeSection = () => {
             Suhaib Ahmad
           </Typography>
 
-          <CarouselComp
+          <Typography size={4} color="white">
+            {texts[0]}
+          </Typography>
+
+          {/* <CarouselComp
             items={texts.map((text, i) => (
               <Fragment key={i}>
                 <img src="/images/empty.png" />
@@ -38,7 +42,7 @@ const WelcomeSection = () => {
                 </CarouselCaption>
               </Fragment>
             ))}
-          />
+          /> */}
         </Col>
 
         <Col lg={6} style={{ margin: "auto 0" }} className="text-center">
