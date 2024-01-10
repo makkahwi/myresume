@@ -3,12 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
-export default function Header({
-  data: { name, profile },
-  contacts,
-  jobsList,
-  setJob,
-}) {
+export default function Header({ data: { name, profile }, contacts }) {
   const { t, i18n } = useTranslation();
 
   return (
@@ -27,28 +22,15 @@ export default function Header({
             {t(name)}
           </h1>
 
-          <h3 className="mb-4">
+          {/* <h3 className="mb-4">
             {t("Jordan's Lead")}
             <br />
             <a href="https://commits.top/jordan_public.html" target="_blank">
               {t("Github Contributor")}
             </a>
-          </h3>
+          </h3> */}
 
-          <h3>
-            {/* {t("Full-Stack Web Developer")} */}
-            <select
-              style={{ width: "100%", textAlign: "center" }}
-              className={`${i18n.language === "ar" && "arabic"}`}
-              onChange={(job) => setJob(job.target.value)}
-            >
-              {jobsList.map((job, i) => (
-                <option value={job.value} key={i}>
-                  {t(job.title)}
-                </option>
-              ))}
-            </select>
-          </h3>
+          <h2 style={{ color: "black" }}>{t("Full-Stack Web Developer")}</h2>
 
           <hr />
 
