@@ -1,5 +1,6 @@
 import PageSection from "components/pageSection";
 import Typography from "components/typography";
+import { Fragment } from "react";
 import { Col, Row } from "react-bootstrap";
 
 const ProjectsSection = () => {
@@ -11,24 +12,50 @@ const ProjectsSection = () => {
     "Future plans include expanding the solution to digitze every corner of the education process going on & off-campus.",
   ];
 
-  return (
-    <PageSection color="info">
-      <Row className="align-items-center">
-        <Col md={6} className="text-center">
-          <a href="https://www.semesteer.com/" target="_blank">
-            <img src="/images/semesteer.png" width="65%" />
-          </a>
-        </Col>
+  const appNestTexts = [
+    "I have designed and built the architecture of a coming-soon open-source project of AppNest.",
+    "This project is about building a tool to help the planning and execution of any future web application projects.",
+    "I am supervising the team that is developing the code for the project, and soon we will launch the MVP for public testing.",
+  ];
 
-        <Col md={6} className="text-center">
-          {texts.map((text, y) => (
-            <Typography size={4} className="my-5" color="white" key={y}>
-              {text}
-            </Typography>
-          ))}
-        </Col>
-      </Row>
-    </PageSection>
+  return (
+    <Fragment>
+      <PageSection color="info">
+        <Row className="align-items-center">
+          <Col md={6} className="text-center">
+            <a href="https://www.semesteer.com/" target="_blank">
+              <img src="/images/semesteer.png" width="65%" />
+            </a>
+          </Col>
+
+          <Col md={6} className="text-center">
+            {texts.map((text, y) => (
+              <Typography size={4} className="my-5" color="white" key={y}>
+                {text}
+              </Typography>
+            ))}
+          </Col>
+        </Row>
+      </PageSection>
+
+      <PageSection color="secondary">
+        <Row className="align-items-center">
+          <Col md={6} className="text-center">
+            {appNestTexts.map((text, y) => (
+              <Typography size={4} className="my-5" color="white" key={y}>
+                {text}
+              </Typography>
+            ))}
+          </Col>
+
+          <Col md={6} className="text-center">
+            <a href="https://sketcher-drab.vercel.app/" target="_blank">
+              <img src="/images/appnest-w.png" width="65%" />
+            </a>
+          </Col>
+        </Row>
+      </PageSection>
+    </Fragment>
   );
 };
 
