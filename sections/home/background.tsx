@@ -24,6 +24,16 @@ export const careers = [
     icon: faCode,
     jobs: [
       {
+        company: "Logatta",
+        website: "https://www.logatta.com",
+        description: "To develop React.Js-based web apps for Saas services.",
+        title: "Senior Frontend Deveoper",
+        type: "Freelancer",
+        period: "Aug - Dec 2023",
+        monthsCount: 5,
+        projectsCount: 2,
+      },
+      {
         company: "Deloitte Digital",
         website:
           "https://www2.deloitte.com/xe/en/pages/strategy-operations/solutions/deloitte-jordan-digital-center.html",
@@ -95,7 +105,7 @@ export const careers = [
         type: "Freelance",
         period: "Jul 2022 - Aug 2022",
         monthsCount: 2,
-        projectsCount: 1,
+        projectsCount: 0,
       },
       {
         company: "Individually",
