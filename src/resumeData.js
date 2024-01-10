@@ -1,5 +1,56 @@
-import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from "@fortawesome/free-brands-svg-icons";
-import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faShapes, faSyncAlt, faV, faVectorSquare, faVideo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBootstrap,
+  faCss3Alt,
+  faDiscord,
+  faDocker,
+  faFacebook,
+  faFigma,
+  faGithub,
+  faHackerrank,
+  faHtml5,
+  faInstagram,
+  faJs,
+  faKaggle,
+  faLaravel,
+  faLinkedin,
+  faMicrosoft,
+  faNode,
+  faNodeJs,
+  faPhp,
+  faPython,
+  faReact,
+  faSlack,
+  faTelegram,
+  faVuejs,
+  faWhatsapp,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faBroadcastTower,
+  faCamera,
+  faChartBar,
+  faCloud,
+  faCoffee,
+  faDatabase,
+  faEdit,
+  faEnvelope,
+  faFan,
+  faFileAlt,
+  faGlobe,
+  faHashtag,
+  faImages,
+  faNewspaper,
+  faPaintBrush,
+  faPaintRoller,
+  faPhoneVolume,
+  faRing,
+  faScroll,
+  faShapes,
+  faSyncAlt,
+  faV,
+  faVectorSquare,
+  faVideo,
+} from "@fortawesome/free-solid-svg-icons";
 
 const portfolioLink = "images/portfolio";
 
@@ -47,8 +98,6 @@ const Data = {
           url: "https://t.me/makkahwi",
           text: "+962788424973",
         },
-      ],
-      [
         {
           icon: faPhoneVolume,
           name: "Phone",
