@@ -664,7 +664,7 @@ const Data = {
           description: "Frontend Dev of React.js Based SaaS App",
           company: "Logatta",
           comingSoon: true,
-          image: `${portfolioLink}/10.jpg`,
+          image: `${portfolioLink}/22.jpg`,
           title: "Crosure",
           link: "Crosure",
           url: "https://crosure.com/",
@@ -722,7 +722,7 @@ const Data = {
           category: "Web Apps",
           description: "Full-Stack Dev of React.Js-Node.Js Based App",
           comingSoon: true,
-          image: `${portfolioLink}/10.jpg`,
+          image: `${portfolioLink}/23.jpg`,
           title: "Rasmi & Kiwan",
           link: "R&K_App",
           // "url": "https://rasmiandkiwan.com/"
