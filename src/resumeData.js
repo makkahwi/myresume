@@ -1,56 +1,5 @@
-import {
-  faBootstrap,
-  faCss3Alt,
-  faDiscord,
-  faDocker,
-  faFacebook,
-  faFigma,
-  faGithub,
-  faHackerrank,
-  faHtml5,
-  faInstagram,
-  faJs,
-  faKaggle,
-  faLaravel,
-  faLinkedin,
-  faMicrosoft,
-  faNode,
-  faNodeJs,
-  faPhp,
-  faPython,
-  faReact,
-  faSlack,
-  faTelegram,
-  faVuejs,
-  faWhatsapp,
-  faWordpress,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faBroadcastTower,
-  faCamera,
-  faChartBar,
-  faCloud,
-  faCoffee,
-  faDatabase,
-  faEdit,
-  faEnvelope,
-  faFan,
-  faFileAlt,
-  faGlobe,
-  faHashtag,
-  faImages,
-  faNewspaper,
-  faPaintBrush,
-  faPaintRoller,
-  faPhoneVolume,
-  faRing,
-  faScroll,
-  faShapes,
-  faSyncAlt,
-  faV,
-  faVectorSquare,
-  faVideo,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from "@fortawesome/free-brands-svg-icons";
+import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faShapes, faSyncAlt, faV, faVectorSquare, faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const portfolioLink = "images/portfolio";
 
@@ -281,6 +230,16 @@ const Data = {
   resume: {
     web: {
       jobsList: [
+        {
+          company: "Logatta",
+          website: "https://www.logatta.com/",
+          description:
+            "Freelance to develop JS based web apps for online Saas services.",
+          title: "Senior Frontend Developer",
+          // certificate: "/agiletz.pdf",
+          years: "Aug - Dec 2023",
+          projects: ["Entreviable", "Crosure"],
+        },
         {
           company: "Deloitte Digital",
           website:
@@ -695,11 +654,22 @@ const Data = {
         {
           category: "Web Apps",
           description: "Frontend Dev of React.js Based SaaS App",
+          company: "Logatta",
           comingSoon: true,
+          image: `${portfolioLink}/10.jpg`,
+          title: "Crosure",
+          link: "Crosure",
+          url: "https://crosure.com/",
+        },
+        {
+          category: "Web Apps",
+          description: "Frontend Dev of React.js Based SaaS App",
+          company: "Logatta",
+          comingSoon: false,
           image: `${portfolioLink}/10.jpg`,
           title: "Entreviable",
           link: "Entreviable",
-          // url: "https://entreviable.com",
+          url: "https://entreviable.com",
         },
         {
           category: "Web Apps",
