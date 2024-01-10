@@ -7,6 +7,15 @@ const WorksSection = () => {
   const works = [
     {
       category: "Web Apps",
+      description: "System architecture of Open-Source SaaS App",
+      comingSoon: true,
+      openSource: true,
+      image: `/10.jpg`,
+      title: "AppNest",
+      // url: "https://AppNest.dev/",
+    },
+    {
+      category: "Web Apps",
       description: "Frontend Dev of React.js Based Search-Engine App",
       comingSoon: true,
       image: `/22.jpg`,
@@ -66,7 +75,7 @@ const WorksSection = () => {
     },
     {
       category: "Landing Pages",
-      description: "Frontend Dev of Next.Js-Node.Js Based App",
+      description: "Frontend Dev of Next.Js-Based Landing Page",
       comingSoon: false,
       image: `/17.jpg`,
       title: "Rasmi & Kiwan",
@@ -167,7 +176,7 @@ const WorksSection = () => {
     },
     {
       category: "Web Apps",
-      description: "Full-Stack Dev of React-Django Based (Coollebraive)",
+      description: "Full-Stack Dev of React-Django Based",
       openSource: true,
       image: `/13.jpg`,
       title: "Tadreebi",
