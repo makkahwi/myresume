@@ -180,8 +180,6 @@ const Data = {
         //   url: "https://www.kaggle.com/makkahwi",
         //   text: "Makkahwi",
         // },
-      ],
-      [
         {
           icon: faDiscord,
           name: "Discord",

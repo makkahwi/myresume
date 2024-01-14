@@ -1,4 +1,4 @@
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useTranslation } from "react-i18next";
@@ -8,7 +8,18 @@ import Data from "../resumeData";
 export default function ResumeSheet({ job = "web" }) {
   const { t, i18n } = useTranslation();
 
-  const contacts = [...Data.main.socialList, ...Data.links[job]];
+  const contacts = [
+    [
+      {
+        icon: faGlobe,
+        name: "Website",
+        url: "https://suhaib.dev/",
+        text: "www.Suhaib.dev",
+      },
+    ],
+    ...Data.main.socialList,
+    ...Data.links[job],
+  ];
 
   return (
     <div
