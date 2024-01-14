@@ -211,6 +211,43 @@ export default function ResumeSheet({ job = "web" }) {
             </div>
           </div>
         ))}
+
+        <div className="twelve columns">
+          <h1 className={`${i18n.language === "ar" && "arabic padding"}`}>
+            {t("Samples Of My Work")}
+          </h1>
+        </div>
+
+        <div className="row">
+          {Data.portfolio[job].projectsList.map((project, i) => (
+            <div
+              key={`${project.title}-${i}`}
+              className="three columns"
+              id={project.link}
+            >
+              <div className="item-wrap">
+                <img alt={project.title} src={project.image} />
+                <div className="overlay">
+                  <div className="portfolio-item-meta">
+                    <h5 style={{ color: "#ff5d00" }}>{project.title}</h5>
+                    <h6>
+                      {project.company ? project.company : t("Freelancing")}
+                    </h6>
+
+                    <p>{t(project.description)}</p>
+
+                    <ul>
+                      {project.openSource && <li>{t("Open Source")}</li>}
+                      {project.comingSoon && (
+                        <li>{t("Soon To be Launched")}</li>
+                      )}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
