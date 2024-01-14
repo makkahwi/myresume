@@ -1,5 +1,56 @@
-import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from "@fortawesome/free-brands-svg-icons";
-import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faShapes, faSyncAlt, faV, faVectorSquare, faVideo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBootstrap,
+  faCss3Alt,
+  faDiscord,
+  faDocker,
+  faFacebook,
+  faFigma,
+  faGithub,
+  faHackerrank,
+  faHtml5,
+  faInstagram,
+  faJs,
+  faKaggle,
+  faLaravel,
+  faLinkedin,
+  faMicrosoft,
+  faNode,
+  faNodeJs,
+  faPhp,
+  faPython,
+  faReact,
+  faSlack,
+  faTelegram,
+  faVuejs,
+  faWhatsapp,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faBroadcastTower,
+  faCamera,
+  faChartBar,
+  faCloud,
+  faCoffee,
+  faDatabase,
+  faEdit,
+  faEnvelope,
+  faFan,
+  faFileAlt,
+  faGlobe,
+  faHashtag,
+  faImages,
+  faNewspaper,
+  faPaintBrush,
+  faPaintRoller,
+  faPhoneVolume,
+  faRing,
+  faScroll,
+  faShapes,
+  faSyncAlt,
+  faV,
+  faVectorSquare,
+  faVideo,
+} from "@fortawesome/free-solid-svg-icons";
 
 const portfolioLink = "images/portfolio";
 
@@ -123,12 +174,12 @@ const Data = {
           url: "https://www.sololearn.com/profile/25072713",
           text: "Makkahwi",
         },
-        {
-          icon: faKaggle,
-          name: "Kaggle",
-          url: "https://www.kaggle.com/makkahwi",
-          text: "Makkahwi",
-        },
+        // {
+        //   icon: faKaggle,
+        //   name: "Kaggle",
+        //   url: "https://www.kaggle.com/makkahwi",
+        //   text: "Makkahwi",
+        // },
       ],
       [
         {
@@ -137,21 +188,21 @@ const Data = {
           url: "https://discordapp.com/users/772634530992619530",
           text: "Makkahwi",
         },
-        {
-          icon: faSlack,
-          name: "Slack",
-          url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
-          text: "Makkahwi",
-        },
+        // {
+        //   icon: faSlack,
+        //   name: "Slack",
+        //   url: "https://slack.com/app_redirect?channel=U02TS20JT8X",
+        //   text: "Makkahwi",
+        // },
       ],
-      [
-        {
-          icon: faCoffee,
-          name: "BuyMeACoffee",
-          url: "https://www.buymeacoffee.com/makkahwi",
-          text: "Buy Me a Coffee",
-        },
-      ],
+      // [
+      //   {
+      //     icon: faCoffee,
+      //     name: "BuyMeACoffee",
+      //     url: "https://www.buymeacoffee.com/makkahwi",
+      //     text: "Buy Me a Coffee",
+      //   },
+      // ],
     ],
     gd: [
       [
