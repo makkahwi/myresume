@@ -131,9 +131,7 @@ export default function ResumeSheet({ job = "web" }) {
             </div>
           ))}
         </div>
-      </div>
 
-      <div className="row">
         <div className="twelve columns">
           <h1 className={`${i18n.language === "ar" && "arabic padding"}`}>
             {t("Education & Training")}
