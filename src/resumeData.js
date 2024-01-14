@@ -111,7 +111,7 @@ const Data = {
   },
   about: {
     web: {
-      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. I'm highly organized, detail-oriented and timing-particular, and I believe that also what makes me a good programmer. You may scroll down to see it for yourself, and you may also download my...",
+      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. I'm highly organized, detail-oriented and timing-particular, and I believe that also what makes me a good programmer.",
       downloads: [
         {
           text: "Resume Sheet",
@@ -132,7 +132,7 @@ const Data = {
       resumeVideo: "https://www.youtube.com/embed/JxHy8wEhrEg",
     },
     gd: {
-      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector. You may scroll down to see it for yourself, and you may also download my...",
+      bio: "An individual with a constant passion & burning desire to keep exploring, learning & giving a try to things, which makes me a fit for the IT sector.",
       downloads: [
         {
           text: "Resume Sheet",
