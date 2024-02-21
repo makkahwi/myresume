@@ -6,11 +6,28 @@ import { Col, Row } from "react-bootstrap";
 const WorksSection = () => {
   const works = [
     {
+      category: "Landing Pages",
+      description: "Frontend Dev of Next.Js Based Landing Page",
+      comingSoon: false,
+      image: `/25.jpg`,
+      title: "Mr. Noor Kayyali",
+      url: "https://www.noorkayyali.com/",
+    },
+    {
+      category: "Web Apps",
+      description: "System architecture of SaaS App",
+      comingSoon: true,
+      openSource: true,
+      image: `/10.jpg`,
+      title: "Learngine",
+      // url: "https://AppNest.dev/",
+    },
+    {
       category: "Web Apps",
       description: "System architecture of Open-Source SaaS App",
       comingSoon: true,
       openSource: true,
-      image: `/10.jpg`,
+      image: `/24.jpg`,
       title: "AppNest",
       // url: "https://AppNest.dev/",
     },
