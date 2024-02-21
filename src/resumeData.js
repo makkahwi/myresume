@@ -1,56 +1,5 @@
-import {
-  faBootstrap,
-  faCss3Alt,
-  faDiscord,
-  faDocker,
-  faFacebook,
-  faFigma,
-  faGithub,
-  faHackerrank,
-  faHtml5,
-  faInstagram,
-  faJs,
-  faKaggle,
-  faLaravel,
-  faLinkedin,
-  faMicrosoft,
-  faNode,
-  faNodeJs,
-  faPhp,
-  faPython,
-  faReact,
-  faSlack,
-  faTelegram,
-  faVuejs,
-  faWhatsapp,
-  faWordpress,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faBroadcastTower,
-  faCamera,
-  faChartBar,
-  faCloud,
-  faCoffee,
-  faDatabase,
-  faEdit,
-  faEnvelope,
-  faFan,
-  faFileAlt,
-  faGlobe,
-  faHashtag,
-  faImages,
-  faNewspaper,
-  faPaintBrush,
-  faPaintRoller,
-  faPhoneVolume,
-  faRing,
-  faScroll,
-  faShapes,
-  faSyncAlt,
-  faV,
-  faVectorSquare,
-  faVideo,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBootstrap, faCss3Alt, faDiscord, faDocker, faFacebook, faFigma, faGithub, faHackerrank, faHtml5, faInstagram, faJs, faKaggle, faLaravel, faLinkedin, faMicrosoft, faNode, faNodeJs, faPhp, faPython, faReact, faSlack, faTelegram, faVuejs, faWhatsapp, faWordpress } from "@fortawesome/free-brands-svg-icons";
+import { faBroadcastTower, faCamera, faChartBar, faCloud, faCoffee, faDatabase, faEdit, faEnvelope, faFan, faFileAlt, faGlobe, faHashtag, faImages, faNewspaper, faPaintBrush, faPaintRoller, faPhoneVolume, faRing, faScroll, faShapes, faSyncAlt, faV, faVectorSquare, faVideo } from "@fortawesome/free-solid-svg-icons";
 
 const portfolioLink = "images/portfolio";
 
@@ -379,6 +328,7 @@ const Data = {
           title: "Wordpress Developer",
           years: "Oct 2015 - Apr 2018",
           projects: [
+            "Noor",
             "AAM",
             "xEdu_Landing",
             "OSF",
@@ -699,11 +649,20 @@ const Data = {
     web: {
       projectsList: [
         {
+          category: "Landing Pages",
+          description: "Frontend Dev of Next.Js Based Landing Page",
+          comingSoon: false,
+          image: `${portfolioLink}/25.jpg`,
+          title: "Mr. Noor Kayyali",
+          link: "noor",
+          url: "https://noorkayyali.com",
+        },
+        {
           category: "Web Apps",
           description: "System architect of Open-Source SaaS App",
           comingSoon: true,
           openSource: true,
-          image: `${portfolioLink}/10.jpg`,
+          image: `${portfolioLink}/24.jpg`,
           title: "AppNest",
           link: "AppNest",
           // url: "https://AppNest.dev/",
