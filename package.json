@@ -1,6 +1,6 @@
 {
-  "name": "resumewebsite",
-  "description": "A React.js-based resume website without API",
+  "name": "resume-website",
+  "description": "A Next.js-based resume website with Firebase API",
   "repo": "https://github.com/makkahwi/myresume",
   "demo": "https://Suhaib.dev",
   "author": {
@@ -11,39 +11,36 @@
     "linkedin": "https://linkedin.com/in/makkahwi",
     "email": "SuhaibAhmadAi@hotmail.com"
   },
-  "version": "5.0.0",
+  "version": "6.0.0",
   "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "i18next": "^22.4.14",
-    "i18next-browser-languagedetector": "^7.0.1",
-    "jquery": "^3.6.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-ga": "^3.3.1",
-    "react-i18next": "^12.2.0",
-    "react-scripts": "^5.0.1",
-    "react-tooltip": "^5.10.5"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.3.2",
+    "next": "14.0.1",
+    "react": "^18",
+    "react-bootstrap": "^2.10.1",
+    "react-countup": "^6.5.0",
+    "react-dom": "^18",
+    "react-scroll": "^1.9.0",
+    "react-slideshow-image": "^4.3.0",
+    "sass": "^1.71.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-scroll": "^1.8.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "typescript": "^5"
   }
 }

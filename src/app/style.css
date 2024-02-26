@@ -1,0 +1,23 @@
+li::marker {
+  color: #565656 !important;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.text-block {
+  text-align: justify;
+  line-height: 3rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
