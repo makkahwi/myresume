@@ -14,8 +14,8 @@ const FooterSection = () => {
           <Image
             src="/images/logo/logo-white.png"
             alt="Logo"
-            width={543 * 0.25}
-            height={771 * 0.25}
+            width={143 * 1}
+            height={143 * 1}
             priority
             role="button"
           />

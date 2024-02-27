@@ -36,8 +36,8 @@ const NavbarComp = () => {
           <Image
             src="/images/logo/logo-white.png"
             alt="Logo"
-            width={543 * 0.075}
-            height={771 * 0.075}
+            width={143 * 0.4}
+            height={143 * 0.4}
             priority
           />
         </NavbarBrand>

@@ -1,5 +1,12 @@
 import PageSection from "@/components/PageSection";
-import { faFacebook, faInstagram, faLinkedinIn, faWhatsapp, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedinIn,
+  faWhatsapp,
+  faXTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -58,22 +65,7 @@ export const socialLinksList = [
 
 const ContactSection = () => {
   return (
-    <PageSection
-      title="Contact Me"
-      id="contact"
-      aboveTitle={
-        <Col md={12} className="text-center">
-          <Image
-            src="/images/logo/sun.png"
-            className="mb-5"
-            alt="Sun"
-            width={409 * 0.35}
-            height={244 * 0.35}
-            priority
-          />
-        </Col>
-      }
-    >
+    <PageSection title="Contact Me" id="contact">
       <Col md={12} className="text-center p-0 m-0">
         <h5 className="mb-5 text-dark">
           {"We can have a discovery session now"}
