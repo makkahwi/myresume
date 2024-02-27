@@ -24,8 +24,7 @@ const AboutSection = () => {
           exploring, learning & giving a try to things, which makes me a fit for
           the IT sector. I&apos;m highly organized, detail-oriented and
           timing-particular, and I believe that also what makes me a good
-          programmer. You may scroll down to see it for yourself, and you may
-          also download my...
+          programmer. You may scroll down to see it for yourself.
         </h5>
       </Col>
 
