@@ -1,4 +1,3 @@
-import BookNowButton from "@/components/BookNowButton";
 import BusinessFacilitationSections from "@/sections/BusinessFacilitation";
 import SkillsSection from "@/sections/Coaching/Achievements";
 import FooterSection from "@/sections/Footer";
@@ -24,8 +23,6 @@ const HomePage = () => {
       <TailSections />
 
       <FooterSection />
-
-      <BookNowButton />
     </Fragment>
   );
 };
