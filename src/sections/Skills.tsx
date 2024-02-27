@@ -237,7 +237,7 @@ const SkillsSection = () => {
       <Col xs={12}>
         <Row>
           {skills.map(({ icon, name, color, website, subskills }, i) => (
-            <Col xs={4} key={i}>
+            <Col xs={6} md={4} key={i}>
               <a href={website} target="_blank">
                 <OverlayTrigger
                   overlay={

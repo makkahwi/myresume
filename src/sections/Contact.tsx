@@ -67,9 +67,7 @@ const ContactSection = () => {
   return (
     <PageSection title="Contact Me" id="contact">
       <Col md={12} className="text-center p-0 m-0">
-        <h5 className="mb-5 text-dark">
-          {"We can have a discovery session now"}
-        </h5>
+        <h5 className="text-dark">{"We can have a discovery session now"}</h5>
       </Col>
 
       <Col md={12} className="text-center p-0 m-0 my-5">
@@ -81,7 +79,7 @@ const ContactSection = () => {
                 <a href={link} target="_blank">
                   <Button
                     style={{ backgroundColor: color }}
-                    className="p-3 my-3 w-100 rounded-5"
+                    className="p-3 my-2 w-100 rounded-5"
                     variant="transparent"
                   >
                     <h6 className="text-center text-white p-0 m-0">

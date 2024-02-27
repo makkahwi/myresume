@@ -6,6 +6,7 @@ import "react-slideshow-image/dist/styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./style.scss";
 import "./style.css";
+import ScrollUpButton from "@/components/ScrollUp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       <body className={inter.className}>
         <main>{children}</main>
+        <ScrollUpButton />
       </body>
     </html>
   );

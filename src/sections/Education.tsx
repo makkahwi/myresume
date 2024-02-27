@@ -82,12 +82,7 @@ const EducationSection = () => {
             <Row className="mb-4" key={i}>
               <Col md={6}>
                 <a href={link} target="_blank">
-                  <Image
-                    alt={school}
-                    src={"/" + logo}
-                    width={2700 * 0.15}
-                    height={900 * 0.15}
-                  />
+                  <img alt={school} src={"/" + logo} width="90%" />
                 </a>
               </Col>
 
@@ -95,7 +90,7 @@ const EducationSection = () => {
                 <h3 className="text-info">{degree}</h3>
                 <h5>{school}</h5>
 
-                <p className="mt-5">{description}</p>
+                <p className="mt-2">{description}</p>
 
                 <Button variant="info" className="rounded-5">
                   {cert.title}
@@ -105,7 +100,7 @@ const EducationSection = () => {
                   <ButtonGroup className="mt-3">
                     {projects.map(({ link, title, more }, y) => (
                       <a href={link} target="_blank" key={y}>
-                        <Button variant="info" className="rounded-5">
+                        <Button variant="info" className="rounded-5 me-2">
                           {title}
                         </Button>
                       </a>
