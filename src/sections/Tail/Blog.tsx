@@ -68,7 +68,7 @@ const BlogSection = () => {
         {
           type: "text",
           content:
-            "If you're ready to unlock your potential, embrace a future- focused mindset, and achieve extraordinary results, let's connect! Together, we can embark on a transformative journey that will elevate your performance, amplify your success, and empower you to thrive.",
+            "If you're ready to Senior Full-Stack Developer, embrace a future- focused mindset, and achieve extraordinary results, let's connect! Together, we can embark on a transformative journey that will elevate your performance, amplify your success, and empower you to thrive.",
         },
       ],
     },

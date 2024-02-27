@@ -1,16 +1,10 @@
 import PageSection from "@/components/PageSection";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedinIn,
-  faWhatsapp,
-  faXTwitter,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedinIn, faWhatsapp, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { Button, Col, Row } from "react-bootstrap";
+
 import ContactForm from "./ContactForm";
 
 export const socialLinksList = [
@@ -77,14 +71,6 @@ export const socialLinksList = [
 ];
 
 const ContactSection = () => {
-  const whatYouWillGet = [
-    "45 - 60 minute",
-    "Targeted assessments, as appropriate",
-    "Guidance and support via text or email",
-    "Free 30 minute consultation for new clients",
-    "Customized packages",
-  ];
-
   return (
     <PageSection
       title="Contact Me"
@@ -104,18 +90,8 @@ const ContactSection = () => {
     >
       <Col md={12} className="text-center p-0 m-0">
         <h5 className="mb-5 text-dark">
-          {"We can have a discovery session now, in which you will get..."}
+          {"We can have a discovery session now"}
         </h5>
-
-        <Row className="justify-content-center">
-          {whatYouWillGet.map((point, i) => (
-            <Col xs={6} lg={3} xl={2} className="my-3" key={i}>
-              <div className="d-flex border rounded-5 border-danger w-100 h-100 p-3">
-                <h6 className="text-dark m-auto">{point}</h6>
-              </div>
-            </Col>
-          ))}
-        </Row>
       </Col>
 
       <Col md={12} className="text-center p-0 m-0 my-5">

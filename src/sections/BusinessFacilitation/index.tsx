@@ -7,13 +7,7 @@ import UniqueProgramsSection from "./UniquePrograms";
 const BusinessFacilitationSections = () => {
   return (
     <Fragment>
-      <BusinessFacilitationHeaderSection />
-
-      {/* <TextSection /> */}
-
       <UniqueProgramsSection />
-
-      <JoinMeSection />
     </Fragment>
   );
 };

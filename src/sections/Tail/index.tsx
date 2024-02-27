@@ -8,13 +8,9 @@ import { Fragment } from "react";
 const TailSections = () => {
   return (
     <Fragment>
-      <VlogSection />
+      {/* <TestimonialsSection /> */}
 
-      <TrustedBySection />
-
-      <TestimonialsSection />
-
-      <BlogSection />
+      {/* <BlogSection /> */}
 
       <ContactSection />
     </Fragment>

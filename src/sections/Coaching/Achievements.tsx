@@ -1,59 +1,235 @@
 import PageSection from "@/components/PageSection";
-import { Col, ListGroup, ListGroupItem } from "react-bootstrap";
+import { faBootstrap, faCss3Alt, faDocker, faGithub, faHtml5, faJs, faLaravel, faNode, faNodeJs, faPhp, faPython, faReact, faVuejs, faWordpress } from "@fortawesome/free-brands-svg-icons";
+import { faBroadcastTower, faCloud, faDatabase, faHashtag, faRing, faShapes, faSyncAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
 const SkillsSection = () => {
-  const photos = [
-    { width: 3, photo: "c.jpg" },
-    { width: 5, photo: "IMG_7004.jpg" },
-    { width: 4, photo: "48bfc81d-a0e9-4626-ad98-8b1a5ff09efd.jpg" },
-  ];
-
-  const achievements = [
+  const skills = [
     {
-      content:
-        "Empowered more than 100 business leaders to achieve remarkable growth by providing actionable insights and strategies during coaching sessions, resulting in the development of strong, high-performing teams.",
-      fullWidth: true,
+      icon: faReact,
+      name: "React.Js",
+      color: "61dafb",
+      website: "https://reactjs.org/",
+      subskills: [
+        "Redux",
+        "Axios",
+        "i18next",
+        "Material-UI",
+        "Chakra-UI",
+        "TailwindCSS",
+        "Ant Design",
+        "PrimeReact",
+        "Styled Components",
+        "React Hook Form",
+        "Formik",
+        "Moment",
+        "Charts.Js",
+        "Eslint",
+        "prettier",
+      ],
     },
     {
-      content:
-        "Honored to be recognized by the European Union as one of the most influential women in Jordan in 2020.",
+      icon: faReact,
+      name: "Next.Js",
+      color: "000000",
+      website: "https://nextjs.org/",
+      subskills: ["Same as React.Js"],
+    },
+    // {
+    //   icon: faV,
+    //   name: "Vite",
+    //   color: "B63DFE",
+    //   website: "https://vitejs.dev/",
+    //   subskills: ["Same as React.Js"],
+    // },
+    {
+      icon: faShapes,
+      name: "Three.Js",
+      color: "000000",
+      website: "https://threejs.org/",
     },
     {
-      content:
-        "Coached entrepreneurs to navigate complex challenges within our dynamic world, ensuring their success.",
+      icon: faVuejs,
+      name: "Vue.Js",
+      color: "00bd83",
+      website: "https://vuejs.org/",
+      subskills: ["VueX", "Vuetify", "Axios", "Webpack", "i18next"],
     },
     {
-      content:
-        "Elevated the confidence and communication skills of business professionals, resulting in more successful negotiations, partnerships, and career advancements.",
+      icon: faVuejs,
+      name: "Nuxt.Js",
+      color: "00DC82",
+      website: "https://nuxt.com/",
+      subskills: ["Same as Vue.Js"],
     },
+    {
+      icon: faNode,
+      name: "Node.Js",
+      color: "8bc500",
+      website: "https://nodejs.org/",
+      subskills: ["npm", "yarn", "strapi.io"],
+    },
+    {
+      icon: faNodeJs,
+      name: "Express.Js",
+      color: "000000",
+      website: "https://expressjs.com/",
+      subskills: [""],
+    },
+    {
+      icon: faNodeJs,
+      name: "Nest.Js",
+      color: "E0234E",
+      website: "https://nestjs.com/",
+      subskills: ["Typeorm"],
+    },
+    {
+      icon: faLaravel,
+      name: "Laravel",
+      color: "ff2d20",
+      website: "https://laravel.com/",
+      subskills: [""],
+    },
+    {
+      icon: faHashtag,
+      name: "Django",
+      color: "092d1f",
+      website: "https://www.djangoproject.com/",
+      subskills: ["DJ REST API", "DJ Simple JWT", "DJ Environ"],
+    },
+    {
+      icon: faWordpress,
+      name: "Wordpress",
+      color: "21759b",
+      website: "https://wordpress.com/",
+      subskills: ["Elementor", "Contact Form 7"],
+    },
+    {
+      icon: faDatabase,
+      name: "PostgreSQL",
+      color: "2f6091",
+      website: "https://www.postgresql.org/",
+    },
+    {
+      icon: faDatabase,
+      name: "MySQL",
+      color: "ffa518",
+      website: "https://www.mysql.com/",
+    },
+    {
+      icon: faGithub,
+      name: "Github",
+      color: "000000",
+      website: "https://www.github.com/",
+    },
+    {
+      icon: faDocker,
+      name: "Docker",
+      color: "2496ed",
+      website: "https://www.docker.com/",
+    },
+    // {
+    //   icon: faMicrosoft,
+    //   name: "VS Code",
+    //   color: "0082cf",
+    //   website: "https://code.visualstudio.com/",
+    // },
+    {
+      icon: faJs,
+      name: "JavaScript",
+      color: "f7e018",
+      website: "https://www.javascript.com/",
+      subskills: ["ES6", "ES5", "Embedded JS"],
+    },
+    {
+      icon: faJs,
+      name: "TypeScript",
+      color: "3178C6",
+      website: "https://www.typescriptlang.org/",
+    },
+    {
+      icon: faBroadcastTower,
+      name: "jQuery",
+      color: "0868ac",
+      website: "https://jquery.com/",
+    },
+    {
+      icon: faRing,
+      name: "JSON",
+      color: "0f0f0f",
+      website: "https://www.json.org/",
+    },
+    {
+      icon: faPython,
+      name: "Python",
+      color: "3771a1",
+      website: "https://www.python.org/",
+      subskills: ["Numpy", "Pandas", "Matplotlib"],
+    },
+    {
+      icon: faPhp,
+      name: "PhP",
+      color: "4f5c93",
+      website: "https://www.php.net/",
+    },
+    {
+      icon: faHtml5,
+      name: "HTML",
+      color: "e44d26",
+      website: "https://html.spec.whatwg.org/",
+    },
+    {
+      icon: faCss3Alt,
+      name: "CSS",
+      color: "379ad6",
+      website: "https://www.w3.org/TR/CSS/#css",
+    },
+    {
+      icon: faBootstrap,
+      name: "Bootstrap",
+      color: "7952b3",
+      website: "https://getbootstrap.com/",
+    },
+    {
+      icon: faSyncAlt,
+      name: "Agile",
+      color: "00a99d",
+      website: "https://www.scrum.org/",
+      subskills: ["SCRUM", "Kanban"],
+    },
+    {
+      icon: faSyncAlt,
+      name: "SCRUM",
+      color: "1f93b8",
+      website: "https://www.scrum.org/",
+      subskills: ["Jira", "ClickUp", "YouTrack"],
+    },
+    { icon: faCloud, name: "REST API", color: "176985" },
   ];
 
   return (
-    <PageSection title="Achievements" color="secondary">
-      {photos.map(({ width, photo }, i) => (
-        <Col md={width} key={i}>
-          <div
-            style={{
-              height: "25vh",
-              backgroundImage: `url('/images/gallery/${photo}')`,
-              backgroundPositionX: "center",
-              backgroundPositionY: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-            className="w-100 p-0 m-0"
-          />
-        </Col>
-      ))}
-
-      <Col xs={12} className="mt-5">
-        <ListGroup className="rounded-5 border-danger">
-          {achievements.map(({ content, fullWidth }, i) => (
-            <ListGroupItem className="bg-transparent border-danger p-4" key={i}>
-              <h5 className="text-dark text-block">{content}</h5>
-            </ListGroupItem>
+    <PageSection title="Skills" color="secondary" id="skills">
+      <Col xs={12}>
+        <Row>
+          {skills.map(({ icon, name, color, website, subskills }, i) => (
+            <Col xs={4} key={i}>
+              <a href={website} target="_blank">
+                <OverlayTrigger
+                  overlay={
+                    <Tooltip id={name} placement="top-start">
+                      {subskills?.join(",")}
+                    </Tooltip>
+                  }
+                >
+                  <h4 style={{ color: "#" + color }}>
+                    <FontAwesomeIcon icon={icon} /> {name}
+                  </h4>
+                </OverlayTrigger>
+              </a>
+            </Col>
           ))}
-        </ListGroup>
+        </Row>
       </Col>
     </PageSection>
   );
