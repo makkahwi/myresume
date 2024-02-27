@@ -1,4 +1,5 @@
 import BusinessFacilitationSections from "@/sections/BusinessFacilitation";
+import ProjectsSection from "@/sections/BusinessFacilitation/Projects";
 import SkillsSection from "@/sections/Coaching/Achievements";
 import FooterSection from "@/sections/Footer";
 import HeaderSection from "@/sections/Header";
@@ -19,6 +20,8 @@ const HomePage = () => {
       <SkillsSection />
 
       <BusinessFacilitationSections />
+
+      <ProjectsSection />
 
       <TailSections />
 
