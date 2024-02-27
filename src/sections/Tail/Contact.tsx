@@ -81,7 +81,7 @@ const ContactSection = () => {
                 <a href={link} target="_blank">
                   <Button
                     style={{ backgroundColor: color }}
-                    className="p-3 my-3 w-100"
+                    className="p-3 my-3 w-100 rounded-5"
                     variant="transparent"
                   >
                     <h6 className="text-center text-white p-0 m-0">

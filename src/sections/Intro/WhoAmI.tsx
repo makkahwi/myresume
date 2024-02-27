@@ -97,13 +97,17 @@ const EducationSection = () => {
 
                 <p className="mt-5">{description}</p>
 
-                <Button variant="info">{cert.title}</Button>
+                <Button variant="info" className="rounded-5">
+                  {cert.title}
+                </Button>
 
                 <div>
                   <ButtonGroup className="mt-3">
                     {projects.map(({ link, title, more }, y) => (
                       <a href={link} target="_blank" key={y}>
-                        <Button variant="info">{title}</Button>
+                        <Button variant="info" className="rounded-5">
+                          {title}
+                        </Button>
                       </a>
                     ))}
                   </ButtonGroup>
