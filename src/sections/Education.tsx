@@ -1,8 +1,5 @@
 import PageSection from "@/components/PageSection";
-import { capitalizeSentenceFirstLetters } from "@/functions/utils";
-import Image from "next/image";
-import { Col, Row } from "react-bootstrap";
-import { Button, ButtonGroup } from "react-bootstrap";
+import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
 const EducationSection = () => {
   const education = [

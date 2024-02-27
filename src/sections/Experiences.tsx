@@ -1,17 +1,11 @@
 import PageSection from "@/components/PageSection";
-import {
-  Card,
-  CardBody,
-  Col,
-  ListGroup,
-  ListGroupItem,
-  Row,
-} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 
 const ExperiencesSection = () => {
   const experiences = [
     {
       company: "AlembicSoft",
+      website: "https://www.alembicsoft.com/",
       description:
         "Freelance to develop Laravel based & PERN based web app private projects.",
       title: "Full-Stack Developer",
@@ -143,7 +137,7 @@ const ExperiencesSection = () => {
 
                 <h6 className="my-4">
                   {dates} @{" "}
-                  <a href={website} target="_blank">
+                  <a href={website} target="_blank" className="text-info">
                     {company}
                   </a>{" "}
                 </h6>

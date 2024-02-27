@@ -4,12 +4,9 @@ import {
   faInstagram,
   faLinkedinIn,
   faWhatsapp,
-  faXTwitter,
-  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import { Button, Col, Row } from "react-bootstrap";
 
 import ContactForm from "./ContactForm";
