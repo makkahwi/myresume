@@ -87,18 +87,18 @@ const EducationSection = () => {
               </Col>
 
               <Col md={6}>
-                <h3 className="text-warning">{degree}</h3>
+                <h3 className="text-info">{degree}</h3>
                 <h5>{school}</h5>
 
                 <p className="mt-5">{description}</p>
 
-                <Button variant="warning">{cert.title}</Button>
+                <Button variant="info">{cert.title}</Button>
 
                 <div>
                   <ButtonGroup className="mt-3">
                     {projects.map(({ link, title, more }, y) => (
                       <a href={link} target="_blank" key={y}>
-                        <Button variant="warning">{title}</Button>
+                        <Button variant="info">{title}</Button>
                       </a>
                     ))}
                   </ButtonGroup>

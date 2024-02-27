@@ -11,7 +11,7 @@ const HeaderSection = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="justify-content-center bg-warning"
+      className="justify-content-center bg-info"
     >
       <Col lg={5} md={6} className="my-auto px-5 text-white">
         <h2 className="mt-4 display-3 fw-bold">Suhaib Ahmad</h2>
