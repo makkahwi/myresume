@@ -11,7 +11,7 @@ export const socialLinksList = [
   {
     name: "LinkedIn",
     icon: faLinkedinIn,
-    link: "https://www.linkedin.com/in/noor-kayyali-a4668811/",
+    link: "https://www.linkedin.com/in/makkahwi/",
     label: "Connect and Empower",
     color: "#0A66C2",
     common: true,
@@ -19,7 +19,7 @@ export const socialLinksList = [
   {
     name: "WhatsApp",
     icon: faWhatsapp,
-    link: "https://wasap.my/962797030228",
+    link: "https://wasap.my/962788424973",
     label: "Text Me Anytime",
     color: "#1fb355",
     common: true,
@@ -27,15 +27,15 @@ export const socialLinksList = [
   {
     name: "Phone",
     icon: faPhone,
-    link: "tel:+962797030228",
-    label: "Call Me Now",
+    link: "tel:+962788424973",
+    label: "Call If Needed",
     color: "#660031",
     common: true,
   },
   {
     name: "Email",
     icon: faEnvelope,
-    link: "mailto:ask@noorkayyali.com",
+    link: "mailto:SuhaibAhmadAi@hotmail.com",
     label: "Inbox Awaits You",
     color: "#c5005f",
     common: true,
@@ -43,30 +43,16 @@ export const socialLinksList = [
   {
     name: "Facebook",
     icon: faFacebook,
-    link: "https://facebook.com/Noorcoach",
+    link: "https://facebook.com/makakahwi",
     label: "Let's Chat Forever",
     color: "#1877F2",
   },
   {
     name: "Instagram",
     icon: faInstagram,
-    link: "https://www.instagram.com/noorkayyali303/",
+    link: "https://www.instagram.com/makakahwi/",
     label: "Capture Life Together",
     color: "#E4405F",
-  },
-  {
-    name: "X",
-    icon: faXTwitter,
-    link: "https://twitter.com/Noorkayyali303",
-    label: "Join My Conversations",
-    color: "#181717",
-  },
-  {
-    name: "Youtube",
-    icon: faYoutube,
-    link: "https://www.youtube.com/channel/UCdCODCOiHkQXfCGHGDQel4Q",
-    label: "Subscribe, Watch, Like",
-    color: "#FF0000",
   },
 ];
 
