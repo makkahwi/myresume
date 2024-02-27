@@ -45,7 +45,7 @@ const ContactForm = () => {
             <FormGroup>
               <FormLabel for={name} className="text-dark">
                 {title}
-                {required ? <span className="text-danger">{" *"}</span> : ""}
+                {required ? <span className="text-info">{" *"}</span> : ""}
               </FormLabel>
               <FormControl
                 id={name}
@@ -61,7 +61,7 @@ const ContactForm = () => {
         ))}
 
         <Col md={3} lg={2} className="float-end">
-          <Button variant="danger" className="p-3" type="submit">
+          <Button variant="info" className="p-3" type="submit">
             <h6 className="text-center p-0 m-0">Reach Me Now</h6>
           </Button>
         </Col>

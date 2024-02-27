@@ -139,7 +139,7 @@ const ExperiencesSection = () => {
               i
             ) => (
               <Col className="mb-5" lg={6} xl={4} key={i}>
-                <h4 className="mb-4 text-danger">{title}</h4>
+                <h4 className="mb-4 text-info">{title}</h4>
 
                 <h6 className="my-4">
                   {dates} @{" "}

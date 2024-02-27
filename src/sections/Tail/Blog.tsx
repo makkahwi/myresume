@@ -258,7 +258,7 @@ const BlogSection = () => {
                       }}
                       className="w-100 p-0 m-0"
                     >
-                      <Button className="m-3 p-2 float-end" variant="danger">
+                      <Button className="m-3 p-2 float-end" variant="info">
                         {category}
                       </Button>
                     </div>
@@ -281,7 +281,7 @@ const BlogSection = () => {
               <Row>
                 <Col md={12}>
                   <CustomToggle eventKey={String(i)} className="m-0 float-end">
-                    <Button variant="danger">
+                    <Button variant="info">
                       <FontAwesomeIcon icon={faX} />
                     </Button>
                   </CustomToggle>
