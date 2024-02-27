@@ -34,9 +34,9 @@ const ContactForm = () => {
       {}
     );
 
-    sendContacts({ ...values, timestamp: new Date() }).then(() =>
-      alert("Your message has been sent. TQ :)")
-    );
+    sendContacts({ ...values, timestamp: new Date() })
+      .then(() => alert("Your message has been sent. TQ :)"))
+      .catch(() => alert("Something went wrong, plz try again. Sorry :("));
   };
 
   return (
