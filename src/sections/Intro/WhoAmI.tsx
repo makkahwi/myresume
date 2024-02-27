@@ -82,7 +82,12 @@ const EducationSection = () => {
             <Row className="mb-4" key={i}>
               <Col md={6}>
                 <a href={link} target="_blank">
-                  <Image src={"/" + logo} width={350} height={350} />
+                  <Image
+                    alt={school}
+                    src={"/" + logo}
+                    width={2700 * 0.15}
+                    height={900 * 0.15}
+                  />
                 </a>
               </Col>
 
