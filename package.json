@@ -1,7 +1,7 @@
 {
   "name": "resume-website",
   "description": "A Next.js-based resume website with Firebase API",
-  "repo": "https://github.com/makkahwi/myresume",
+  "repository": "https://github.com/makkahwi/myresume",
   "demo": "https://Suhaib.dev",
   "author": {
     "name": "Suhaib Ahmad",

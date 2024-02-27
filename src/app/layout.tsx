@@ -7,6 +7,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./style.scss";
 import "./style.css";
 import ScrollUpButton from "@/components/ScrollUp";
+import Head from "next/head";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,22 @@ export const metadata: Metadata = {
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html dir="ltr" lang="en">
+      <Head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-WDD6QTCBFJ"
+        />
+
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WDD6QTCBFJ');
+          `}
+        </Script>
+      </Head>
+
       <head>
         <link rel="icon" href="/FavIcon.jpg" sizes="any" />
       </head>
