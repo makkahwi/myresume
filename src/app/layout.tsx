@@ -20,21 +20,19 @@ export const metadata: Metadata = {
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html dir="ltr" lang="en">
-      <Head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-WDD6QTCBFJ"
-        />
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-WDD6QTCBFJ"
+      />
 
-        <Script id="google-analytics">
-          {`
+      <Script id="google-analytics">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-WDD6QTCBFJ');
           `}
-        </Script>
-      </Head>
+      </Script>
 
       <head>
         <link rel="icon" href="/FavIcon.jpg" sizes="any" />
