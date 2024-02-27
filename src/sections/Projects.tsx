@@ -240,7 +240,7 @@ const ProjectsSection = () => {
               { category, description, openSource, image, title, link, url },
               i
             ) => (
-              <Col sm={6} md={3} className="mb-4" key={i}>
+              <Col sm={6} md={4} lg={3} className="mb-4" key={i}>
                 <a href={url} target="_blank">
                   <Card role="button" className="h-100">
                     <img src={image} width="100%" />
