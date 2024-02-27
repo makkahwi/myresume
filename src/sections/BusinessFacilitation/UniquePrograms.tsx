@@ -13,7 +13,7 @@ const ExperiencesSection = () => {
     {
       company: "AlembicSoft",
       description:
-        "Executed several Laravel based & PERN based web app private & open-source projects.",
+        "Freelance to develop Laravel based & PERN based web app private projects.",
       title: "Full-Stack Developer",
       dates: "Sep 2019 - Present",
       projects: [
