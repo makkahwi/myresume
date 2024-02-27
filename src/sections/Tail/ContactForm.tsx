@@ -62,7 +62,7 @@ const ContactForm = () => {
 
         <Col md={3} lg={2} className="float-end">
           <Button variant="info" className="p-3" type="submit">
-            <h6 className="text-center p-0 m-0">Reach Me Now</h6>
+            <h6 className="text-center p-0 m-0">Send</h6>
           </Button>
         </Col>
       </Row>

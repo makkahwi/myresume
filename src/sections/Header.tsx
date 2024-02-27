@@ -8,8 +8,8 @@ const HeaderSection = () => {
         minHeight: "100vh",
         backgroundImage: `url('/images/Pattern.png')`,
         backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        backgroundRepeat: "repeat",
+        // backgroundSize: "cover",
       }}
       className="justify-content-center align-items-center bg-info"
     >
