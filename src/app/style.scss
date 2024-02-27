@@ -21,5 +21,10 @@ $theme-colors: (
   // 000000
 );
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
