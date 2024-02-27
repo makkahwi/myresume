@@ -11,6 +11,21 @@ import {
 const ExperiencesSection = () => {
   const experiences = [
     {
+      company: "AlembicSoft",
+      description:
+        "Executed several Laravel based & PERN based web app private & open-source projects.",
+      title: "Full-Stack Developer",
+      dates: "Sep 2019 - Present",
+      projects: [
+        // "Currency_Showroom",
+        "Semesteer",
+        "Tadreebi",
+        // "Zaytouna",
+        "R&K_Landing",
+        "R&K_App",
+      ],
+    },
+    {
       company: "Logatta",
       website: "https://www.logatta.com/",
       description:
@@ -41,6 +56,16 @@ const ExperiencesSection = () => {
       dates: "Aug 2022 - May 2023",
       projects: ["Sanad", "DLS"],
     },
+    {
+      company: "Digizyn",
+      website: "https://digizyn.com/",
+      description:
+        "Freelance job to develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
+      title: "Full-Stack Developer",
+      // certificate: "/digizyn.pdf",
+      dates: "Jul 2022 - Jul 2022",
+      projects: ["DLS"],
+    },
     // {
     //   company: "ArabWork",
     //   website: "https://www.linkedin.com/company/arabwork/",
@@ -70,31 +95,6 @@ const ExperiencesSection = () => {
       certificate: "/ais.pdf",
       dates: "Sep 2019 - Aug 2020",
       projects: ["AIS_Students", "AIS_Staff"],
-    },
-    {
-      company: "Individually",
-      description:
-        "Executed several Laravel based & PERN based web app private & open-source projects.",
-      title: "Full-Stack Developer",
-      dates: "Sep 2019 - Present",
-      projects: [
-        "Currency_Showroom",
-        "Semesteer",
-        "Tadreebi",
-        // "Zaytouna",
-        "R&K_Landing",
-        "R&K_App",
-      ],
-    },
-    {
-      company: "Digizyn",
-      website: "https://digizyn.com/",
-      description:
-        "Freelance job to develop a React.js-Node.js Based Multi-Front Public (Governmental) Service App.",
-      title: "Full-Stack Developer",
-      // certificate: "/digizyn.pdf",
-      dates: "Jul 2022 - Jul 2022",
-      projects: ["DLS"],
     },
     {
       company: "Individually",
