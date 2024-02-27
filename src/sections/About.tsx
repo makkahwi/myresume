@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 
 import NumberCounters from "./Numbers";
 
-const AboutIntroSection = () => {
+const AboutSection = () => {
   return (
     <PageSection id="about">
       {/* <Col lg={6} className="my-auto">
@@ -34,4 +34,4 @@ const AboutIntroSection = () => {
   );
 };
 
-export default AboutIntroSection;
+export default AboutSection;

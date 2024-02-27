@@ -1,12 +1,13 @@
-import BusinessFacilitationSections from "@/sections/BusinessFacilitation";
-import ProjectsSection from "@/sections/BusinessFacilitation/Projects";
-import SkillsSection from "@/sections/Coaching/Achievements";
+import ProjectsSection from "@/sections/Projects";
+import ContactSection from "@/sections/Contact";
+import EducationSection from "@/sections/Education";
+import ExperiencesSection from "@/sections/Experiences";
 import FooterSection from "@/sections/Footer";
 import HeaderSection from "@/sections/Header";
-import IntroSections from "@/sections/Intro";
 import NavbarComp from "@/sections/Navbar";
-import TailSections from "@/sections/Tail";
+import SkillsSection from "@/sections/Skills";
 import { Fragment } from "react";
+import AboutSection from "@/sections/About";
 
 const HomePage = () => {
   return (
@@ -15,15 +16,17 @@ const HomePage = () => {
 
       <HeaderSection />
 
-      <IntroSections />
+      <AboutSection />
+
+      <EducationSection />
 
       <SkillsSection />
 
-      <BusinessFacilitationSections />
+      <ExperiencesSection />
 
       <ProjectsSection />
 
-      <TailSections />
+      <ContactSection />
 
       <FooterSection />
     </Fragment>

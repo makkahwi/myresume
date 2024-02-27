@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { Button, ButtonGroup, Col, Row } from "react-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { socialLinksList } from "../Tail/Contact";
+import { socialLinksList } from "../Contact";
 import FooterNav from "./Nav";
 
 const FooterSection = () => {
