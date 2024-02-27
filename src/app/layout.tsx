@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "react-slideshow-image/dist/styles.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./style.scss";
 import "./style.css";
 

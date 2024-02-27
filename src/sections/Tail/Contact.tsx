@@ -36,7 +36,7 @@ export const socialLinksList = [
     icon: faPhone,
     link: "tel:+962788424973",
     label: "Call If Needed",
-    color: "#660031",
+    color: "#1e4c9d",
     common: true,
   },
   {
@@ -44,7 +44,7 @@ export const socialLinksList = [
     icon: faEnvelope,
     link: "mailto:SuhaibAhmadAi@hotmail.com",
     label: "Inbox Awaits You",
-    color: "#c5005f",
+    color: "#17A2B8",
     common: true,
   },
   {

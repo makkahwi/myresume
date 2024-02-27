@@ -1,6 +1,30 @@
 import PageSection from "@/components/PageSection";
-import { faBootstrap, faCss3Alt, faDocker, faGithub, faHtml5, faJs, faLaravel, faNode, faNodeJs, faPhp, faPython, faReact, faVuejs, faWordpress } from "@fortawesome/free-brands-svg-icons";
-import { faBroadcastTower, faCloud, faDatabase, faHashtag, faRing, faShapes, faSyncAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBootstrap,
+  faCss3Alt,
+  faDocker,
+  faGithub,
+  faHtml5,
+  faJs,
+  faLaravel,
+  faNode,
+  faNodeJs,
+  faPhp,
+  faPython,
+  faReact,
+  faVuejs,
+  faWordpress,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faBroadcastTower,
+  faCloud,
+  faDatabase,
+  faHashtag,
+  faRing,
+  faShapes,
+  faSyncAlt,
+  faV,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 
@@ -36,13 +60,13 @@ const SkillsSection = () => {
       website: "https://nextjs.org/",
       subskills: ["Same as React.Js"],
     },
-    // {
-    //   icon: faV,
-    //   name: "Vite",
-    //   color: "B63DFE",
-    //   website: "https://vitejs.dev/",
-    //   subskills: ["Same as React.Js"],
-    // },
+    {
+      icon: faV,
+      name: "Vite",
+      color: "B63DFE",
+      website: "https://vitejs.dev/",
+      subskills: ["Same as React.Js"],
+    },
     {
       icon: faShapes,
       name: "Three.Js",
