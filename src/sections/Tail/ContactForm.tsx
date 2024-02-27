@@ -1,5 +1,6 @@
 "use client";
 
+import { sendContacts } from "@/api";
 import {
   Button,
   Col,
@@ -33,8 +34,9 @@ const ContactForm = () => {
       {}
     );
 
-    console.log({ values });
-    alert("Your message has been sent. TQ :)");
+    sendContacts({ ...values, timestamp: new Date() }).then(() =>
+      alert("Your message has been sent. TQ :)")
+    );
   };
 
   return (
