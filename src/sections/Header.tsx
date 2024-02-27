@@ -15,7 +15,7 @@ const HeaderSection = () => {
     >
       <Col lg={5} md={6} className="my-auto px-5 text-white">
         <h2 className="mt-4 display-3 fw-bold">Suhaib Ahmad</h2>
-        <h4 className="text-light fst-italic">Senior Full-Stack Developer</h4>
+        <h4 className="text-light">Senior Full-Stack Developer</h4>
       </Col>
 
       <Col lg={4} md={6} className="mt-5 ">
