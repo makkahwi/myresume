@@ -6,15 +6,15 @@ import NumberCounters from "./Numbers";
 const AboutIntroSection = () => {
   return (
     <PageSection id="about">
-      <Col lg={6} className="my-auto">
+      {/* <Col lg={6} className="my-auto">
         <iframe
           src="https://www.youtube.com/embed/JxHy8wEhrEg"
-          width="100%"
-          style={{ minHeight: "350px" }}
+          width="500vw"
+          style={{ minHeight: 33 / 1.778 + "vw" }}
         />
-      </Col>
+      </Col> */}
 
-      <Col lg={6} className="my-auto">
+      <Col lg={12} className="my-auto">
         <h5 className="text-block text-dark">
           An individual with a constant passion & burning desire to keep
           exploring, learning & giving a try to things, which makes me a fit for
