@@ -41,7 +41,7 @@ const FooterSection = () => {
       <Row className="py-5 bg-white">
         <h6 className="text-center text-dark">
           All Rights Reserved For{" "}
-          <span className="text-danger">NOOR KAYYALI</span> ©{" "}
+          <span className="text-danger">Suhaib Ahmad</span> ©{" "}
           {new Date().getFullYear()}
         </h6>
 

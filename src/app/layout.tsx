@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "react-slideshow-image/dist/styles.css";
@@ -8,8 +9,8 @@ import "./style.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Noor Kayyal",
-  description: "Unlock Your Potential",
+  title: "Suhaib Ahmad",
+  description: "Senior Full-Stack Developer",
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
