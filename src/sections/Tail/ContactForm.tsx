@@ -34,7 +34,7 @@ const ContactForm = () => {
     );
 
     console.log({ values });
-    alert("You&apos;re message has been sent. TQ :)");
+    alert("Your message has been sent. TQ :)");
   };
 
   return (

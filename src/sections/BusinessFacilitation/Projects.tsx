@@ -246,8 +246,8 @@ const ProjectsSection = () => {
                     <img src={image} width="100%" />
 
                     <CardBody>
-                      <h4>{title}</h4>
-                      {description}
+                      <h5>{title}</h5>
+                      <p>{description}</p>
                     </CardBody>
                   </Card>
                 </a>
