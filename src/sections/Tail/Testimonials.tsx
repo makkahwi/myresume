@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
     {
       author: "Ahmad Labeeb - Piky Host",
       content:
-        "Thank you very much, my dear coach Noor, for dedicating your time and effort to help me a lot. You have greatly assisted me in logical thinking, and you've always been giving and optimistic. I enjoyed every minute of every session. Wishing you continued success and prosperity. God bless you.",
+        "Thank you very much, my dear coach Noor, for dedicating your time and effort to help me a lot. You have greatly assisted me in logical thinking, and you&apos;ve always been giving and optimistic. I enjoyed every minute of every session. Wishing you continued success and prosperity. God bless you.",
     },
     {
       author: "Lina R.",
@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
     // {
     //   author: "HR Manager - KSA",
     //   content:
-    //     "In addition to their exceptional coaching skills, Mrs. Noor is also a tremendous source of motivation and encouragement. She genuinely believes in their clients' potential and provide unwavering support throughout the coaching journey. Their enthusiasm is contagious, and their positive energy has inspired me to stay committed and motivated on my path towards self-improvement.",
+    //     "In addition to their exceptional coaching skills, Mrs. Noor is also a tremendous source of motivation and encouragement. She genuinely believes in their clients&apos; potential and provide unwavering support throughout the coaching journey. Their enthusiasm is contagious, and their positive energy has inspired me to stay committed and motivated on my path towards self-improvement.",
     // },
     {
       author: "Abdulrahman Dawood",
@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
     {
       author: "Hussein Al Dardasawi - Photographer",
       content:
-        "The session was full of attention, oh, full of attention, thanks to the skill of the trainer 'Noor' in guiding one to a safe space where they could speak from the heart and be assured that the person in front of them would stand by them with all the strength that God has given them! Through this reassurance, I was able to express all my concerns and issues related to my nascent project. This helped me to think out loud a bit more and to listen to myself. With the help of the trainer Noor, I put my foot back on the road again, but this time, with even greater strength!",
+        "The session was full of attention, oh, full of attention, thanks to the skill of the trainer &apos;Noor&apos; in guiding one to a safe space where they could speak from the heart and be assured that the person in front of them would stand by them with all the strength that God has given them! Through this reassurance, I was able to express all my concerns and issues related to my nascent project. This helped me to think out loud a bit more and to listen to myself. With the help of the trainer Noor, I put my foot back on the road again, but this time, with even greater strength!",
     },
     {
       author: "Nidal Khoury - Co-founder of 12 Clients",

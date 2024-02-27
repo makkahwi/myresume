@@ -38,7 +38,7 @@ const BlogSection = () => {
         {
           type: "text",
           content:
-            "In the dynamic world of professional development, it is essential to adapt and evolve to meet the ever-changing needs of learners. As a dedicated trainer, I have always strived to create an environment that fosters growth, empowerment, and positive change. However, it wasn't until I discovered the Solution-Focused Coaching approach that I truly experienced a profound shift in my training methodology.",
+            "In the dynamic world of professional development, it is essential to adapt and evolve to meet the ever-changing needs of learners. As a dedicated trainer, I have always strived to create an environment that fosters growth, empowerment, and positive change. However, it wasn&apos;t until I discovered the Solution-Focused Coaching approach that I truly experienced a profound shift in my training methodology.",
         },
         {
           type: "text",
@@ -58,7 +58,7 @@ const BlogSection = () => {
         {
           type: "text",
           content:
-            "Moreover, Solution-Focused Coaching has instilled a sense of empowerment in me as a trainer. It has allowed me to step into a coach / facilitator role, guiding individuals and teams towards their desired outcomes, and witnessing their growth and success has been an incredible source of joy and fulfillment for me. It is a privilege to witness the profound impact this approach can have on individuals' lives and professional trajectories.",
+            "Moreover, Solution-Focused Coaching has instilled a sense of empowerment in me as a trainer. It has allowed me to step into a coach / facilitator role, guiding individuals and teams towards their desired outcomes, and witnessing their growth and success has been an incredible source of joy and fulfillment for me. It is a privilege to witness the profound impact this approach can have on individuals&apos; lives and professional trajectories.",
         },
         {
           type: "text",
@@ -68,7 +68,7 @@ const BlogSection = () => {
         {
           type: "text",
           content:
-            "If you're ready to Senior Full-Stack Developer, embrace a future- focused mindset, and achieve extraordinary results, let's connect! Together, we can embark on a transformative journey that will elevate your performance, amplify your success, and empower you to thrive.",
+            "If you&apos;re ready to Senior Full-Stack Developer, embrace a future- focused mindset, and achieve extraordinary results, let&apos;s connect! Together, we can embark on a transformative journey that will elevate your performance, amplify your success, and empower you to thrive.",
         },
       ],
     },
@@ -208,7 +208,7 @@ const BlogSection = () => {
         {
           type: "text",
           content:
-            " A huge part of AQai success lies in testing – skills, processes, software, technology, and behaviours. Life is a series of choices, as you choose so you become. You could choose to dig deeper into your own self and create a new better version of yourself and maybe have a moment of epiphany only to realize how many years you’ve wasted not doing things in an adaptive way. But the good news is that it’s never too late to master the science of adaptability. In fact it is part of life's journey.",
+            " A huge part of AQai success lies in testing – skills, processes, software, technology, and behaviours. Life is a series of choices, as you choose so you become. You could choose to dig deeper into your own self and create a new better version of yourself and maybe have a moment of epiphany only to realize how many years you’ve wasted not doing things in an adaptive way. But the good news is that it’s never too late to master the science of adaptability. In fact it is part of life&apos;s journey.",
         },
         {
           type: "boldText",

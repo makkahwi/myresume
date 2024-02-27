@@ -31,7 +31,7 @@ const JoinMeSection = () => {
       <Col md={12} className="border border-info border-2 rounded-5 p-3 p-md-5">
         <h5 className="text-block text-dark">
           {
-            "Whether you're a seasoned executive or an emerging leader, I have a program that's perfect for you. If you're looking to elevate your leadership skills, drive organizational success, and unlock your full potential, my executive development programs are your gateway to excellence."
+            "Whether you&apos;re a seasoned executive or an emerging leader, I have a program that&apos;s perfect for you. If you&apos;re looking to elevate your leadership skills, drive organizational success, and unlock your full potential, my executive development programs are your gateway to excellence."
           }
         </h5>
         <br />

@@ -18,7 +18,7 @@ const AboutIntroSection = () => {
         <h5 className="text-block text-dark">
           An individual with a constant passion & burning desire to keep
           exploring, learning & giving a try to things, which makes me a fit for
-          the IT sector. I'm highly organized, detail-oriented and
+          the IT sector. I&apos;m highly organized, detail-oriented and
           timing-particular, and I believe that also what makes me a good
           programmer. You may scroll down to see it for yourself, and you may
           also download my...

@@ -51,7 +51,7 @@ export const socialLinksList = [
     name: "Facebook",
     icon: faFacebook,
     link: "https://facebook.com/makakahwi",
-    label: "Let's Chat Forever",
+    label: "Let&apos;s Chat Forever",
     color: "#1877F2",
   },
   {
