@@ -162,7 +162,7 @@ const SkillsSection = () => {
     {
       icon: faJs,
       name: "JavaScript",
-      color: "f7e018",
+      color: "9c8e0f",
       website: "https://www.javascript.com/",
       subskills: ["ES6", "ES5", "Embedded JS"],
     },
@@ -239,17 +239,23 @@ const SkillsSection = () => {
           {skills.map(({ icon, name, color, website, subskills }, i) => (
             <Col xs={6} md={4} key={i}>
               <a href={website} target="_blank">
-                <OverlayTrigger
-                  overlay={
-                    <Tooltip id={name} placement="top-start">
-                      {subskills?.join(",")}
-                    </Tooltip>
-                  }
-                >
+                {subskills ? (
+                  <OverlayTrigger
+                    overlay={
+                      <Tooltip id={name} placement="top-start">
+                        {subskills?.join(",")}
+                      </Tooltip>
+                    }
+                  >
+                    <h4 style={{ color: "#" + color }}>
+                      <FontAwesomeIcon icon={icon} /> {name}
+                    </h4>
+                  </OverlayTrigger>
+                ) : (
                   <h4 style={{ color: "#" + color }}>
                     <FontAwesomeIcon icon={icon} /> {name}
                   </h4>
-                </OverlayTrigger>
+                )}
               </a>
             </Col>
           ))}

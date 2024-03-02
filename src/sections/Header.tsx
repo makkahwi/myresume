@@ -14,7 +14,7 @@ const HeaderSection = () => {
       className="justify-content-center align-items-center bg-info"
     >
       <Col lg={5} md={6} className="my-auto px-5 text-white">
-        <h2 className="mt-4 display-3 fw-bold">Suhaib Ahmad</h2>
+        <h2 className="mt-2 display-3 fw-bold">Suhaib Ahmad</h2>
         <h4 className="text-light">Senior Full-Stack Developer</h4>
       </Col>
 

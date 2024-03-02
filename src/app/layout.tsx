@@ -7,8 +7,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "react-slideshow-image/dist/styles.css";
-import "./style.css";
 import "./style.scss";
+import "./style.css";
+import { Alert } from "react-bootstrap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </head>
 
       <body className={inter.className}>
-        <main>{children}</main>
+        <main>
+          {children}
+
+          <Alert variant="info" className="position-fixed bottom-0 start-0 m-5">
+            This is still under development. So the best is yet to come.
+          </Alert>
+        </main>
+
         <ScrollUpButton />
 
         <Script

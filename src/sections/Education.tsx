@@ -18,12 +18,12 @@ const EducationSection = () => {
         },
         {
           link: "https://silent-speakers.github.io/silent-speakers/",
-          title: "Mid-term group project",
+          title: "Mid-term project",
           more: "(Desktop Python App)",
         },
         {
           link: "https://tadreebi.netlify.app/",
-          title: "Final group project",
+          title: "Final project",
           more: "(React-Django Web App)",
         },
       ],
@@ -48,7 +48,7 @@ const EducationSection = () => {
         // },
         {
           link: "https://github.com/makkahwi/iDecide",
-          title: "My FYP project",
+          title: "FYP project",
           more: "(a web app)",
         },
       ],
@@ -94,15 +94,17 @@ const EducationSection = () => {
                 </Button>
 
                 <div>
-                  <ButtonGroup className="mt-3">
+                  <Row className="justify-content-center">
                     {projects.map(({ link, title, more }, y) => (
-                      <a href={link} target="_blank" key={y}>
-                        <Button variant="info" className="rounded-5 me-2">
-                          {title}
-                        </Button>
-                      </a>
+                      <Col sm={6} md={4} className="my-3" key={y}>
+                        <a href={link} target="_blank">
+                          <Button variant="info" className="rounded-5 me-2">
+                            {title}
+                          </Button>
+                        </a>
+                      </Col>
                     ))}
-                  </ButtonGroup>
+                  </Row>
                 </div>
               </Col>
             </Row>
